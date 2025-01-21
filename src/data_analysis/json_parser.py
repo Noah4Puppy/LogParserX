@@ -1,9 +1,4 @@
-
-
 import json
-
-
-
 def json_extract_log_field(json_file):
     with open(json_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -56,7 +51,7 @@ key_words = [
     "appName"
 ]
 
-json_path = r"d:/Competition_Xihu/Resources/LogParserX/data/dataset.json"
+json_path = r"LogParserX/data/dataset.json"
 res = json_extract_log_field(json_file=json_path)
 res2 = get_key_words(result=res, key_words=key_words)
 
