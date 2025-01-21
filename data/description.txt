@@ -1,0 +1,181 @@
+[数据集介绍]
+
+附件中的 dataset.json 文件为本赛题使用的开发集, 样例如下:
+
+    {
+        'logId': 327,
+        'logText': '<189>Jan 11 2013 08:00:19 HuaweiA %%01FTPS/5/SENDDATA(l)[128]:The FTP server sent 3958656 bytes to the client admin. (IpAddress=193.168.1.2, VpnInstanceName="")',
+        'logField': [
+            {'key': '', 'value': 'Jan 11 2013 08:00:19'},
+            {'key': '', 'value': 'HuaweiA'},
+            {'key': '', 'value': '128'},
+            {'key': 'IpAddress', 'value': '193.168.1.2'}
+        ]
+    }
+
+其中每个样例有三个字段:
+
+    - logId: 日志的id, int 类型
+    - logText: 日志的内容, string 类型
+    - logField: 日志中按出现顺序排列的字段列表, List[dict] 类型, 字段是指日志中出现的有意义的实体片段, 有 key-value 和 value 两种出现形式
+        - key: 字段的键, string 类型, 如果字段没有 key 则为空
+        - value: 字段的值, string 类型, value 字段保证不为空
+
+dataset.json 文件可以使用以下代码进行读入:
+
+with open('dataset.json', 'r', encoding='utf-8') as f:
+    input_list = json.load(f)
+
+
+[数据集构造]
+
+对于开发集, 我们从真实的线上环境中随机选取若干厂商的日志共 400 条, 然后人工打标出每条日志中有意义的字段,
+经过剔除有争议的字段, 剔除 value 值为空的字段以及去重 value 相同的字段后, 每条日志随机选取最多 10 个
+字段放入 logField 中, 最终整理得到 dataset.json。
+
+每条日志可以只关注 logField 中出现的字段, 其他字段不纳入指标计算范围。
+
+对于评估集, 整体构造过程与开发集类似, 但评估集会先挑选出难度更大, 复杂度更高的厂商日志, 并且在此基础上,
+有约 20% 的日志经过特殊攻击处理, 以此进一步增加难度, 进而考察生成算法的通用性。
+
+开发集和评估集的格式完全相同, 但评估集中无标签数据的 logField 字段为空。
+
+以下列举出若干在人工打标中认为有意义的字段作为参考:
+
+    - startTime: 开始时间。通常指某个特定操作或事件的起始时间或发生时间。
+    - endTime: 结束时间。通常指某个特定操作或事件的结束时间。
+    - opType: 操作类型。指在日志或系统中记录的各种不同的操作或类型。
+    - srcAddress: 来源IP。指发起请求或连接的设备的IP地址。
+    - destAddress: 的IP。指数据包、请求或连接的目标设备的IP地址。
+    - srcPort: 来源端口。指发起网络请求或连接的设备使用的端口号。
+    - destPort: 目的端口。指数据包、请求或连接的目标设备的IP地址。
+    - srcMacAddress: 来源MAC地址。指发起网络请求或通信的设备的物理地址。
+    - destMacAddress: 目的MAC地址。指网络通信中目标设备的物理地址。
+    - srcUserName: 来源用户名。是指在网络流量、系统日志、访问记录等数据中，标识来源用户身份的用户名。
+    - UserId: 来源用户ID。通常指在一个系统或平台中，用来唯一标识某个来源用户的独特识别码。
+    - srcHostName: 来源主机名。在计算机网络和信息技术中通常指发起某个网络请求或连接的计算机或设备的名称。
+    - taskName: 任务名称,指为某一特定任务或项目所设定的标识性名称。
+    - sessionId: 会话ID。指用于唯一标识一次会话或通信过程的标识符。
+    - requestUrl: 请求URL。
+    - loginType: 登录方法。是指用户访问和进入某个系统、应用程序或在线服务的步骤和手段。
+    - fileMd5: 文件MD5。
+    - dnsType: DNS类型。此日志属于DNS查询还是属于DNS响应。
+    - srcProcessCmd: 来源进程命令行。通常指在计算机系统中用于启动来源进程的命令行。
+    - appName: 应用名称。即软件或应用程序的名字，是用户识别和记住该应用的主要标识。
+
+
+[代码提交说明]
+
+本赛题评测阶段统一使用 Qwen-2.5-72B 模型, 请在代码中实现以下函数, 使用 openai 接口调用大模型:
+
+def get_chat_completions(messages, api_key, base_url, use_llm_model):
+    """
+    使用 openai 接口调用大模型。
+    """
+    client = openai.OpenAI(api_key=api_key, base_url=base_url)
+
+    response = client.chat.completions.create(model=use_llm_model, messages=messages)
+
+    return response
+
+算法部分需要实现 generate 和 extract 两个函数:
+
+def generate(labeled_data_file_path: str, rules_save_file_path: str) -> None:
+    """
+    使用有标签日志数据生成解析规则。
+
+    这个函数从文件中读入有标签数据, 生成一系列规则, 并以任意形式将规则保存到一个文件中。
+    可以无限次数的使用大语言模型, 充分利用有标签数据实现智能体的自我优化。
+
+    参数:
+        labeled_data_file_path (str): 有标签数据集的文件路径, 格式如[数据集介绍]中所述。
+        rules_save_file_path (str): 保存规则的文件路径。
+    
+    返回:
+        None, 这个函数不需要有返回值
+    """
+    ...
+
+def extract(unlabeled_data_file_path: str, rules_save_file_path: str, result_file_path: str) -> None:
+    """
+    使用解析规则对无标签数据进行解析。
+
+    这个函数从文件中读入无标签数据和保存的规则, 使用规则解析无标签数据, 并将解析结果保存到结果文件中。
+    读入的无标签数据的 logField 字段为空, 只需要将解析的结果放回 logField 字段再保存到结果文件中即可。
+
+    参数:
+        unlabeled_data_file_path (str): 无标签数据集的文件路径, 格式如[数据集介绍]中所述。
+        rules_save_file_path (str): 保存规则的文件路径。
+        result_file_path: 保存解析结果的文件路径。
+    
+    返回:
+        None, 这个函数不需要有返回值
+    """
+    ...
+
+其中日志的解析结果可以使用以下代码进行保存:
+
+with open(result_file_path, 'w', encoding='utf-8') as f:
+    json.dump(result_list, f, ensure_ascii=False, indent=4)
+
+
+评测阶段我们执行以下命令运行生成阶段的代码:
+
+python generate.py --labeled_data_file_path "LABELED_DATA_FILE_PATH" --rules_save_file_path "RULES_SAVE_FILE_PATH" \
+    --api_key "API_KEY" --base_url "BASE_URL" --use_llm_model "USE_LLM_MODEL"
+
+执行以下命令运行提取阶段的代码:
+
+python extract.py --unlabeled_data_file_path "UNLABELED_DATA_FILE_PATH" --rules_save_file_path "RULES_SAVE_FILE_PATH" \
+    --result_file_path "RESULT_FILE_PATH"
+
+请将对应的代码实现在 generate.py 和 extract.py 中, 并且确保能够处理上述命令行参数。
+
+
+[指标计算]
+
+基于结果文件的 logField 和人工打标的 logField 对比, 可以判断:
+
+    - 字段抽取正确: 解析结果中字段的 key 和 value 与人工打标的对应字段相等, 则认为字段抽取正确。
+    - 匹配日志: 对于每条日志, 人工打标的结果中至少有一个字段抽取正确, 认为该条日志能被规则匹配。
+    - 完全匹配日志: 对于每条日志,人工打标的结果中所有字段均抽取正确, 认为该条日志能被规则完全匹配。
+
+基于字段抽取和日志匹配情况, 可以计算匹配率与完全正确率进行最终打分:
+
+    - 匹配率 = (匹配日志数 / 总日志数) * 100%
+    - 完全正确率 = (完全匹配日志数 / 总日志数) * 100%
+
+
+[算法评估]
+
+对于每个参赛者的方案, 我们会在容器环境中执行以下步骤:
+
+    1. 根据参赛者给出的 requirement.txt 等文件安装使用到的第三方库和工具。
+    2. 按照[代码提交说明]执行生成阶段的代码, 其中有标签数据的文件路径会替换成评估集的文件路径。
+    3. 按照[代码提交说明]执行提取阶段的代码, 其中无标签数据的文件路径会替换成评估集中的文件路径。
+    4. 对比方案给出的结果和人工打标的结果, 计算该方案的匹配率和完全正确率。
+
+
+[轨迹文件]
+
+本赛题要求参赛者在训练集中运行你的代码, 记录过程中使用大模型的每一轮的输入和输出的轨迹文件, 格式如下:
+
+[
+    {
+        'step': 0,
+        'logId': 327,
+        'input': '你是一个代码生成领域专家, 你的任务是 ... ',
+        'output': '[{'key': '', 'value': 'Jan 11 2013 08:00:19'}, ...]',
+    },
+    ...
+]
+
+文件统一命名为 trace.json, 可以适当增加记录的字段。
+
+
+[补充说明]
+
+1. extract 函数应该包含执行规则的代码, 但请不要对文件系统进行任何攻击。
+2. extract 函数不能以任意形式调用模型, 并且单日志的平均处理耗时不得超过500ms。
+3. 我们会审查平凡解的情况, 若生成算法为平凡解则最终得分为 0。
+4. 如对赛题有任何疑问, 欢迎咨询官方组织人员。

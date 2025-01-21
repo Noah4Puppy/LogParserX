@@ -169,3 +169,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+## API KEY RESTORE CHECK
+src/restore_checker.py
