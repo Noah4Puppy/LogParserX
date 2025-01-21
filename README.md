@@ -15,9 +15,9 @@ For some easy testing, but actually you should interact through API Key.
 
 (2) API Key Link: 
 
-官方正版：https://help.aliyun.com/zh/model-studio/billing-for-model-studio
+Official：https://help.aliyun.com/zh/model-studio/billing-for-model-studio
 
-中转1折：https://wcode.net/qwen-llm-api
+WCode：https://wcode.net/qwen-llm-api
 
 
 
