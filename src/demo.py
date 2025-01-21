@@ -10,7 +10,7 @@ def get_chat_completions(messages, api_key, base_url, use_llm_model):
     response = client.chat.completions.create(model=use_llm_model, messages=messages)
 
     return response
-
+# print(openai.proxy)
 # usage example
 messages = [
     {
@@ -26,6 +26,11 @@ messages = [
 api_key = "sk-63.h3A5gkOyaHkT8W9wPKtu28gqEzhkpR5X53NKFyzX9eq5dIEH"
 base_url = "https://wcode.net/api/gpt/v1"
 use_llm_model = "qwen2.5-72b-instruct"
+
+import os
+os.environ['HTTP_PROXY'] = 'http://127.0.0.1:8800'
+os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:8800'
+
 response = get_chat_completions(messages, api_key, base_url, use_llm_model)
 reply_content = response.choices[0].message.content
 print(reply_content)
