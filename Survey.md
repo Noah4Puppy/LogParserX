@@ -24,7 +24,16 @@ Sep 9 16:15:01: Started Session 1001 of user root
 
 ## LLM 智能体
 ### 参考
-正则表达式生成：
+- AI智能体框架
+https://github.com/BinNong/meet-libai
+
+https://github.com/fufankeji/BiliAgent
+
+https://github.com/cjyyx/AI_Gen_Novel
+
+https://github.com/business24ai/crewai-obsidian
+
+- 正则表达式生成：
 https://github.com/ua-parser/uap-core
 
 https://github.com/sagar-arora/LogAgent
