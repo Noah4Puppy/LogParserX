@@ -7,6 +7,8 @@ import os
 os.environ['HTTP_PROXY'] = 'http://127.0.0.1:8800'
 os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:8800'
 ```
+使用quickq智能代理就不用改
+
 ## Bug2: OpenAI 接口调用失败
 修改`base_link`和`APIKEY`的值
 

@@ -43,3 +43,5 @@ https://github.com/sercanarga/fuckregex
 https://github.com/lucasrpatten/RegexGenerator
 
 https://github.com/riteshtambe/RegexAI
+
+智能体框架CrewAI: https://crewai.theforage.cn/core-concepts/Crews/#crew_3

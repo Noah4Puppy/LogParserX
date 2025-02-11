@@ -28,8 +28,8 @@ base_url = "https://wcode.net/api/gpt/v1"
 use_llm_model = "qwen2.5-72b-instruct"
 
 import os
-os.environ['HTTP_PROXY'] = 'http://127.0.0.1:8800'
-os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:8800'
+# os.environ['HTTP_PROXY'] = 'http://127.0.0.1:8800'
+# os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:8800'
 
 response = get_chat_completions(messages, api_key, base_url, use_llm_model)
 reply_content = response.choices[0].message.content
