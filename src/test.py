@@ -575,17 +575,23 @@ match_ip_number_(ip_port_p_3, text)
 
 
 import re  # 需要安装 regex 模块
+text = "<128>May 16 14:54:09 2024 dbapp APT~30~1~2024-05-16 14:54:09~10.50.134.18:47013~1.1.1.1:53~远程控制~漏洞利用攻击事件~类型:    C&C~高~2405161454090000256~~请求DNS服务器 [1.1.1.1] 解析域名: oast.pro~~~0~4~2~60:db:15:73:46:01~00:00:5e:00:01:0a~0~Host: oast.pro~~~~成功~12~1~630~212002"
+segments = text.split('~')
+# Step 2: 定义关键字段匹配规则
+target_keys = {'类型', 'Host', '解析域名'}
+pattern = r"""
+    ^\s*                    # 开头可能存在的空格
+    ({})                    # 捕获目标键（类型|Host|解析域名）
+    \s*:\s*                 # 冒号及两侧空格
+    (.+?)                   # 非贪婪捕获值
+    \s*$                    # 结尾可能存在的空格
+""".format('|'.join(target_keys))
 
-def nested_parser(text):
-    pattern = r"""
-        ([^:：]+)[：:]\s*
-        (
-            (?: 
-                (?: (?!,|;|；|~) 
-                    (?: \\[~,;；] | . ) 
-                )++
-            )
-        )
-        (?=[~,;；]|$)
-    """
-    return re.findall(pattern, text, re.VERBOSE)
+# Step 3: 遍历字段提取数据
+result = {}
+for seg in segments:
+    match = re.search(pattern, seg, re.VERBOSE)
+    if match:
+        key, value = match.groups()
+        result[key] = value.strip()
+print(result)

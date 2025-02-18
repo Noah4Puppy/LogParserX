@@ -88,3 +88,12 @@ json_str_p = r'''
         |-?\d+\.\d+      # 浮点数
         |true|false|null # 布尔/空值
     )'''
+
+target_keys = {'类型', 'Host'}
+segment_p = r"""
+    ^\s*                    # 开头可能存在的空格
+    ({})                    # 捕获目标键（类型|Host|解析域名）
+    \s*:\s*                 # 冒号及两侧空格
+    (.+?)                   # 非贪婪捕获值
+    \s*$                    # 结尾可能存在的空格
+""".format('|'.join(target_keys))

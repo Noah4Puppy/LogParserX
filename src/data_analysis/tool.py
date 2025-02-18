@@ -328,3 +328,19 @@ def match_json_str(pattern, text):
     else:
         print("未找到匹配的JSON字符串")
         return [] 
+
+def match_segment(pattern, text):
+    result = []
+    segments = text.split('~')
+    for seg in segments:
+        match = re.search(pattern, seg, re.VERBOSE)
+        if match:
+            key, value = match.groups()
+            result.append({'key': key, 'value': value.strip()})
+    if result:
+        print("Segment Results:", result)
+        return result
+    else:
+        print("未找到匹配的Segment ~")
+        return []   
+    

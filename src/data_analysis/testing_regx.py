@@ -38,6 +38,7 @@ def get_components(keyword, log_text):
         'json_str': (match_json_str, [json_str_p]),
         'email': (match_mail, []),
         'function': (match_function, [function_p]),
+        'segment': (match_segment, [segment_p]),
         # f'{new_key}': (f'match_{new_key}', [f'{new_pattern}'])
     }
 

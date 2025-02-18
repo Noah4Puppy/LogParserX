@@ -50,7 +50,9 @@ testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Aug 12 08:11:56'
 可见对于后面日志来说这些规则的筛选率不高
 
 目前的分类如下：
-"keywords": ["key_value", "hostname", "date", "pid", "ip_port", "session", "slash", "slash_filtered", "webport", "web_attack", "sys_attack", "json_str", "email", "function"]
+"keywords": ["key_value", "hostname", "date", "pid", "ip_port", "session", 
+//"slash", //"slash_filtered", "webport", "web_attack", "sys_attack", "json_str", "email", "function"]
+其中 slash相关可以先去掉
 
 分析后面日志的命中情况：
 ```txt
