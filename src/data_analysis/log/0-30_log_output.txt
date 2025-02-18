@@ -1,0 +1,151 @@
+Record 1:
+Original: [{'key': '', 'value': 'Aug 13 09:04:02'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '3831379'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Aug 13 09:04:02'}, {'key': '', 'value': '3831379'}]
+Coverage: 75.0%
+
+Record 2:
+Original: [{'key': '', 'value': 'Oct 28 18:00:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '172578'}, {'key': '', 'value': '120.25.115.20'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Oct 28 18:00:09'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '172578'}, {'key': '', 'value': '120.25.115.20'}]
+Coverage: 100.0%
+
+Record 3:
+Original: [{'key': '', 'value': 'Oct 28 17:58:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}, {'key': 'code', 'value': 'exited'}, {'key': 'status', 'value': '2/INVALIDARGUMENT'}]
+Testing: [{'key': 'code', 'value': 'exited'}, {'key': 'status', 'value': '2/INVALIDARGUMENT'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Oct 28 17:58:09'}, {'key': ' status=2', 'value': 'INVALIDARGUMENT'}]
+Coverage: 80.0%
+
+Record 4:
+Original: [{'key': '', 'value': 'Aug 12 08:06:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '16209'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38316'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'Aug 12 08:06:01'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '16209'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38316'}, {'key': '', 'value': '3.66.0.23'}]
+Coverage: 88.9%
+
+Record 5:
+Original: [{'key': '', 'value': 'Aug 12 08:11:56'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '33101'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Aug 12 08:11:56'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '33101'}]
+Coverage: 100.0%
+
+Record 6:
+Original: [{'key': '', 'value': 'Oct 28 17:57:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '4996668'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Oct 28 17:57:09'}, {'key': '', 'value': '4996668'}]
+Coverage: 75.0%
+
+Record 7:
+Original: [{'key': '', 'value': 'Aug 12 07:38:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '138033'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38140'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'Aug 12 07:38:43'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '138033'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38140'}, {'key': '', 'value': '3.66.0.23'}]
+Coverage: 88.9%
+
+Record 8:
+Original: [{'key': '', 'value': 'Jul 29 07:31:56'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '60636'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '48454'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'Jul 29 07:31:56'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '60636'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '48454'}, {'key': '', 'value': '3.66.0.23'}]
+Coverage: 88.9%
+
+Record 9:
+Original: [{'key': '', 'value': 'Jul 29 07:42:11'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '89018'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42736'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'Jul 29 07:42:11'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '89018'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42736'}, {'key': '', 'value': '3.66.0.23'}]
+Coverage: 88.9%
+
+Record 10:
+Original: [{'key': '', 'value': 'Aug 12 07:14:12'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '71841'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '43604'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'Aug 12 07:14:12'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '71841'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '43604'}, {'key': '', 'value': '3.66.0.23'}]
+Coverage: 88.9%
+
+Record 11:
+Original: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26434'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'CMD'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26434'}, {'key': 'Oct 29 00:00:01 soc-32 CROND[26434]: (root) CMD (', 'value': 'usr/lib64/sa/sa1 1 1)'}]
+Coverage: 66.7%
+
+Record 12:
+Original: [{'key': '', 'value': 'Aug 13 09:05:17'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Aug 13 09:05:17'}]
+Coverage: 66.7%
+
+Record 13:
+Original: [{'key': '', 'value': 'Jul 16 16:33:39'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}, {'key': '', 'value': '3405658'}, {'key': '', 'value': 'root'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Jul 16 16:33:39'}, {'key': '', 'value': '3405658'}]
+Coverage: 60.0%
+
+Record 14:
+Original: [{'key': '', 'value': 'Jul 29 07:12:58'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '7246'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '35052'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'Jul 29 07:12:58'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '7246'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '35052'}, {'key': '', 'value': '3.66.0.23'}]
+Coverage: 100.0%
+
+Record 15:
+Original: [{'key': '', 'value': 'Oct 28 10:11:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '2100'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'CMD'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Oct 28 10:11:01'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '2100'}, {'key': '<21>Oct 28 10:11:01 soc-32 CROND[2100]: (root) CMD (', 'value': 'usr/bin/bash /data/soc/soc_upgrade_dir/scripts/check_status.sh &> /dev/null)'}]
+Coverage: 66.7%
+
+Record 16:
+Original: [{'key': '', 'value': 'Jul 29 16:57:28'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Jul 29 16:57:28'}]
+Coverage: 66.7%
+
+Record 17:
+Original: [{'key': '', 'value': 'Aug 12 08:04:16'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '10791'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '34650'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'Aug 12 08:04:16'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '10791'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '34650'}, {'key': '', 'value': '3.66.0.23'}]
+Coverage: 100.0%
+
+Record 18:
+Original: [{'key': '', 'value': 'Aug 12 08:08:52'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '24720'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'Aug 12 08:08:52'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '24720'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '44196'}, {'key': '', 'value': '3.66.0.23'}]
+Coverage: 100.0%
+
+Record 19:
+Original: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': '', 'value': 'root'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}]
+Coverage: 80.0%
+
+Record 20:
+Original: [{'key': '', 'value': 'Aug 12 07:51:29'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '172326'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '36424'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'Aug 12 07:51:29'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '172326'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '36424'}, {'key': '', 'value': '3.66.0.23'}]
+Coverage: 100.0%
+
+Record 21:
+Original: [{'key': '', 'value': 'Jul 29 07:02:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '174980'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '40030'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'Jul 29 07:02:20'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '174980'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '40030'}, {'key': '', 'value': '3.66.0.23'}]
+Coverage: 100.0%
+
+Record 22:
+Original: [{'key': '', 'value': 'Aug 13 09:26:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '41916'}, {'key': '', 'value': '120.25.115.20'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Aug 13 09:26:10'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '41916'}, {'key': '', 'value': '120.25.115.20'}]
+Coverage: 100.0%
+
+Record 23:
+Original: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38666'}, {'key': '', 'value': 'ssh2'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38666'}, {'key': '', 'value': '3.66.0.23'}, {'key': '<21>Jul 29 07:01:43 soc-32 sshd[173168]: Accepted publickey for root from 3.66.0.23 port 38666 ssh2: RSA SHA256:M', 'value': 'HclYq1V9UXKEtEyF03gXBB7IyFJKcs8tU6lqWNuyM'}]
+Coverage: 85.7%
+
+Record 24:
+Original: [{'key': '', 'value': 'Oct 28 10:01:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '170594'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'CMD'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Oct 28 10:01:01'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '170594'}, {'key': '<21>Oct 28 10:01:01 soc-32 CROND[170594]: (root) CMD (run-parts ', 'value': 'etc/cron.hourly)'}]
+Coverage: 66.7%
+
+Record 25:
+Original: [{'key': '', 'value': 'Aug 12 07:13:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '69034'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41484'}, {'key': '', 'value': 'ssh2'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Aug 12 07:13:10'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '69034'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41484'}, {'key': '', 'value': '3.66.0.23'}, {'key': '<21>Aug 12 07:13:10 soc-32 sshd[69034]: Accepted publickey for root from 3.66.0.23 port 41484 ssh2: RSA SHA256:M', 'value': 'HclYq1V9UXKEtEyF03gXBB7IyFJKcs8tU6lqWNuyM'}]
+Coverage: 85.7%
+
+Record 26:
+Original: [{'key': '', 'value': 'Jul 29 17:01:24'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}, {'key': '', 'value': '3604702'}, {'key': '', 'value': 'root'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Jul 29 17:01:24'}, {'key': '', 'value': '3604702'}]
+Coverage: 60.0%
+
+Record 27:
+Original: [{'key': '', 'value': 'Aug 12 08:07:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '20315'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41070'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'Aug 12 08:07:20'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '20315'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41070'}, {'key': '', 'value': '3.66.0.23'}]
+Coverage: 100.0%
+
+Record 28:
+Original: [{'key': '', 'value': 'Oct 28 18:00:13'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '4996702'}, {'key': '', 'value': 'root'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Oct 28 18:00:13'}, {'key': '', 'value': '4996702'}]
+Coverage: 60.0%
+
+Record 29:
+Original: [{'key': '', 'value': 'Jul 29 07:20:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '28635'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50848'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'Jul 29 07:20:09'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '28635'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50848'}, {'key': '', 'value': '3.66.0.23'}]
+Coverage: 100.0%
+
+Record 30:
+Original: [{'key': '', 'value': 'Jul 29 16:56:04'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '3604644'}, {'key': '', 'value': 'root'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Jul 29 16:56:04'}, {'key': '', 'value': '3604644'}]
+Coverage: 60.0%
+
+Total Coverage: 83.3%

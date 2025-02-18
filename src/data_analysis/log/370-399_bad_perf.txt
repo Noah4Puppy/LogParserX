@@ -1,0 +1,47 @@
+Bad Performance Records:
+Record 2:
+Original: [{'key': '', 'value': 'April 25 19:52:48 2013'}, {'key': '', 'value': 'APT'}, {'key': '', 'value': '2013-04-25 17:28:02'}, {'key': '', 'value': '192.168.58.200:36720'}, {'key': '', 'value': 'WEB攻击'}, {'key': '', 'value': '异常文件扩展名字访问'}]
+Testing: [{'key': '', 'value': 'apt'}, {'key': '', 'value': 'April 25 19:52:48'}, {'key': '', 'value': '2013-04-25 17:28:02'}, {'key': '', 'value': '2013-04-25 17:28'}, {'key': '', 'value': '192.168.58.200:36720'}, {'key': '', 'value': '192.168.58.102:80'}, {'key': '<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB攻击~异常文件扩展名字访问~NULL~中~1304251728020000001~ NULL~POST ', 'value': 'apt/files?action=add'}, {'key': '<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB攻击~异常文件扩展名字访问~NULL~中~1304251728020000001~ NULL~POST ', 'value': 'apt/files?action=add'}, {'key': '', 'value': 'WEB攻击'}, {'key': '', 'value': '异常文件扩展名字访问'}, {'key': '', 'value': '中'}]
+Coverage: 66.7%
+
+Record 3:
+Original: [{'key': '', 'value': 'May 16 14:54:09 2024'}, {'key': '', 'value': 'APT'}, {'key': '', 'value': '2024-05-16 14:54:09'}, {'key': '', 'value': '10.50.134.18:47013'}, {'key': '', 'value': '1.1.1.1:53'}, {'key': '', 'value': '远程控制'}, {'key': '', 'value': '漏洞利用攻击事件'}, {'key': '类型', 'value': 'C&C'}, {'key': 'Host', 'value': 'oast.pro'}]
+Testing: [{'key': '', 'value': 'dbapp'}, {'key': '', 'value': 'May 16 14:54:09'}, {'key': '', 'value': '2024-05-16 14:54:09'}, {'key': '', 'value': 'C&C~高~2405161454090000256~~请求DNS服务器'}, {'key': '', 'value': '1.1.1.1'}, {'key': '', 'value': '2024-05-16 14:54'}, {'key': '', 'value': '10.50.134.18:47013'}, {'key': '', 'value': '1.1.1.1:53'}, {'key': '', 'value': '73:46:01~00:00'}]
+Coverage: 33.3%
+
+Record 4:
+Original: [{'key': '', 'value': 'April 26 13:30:32 2013'}, {'key': '', 'value': 'APT'}, {'key': '', 'value': '2013-04-26 13:30:25'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '系统告警'}, {'key': '', 'value': '高'}]
+Testing: [{'key': '', 'value': 'apt'}, {'key': '', 'value': 'April 26 13:30:32'}, {'key': '', 'value': '2013-04-26 13:30:25'}, {'key': '', 'value': '2013-04-26 13:30'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '系统告警'}, {'key': '', 'value': '高'}, {'key': '', 'value': '55'}]
+Coverage: 66.7%
+
+Record 6:
+Original: [{'key': '', 'value': 'April 26 13:30:32 2013'}, {'key': '', 'value': 'APT'}, {'key': '', 'value': '2013-04-26 13:30:25'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '系统告警'}, {'key': '', 'value': '高'}]
+Testing: [{'key': '', 'value': 'apt'}, {'key': '', 'value': 'April 26 13:30:32'}, {'key': '', 'value': '2013-04-26 13:30:25'}, {'key': '', 'value': '2013-04-26 13:30'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '系统告警'}, {'key': '', 'value': '高'}, {'key': '', 'value': '55'}]
+Coverage: 66.7%
+
+Record 8:
+Original: [{'key': '', 'value': 'April 26 13:30:32 2013'}, {'key': '', 'value': 'APT'}, {'key': '', 'value': '2013-04-26 13:30:25'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '系统告警'}, {'key': '', 'value': '高'}]
+Testing: [{'key': '', 'value': 'apt'}, {'key': '', 'value': 'table'}, {'key': '', 'value': 'info'}, {'key': '', 'value': 'April 26 13:30:32'}, {'key': '', 'value': '2013-04-26 13:30:25'}, {'key': '', 'value': '2013-04-26 13:30'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '系统告警'}, {'key': '', 'value': '高'}, {'key': '', 'value': '55'}]
+Coverage: 66.7%
+
+Record 11:
+Original: [{'key': '', 'value': 'October 24 20:11:31 2013'}, {'key': '', 'value': 'APT'}, {'key': '', 'value': '2013-10-24 20:11:19'}, {'key': '', 'value': '192.168.29.124:0'}, {'key': '', 'value': '122.224.213.5:0'}, {'key': '', 'value': '恶意行为'}, {'key': '', 'value': 'WEB自动扫描'}, {'key': '', 'value': '高'}]
+Testing: [{'key': '', 'value': 'dbapp'}, {'key': '', 'value': 'October 24 20:11:31'}, {'key': '', 'value': '2013-10-24 20:11:19'}, {'key': '', 'value': '2013-10-24 20:11'}, {'key': '', 'value': '192.168.29.124:0'}, {'key': '', 'value': '122.224.213.5:0'}, {'key': '<128>October 24 20:11:31 2013 dbapp APT~2~1~2013-10-24 20:11:19~192.168.29.124:0~122.224.213.5:0~恶意行为~WEB自动扫描~NULL~高~1310242011199910111~NULL~POST ', 'value': 'new/jeecms/ajax/cms/search/trsSearch.do'}, {'key': '<128>October 24 20:11:31 2013 dbapp APT~2~1~2013-10-24 20:11:19~192.168.29.124:0~122.224.213.5:0~恶意行为~WEB自动扫描~NULL~高~1310242011199910111~NULL~POST ', 'value': 'new/jeecms/ajax/cms/search/trsSearch.do'}]
+Coverage: 37.5%
+
+Record 15:
+Original: [{'key': '', 'value': 'October 14 10:39:26 2014'}, {'key': '', 'value': 'APT'}, {'key': '', 'value': '2014-10-14 10:38:05'}, {'key': '', 'value': '172.16.40.227:1395'}, {'key': '', 'value': '58.67.149.240:80'}, {'key': '', 'value': '恶意代码攻击'}, {'key': '', 'value': '高'}]
+Testing: [{'key': '', 'value': 'dbapp'}, {'key': '', 'value': 'October 14 10:39:26'}, {'key': '', 'value': '2014-10-14 10:38:05'}, {'key': '', 'value': '10:38:05~172.16.40.227:1395~58.67.149.240:80~恶意代码攻击~提升权限~提升权限。~高~1410141038050000014~1410141038050000114_TreasureBox20140928144937_4.4.0.3419.zip'}, {'key': '', 'value': ' aliedit.exe '}, {'key': '', 'value': '2014-10-14 10:38'}, {'key': '', 'value': '172.16.40.227:1395'}, {'key': '', 'value': '58.67.149.240:80'}, {'key': '<128>October 14 10:39:26 2014 dbapp APT~2~1~2014-10-14 10:38:05~172.16.40.227:1395~58.67.149.240:80~恶意代码攻击~提升权限~提升权限。~高~1410141038050000014~1410141038050000114_TreasureBox20140928144937_4.4.0.3419.zip [ aliedit.exe ]~GET ', 'value': 'L1/44/1/seccli/publish/TreasureBox20140928144937_4.4.0.3419.zip'}, {'key': '<128>October 14 10:39:26 2014 dbapp APT~2~1~2014-10-14 10:38:05~172.16.40.227:1395~58.67.149.240:80~恶意代码攻击~提升权限~提升权限。~高~1410141038050000014~1410141038050000114_TreasureBox20140928144937_4.4.0.3419.zip [ aliedit.exe ]~GET ', 'value': 'L1/44/1/seccli/publish/TreasureBox20140928144937_4.4.0.3419.zip'}]
+Coverage: 42.9%
+
+Record 18:
+Original: [{'key': '', 'value': 'April 25 19:52:48 2013'}, {'key': '', 'value': 'APT'}, {'key': '', 'value': '2013-04-25 17:28:02'}, {'key': '', 'value': '192.168.58.102:80'}, {'key': '', 'value': 'WEB攻击'}, {'key': '', 'value': '中'}]
+Testing: [{'key': '', 'value': 'apt'}, {'key': '', 'value': 'alert'}, {'key': '', 'value': 'April 25 19:52:48'}, {'key': '', 'value': '2013-04-25 17:28:02'}, {'key': '', 'value': '2013-04-25 17:28'}, {'key': '', 'value': '192.168.58.200:36720'}, {'key': '', 'value': '192.168.58.102:80'}, {'key': '<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB攻击~fromcharcode alert eval嵌入标签跨站~NULL~中~1304251728020000001~ NULL~POST ', 'value': 'apt/files?action=add'}, {'key': '<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB攻击~fromcharcode alert eval嵌入标签跨站~NULL~中~1304251728020000001~ NULL~POST ', 'value': 'apt/files?action=add'}, {'key': '', 'value': 'WEB攻击'}, {'key': '', 'value': 'fromcharcode alert eval嵌入标签跨站'}, {'key': '', 'value': '中'}]
+Coverage: 66.7%
+
+Record 22:
+Original: [{'key': '', 'value': 'April 26 13:30:32 2013'}, {'key': '', 'value': 'APT'}, {'key': '', 'value': '2013-04-26 13:30:25'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '系统告警'}, {'key': '', 'value': '高'}]
+Testing: [{'key': '', 'value': 'apt'}, {'key': '', 'value': 'April 26 13:30:32'}, {'key': '', 'value': '2013-04-26 13:30:25'}, {'key': '', 'value': '2013-04-26 13:30'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '系统告警'}, {'key': '', 'value': '高'}, {'key': '', 'value': '55'}]
+Coverage: 66.7%
+
+Total Bad Records: 9
