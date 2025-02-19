@@ -65,11 +65,11 @@ WEB攻击~createtextrange跨站~NULL~中;
 WEB攻击~通用目录遍历(..\\/)~~低;
 
 
-6.Warning
+6. Warning
 形如:
 系统告警~~NULL~高~55
 
 7. Function
 形如 func(param) 需要提取 func, param
 
-8.
+8. keywords and excluded keywords

@@ -62,3 +62,33 @@ pdf_tool = PDFSearchTool(
     )
 )
 ```
+
+## Usage
+### agents.yaml 配置
+这里设定所有你要使用的agents, 如果你不想通过这个使用就直接把agents.yaml文件删除。
+例如：
+```yaml
+researcher:
+  role: >
+    {topic} Senior Data Researcher
+  goal: >
+    Uncover cutting-edge developments in {topic}
+  backstory: >
+    You're a seasoned researcher with a knack for uncovering the latest
+    developments in {topic}. Known for your ability to find the most relevant
+    information and present it in a clear and concise manner.
+
+reporting_analyst:
+  role: >
+    {topic} Reporting Analyst
+  goal: >
+    Create detailed reports based on {topic} data analysis and research findings
+  backstory: >
+    You're a meticulous analyst with a keen eye for detail. You're known for
+    your ability to turn complex data into clear and concise reports, making
+    it easy for others to understand and act on the information you provide.
+```
+注意这里的命名之后调用的时候名字要保持一致：
+```python
+
+```

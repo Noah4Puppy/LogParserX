@@ -9,20 +9,7 @@ keywords = [
     "system-logind",
     "systemd",
     "APT",
-]
-
-exclude_keywords = [
-    "Removed",
-    "session",
-    "adjust",
-    "Postponed",
-    "for",
-    "from",
-    "port",
-    "closed",
-    "user",
-    "of",
-    "New",
+    "",
 ]
 
 key_value_p = r"""
@@ -52,11 +39,10 @@ key_value_p = r"""
 # 时间：不带年份+带年份
 date_p = r"""\b([A-Za-z]+ \d{2} \d{2}:\d{2}:\d{2})\b"""
 date_p_ = r"""\b([A-Za-z]+ \d{2} \d{4} \d{2}:\d{2}:\d{2})\b"""
-date_p_2 = r"([A-Za-z]{3})\s+ (\d{1,2})\s+(\d{4})\s+(\d{2}):(\d{2}):(\d{2})([+-]\d{2}):(\d{2})"
+date_p_2 = r"([A-Za-z]{3})\s+(\d{1,2})\s+(\d{4})\s+(\d{2}):(\d{2}):(\d{2})([+-]\d{2}):(\d{2})"
 date_p_3 = r"""\b(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})(\.\d{1,6})?\b"""
 # 主机名字
-# hostname_p = r"(?<=\s)([a-zA-Z0-9-]+)(?=\s)"
-hostname_p = r"(?<=\s)([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)(?=\s)" 
+hostname_p = r"(?<=\s)([a-zA-Z0-9-]+)(?=\s)"
 # 进程ID
 pid_p = r"([a-zA-Z0-9_-]+)\[(\d+)\]"
 pid_p_2 = r"(\S+)\s+\[(.*?)\]"
@@ -84,8 +70,6 @@ slash_pattern = r"([^,/]+)\/([^,]+)"
 user_agent_p = r"Mozilla/5\.0\s*\([^)]+\)\s*(?:AppleWebKit/[\d\.]+\s*\([^)]+\)\s*Chrome/[\d\.]+\s*Safari/[\d\.]+|[\w\s]+/[\d\.]+)"
 # HTTP响应码
 HTTPS_code_p = r"HTTP/S响应码/(\d+)"
-# mail关键词
-# email_p = r"(^|\s)([\w\u0080-\uFFFF.-]+@([\w\u0080-\uFFFF-]+\.)+[\w\u0080-\uFFFF]{2,18})(?=\s|$)"
 
 # attack info
 web_attack_p = r"WEB攻击~([^~]+)~([^~]*)~([中高低]+)"

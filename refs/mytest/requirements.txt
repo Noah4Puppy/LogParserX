@@ -1,0 +1,6 @@
+crewai==0.102.0
+crewai_tools==0.36.0
+langchain_openai==0.3.6
+litellm==1.61.9
+pydantic==2.10.6
+python-dotenv==1.0.1

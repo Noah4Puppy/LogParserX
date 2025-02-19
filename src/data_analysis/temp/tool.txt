@@ -19,21 +19,6 @@ def get_concrete_words(text):
         "APT",
         ""
     ]
-    keyword_pattern = re.compile(
-    r'\b(' + '|'.join(map(re.escape, keywords)) + r')\b', 
-    flags=re.IGNORECASE
-    )
-    key_matches = keyword_pattern.findall(text)
-    results = []
-    for match in key_matches:
-        if match:
-            results.append({'key': '', 'value': match})
-    if results:
-        print("Concrete Words Results:", results)
-        return results
-    else:
-        print("未找到匹配的具体词汇")
-        return []
 
 
 
@@ -107,31 +92,19 @@ def match_date_ISO(pattern, text):
         print("未找到匹配的ISO日期时间信息, 类似：2015-12-28 06:16:28")
         return []  
 
-exclude_keywords = [
-    "Removed",
-    "session",
-    "adjust",
-    "Postponed",
-    "for",
-    "from",
-    "port",
-    "closed",
-    "user",
-    "of",
-    "New",
-]
 
 
 def match_hostname(pattern, text):
     matches = re.findall(pattern, text)
     results = []
     for match in matches:
-        if match and match not in exclude_keywords:
-            # 这里可能需要根据实际分组调整match的处理
-            # 如果正则中有分组，match会是元组，否则是字符串
-            value = match if isinstance(match, str) else match
-            if not value.isdigit():
-                results.append({'key': '', 'value': value})
+        if match:
+            isdigit = match.isdigit()
+            # isalpha = match.isalpha()
+            if isdigit:
+                pass
+            else:
+                results.append({'key': '', 'value': match})
     print("Hostname Results:", results)
     return results
 

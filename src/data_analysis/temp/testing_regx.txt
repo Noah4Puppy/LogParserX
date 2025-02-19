@@ -39,7 +39,6 @@ def get_components(keyword, log_text):
         'email': (match_mail, []),
         'function': (match_function, [function_p]),
         'segment': (match_segment, [segment_p]),
-        'keywords': (get_concrete_words, []),
         # f'{new_key}': (f'match_{new_key}', [f'{new_pattern}'])
     }
 
@@ -118,7 +117,7 @@ if __name__ == '__main__':
         target_log.append(log['logText'])
         origin_logField.append(log['logField'])
     # print(target_log[:5])
-    START = 0
+    START = 300
     END = 400
     T = target_log[START:END]
     O = origin_logField[START:END]
