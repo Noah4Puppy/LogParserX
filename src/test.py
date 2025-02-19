@@ -533,45 +533,45 @@
 #         return [] 
 # match_sys_attack(pattern, text)
 
-import re
-# ip_port_p_2 = r"(\d+\.\d+\.\d+\.\d+)((\d+))"
-ip_port_p_2 = r"(\d+\.\d+\.\d+\.\d+)(?:\((\d+)\))?"
-text = "<128>April 26 13:30:32 2013 apt APT~0~1~2013-04-26 13:30:25~127.0.0.1:0~127.0.0.1:0~系统告警~~NULL~高~55~~探测器:{0},报表相关表{1}同步失败，相关功能可能会出现异常！"
-text = "127.0.0.1(80),127.0.0.1(443),127.0.0.1(3306),127.0.0.1(27017),127.0.0.1(22),127.0.0.1(53),127.0.0.1(135),127.0.0.1(139),127.0.0.1(445),127.0.0.1(1433),127.0.0.1(1521),127.0.0.1(3389),127.0.0.1(8080),127.0.0.1(8000),127"
-text = "127.0.0.1:0, 192.168.58.200:36720, 192.168.58.200:10000"
-def match_ip_number(pattern, text):
-    matches = re.findall(pattern, text)
-    results = []
-    for ip, port in matches:
-        print(f"IP: {ip}, Port: {port}")
-        if ip and port:
-            results.append({'key': '', 'value': ip})
-            results.append({'key': '', 'value': port})
-    if results:
-        print("IP-Port Number Results:", results)
-        return results
-    else:
-        print("未找到匹配的 IP 地址和端口号-2")
-        return []
+# import re
+# # ip_port_p_2 = r"(\d+\.\d+\.\d+\.\d+)((\d+))"
+# ip_port_p_2 = r"(\d+\.\d+\.\d+\.\d+)(?:\((\d+)\))?"
+# text = "<128>April 26 13:30:32 2013 apt APT~0~1~2013-04-26 13:30:25~127.0.0.1:0~127.0.0.1:0~系统告警~~NULL~高~55~~探测器:{0},报表相关表{1}同步失败，相关功能可能会出现异常！"
+# text = "127.0.0.1(80),127.0.0.1(443),127.0.0.1(3306),127.0.0.1(27017),127.0.0.1(22),127.0.0.1(53),127.0.0.1(135),127.0.0.1(139),127.0.0.1(445),127.0.0.1(1433),127.0.0.1(1521),127.0.0.1(3389),127.0.0.1(8080),127.0.0.1(8000),127"
+# text = "127.0.0.1:0, 192.168.58.200:36720, 192.168.58.200:10000"
+# def match_ip_number(pattern, text):
+#     matches = re.findall(pattern, text)
+#     results = []
+#     for ip, port in matches:
+#         print(f"IP: {ip}, Port: {port}")
+#         if ip and port:
+#             results.append({'key': '', 'value': ip})
+#             results.append({'key': '', 'value': port})
+#     if results:
+#         print("IP-Port Number Results:", results)
+#         return results
+#     else:
+#         print("未找到匹配的 IP 地址和端口号-2")
+#         return []
 
-def match_ip_number_(pattern, text):
-    matches = re.findall(pattern, text)
-    results = []
-    if matches:
-        for item in matches:
-            ip_port = f"{item[0]}:{item[1]}"
-            results.append({'key': '', 'value': ip_port})
-    if results:
-        print("IP-Port Number Results:", results)
-        return results
-    else:
-        print("未找到匹配的 IP 地址和端口号-3")
-        return []
+# def match_ip_number_(pattern, text):
+#     matches = re.findall(pattern, text)
+#     results = []
+#     if matches:
+#         for item in matches:
+#             ip_port = f"{item[0]}:{item[1]}"
+#             results.append({'key': '', 'value': ip_port})
+#     if results:
+#         print("IP-Port Number Results:", results)
+#         return results
+#     else:
+#         print("未找到匹配的 IP 地址和端口号-3")
+#         return []
 
-# match_ip_number(ip_port_p_2, text)
-ip_port_p_3 = r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{*}$"
-ip_port_p_3 = r'(\d+.\d+.\d+.\d+):(\d+)'
-match_ip_number_(ip_port_p_3, text)
+# # match_ip_number(ip_port_p_2, text)
+# ip_port_p_3 = r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{*}$"
+# ip_port_p_3 = r'(\d+.\d+.\d+.\d+):(\d+)'
+# match_ip_number_(ip_port_p_3, text)
 
 
 # import re  # 需要安装 regex 模块
@@ -595,3 +595,101 @@ match_ip_number_(ip_port_p_3, text)
 #         key, value = match.groups()
 #         result[key] = value.strip()
 # print(result)
+
+
+
+
+import re
+
+def match_function(text):
+    # 第一层过滤：精确匹配干扰格式
+    exclude_pat = r"%%\d{2}/[^/]+/"  # 修正点1：允许非数字字符
+    if re.search(exclude_pat, text):
+        print(f"已排除干扰格式: {text[:15]}...")
+        return []
+
+    # 第二层匹配：修正正则表达式
+    function_p = r"\b([a-zA-Z0-9_-]+)$$(.*?)$$"  # 修正点2：使用正确括号
+    match = re.search(function_p, text)
+    
+    if match:
+        function_name = match.group(1)
+        # 第三层验证：增强过滤逻辑
+        if any(char in function_name for char in ['/', '@', '#']):
+            print(f"非法字符过滤: {function_name}")
+            return []
+        
+        return [
+            {'key': 'function', 'value': function_name},
+            {'key': 'params', 'value': match.group(2)}
+        ]
+    else:
+        return []
+
+# 测试用例
+test_cases = [
+    "%%01WEBM/5/IMPORTSUCC(l)",    # 应排除
+    "%%01BGP/6/EOR_SENT(l)",       # 应排除
+    "valid_function(param=1)",     # 应匹配
+    "another_valid(param)",        # 应匹配
+    "invalid/3/format(arg)",       # 应排除
+    "special@func(test)"           # 应排除
+]
+
+for case in test_cases:
+    print(f"测试用例: {case}")
+    result = match_function(case)
+    print("结果:", result, "\n")
+
+import re
+
+# 匹配字符串
+test_str1 = "%%01WEBM/5/IMPORTSUCC(l)"  # 应该不匹配
+test_str2 = "function_p(param)"        # 应该匹配
+
+regex = re.compile(r"^(?!%%)\b([a-zA-Z0-9_-]+)\((.*?)\)\b")
+
+match1 = regex.search(test_str1)
+print(match1)  # 输出 None
+
+match2 = regex.search(test_str2)
+print(match2)  # 输出 <re.Match object; span=(0, 14), match='function_p(param)'>
+
+import re
+
+text = ":52 SD-RZ-ZYL-SR-1.MAN "
+pattern = r'(?<=:\d{2}) ([a-zA-Z0-9._-]+)*(?=\s)'
+match = re.search(pattern, text)
+if match:
+    print("提取到的目标字符串：", match.group())
+else:
+    print("未找到匹配的内容")
+
+
+import re
+
+import re
+
+def match_date_ISO(pattern, text):
+    match = re.search(pattern, text)
+    results = []
+    if match:
+        date = match.group(0)
+        results.append({'key': '', 'value': date})
+        print("ISO Date Results:", results)
+        return results
+    else:
+        # 匹配没有小数点和毫秒部分的日期时间格式
+        p_iso = r"(\d{4}-\d{1,2}-\d{1,2} \d{2}:\d{2}:\d{2})"
+        match_iso = re.search(p_iso, text)
+        if match_iso:
+            date_iso = match_iso.group(0)
+            results.append({'key': '', 'value': date_iso})
+            return results
+        else:
+            print("未找到匹配的ISO日期时间信息")
+            return []
+text = "2015-12-28 06:16:28+10:00"
+password_pattern = r"""\d{4}-\d{1,2}-\d{1,2} \d{2}:\d{2}:\d{2}"""
+results = match_date_ISO(pattern, text)
+print(results)

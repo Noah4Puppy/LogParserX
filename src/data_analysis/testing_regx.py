@@ -40,6 +40,7 @@ def get_components(keyword, log_text):
         'function': (match_function, [function_p]),
         'segment': (match_segment, [segment_p]),
         'keywords': (get_concrete_words, []),
+        'fangkuohao': (match_fangkuohao, [fangkuohao_p]),
         # f'{new_key}': (f'match_{new_key}', [f'{new_pattern}'])
     }
 
@@ -79,9 +80,10 @@ def Test(log_text):
     sys_attack = match_sys_attack(sys_attack_p, log_text)
     json_str = match_json_str(json_str_p, log_text)
     email = match_mail(log_text)
-    function = match_function(function_p, log_text)
+    # function = match_function(function_p, log_text)
     segment = match_segment(segment_p, log_text)
     keywords = get_concrete_words(log_text)
+    fangkuohao = match_fangkuohao(fangkuohao_p, log_text)
 
     L = []
     L.extend(key_value_l)
@@ -99,7 +101,8 @@ def Test(log_text):
     L.extend(sys_attack)
     L.extend(json_str)
     L.extend(email)
-    L.extend(function)
+    # L.extend(function)
+    L.extend(fangkuohao)
     L.extend(segment)
     L.extend(keywords)
     return L
@@ -122,8 +125,8 @@ if __name__ == '__main__':
         target_log.append(log['logText'])
         origin_logField.append(log['logField'])
     # print(target_log[:5])
-    START = 200
-    END = 300
+    START = 0
+    END = 400
     T = target_log[START:END]
     O = origin_logField[START:END]
     # print(O)

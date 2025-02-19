@@ -10,7 +10,7 @@ def get_concrete_words(text):
         "system-logind",
         "systemd",
         "APT",
-        ""
+        "run-parts",
     ]
     keyword_pattern = re.compile(
     r'\b(' + '|'.join(map(re.escape, keywords)) + r')\b', 
@@ -97,14 +97,15 @@ def match_date_ISO(pattern, text):
     results = []
     if match:
         date = match.group(0)
-        results.append({'key': '', 'value': date})
-        print("ISO Date Results:", results)
+        results.append({'key': '', 'value': date}) 
         return results
     else:
-        print("未找到匹配的ISO日期时间信息, 类似：2015-12-28 06:16:28")
+        print("未找到匹配的ISO日期时间信息, 类似：2015-12-28 06:16:28+08:00")
         return []  
 
-exclude_keywords = [
+
+def match_hostname(pattern, text):
+    exclude_keywords = [
     "Removed",
     "session",
     "adjust",
@@ -116,14 +117,14 @@ exclude_keywords = [
     "user",
     "of",
     "New",
-]
-
-
-def match_hostname(pattern, text):
+    "to",
+    "alloc",
+    "IP",
+    "address",
+    "like"]
     matches = re.findall(pattern, text)
     results = []
     for match in matches:
-        print("Matched:", match)
         if match and match not in exclude_keywords:
             # 这里可能需要根据实际分组调整match的处理
             # 如果正则中有分组，match会是元组，否则是字符串
@@ -178,6 +179,7 @@ def match_ip_number_3(pattern, text):
     results = []
     if matches:
         for item in matches:
+            print(f"IP: {item[0]}, Port: {item[1]}")
             ip_port = f"{item[0]}:{item[1]}"
             results.append({'key': '', 'value': ip_port})
     if results:
@@ -227,11 +229,30 @@ def match_WebPort(pattern, text):
         return []
 
 def match_slash(pattern, text):
+    keywords = [
+        "URL地址",
+        "发生时间",
+        "服务器IP",
+        "服务器端口",
+        "主机名",
+        "攻击特征串",
+        "触发规则",
+        "访问唯一编号",
+        "国家",
+        "事件",
+        "请求方法",
+        "标签",
+        "动作",
+        "威胁",
+        "POST数据",
+        "省",
+        "HTTP/S响应码",
+    ]
     matches = re.findall(pattern, text)
     results = []
     for match in matches:
         print("Matched:", match)
-        if match:
+        if match and match[0] in keywords:
             results.append({'key': match[0], 'value': match[1]})
     else:
         print("未找到匹配的斜杠")
@@ -369,3 +390,12 @@ def match_segment(pattern, text):
         print("未找到匹配的Segment ~")
         return []   
     
+def match_fangkuohao(pattern, text):
+    match = re.search(pattern, text)
+    if match:
+        v = match.group(1)
+        print("找到匹配的方括号:", {'key': "", 'value': v})
+        return [{'key': '', 'value': v}]
+    else:
+        print("未找到匹配的方括号")
+        return []

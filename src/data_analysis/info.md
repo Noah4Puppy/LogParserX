@@ -12,6 +12,9 @@
 
 2.1 主机名字：sco-12
 
+keywords and excluded keywords
+排除项 和 提取项
+
 2.2 User-Agent: 多种
 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
 - Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.10) Gecko/20100922 Ubuntu/10.10 (maverick) Firefox/3.6.10
@@ -69,7 +72,11 @@ WEB攻击~通用目录遍历(..\\/)~~低;
 形如:
 系统告警~~NULL~高~55
 
-7. Function
+7. Function 
+
+需要增加排除项
 形如 func(param) 需要提取 func, param
 
-8. keywords and excluded keywords
+8. Slash 斜杠过滤器
+
+形如：

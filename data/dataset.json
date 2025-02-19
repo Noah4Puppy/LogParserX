@@ -3704,8 +3704,8 @@
                 "value": "Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)"
             },
             {
-                "key": "HTTP",
-                "value": "S响应码/403"
+                "key": "HTTPS响应码",
+                "value": "403"
             },
             {
                 "key": "触发规则",
@@ -3796,8 +3796,8 @@
                 "value": "通用防护"
             },
             {
-                "key": "HTTP/S",
-                "value": "响应码/301"
+                "key": "HTTP/S响应码",
+                "value": "301"
             }
         ]
     },
@@ -3964,8 +3964,8 @@
                 "value": "阻断"
             },
             {
-                "key": "HTTP/S",
-                "value": "响应码/403"
+                "key": "HTTP/S响应码",
+                "value": "403"
             },
             {
                 "key": "触发规则",
@@ -4692,8 +4692,8 @@
                 "value": "告警"
             },
             {
-                "key": "HTTP/S",
-                "value": "响应码/301"
+                "key": "HTTP/S响应码",
+                "value": "301"
             },
             {
                 "key": "攻击特征串",
@@ -4738,8 +4738,8 @@
                 "value": "通用防护"
             },
             {
-                "key": "HTTP/S",
-                "value": "响应码/301"
+                "key": "HTTP/S响应码",
+                "value": "301"
             },
             {
                 "key": "攻击特征串",
@@ -4776,8 +4776,8 @@
                 "value": "57640"
             },
             {
-                "key": "HTTP/S",
-                "value": "响应码/403"
+                "key": "HTTP/S响应码",
+                "value": "403"
             },
             {
                 "key": "攻击特征串",
@@ -4872,8 +4872,8 @@
                 "value": "Mozilla/4.75 [en] (X11, U;)"
             },
             {
-                "key": "HTTP/S",
-                "value": "响应码/403"
+                "key": "HTTP/S响应码",
+                "value": "403"
             },
             {
                 "key": "攻击特征串",
@@ -4964,8 +4964,8 @@
                 "value": "通用防护"
             },
             {
-                "key": "HTTP/S",
-                "value": "响应码/403"
+                "key": "HTTP/S响应码",
+                "value": "403"
             },
             {
                 "key": "攻击特征串",
@@ -5052,8 +5052,8 @@
                 "value": "告警"
             },
             {
-                "key": "HTTP/S",
-                "value": "响应码/301"
+                "key": "HTTP/S响应码",
+                "value": "301"
             },
             {
                 "key": "攻击特征串",
@@ -5098,8 +5098,8 @@
                 "value": "55122"
             },
             {
-                "key": "HTTP/S",
-                "value": "响应码/403"
+                "key": "HTTP/S响应码",
+                "value": "403"
             },
             {
                 "key": "触发规则",
@@ -5194,8 +5194,8 @@
                 "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
             },
             {
-                "key": "HTTP/S",
-                "value": "响应码/403"
+                "key": "HTTP/S响应码",
+                "value": "403"
             },
             {
                 "key": "攻击特征串",

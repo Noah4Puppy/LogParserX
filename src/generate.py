@@ -1,3 +1,7 @@
+import os
+import openai
+
+
 def generate(labeled_data_file_path: str, rules_save_file_path: str) -> None:
     """
     使用有标签日志数据生成解析规则。
@@ -15,5 +19,24 @@ def generate(labeled_data_file_path: str, rules_save_file_path: str) -> None:
     pass
 
 
+api_key = os.getenv('QWEN_API_KEY')
+base_url = os.getenv('QWEN_API_URL')
+use_llm_model = os.getenv('QWEN_USE_LLM_MODEL')
 
+def get_chat_completions(messages, api_key, base_url, use_llm_model):
+    client = openai.OpenAI(api_key=api_key, base_url=base_url)
+    response = client.chat.completions.create(model=use_llm_model, temperature=0.3,
+                                              messages=messages)   # 限制响应长度messages=messages)
+    return response.choices[0].message.content
 
+def get_python_codes(python_path):
+    with open(python_path, 'r', encoding='utf-8') as f:
+        code = f.read()
+    return code
+
+def prompt(python_code, role, context):
+    messages = {
+        "role": role,
+        "context": context,
+        "code": python_code
+    }

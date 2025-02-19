@@ -1,36 +1,9 @@
-# 预编译
-
 import re
 from functools import lru_cache
-
-# ========== 新增代码：正则缓存核心 ==========
 @lru_cache(maxsize=100)
 def _compile_regex(pattern: str, flags: int = 0) -> re.Pattern:
     """带缓存的正则编译函数（线程安全）"""
     return re.compile(pattern, flags)
-
-
-keywords = [
-    "root",
-    "CMD",
-    "system-logind",
-    "systemd",
-    "APT",
-]
-
-exclude_keywords = [
-    "Removed",
-    "session",
-    "adjust",
-    "Postponed",
-    "for",
-    "from",
-    "port",
-    "closed",
-    "user",
-    "of",
-    "New",
-]
 
 key_value_p = r"""
         (?:                        # 起始分隔符检测
@@ -55,15 +28,14 @@ key_value_p = r"""
             (?=\S+\s*=)            # 后面紧跟新键（含空格键名）
         )
     """
-
 # 时间：不带年份+带年份
-date_p = r"""\b([A-Za-z]+ \d{2} \d{2}:\d{2}:\d{2})\b"""
-date_p_ = r"""\b([A-Za-z]+ \d{2} \d{4} \d{2}:\d{2}:\d{2})\b"""
+date_p = r"\b[A-Za-z]{3}\s{1,2}\d{1,2}\s\d{4}\s\d{2}:\d{2}:\d{2}\b"
+date_p_ = r"""\b([A-Za-z]+ \d{1,2} \d{4} \d{2}:\d{2}:\d{2})\b"""
 date_p_2 = r"([A-Za-z]{3})\s+ (\d{1,2})\s+(\d{4})\s+(\d{2}):(\d{2}):(\d{2})([+-]\d{2}):(\d{2})"
-date_p_3 = r"""\b(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})(\.\d{1,6})?\b"""
+date_p_3 = r"(\d{4}-\d{1,2}-\d{1,2} \d{2}:\d{2}:\d{2}(?:[+-]\d{2}:\d{2})?)"
 # 主机名字
-hostname_p = r"(?<=\s)([a-zA-Z0-9_-]+)(?=\s)"
-# hostname_p = r"(?<=\s)([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)(?=\s)" 
+# hostname_p = r"(?<=\s)([a-zA-Z0-9_-]+)(?=\s)"
+hostname_p = r"(?<=:\d{2}) ([a-zA-Z0-9._-]+)*(?=\s)"
 # 进程ID
 pid_p = r"([a-zA-Z0-9_-]+)\[(\d+)\]"
 pid_p_2 = r"(\S+)\s+\[(.*?)\]"
@@ -73,14 +45,14 @@ ip_port_p = r"(\d+\.\d+\.\d+\.\d+)\s+port\s+(\d+)"
 # ip(port)
 ip_port_p_2 = r"(\d+\.\d+\.\d+\.\d+)(?:\((\d+)\))?"
 # ip:port
-ip_port_p_3 = r'(\d+.\d+.\d+.\d+):(\d+)'
+ip_port_p_3 = r"(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5]):([0-9]|[1-9]\d|[1-9]\d{2}|[1-9]\d{3}|[1-5]\d{4}|6[0-4]\d{3}|65[0-4]\d{2}|655[0-2]\d|6553[0-5])$"
 # cmd
 cmd_p = r"""\b\w+\b(?=\s*CMD)"""
 # 会话ID
 session_p = r"session (\d+)"
 # session_p = r"(?i)\bsession\s+\d+"
 # 函数调用
-function_p = r"([a-zA-Z0-9_-]+)\((.*?)\)"
+function_p = r"(?!%%.*)([a-zA-Z0-9_-]+)\((.*?)\)"
 # 90-09-10-20
 WebPort_p = r"(\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3})"
 
@@ -118,18 +90,20 @@ segment_p = r"""
     (.+?)                   # 非贪婪捕获值
     \s*$                    # 结尾可能存在的空格
 """.format('|'.join(target_keys))
-        
+
+fangkuohao_p = r"\[(\d+)\]"
+          
 def get_concrete_words(text):
     keywords = [
         "root",
         "system-logind",
         "systemd",
         "APT",
-        ""
+        "run-parts",
     ]
-    keyword_pattern = _compile_regex(
-        r'\b(' + '|'.join(map(re.escape, keywords)) + r')\b',
-        re.IGNORECASE
+    keyword_pattern = re.compile(
+    r'\b(' + '|'.join(map(re.escape, keywords)) + r')\b', 
+    flags=re.IGNORECASE
     )
     key_matches = keyword_pattern.findall(text)
     results = []
@@ -177,8 +151,10 @@ def match_key_value(pattern, text):
         print("未找到匹配的键值对")
         return []
 
+    
 def match_date_year(pattern, text):
-    matches = re.findall(pattern, text)
+    compile_re = _compile_regex(pattern)
+    matches = compile_re.findall(text)
     results = []
     for match in matches:
         if match:
@@ -191,7 +167,8 @@ def match_date_year(pattern, text):
         return []
     
 def match_date_with_zone(pattern, text):
-    match = re.search(pattern, text)
+    compile_re = _compile_regex(pattern)
+    match = compile_re.search(text)
     if match:
         month = match.group(1)
         day = match.group(2)
@@ -209,7 +186,8 @@ def match_date_with_zone(pattern, text):
         return []
     
 def match_date_ISO(pattern, text):
-    match = re.search(pattern, text)
+    compiled_re = _compile_regex(pattern)
+    match = compiled_re.search(text)
     results = []
     if match:
         date = match.group(0)
@@ -220,7 +198,10 @@ def match_date_ISO(pattern, text):
         print("未找到匹配的ISO日期时间信息, 类似：2015-12-28 06:16:28")
         return []  
 
-exclude_keywords = [
+
+
+def match_hostname(pattern, text):
+    exclude_keywords = [
     "Removed",
     "session",
     "adjust",
@@ -231,15 +212,11 @@ exclude_keywords = [
     "closed",
     "user",
     "of",
-    "New",
-]
-
-
-def match_hostname(pattern, text):
-    matches = re.findall(pattern, text)
+    "New",]
+    compiled_re = _compile_regex(pattern)
+    matches = compiled_re.findall(text)
     results = []
     for match in matches:
-        print("Matched:", match)
         if match and match not in exclude_keywords:
             # 这里可能需要根据实际分组调整match的处理
             # 如果正则中有分组，match会是元组，否则是字符串
@@ -250,7 +227,8 @@ def match_hostname(pattern, text):
     return results
 
 def match_pid(pattern, text):
-    matches = re.findall(pattern, text)
+    compiled_re = _compile_regex(pattern)
+    matches = compiled_re.findall(text)
     results = []
     for match in matches:
         process_name, pid = match
@@ -261,7 +239,8 @@ def match_pid(pattern, text):
     
 
 def match_ip_number_1(pattern, text):
-    match = re.search(pattern, text)
+    compiled_re = _compile_regex(pattern)
+    match = compiled_re.search(text)
     results = []
     if match:
         ip = match.group(1)
@@ -275,7 +254,8 @@ def match_ip_number_1(pattern, text):
         return []
     
 def match_ip_number_2(pattern, text):
-    matches = re.findall(pattern, text)
+    compiled_re = _compile_regex(pattern)
+    matches = compiled_re.findall(text)
     results = []
     for ip, port in matches:
         print(f"IP: {ip}, Port: {port}")
@@ -290,7 +270,8 @@ def match_ip_number_2(pattern, text):
         return []
     
 def match_ip_number_3(pattern, text):
-    matches = re.findall(pattern, text)
+    compiled_re = _compile_regex(pattern)
+    matches = compiled_re.findall(text)
     results = []
     if matches:
         for item in matches:
@@ -304,7 +285,8 @@ def match_ip_number_3(pattern, text):
         return []
     
 def match_session_id(pattern, text):
-    matches = re.findall(pattern, text, re.IGNORECASE)
+    compiled_re = _compile_regex(pattern, re.IGNORECASE)
+    matches = compiled_re.findall(text)
     for match in matches:
         if match:
             id = [match.group(1) for match in re.finditer(pattern, text, re.IGNORECASE)]
@@ -317,7 +299,8 @@ def match_session_id(pattern, text):
     
 
 def match_function(pattern, text):
-    match = re.search(pattern, text)
+    compiled_re = _compile_regex(pattern)
+    match = compiled_re.search(text)
     results = []
     if match:
         function_name = match.group(1)
@@ -331,7 +314,8 @@ def match_function(pattern, text):
         return []
 
 def match_WebPort(pattern, text):
-    match = re.search(pattern, text)
+    compiled_re = _compile_regex(pattern)
+    match = compiled_re.search(text)
     results = []
     if match:
         WebPort = match.group(1)
@@ -341,13 +325,33 @@ def match_WebPort(pattern, text):
     else:
         print("未找到匹配的 WebPort")
         return []
-
+    
 def match_slash(pattern, text):
-    matches = re.findall(pattern, text)
+    keywords = [
+        "URL地址",
+        "发生时间",
+        "服务器IP",
+        "服务器端口",
+        "主机名",
+        "攻击特征串",
+        "触发规则",
+        "访问唯一编号",
+        "国家",
+        "事件",
+        "请求方法",
+        "标签",
+        "动作",
+        "威胁",
+        "POST数据",
+        "省",
+        "HTTP/S响应码",
+    ]
+    compiled_re = _compile_regex(pattern)
+    matches = compiled_re.findall(text)
     results = []
     for match in matches:
         print("Matched:", match)
-        if match:
+        if match and match[0] in keywords:
             results.append({'key': match[0], 'value': match[1]})
     else:
         print("未找到匹配的斜杠")
@@ -355,13 +359,15 @@ def match_slash(pattern, text):
     return results
     
 def match_user_agent(pattern, text):
-    match =  re.findall(pattern, text)
+    compiled_re = _compile_regex(pattern)
+    match = compiled_re.findall(text)
     if match:
         if len(match) == 1:
             value = match[0]
             print("User-Agent Results:", {'key': "客户端环境", 'value': value})
             return {'key': '客户端环境', 'value': value}
     else:
+        # 尝试匹配旧格式的User-Agent
         p = r"Mozilla/5\.0\s*\[.*?\]\s*\([^)]*\)"
         match = re.findall(p, text)
         if match:
@@ -374,7 +380,8 @@ def match_user_agent(pattern, text):
 
 
 def match_HTTPS_code(pattern, text):
-    match = re.search(pattern, text)
+    compiled_re = _compile_regex(pattern)
+    match = compiled_re.search(text)
     if match:    
         value = match.group(1)
         print("HTTPS Code Results:", {'key': "HTTP/S响应码", 'value': value})    
@@ -400,7 +407,8 @@ def slash_filter(results, custom_env_p, https_p, log_text):
     return new_results
 
 def match_mail(text):
-    fields = re.findall(r'"(?:\\"|[^"])*"|[^,]+', text)
+    compiled_re = _compile_regex(r'"(?:\\"|[^"])*"|[^,]+')
+    fields = compiled_re.findall(text)
     cleaned_fields = []
     for field in fields:
         cleaned = field.strip('"').replace('\\"', '"')
@@ -418,7 +426,8 @@ def match_mail(text):
 
 
 def match_web_attack(pattern, text):
-    matches = re.findall(pattern, text)
+    compiled_re = _compile_regex(pattern)
+    matches = compiled_re.findall(text)
     results = []
     if matches:
         results.append({'key': '', 'value': 'WEB攻击'})
@@ -451,11 +460,12 @@ def match_sys_attack(pattern, text):
 def match_json_str(pattern, text):
     import json
     try:
-        json_str = re.search(r'\{.*\}', text)
+        json_str = re.compile(r'\{.*\}', re.DOTALL).search(text)
     except:
         return []    
     if not json_str: return []
-    matches = re.findall(pattern, json_str.group(), re.VERBOSE)
+    compiled_re = _compile_regex(pattern, re.VERBOSE)
+    matches = compiled_re.findall(json_str.group())
     results = []
     for key, value in matches:
         try:
@@ -474,7 +484,8 @@ def match_segment(pattern, text):
     result = []
     segments = text.split('~')
     for seg in segments:
-        match = re.search(pattern, seg, re.VERBOSE)
+        compiled_re = _compile_regex(pattern, re.VERBOSE)
+        match = compiled_re.search(seg)
         if match:
             key, value = match.groups()
             result.append({'key': key, 'value': value.strip()})
@@ -485,3 +496,70 @@ def match_segment(pattern, text):
         print("未找到匹配的Segment ~")
         return []   
     
+def match_fangkuohao(pattern, text):
+    compiled_re = _compile_regex(pattern, re.VERBOSE)
+    match = compiled_re.findall(text)
+    if match:
+        v = match.group(1)
+        print("找到匹配的方括号:", {'key': "", 'value': v})
+        return [{'key': '', 'value': v}]
+    else:
+        print("未找到匹配的方括号")
+        return []
+    
+def get_all_datetimes(log_text):
+    res1 = match_date_year(date_p, log_text)
+    res1_ = match_date_year(date_p_, log_text)
+    res2 = match_date_with_zone(date_p_2, log_text)
+    res3 = match_date_ISO(date_p_3, log_text)
+    res = res1 + res1_+ res2 + res3
+    return res
+
+def get_all_ip_ports(log_text):
+    res1 = match_ip_number_1(ip_port_p, log_text)
+    res2 = match_ip_number_2(ip_port_p_2, log_text)     
+    res3 = match_ip_number_3(ip_port_p_3, log_text)
+    res = res1 + res2 + res3
+    return res
+
+def get_components(keyword, log_text):
+    # 定义关键字与对应函数及参数的映射关系
+    component_map = {
+        'key_value': (match_key_value, [key_value_p]),
+        'hostname': (match_hostname, [hostname_p]),
+        'date': (get_all_datetimes, []),
+        'pid': [(match_pid, [pid_p]), (match_pid, [pid_p_2])],  # 多模式匹配
+        'ip_port': (get_all_ip_ports, []),
+        'session': (match_session_id, [session_p]),
+        'slash': (match_slash, [slash_pattern]),
+        'slash_filtered': (lambda txt: slash_filter(match_slash(slash_pattern, txt), user_agent_p, HTTPS_code_p, txt), []),
+        'webport': (match_WebPort, [WebPort_p]),
+        'web_attack': (match_web_attack, [web_attack_p]),
+        'sys_attack': (match_sys_attack, [sys_attack_p]),
+        'json_str': (match_json_str, [json_str_p]),
+        'email': (match_mail, []),
+        'function': (match_function, [function_p]),
+        'segment': (match_segment, [segment_p]),
+        'keywords': (get_concrete_words, []),
+        'fangkuohao': (match_fangkuohao, [fangkuohao_p]),
+       # f'{new_key}': (f'match_{new_key}', [f'{new_pattern}'])
+    }
+    result = []
+    for key in keyword:
+        if key in component_map:
+            # 处理多模式匹配的情况（如pid）
+            handlers = component_map[key]
+            if not isinstance(handlers, list):
+                handlers = [handlers]
+            for handler in handlers:
+                func, args = handler
+                # 动态构建参数：模式参数 + log_text
+                call_args = args + [log_text] if args else [log_text]
+                # 执行函数并收集结果
+                result.extend(func(*call_args))
+    return result
+
+if __name__ == '__main__':
+    keywords = ['hostname', 'pid', 'ip_port', 'date', 'key_value', 'function', 'webport', 'web_attack', 'json_str', 'email', 'keywords', 'fangkuohao']
+    l = "<128>May 16 14:54:09 2024 dbapp APT~30~1~2024-05-16 14:54:09~10.50.134.18:47013~1.1.1.1:53~远程控制~漏洞利用攻击事件~类型:    C&C~高~2405161454090000256~~请求DNS服务器 [1.1.1.1] 解析域名: oast.pro~~~0~4~2~60:db:15:73:46:01~00:00:5e:00:01:0a~0~Host: oast.pro~~~~成功~12~1~630~212002"
+    res = get_components(keywords, l)

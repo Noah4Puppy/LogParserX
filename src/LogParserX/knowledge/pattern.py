@@ -1,38 +1,7 @@
-# 正则表达式
-# key=value
-# key_value_p = r"""\b(\w+)\s*=\s*([^=]+)(?=\s|$)"""
-# key_value_p = r"(\w+)=([^,;=\)\s]+)"
-
-import re
-
-
-keywords = [
-    "root",
-    "CMD",
-    "system-logind",
-    "systemd",
-    "APT",
-]
-
-exclude_keywords = [
-    "Removed",
-    "session",
-    "adjust",
-    "Postponed",
-    "for",
-    "from",
-    "port",
-    "closed",
-    "user",
-    "of",
-    "New",
-]
-
 key_value_p = r"""
         (?:                        # 起始分隔符检测
-            (?<=[;,:,=(\-])|       # 关键修正：添加冒号:和连字符-作为合法分隔符
-            ^                      # 或行首
-        )
+        (?<=[;,:,=(\-])|       # 关键修正：添加冒号:和连字符-作为合法分隔符
+        ^)
         \s*                        # 允许前置空格
         (?P<key>                   # 键名规则
             (?![\d\-])             # 不能以数字或连字符开头
@@ -51,14 +20,12 @@ key_value_p = r"""
             (?=\S+\s*=)            # 后面紧跟新键（含空格键名）
         )
     """
-
 # 时间：不带年份+带年份
 date_p = r"\b[A-Za-z]{3}\s{1,2}\d{1,2}\s\d{4}\s\d{2}:\d{2}:\d{2}\b"
 date_p_ = r"""\b([A-Za-z]+ \d{1,2} \d{4} \d{2}:\d{2}:\d{2})\b"""
 date_p_2 = r"([A-Za-z]{3})\s+ (\d{1,2})\s+(\d{4})\s+(\d{2}):(\d{2}):(\d{2})([+-]\d{2}):(\d{2})"
 date_p_3 = r"(\d{4}-\d{1,2}-\d{1,2} \d{2}:\d{2}:\d{2}(?:[+-]\d{2}:\d{2})?)"
 # 主机名字
-# hostname_p = r"(?<=\s)([a-zA-Z0-9_-]+)(?=\s)"
 hostname_p = r"(?<=:\d{2}) ([a-zA-Z0-9._-]+)*(?=\s)"
 # 进程ID
 pid_p = r"([a-zA-Z0-9_-]+)\[(\d+)\]"
@@ -70,30 +37,21 @@ ip_port_p = r"(\d+\.\d+\.\d+\.\d+)\s+port\s+(\d+)"
 ip_port_p_2 = r"(\d+\.\d+\.\d+\.\d+)(?:\((\d+)\))?"
 # ip:port
 ip_port_p_3 = r"(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5]):([0-9]|[1-9]\d|[1-9]\d{2}|[1-9]\d{3}|[1-5]\d{4}|6[0-4]\d{3}|65[0-4]\d{2}|655[0-2]\d|6553[0-5])$"
-# cmd
-cmd_p = r"""\b\w+\b(?=\s*CMD)"""
 # 会话ID
 session_p = r"session (\d+)"
-# session_p = r"(?i)\bsession\s+\d+"
 # 函数调用
 function_p = r"(?!%%.*)([a-zA-Z0-9_-]+)\((.*?)\)"
 # 90-09-10-20
 WebPort_p = r"(\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3})"
-
-# 粗提取 +替换
 # XXX/YYYY 
 slash_pattern = r"([^,/]+)\/([^,]+)"
 # user-agent
 user_agent_p = r"Mozilla/5\.0\s*\([^)]+\)\s*(?:AppleWebKit/[\d\.]+\s*\([^)]+\)\s*Chrome/[\d\.]+\s*Safari/[\d\.]+|[\w\s]+/[\d\.]+)"
 # HTTP响应码
 HTTPS_code_p = r"HTTP/S响应码/(\d+)"
-# mail关键词
-# email_p = r"(^|\s)([\w\u0080-\uFFFF.-]+@([\w\u0080-\uFFFF-]+\.)+[\w\u0080-\uFFFF]{2,18})(?=\s|$)"
-
 # attack info
 web_attack_p = r"WEB攻击~([^~]+)~([^~]*)~([中高低]+)"
 sys_attack_p = r"系统告警~+([^~]*)~+([^~]*)~+([中高低]+)~+(\d+)"
-
 # json_str
 json_str_p = r'''
     "([^"]+)"            # 键
@@ -105,7 +63,6 @@ json_str_p = r'''
         |-?\d+\.\d+      # 浮点数
         |true|false|null # 布尔/空值
     )'''
-
 target_keys = {'类型', 'Host'}
 segment_p = r"""
     ^\s*                    # 开头可能存在的空格
@@ -114,5 +71,4 @@ segment_p = r"""
     (.+?)                   # 非贪婪捕获值
     \s*$                    # 结尾可能存在的空格
 """.format('|'.join(target_keys))
-
 fangkuohao_p = r"\[(\d+)\]"
