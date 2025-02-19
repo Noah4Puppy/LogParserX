@@ -58,7 +58,6 @@ class MyTest():
 			config=self.agents_config['researcher'],
 			llm=self._init_llm(),
 			verbose=True,
-			tools=[search_tool]
 		)
 	
 	@task
@@ -71,7 +70,8 @@ class MyTest():
 	def reporting_analyst(self) -> Agent:
 		return Agent(
 		config=self.agents_config['reporting_analyst'],
-		verbose=True
+		llm=self._init_llm(),
+		verbose=True,
 		)
 	
 	@task
