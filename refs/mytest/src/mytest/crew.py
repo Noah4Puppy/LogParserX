@@ -27,6 +27,7 @@ search_tool = GithubSearchTool(
         ),
     ),
 	gh_token=os.getenv("GITHUB_TOKEN"),
+	# github_repo="",
 	content_types=['code', 'issue']
 )
 
