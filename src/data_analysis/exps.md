@@ -70,3 +70,16 @@ Original: [{'key': '', 'value': 'October 24 20:11:31 2013'}, {'key': '', 'value'
 Testing: [{'key': '', 'value': 'dbapp'}, {'key': '', 'value': 'October 24 20:11:31'}, {'key': '', 'value': '2013-10-24 20:11:19'}, {'key': '', 'value': '2013-10-24 20:11'}, {'key': '', 'value': '192.168.29.124:0'}, {'key': '', 'value': '122.224.213.5:0'}, {'key': '<128>October 24 20:11:31 2013 dbapp APT~2~1~2013-10-24 20:11:19~192.168.29.124:0~122.224.213.5:0~恶意行为~WEB自动扫描~NULL~高~1310242011199910111~NULL~POST ', 'value': 'new/jeecms/ajax/cms/search/trsSearch.do'}, {'key': '<128>October 24 20:11:31 2013 dbapp APT~2~1~2013-10-24 20:11:19~192.168.29.124:0~122.224.213.5:0~恶意行为~WEB自动扫描~NULL~高~1310242011199910111~NULL~POST ', 'value': 'new/jeecms/ajax/cms/search/trsSearch.do'}]
 Coverage: 37.5%
 ```
+
+## Thrid Version Answers
+
+| Index | Coverage(Mine) | Matched(Official)|  Perfect_Macthed(Official) |  70%< Coverage Count(Mine)|
+|--|--|--|--|--|
+| 0 - 5 | 91.0% | 100.0% | 0.0% |  0 |
+| 0 - 10 | 91.0% | 100.0% | 0.0%|  0 |
+| 0 - 100 | 84.6% | 100.0% | 1.0%  |  15 |
+| 0 - 400 | 79.6% |  98.2%| 0.2% |  106 |
+| 100 - 200 | 81.1% | 99.0% | 0.0% |  27 |
+| 120 - 125 | 92.0% | 100.0% | 0.0% |  0 |
+| 200 - 300 | 66.9% | 95.0% | 0.0%|  46 |
+| 300 - 400 | 71.0% |  99.0% | 0.0% |  39 |

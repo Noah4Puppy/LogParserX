@@ -1,0 +1,31 @@
+Record 1:
+Original: [{'key': '', 'value': 'Aug 13 09:04:02'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '3831379'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Aug 13 09:04:02'}, {'key': '', 'value': '3831379'}]
+Matched: True
+Perfect: True
+
+Record 2:
+Original: [{'key': '', 'value': 'Oct 28 18:00:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '172578'}, {'key': '', 'value': '120.25.115.20'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'time'}, {'key': '', 'value': 'server'}, {'key': '', 'value': 'offset'}, {'key': '', 'value': 'Oct 28 18:00:09'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '172578'}]
+Matched: True
+Perfect: False
+
+Record 3:
+Original: [{'key': '', 'value': 'Oct 28 17:58:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}, {'key': 'code', 'value': 'exited'}, {'key': 'status', 'value': '2/INVALIDARGUMENT'}]
+Testing: [{'key': 'code', 'value': 'exited'}, {'key': 'status', 'value': '2/INVALIDARGUMENT'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'main'}, {'key': '', 'value': 'process'}, {'key': '', 'value': 'Oct 28 17:58:09'}, {'key': ' status=2', 'value': 'INVALIDARGUMENT'}, {'key': ' status=2', 'value': 'INVALIDARGUMENT'}]
+Matched: True
+Perfect: False
+
+Record 4:
+Original: [{'key': '', 'value': 'Aug 12 08:06:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '16209'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38316'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'publickey'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'Aug 12 08:06:01'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '16209'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38316'}]
+Matched: True
+Perfect: False
+
+Record 5:
+Original: [{'key': '', 'value': 'Aug 12 08:11:56'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '33101'}]
+Testing: [{'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'Aug 12 08:11:56'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '33101'}, {'key': '', 'value': 'pam_unix'}, {'key': '', 'value': 'sshd:session'}]
+Matched: True
+Perfect: False
+
+总计5条日志，匹配率100.0%, 完全正确率20.0%, 综合得分52.0

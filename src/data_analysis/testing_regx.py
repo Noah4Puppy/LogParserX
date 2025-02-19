@@ -80,6 +80,8 @@ def Test(log_text):
     json_str = match_json_str(json_str_p, log_text)
     email = match_mail(log_text)
     function = match_function(function_p, log_text)
+    segment = match_segment(segment_p, log_text)
+    keywords = get_concrete_words(log_text)
 
     L = []
     L.extend(key_value_l)
@@ -98,6 +100,8 @@ def Test(log_text):
     L.extend(json_str)
     L.extend(email)
     L.extend(function)
+    L.extend(segment)
+    L.extend(keywords)
     return L
 
 def calculate_coverage(original, testing):
@@ -118,8 +122,8 @@ if __name__ == '__main__':
         target_log.append(log['logText'])
         origin_logField.append(log['logField'])
     # print(target_log[:5])
-    START = 0
-    END = 400
+    START = 200
+    END = 300
     T = target_log[START:END]
     O = origin_logField[START:END]
     # print(O)
