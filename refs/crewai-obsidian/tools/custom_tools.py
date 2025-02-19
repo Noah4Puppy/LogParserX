@@ -4,7 +4,6 @@ import os
 
 
 class CustomTools():
-
     @tool("Write File with content")
     def store_note_to_obsidian(content: str) -> str:
         """Useful to write a note to the note taking app obsidian.
@@ -15,8 +14,11 @@ class CustomTools():
            """
         try:
             # Path to Obsidian vault
-            obsidian_dir = r'/home/cxx/LogParserX/refs/crewai-obsidian/temp'
-        
+            # win
+            obsidian_dir = r'D:\Competition_Xihu\Resources\LogParserX\refs\crewai-obsidian\temp'
+            os.makedirs(obsidian_dir, exist_ok=True)
+            # linux
+            # obsidian_dir = '/home/cxx/LogParserX/refs/crewai-obsidian/temp'
             # Get the current date and time
             current_datetime = datetime.datetime.now()
 

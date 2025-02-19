@@ -493,4 +493,9 @@ Original: [{'key': '', 'value': 'April 26 13:30:32 2013'}, {'key': '', 'value': 
 Testing: [{'key': '', 'value': 'apt'}, {'key': '', 'value': 'April 26 13:30:32'}, {'key': '', 'value': '2013-04-26 13:30:25'}, {'key': '', 'value': '2013-04-26 13:30'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '系统告警'}, {'key': '', 'value': '高'}, {'key': '', 'value': '55'}]
 Coverage: 71.4%
 
+Record 100:
+Original: [{'key': '', 'value': 'April 26 13:30:32 2013'}, {'key': '', 'value': 'APT'}, {'key': '', 'value': '2013-04-26 13:30:25'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '系统告警'}, {'key': '', 'value': '高'}, {'key': '', 'value': '55'}]
+Testing: [{'key': '', 'value': 'apt'}, {'key': '', 'value': 'April 26 13:30:32'}, {'key': '', 'value': '2013-04-26 13:30:25'}, {'key': '', 'value': '2013-04-26 13:30'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '127.0.0.1:0'}, {'key': '', 'value': '系统告警'}, {'key': '', 'value': '高'}, {'key': '', 'value': '55'}]
+Coverage: 71.4%
+
 Total Coverage: 71.0%

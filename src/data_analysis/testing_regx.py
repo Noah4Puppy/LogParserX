@@ -118,7 +118,7 @@ if __name__ == '__main__':
         origin_logField.append(log['logField'])
     # print(target_log[:5])
     START = 300
-    END = 399
+    END = 400
     T = target_log[START:END]
     O = origin_logField[START:END]
     # print(O)

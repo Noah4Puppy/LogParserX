@@ -1,37 +1,20 @@
-from langchain_community.tools import DuckDuckGoSearchRun
 import os
 from crewai import Agent, Task, Crew, Process
 from tools.custom_tools import CustomTools
 
-# 修改1：使用新版langchain_openai导入路径
-from langchain_openai import ChatOpenAI  # 替换原langchain_community导入
+# os.environ["OPENAI_API_KEY"] = "YourKey"
+from langchain_community.chat_models import ChatOpenAI
 
-# 修改2：添加工具包装器
-from langchain.tools import Tool  # 新增导入
-
+# model_name="gpt-3.5-turbo-1106"
 api_key = "sk-63.h3A5gkOyaHkT8W9wPKtu28gqEzhkpR5X53NKFyzX9eq5dIEH"
 base_url = "https://wcode.net/api/gpt/v1"
 use_llm_model = "qwen2.5-72b-instruct"
 
-llm_gpt35 = ChatOpenAI(
-    model_name=use_llm_model,
-    openai_api_base=base_url,
-    openai_api_key=api_key,
-    temperature=0.2,
-    max_tokens=4096,             # 添加必要参数
-    streaming=False              # 关闭流式传输
-)
+llm_gpt35=ChatOpenAI(model_name=use_llm_model, openai_api_base= base_url, openai_api_key = api_key, temperature=0.2)
+# llm_gpt35=ChatOpenAI(model_name=use_llm_model, openai_api_base= base_url, openai_api_key = api_key, temperature=0.2)
 
-test_response = llm_gpt35.invoke("Say 'ping'")
-print(f"API Response: {test_response.content}")
-
-# 修改3：包装DuckDuckGoSearchRun工具
 from langchain_community.tools import DuckDuckGoSearchRun
-search_tool = Tool.from_function(
-    name="duckduckgo_search",
-    func=DuckDuckGoSearchRun().run,
-    description="Web search tool for real-time information"
-)
+search_tool = DuckDuckGoSearchRun()
 
 # Define your agents with roles and goals
 researcher = Agent(
@@ -76,15 +59,13 @@ task1 = Task(
   description="""Conduct a brief research about School Holidays in Hamburg in 2024.
   Define the start and end and duration.
   Your final answer MUST be a brief report""",
-  agent=researcher,
-  expected_output="A structured report in bullet points format",  # 新增此行
+  agent=researcher
 )
 
 task2 = Task(
   description="""Using the information provided, create a brief note.
   If there is a listing in the content use markdown table to structure it.
   Your final answer MUST be a note in markdown.""",
-  expected_output="Markdown formatted note with tables",  # 新增此行
   agent=editor
 )
 
@@ -93,7 +74,6 @@ task3 = Task(
   You must save the contetnt as a note to the Obsidian note taking App.
   It is bvery important to store the content as a note to be used later.
   Your final answer MUST be the information is the note is stored or not.""",
-  expected_output="Confirmation message of note storage",  # 新增此行
   agent=note_taker
 )
 
