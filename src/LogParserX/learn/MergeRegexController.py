@@ -34,8 +34,10 @@ pattern_checker = Agent(
 
     backstory="""You are a regular expression pattern checker with experience in regular expressions.
     You can check if the regular expression pattern is correct and precise for given logText and logField data.
-    Correct and precise regular expression patterns should be applied to logText and get the same results as logField.""",
-    allow_code_execution=False,
+    Correct and precise regular expression patterns should be applied to logText and get the same results as logField. 
+    Try to make your regular expression pattern as precise as possible to cover all possible conditions as enough as possible.
+    You can use any Python libraries and modules and check the correctness of your regular expression patterns through execution them.""",
+    allow_code_execution=True,
     llm=qwen,
     memory=True,
 )
@@ -81,21 +83,18 @@ pattern_check_task = Task(
     agent=pattern_checker,
     expected_output=
     """
-    {
-        "valid_patterns": [
-            {"name": "date_p_2", "pattern": "..."},
-            {"name": "hostname_p", "pattern": "..."}
-        ],
-        "improved_patterns": [
-            {
-                "original": "function_p", 
-                "optimized": "r'(?!%%.*)([a-zA-Z0-9_-]+)$$(.*?)$$'"
-            }
-        ]
-    }
+    Optimized Pattern:
+    date_p = r"\b[A-Za-z]{{3}}\s{1,2}\d{1,2}\s\d{4}\s\d{2}:\d{2}:\d{2}\b"
+    date_p_ = r"\b([A-Za-z]+ \d{1,2} \d{4} \d{2}:\d{2}:\d{2})\b"
+    date_p_2 = r"([A-Za-z]{3})\s+ (\d{1,2})\s+(\d{4})\s+(\d{2}):(\d{2}):(\d{2})([+-]\d{2}):(\d{2})"
+    date_p_3 = r"(\d{4}-\d{1,2}-\d{1,2} \d{2}:\d{2}:\d{2}(?:[+-]\d{2}:\d{2})?)"
+    Optimized Reasons:
+    - This regex can face some false positives, such as "Nov 5 2021 11:34:18+08:00"
+    ...
+    Optimized Rate:
+    Compared to the original pattern, the optimized pattern can cover X%, except for some conditions: XXX.
     """, 
     output_file="{output_file_p}",
-    output_key="pattern_report"
 )
 
 code_generator = Agent(
@@ -107,25 +106,114 @@ code_generator = Agent(
     You can generate corresponding python codes for regular expressions from labeled data.
     With given labeled data and standard answers, your generated codes can be semantical and precise.
     You are allowed to use any Python libraries and modules and check the correctness of your generated codes through execution them.""",
-    allow_code_execution=False,
     llm=qwen,
+    allow_code_execution=True,
+    memory = True,
 )
 
 code_generation_task = Task(
     description="""Generate code based on verification results:
-    Verified pattern: {pattern_report}
-    Original pattern library: {pattern}
     Log sample: {logText}
-    Target field: {logField}""", # Explicitly reference upstream output
+    Target field: {logField},
+    Read Report from Pattern Checker, and use the optimized pattern to generate Python codes.
+    If the optimized pattern is not correct, you can modify it and re-run the code generation task.
+    Execute the generated codes and check if the results match the logField.
+    You should generate codes in Python that can match the logText to the logField with the verified pattern.
+    You had better return clear codes instead of markdown format with starting and ending quotes.
+    For example: ```python```""", # Explicitly reference upstream output
     agent=code_generator,
     context=[pattern_check_task], # Establish dependency chain
-    expected_output=""" Python function containing the following elements:
-    - Use the verified pattern_report pattern
-    - Compatible with the original pattern library
-    - Complete exception handling""",
+    
+    expected_output="""Python function containing the following elements:
+    - Use the optimized patterns
+    - Complete all functions and variables with proper values
+    - The codes can be executed and return the expected results
+    - Use python format instead of markdown format for better readability
+
+    For example(clean codes), your codes should be like this:
+    import re
+    from functools import lru_cache
+    @lru_cache(maxsize=100)
+    def _compile_regex(pattern: str, flags: int = 0) -> re.Pattern:
+        return re.compile(pattern, flags)
+    # use optimized pattern
+    patterns = {
+        "pattern_name": "",
+        'date': r'\b[A-Za-z]{3}\s{1,2}\d{1,2}\s\d{2}:\d{2}:\d{2}\b',
+        'hostname': r'(?<=:\d{2}) ([a-zA-Z0-9._-]+)',
+        'pid': r'([a-zA-Z0-9_-]+)\[(\d+)\]',
+        ...
+    }
+    # define functions like match_{pattern_name}
+    def match_date(text):
+        compiled_re = _compile_regex(patterns['date'])
+        match = compiled_re.search(text)
+        results = []
+        if match:
+            date = match.group(0)
+            results.append({'key': '', 'value': date})
+            print("ISO Date Results:", results)
+            return results
+        return [] 
+    # other functions
+    ...
+    def get_components(log_text):
+        res = match_date(log_text)
+        ...
+        return res
+
+    if __name__ == '__main__':
+        text = {{logText}}
+        pattern = {{optimized_pattern}}
+        res = get_components(text)
+        print(res)
+    """,
     output_file="{output_file}",
 )
 
+
+code_validater = Agent(
+    role="Regex Python Code Validator",
+    goal="""Validate the generated Python codes by executing them and checking the results, try to find ismatched context and give analysis for codes.
+    Try to increase the macth rate of original codes by modifying the codes and re-run the validation task.""",
+    backstory="""You are a Python code validator with experience in regular expressions. 
+    You can validate the generated Python codes by executing them and checking the results.
+    You can find ismatched context and give analysis for codes.
+    You can modify the codes and re-run the validation task to increase the macth rate of original codes.""",
+    llm=qwen,
+    allow_code_execution=True,
+    memory = True,
+)
+
+code_validation_task = Task(
+    description="""Validate the generated Python codes by executing them and checking the results.
+    You should execute the generated codes and check if the results match the logField.
+    If the results do not match, you should modify the codes and re-run the validation task.
+    If the results match, you can submit the codes to the code review team for review.
+    """,
+    agent=code_validater,
+    context=[code_generation_task],
+    expected_output="""A markdown report containing the following elements:
+    - The generated codes are executed and return the expected results
+    - The results match the logField
+    - The matche rate and comparison with the original codes are provided
+    Like this format:
+    # Optimized Codes Analysis
+    ## Optimized Codes
+    ```python
+    ...
+    ```
+    ## Output
+    ```txt
+    {"key": "", "value": ""}
+    ```
+    ## Comparison
+    Optimized codes Matched Rate: X%
+    Original codes Matched Rate: Y%
+    Some Analysis...
+    """,
+    output_file="{output_file_md}",
+    )
 
 def get_str(file_path):
     with open(file_path, "r", encoding="utf-8") as f:
@@ -150,15 +238,30 @@ def add_log(step, id, inputs, outputs):
     }
     return item
 
-def run(test_data, pattern, python_code, output_file, output_file_p):
+def generate_log_fileName():
+    """
+    根据当前时间生成日志文件路径
+    Returns:
+        str: 完整的日志文件路径
+    """
+    # 日志目录，根据自己项目修改
+    log_dir = r"src\LogParserX\log"  
+    os.makedirs(log_dir, exist_ok=True)
+    # 生成精确到秒的时间戳
+    timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+    # 返回完整日志文件路径
+    return os.path.join(log_dir, f'crewai_{timestamp}.log')
+
+def run(test_data, pattern, python_code, output_file, output_file_p, output_file_md):
     record_list = []
     step = 0
     for item in test_data:
         single_crew = Crew(
-            agents=[pattern_checker, code_generator],
-            tasks=[pattern_check_task, code_generation_task],
+            agents=[pattern_checker, code_generator, code_validater],
+            tasks=[pattern_check_task, code_generation_task, code_validation_task],
             process=Process.sequential,
-            verbose=True
+            verbose=True,
+            output_log_file=generate_log_fileName()
         )
         log_id = item["logId"]
         log_text = item["logText"]
@@ -169,28 +272,34 @@ def run(test_data, pattern, python_code, output_file, output_file_p):
             "pattern": f"{pattern}",
             "python_code": f"{python_code}",
             "output_file": output_file.format(log_id),
-            "output_file_p": output_file_p.format(log_id)
+            "output_file_p": output_file_p.format(log_id),
+            "output_file_md": output_file_md.format(log_id),
         }
         result = single_crew.kickoff(inputs=inputs)
         print("####################")
         print(result)
-        pattern_report = pattern_check_task.output.export() 
-        generated_code = code_generation_task.output.export()
         
-        with open(inputs["output_file_p"], 'w') as f:
-            json.dump(pattern_report, f, indent=2)
-        with open(inputs["output_file"], 'w') as f:
-            f.write(generated_code)
+        item = add_log(step, log_id, inputs, str(result))
+        step += 1
+        record_list.append(item)
+        # pattern_report = pattern_check_task.output.export() 
+        # generated_code = code_generation_task.output.export()
+        
+        # with open(inputs["output_file_p"], 'w') as f:
+        #     json.dump(pattern_report, f, indent=2)
+        # with open(inputs["output_file"], 'w') as f:
+        #     f.write(generated_code)
 
-    # record_log(r"D:\Competition_Xihu\Resources\LogParserX\src\LogParserX\trace\trace_{}.txt".
-    #            format(datetime.datetime.now().strftime("%Y%m%d%H%M%S")), record_list)
+    record_log(r"D:\Competition_Xihu\/Resources\LogParserX\src\LogParserX\trace\trace_{}.txt".
+               format(datetime.datetime.now().strftime("%Y%m%d%H%M%S")), record_list)
     # print(record_list)
 
-def launcher(S,E):
+def launcher(S, E):
     python_tool = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/knowledge/faster_tool.py"
     python_pattern = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/knowledge/pattern.py"
-    output_file = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/output/gen/output_{}.py"
-    output_file_p = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/output/gen/pattern_{}.py"
+    output_file = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/output/test/output_{}.py"
+    output_file_p = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/output/test/pattern_{}.md"
+    output_file_md = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/output/test/report_{}.md"
     json_path = r"D:/Competition_Xihu/Resources/LogParserX/data/dataset.json"
     with open(python_tool, "r", encoding="utf-8")as f:
         python_code = f.read()
@@ -198,8 +307,8 @@ def launcher(S,E):
         pattern = f.read()
     data = json.load(open(json_path, "r", encoding="utf-8"))
     test_data= data[S:E]
-    run(test_data, pattern, python_code, output_file, output_file_p)
+    run(test_data, pattern, python_code, output_file, output_file_p, output_file_md)
     print("Done!")
 
 if __name__ == '__main__':
-    launcher(S=1,E=2)
+    launcher(S=0,E=1)

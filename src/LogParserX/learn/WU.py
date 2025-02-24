@@ -1,6 +1,30 @@
 from crewai import Agent, Task, Crew, Process
 import json
 import os
+
+from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI
+load_dotenv(override=True)
+
+call_logs = []
+log_id_counter = 0
+
+QWEN_MODEL_NAME = os.getenv("MODEL_NAME")
+QWEN_API_BASE = os.getenv("OPENAI_API_BASE")
+QWEN_API_KEY = os.getenv("OPENAI_API_KEY")
+# EMBED_MODEL_NAME = os.getenv("EMBED_MODEL_NAME")
+Temperature = os.getenv("Temperature")
+max_tokens = os.getenv("max_tokens")
+# print(f"QWEN_MODEL_NAME: {QWEN_MODEL_NAME}, QWEN_API_BASE: {QWEN_API_BASE}, QWEN_API_KEY: {QWEN_API_KEY}, Temperature: {Temperature}, max_tokens: {max_tokens}")
+qwen = ChatOpenAI(
+			model=QWEN_MODEL_NAME,
+			openai_api_base=QWEN_API_BASE,
+			openai_api_key=QWEN_API_KEY,
+			temperature=Temperature,
+			max_tokens=max_tokens,
+			streaming=False,
+            timeout=60
+		)
 pattern_checker = Agent(
     role="正则模式审核专家",
     goal="验证正则模式准确性",
@@ -8,7 +32,8 @@ pattern_checker = Agent(
     曾为多家网络安全公司设计日志解析方案。""",  # 必须添加的字段
     allow_code_execution=False,
     verbose=True,
-    memory=True
+    memory=True,
+    llm=qwen
 )
 
 code_generator = Agent(
@@ -17,7 +42,8 @@ code_generator = Agent(
     backstory="""我是专注于日志处理系统的全栈开发工程师，精通Python正则表达式优化，
     开发过多个高性能日志解析框架。""",  # 必须添加的字段
     verbose=True,
-    allow_code_execution=True
+    allow_code_execution=True,
+    llm=qwen
 )
 # 旧版本任务定义
 pattern_check_task = Task(
@@ -32,19 +58,18 @@ pattern_check_task = Task(
         "improved": {{"host_p": "新正则"}}
     }}""",
     output_file="reports/pattern_{log_id}.json",
-    output_key="validation_report"  # 关键输出标识
 )
 
 code_gen_task = Task(
     description="""生成解析代码：
-    验证结果：{validation_report}  # 使用前置任务的output_key
     原始模式：{existing_patterns}
+    现有模式：上一步的结果
     日志样本：{log_text}""",
     agent=code_generator,
-    context=[pattern_check_task],  # 声明依赖关系
-    output_file="output/code_{log_id}.py"
+    context=[pattern_check_task],  # 上一步输出将会作为输入
+    output_file="output/code_{log_id}.py",
+    expected_output="格式规范的Python脚本文件，包含日志解析逻辑和结构化输出功能"
 )
-
 # 执行引擎
 class LogProcessor:
     def __init__(self):
@@ -52,7 +77,7 @@ class LogProcessor:
             agents=[pattern_checker, code_generator],
             tasks=[pattern_check_task, code_gen_task],
             process=Process.sequential,
-            verbose=2
+            verbose=True
         )
     
     def process(self, log_data, pattern_lib):
@@ -74,7 +99,7 @@ class LogProcessor:
 # 使用示例
 if __name__ == "__main__":
     # 加载模式库
-    with open(r"src\LogParserX\knowledge\pattern.py") as f:
+    with open(r"src\LogParserX\knowledge\pattern.py", "r", encoding="utf-8")  as f:
         patterns = f.read()
     
     # 测试数据
@@ -82,9 +107,9 @@ if __name__ == "__main__":
         "logId": "20240520_001",
         "logText": "<12>May 20 10:15:32 router1 system: Interface eth0 down",
         "logField": [
-            {"key": "timestamp", "value": "May 20 10:15:32"},
-            {"key": "device", "value": "router1"},
-            {"key": "event", "value": "Interface down"}
+            {"key": "", "value": "May 20 10:15:32"},
+            {"key": "", "value": "router1"},
+            {"key": "", "value": "Interface down"}
         ]
     }
     

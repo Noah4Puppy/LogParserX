@@ -76,18 +76,31 @@
 | 200 - 300 | 66.9% | 95.0% | 0.0%|  46 |
 | 300 - 400 | 71.0% |  99.0% | 0.0% |  39 |
 
-### LogParserX框架
 
 
+# 2025.2.22-2.24
+这里修改了相关逻辑，把原来很复杂的代理优化成三个，并且要求知识库合并这个难题去掉。
 
+原因见如下：
+
+目前存在的瓶颈是如何把多个日志所应对的py规则程序整合在一起，但是如果针对开发集的每一条日志，都有对应的验证集的一条类似结构的同源数据（只是内容不同，结构极其类似）
+
+比如 时间-主机名-信息 这种结构！
+
+它只是内容不同 那么使用的pattern正则程序应该是可以通用的！那么并不需要对所有对应的程序整合，因为这样会增加运算量（两两融合就要N方复杂度），根据理想状态他们是一一对应的顺序分布，每一个生成的py程序都用于同源结构的日志验证那么是直接可以允许运行该程序验证的！所以这里就不用再考虑多个py程序整合的难题了。（考虑了也没法完美解决）
+
+所以就只到生成程序并运行的这一步了，之后规则存储的就是每个生成的代码的相对地址，对应每一个验证集的数据。
+
+# LogParserX框架
 ```mermaid
-graph TD    
-A[Keyword Detection] --> B[Knowledge Query]    
-B -->|existing_rules| F[Knowledge Maintainer]    
-B -->|missing_types| C[Regex Generation]    
-C -->|coverage<70%| D[Difference Analyzer]    
-D --> E[Regex Optimizer]    
-E -->|optimized_regex| F    
-F -->|update log| G[Versioned Knowledge Base]
+graph LR
+    A[Keyword Detection] --> B[Knowledge Query]
+    B -->|existing_rules| F[Knowledge Maintainer]
+    B -->|missing_types| C[Regex Generation]
+    C -->|optimized regex| D[Code Generation]
+    D -->|codes with optimized regex| E[Codes Optimizer]
+    E -->|analysis report| F
+    F -->|update rules| G[Knowledge Base]
 ```
+提取report里面的代码并验证它的提取率。
 

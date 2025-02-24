@@ -1,0 +1,3558 @@
+[
+    {
+        "logId": 300,
+        "logText": "<188>2021-02-22 10:34:06 WT_BianJie_USG5310_A %%01SHELL/4/CMD(l): -DevIP=172.28.18.62; :vt0 :172.28.24.198 :** :public :dis this",
+        "logField": [
+            {
+                "key": "",
+                "value": "2021-02-22 10:34:06"
+            },
+            {
+                "key": "",
+                "value": "WT_BianJie_USG5310_A"
+            },
+            {
+                "key": "-DevIP",
+                "value": "172.28.18.62"
+            }
+        ]
+    },
+    {
+        "logId": 301,
+        "logText": "<190>2015-07-20 13:19:32 USG5310_Railwaynet %%01RT/6/CM(l): -DevIP=10.32.250.19; cpu=12 totalmemory=418369056 curmemory=135974164",
+        "logField": [
+            {
+                "key": "",
+                "value": "2015-07-20 13:19:32"
+            },
+            {
+                "key": "",
+                "value": "USG5310_Railwaynet"
+            },
+            {
+                "key": "-DevIP",
+                "value": "10.32.250.19"
+            },
+            {
+                "key": "cpu",
+                "value": "12"
+            },
+            {
+                "key": "totalmemory",
+                "value": "418369056"
+            },
+            {
+                "key": "curmemory",
+                "value": "135974164"
+            }
+        ]
+    },
+    {
+        "logId": 302,
+        "logText": "<189>Jan 11 2013 08:00:19 HuaweiA %%01FTPS/5/REQUEST(l)[128]:The user had a request. (UserName=\"admin\", IpAddress=193.168.1.2, VpnInstanceName=\"\", Request=LIST)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jan 11 2013 08:00:19"
+            },
+            {
+                "key": "",
+                "value": "HuaweiA"
+            },
+            {
+                "key": "",
+                "value": "128"
+            },
+            {
+                "key": "UserName",
+                "value": "admin"
+            },
+            {
+                "key": "IpAddress",
+                "value": "193.168.1.2"
+            },
+            {
+                "key": "Request",
+                "value": "LIST"
+            }
+        ]
+    },
+    {
+        "logId": 303,
+        "logText": "<188>2015-07-29 05:28:11 BCJN_Inter_FW_HW_01 %%01HTTPD/4/PASS(l): User admin(IP:51.0.0.33 ID:292) login succeeded",
+        "logField": [
+            {
+                "key": "",
+                "value": "2015-07-29 05:28:11"
+            },
+            {
+                "key": "",
+                "value": "BCJN_Inter_FW_HW_01"
+            },
+            {
+                "key": "IP",
+                "value": "51.0.0.33"
+            },
+            {
+                "key": "ID",
+                "value": "292"
+            }
+        ]
+    },
+    {
+        "logId": 304,
+        "logText": "<189>Dec 18 2023 16:41:43+08:00 FAB_B-Area_06-PROD_A-01*5 %%01SRM/5/TXPOWER_RESUME(l)[6465634]:Optical module in interface XGigabitEthernet0/0/2, Tx power resume.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 18 2023 16:41:43+08:00"
+            },
+            {
+                "key": "",
+                "value": "6465634"
+            }
+        ]
+    },
+    {
+        "logId": 305,
+        "logText": "<148>Dec 20 2016 10:01:49 11F-Dong %%01L2IF/4/hwMacHopAlarm_active(l):VS=Admin-VS-CID=0x808c043d-alarmID=0x00f10007;Mac-hopping exist . (VlanId=101, Vsi=-, BDId=0, the port list of Mac-hopping = GigabitEthernet0/2/7, -, -, -, the PW list of Mac-hopping = -)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 20 2016 10:01:49 11F-Dong"
+            },
+            {
+                "key": "",
+                "value": "11F-Dong"
+            },
+            {
+                "key": "VS",
+                "value": "Admin"
+            },
+            {
+                "key": "VS-CID",
+                "value": "0x808c043d"
+            },
+            {
+                "key": "alarmID",
+                "value": "0x00f10007"
+            },
+            {
+                "key": "VlanId",
+                "value": "101"
+            },
+            {
+                "key": "BDId",
+                "value": "0"
+            }
+        ]
+    },
+    {
+        "logId": 306,
+        "logText": "<188>Feb 11 2014 15:08:22 Core9300A %%01SHELL/4/LOGINFAILED(l)[6]:Failed to login. (Ip=**, UserName=**, Times=1, AccessType=CON)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Feb 11 2014 15:08:22"
+            },
+            {
+                "key": "",
+                "value": "Core9300A"
+            },
+            {
+                "key": "",
+                "value": "6"
+            },
+            {
+                "key": "AccessType",
+                "value": "CON"
+            }
+        ]
+    },
+    {
+        "logId": 307,
+        "logText": "<189>Jun  3 2016 14:32:24 KS_IDC_ISSCloud_CS_CE6810_02 %%01CLI/5/INTER_CMDRECORD(s):CID=0x80d22715;Recorded command information. (Task=vty0, Ip=10.44.36.197, VpnName=_public_, User=issadmin, Command=\"\", PromptInfo=\"Warning: The initial password poses security risks.The password needs to be changed. Change now? [Y/N]:\", UserInput=\"N\".)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jun  3 2016 14:32:24"
+            },
+            {
+                "key": "",
+                "value": "KS_IDC_ISSCloud_CS_CE6810_02"
+            },
+            {
+                "key": "CID",
+                "value": "0x80d22715"
+            },
+            {
+                "key": "Task",
+                "value": "vty0"
+            },
+            {
+                "key": "Ip",
+                "value": "10.44.36.197"
+            },
+            {
+                "key": "VpnName",
+                "value": "_public_"
+            },
+            {
+                "key": "User",
+                "value": "issadmin"
+            },
+            {
+                "key": "UserInput",
+                "value": "N"
+            }
+        ]
+    },
+    {
+        "logId": 308,
+        "logText": "<187>Oct 9 2022 02:32:58 Access-AP %%01SECE/3/ARPS_DROP_PACKET_GLOBAL_SPDLMT(l)[25712]:Rate of global arp packets exceeds the limit. (SourceMAC=e2a0-e0f5-ebf2, SourceIP=172.16.121.102, SourceInterface=GigabitEthernet0/0/6, DropTime=2022/10/09 10:32:58)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 9 2022 02:32:58"
+            },
+            {
+                "key": "",
+                "value": "Access-AP"
+            },
+            {
+                "key": "",
+                "value": "25712"
+            },
+            {
+                "key": "SourceMAC",
+                "value": "e2a0-e0f5-ebf2"
+            },
+            {
+                "key": "SourceIP",
+                "value": "172.16.121.102"
+            },
+            {
+                "key": "SourceInterface",
+                "value": "GigabitEthernet0/0/6"
+            },
+            {
+                "key": "DropTime",
+                "value": "2022/10/09 10:32:58"
+            }
+        ]
+    },
+    {
+        "logId": 309,
+        "logText": "<187>Nov  5 2015 19:58:33 Quidway %%01FTPS/3/LOGINFAILED(s)[19]:Failed to login. (UserName=\"a\", IpAddress=192.168.100.2, VpnInstanceName=\" \", Reason=\"Login failed\")",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov  5 2015 19:58:33"
+            },
+            {
+                "key": "",
+                "value": "Quidway"
+            },
+            {
+                "key": "",
+                "value": "19"
+            },
+            {
+                "key": "UserName",
+                "value": "a"
+            },
+            {
+                "key": "IpAddress",
+                "value": "192.168.100.2"
+            },
+            {
+                "key": "Reason",
+                "value": "Login failed"
+            }
+        ]
+    },
+    {
+        "logId": 310,
+        "logText": "<189>Apr 14 2017 15:31:41 BGW-1#lou-CSS-S7706 %%01SSH/5/SSH_CONNECT_CLOSED(s)[9662]:SSH connect was closed. (IP=192.168.1.100, VPNInstanceName= , UserName=admin)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Apr 14 2017 15:31:41"
+            },
+            {
+                "key": "",
+                "value": "BGW-1"
+            },
+            {
+                "key": "",
+                "value": "9662"
+            },
+            {
+                "key": "IP",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "UserName",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 311,
+        "logText": "<190>2017/02/28 06:00:30 USG6300 %%01AUDIT/6/HTTP(l): The HTTP audit policy was matched. (SyslogId=73055, VSys=\"public\", AuditPolicy=\"audit_ah\", SrcIp=103.25.36.236, DstIp=192.168.10.124, SrcPort=80, DstPort=32293, SrcZone=trust, DstZone=trust, User=\"unknown\", Protocol=TCP, Application=\"HTTP\", Profile=\"audit.dbappsecurity\", AuditType=\"URL Accessing\", EventNum=1, Direction=download, URL=\"\", Subject=\"\", Content=\"\", FileName=\"\", FileSize=0, URLCategory=\"Others\")",
+        "logField": [
+            {
+                "key": "",
+                "value": "2017/02/28 06:00:30"
+            },
+            {
+                "key": "",
+                "value": "USG6300"
+            },
+            {
+                "key": "SyslogId",
+                "value": "73055"
+            },
+            {
+                "key": "VSys",
+                "value": "public"
+            },
+            {
+                "key": "AuditPolicy",
+                "value": "audit_ah"
+            },
+            {
+                "key": "SrcIp",
+                "value": "103.25.36.236"
+            },
+            {
+                "key": "DstIp",
+                "value": "192.168.10.124"
+            },
+            {
+                "key": "SrcPort",
+                "value": "80"
+            },
+            {
+                "key": "DstPort",
+                "value": "32293"
+            },
+            {
+                "key": "Direction",
+                "value": "download"
+            }
+        ]
+    },
+    {
+        "logId": 312,
+        "logText": "<188>Jul 19 2021 09:27:15 HD-NE20E-S4 %%01CPUDEFEND/4/FREEARPFILTERENHANCECAR(s):CID=0x80c4047a-Slot=5;The port GigabitEthernet0/2/2 pevlan 700 cevlan 0 is released from attacks. Arp vlan car is cancelled.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 19 2021 09:27:15"
+            },
+            {
+                "key": "",
+                "value": "HD-NE20E-S4"
+            },
+            {
+                "key": "CID",
+                "value": "0x80c4047a"
+            },
+            {
+                "key": "Slot",
+                "value": "5"
+            }
+        ]
+    },
+    {
+        "logId": 313,
+        "logText": "<189>Jun 24 2024 07:58:14 XJDL102_OTUSR_AS_06 %%01CFM/5/SAVE_FILE_RECORD(s)[54216]:The system automatically saved the current configuration to the file. (FileName=flash:/vrpcfg.zip)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jun 24 2024 07:58:14"
+            },
+            {
+                "key": "",
+                "value": "XJDL102_OTUSR_AS_06"
+            },
+            {
+                "key": "",
+                "value": "54216"
+            },
+            {
+                "key": "FileName",
+                "value": "flash:/vrpcfg.zip"
+            }
+        ]
+    },
+    {
+        "logId": 314,
+        "logText": "<188>Nov 20 2023 08:30:38 B-Area6-G1-18U-FabC-Acc %%01MSTP/4/MSTPLOG_PROPORT_STATE_LEARNING(l):CID=0x80547552;The MSTP process's port has been set to learning state. (ProcessID=0, InstanceID=0, PortID=1, IfIndex=3, PortName=GE1/0/1, PwName=-)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 20 2023 08:30:38"
+            },
+            {
+                "key": "",
+                "value": "B-Area6-G1-18U-FabC-Acc"
+            },
+            {
+                "key": "CID",
+                "value": "0x80547552"
+            },
+            {
+                "key": "ProcessID",
+                "value": "0"
+            },
+            {
+                "key": "PortID",
+                "value": "1"
+            },
+            {
+                "key": "IfIndex",
+                "value": "3"
+            },
+            {
+                "key": "PortName",
+                "value": "GE1/0/1"
+            }
+        ]
+    },
+    {
+        "logId": 315,
+        "logText": "<188>Dec 19 2017 16:32:19 ANC-FZ-MGMT-SW-HW5720-09 %%01CFM/4/SAVE_FILE(s)[1518]:When deciding whether to save the configuration to the file flash:/backupFtp.cfg, the user chose Y.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 19 2017 16:32:19"
+            },
+            {
+                "key": "",
+                "value": "ANC-FZ-MGMT-SW-HW5720-09"
+            },
+            {
+                "key": "",
+                "value": "1518"
+            }
+        ]
+    },
+    {
+        "logId": 316,
+        "logText": "<147>Dec 20 2016 10:01:49 11F-Dong %%01OSPF/3/NBR_DOWN_REASON(l)[10743]:Neighbor state leaves full or changed to Down. (ProcessId=2, NeighborRouterId=100.78.141.131, NeighborAreaId=0, NeighborInterface=Vlanif10,NeighborDownImmediate reason=Neighbor Down Due to Inactivity, NeighborDownPrimeReason=Hello Not Seen, NeighborChangeTime=2016-12-19 11:36:05+00:00)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 20 2016 10:01:49"
+            },
+            {
+                "key": "",
+                "value": "11F-Dong"
+            },
+            {
+                "key": "",
+                "value": "10743"
+            },
+            {
+                "key": "ProcessId",
+                "value": "2"
+            },
+            {
+                "key": "NeighborRouterId",
+                "value": "100.78.141.131"
+            },
+            {
+                "key": "NeighborAreaId",
+                "value": "0"
+            },
+            {
+                "key": "NeighborInterface",
+                "value": "Vlanif10"
+            },
+            {
+                "key": "NeighborDownImmediate reason",
+                "value": "Neighbor Down Due to Inactivity"
+            },
+            {
+                "key": "NeighborDownPrimeReason",
+                "value": "Hello Not Seen"
+            },
+            {
+                "key": "NeighborChangeTime",
+                "value": "2016-12-19 11:36:05+00:00"
+            }
+        ]
+    },
+    {
+        "logId": 317,
+        "logText": "<164>Nov  5 2021 11:34:18+08:00 ME60-1 %%01BRASAM/4/hwAllocUserIPFailAlarm (t):VS=Admin-VS-CID=0x81d80420-OID=1.3.6.1.4.1.2011.6.8.2.2.0.3;Fail to alloc IP address from domain. (DomainNo.=72,DomainName=vlan3260)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov  5 2021 11:34:18+08:00"
+            },
+            {
+                "key": "",
+                "value": "ME60-1"
+            },
+            {
+                "key": "VS",
+                "value": "Admin"
+            },
+            {
+                "key": "VS-CID",
+                "value": "0x81d80420"
+            },
+            {
+                "key": "OID",
+                "value": "1.3.6.1.4.1.2011.6.8.2.2.0.3"
+            },
+            {
+                "key": "DomainNo.",
+                "value": "72"
+            },
+            {
+                "key": "DomainName",
+                "value": "vlan3260"
+            }
+        ]
+    },
+    {
+        "logId": 318,
+        "logText": "<188>Jan 21 2013 06:59:13 HuaweiB %%01HRP/4/CORE_STATE(l)[123]:HRP core state changed, old_state = load-balance, new_state = master, local_priority = 47016, peer_priority = 47014.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jan 21 2013 06:59:13"
+            },
+            {
+                "key": "",
+                "value": "HuaweiB"
+            },
+            {
+                "key": "old_state",
+                "value": "load-balance"
+            },
+            {
+                "key": "new_state",
+                "value": "master"
+            },
+            {
+                "key": "local_priority",
+                "value": "47016"
+            },
+            {
+                "key": "peer_priority",
+                "value": "47014"
+            }
+        ]
+    },
+    {
+        "logId": 319,
+        "logText": "<190>Dec 18 2017 22:02:14 ANC-FZ-Bak&Test-SW-HW8860-S2-01 %%01OSPF/6/ospfMaxAgeLsa(t):CID=0x80830440-OID=1.3.6.1.2.1.14.16.2.13;An LSA is aged. (RouterId=10.50.240.236, LsdbAreaId=0.0.0.0, LsdbType=2, LsdbLsid=10.50.255.22, LsdbRouterId=10.50.240.245)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 18 2017 22:02:14"
+            },
+            {
+                "key": "",
+                "value": "ANC-FZ-Bak&Test-SW-HW8860-S2-01"
+            },
+            {
+                "key": "CID",
+                "value": "0x80830440"
+            },
+            {
+                "key": "OID",
+                "value": "1.3.6.1.2.1.14.16.2.13"
+            },
+            {
+                "key": "RouterId",
+                "value": "10.50.240.236"
+            },
+            {
+                "key": "LsdbAreaId",
+                "value": "0.0.0.0"
+            },
+            {
+                "key": "LsdbType",
+                "value": "2"
+            },
+            {
+                "key": "LsdbLsid",
+                "value": "10.50.255.22"
+            },
+            {
+                "key": "LsdbRouterId",
+                "value": "10.50.240.245"
+            }
+        ]
+    },
+    {
+        "logId": 320,
+        "logText": "<189>Nov 25 2023 08:08:17 B-Area6-G5-20U-FabC-Acc %%01TRUNK/5/hwTrunkBwChange(t):CID=0x807a0417-OID=1.3.6.1.4.1.2011.5.25.41.3.57;The trunk interface bandwidth changes. (TrunkName=Eth-Trunk1, OldBandwidth=1000000000, NewBandwidth=2000000000)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 25 2023 08:08:17"
+            },
+            {
+                "key": "",
+                "value": "B-Area6-G5-20U-FabC-Acc"
+            },
+            {
+                "key": "CID",
+                "value": "0x807a0417"
+            },
+            {
+                "key": "OID",
+                "value": "1.3.6.1.4.1.2011.5.25.41.3.57"
+            },
+            {
+                "key": "TrunkName",
+                "value": "Eth-Trunk1"
+            },
+            {
+                "key": "OldBandwidth",
+                "value": "1000000000"
+            },
+            {
+                "key": "NewBandwidth",
+                "value": "2000000000"
+            }
+        ]
+    },
+    {
+        "logId": 321,
+        "logText": "<188>Feb 3 2021 18:24:56 SYHX-DMZ-Core_SW-CE16804-01 %%01SSH/4/IP_LOCKED(s):CID=0x80932724;IP was locked. (IpAddress=21.95.12.31, VpnName=MAG_OUT, Period=5 minutes)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Feb 3 2021 18:24:56"
+            },
+            {
+                "key": "",
+                "value": "SYHX-DMZ-Core_SW-CE16804-01"
+            },
+            {
+                "key": "CID",
+                "value": "0x80932724"
+            },
+            {
+                "key": "IpAddress",
+                "value": "21.95.12.31"
+            },
+            {
+                "key": "VpnName",
+                "value": "MAG_OUT"
+            },
+            {
+                "key": "Period",
+                "value": "5 minutes"
+            }
+        ]
+    },
+    {
+        "logId": 322,
+        "logText": "<190>Jul 19 2021 10:46:47 HD-NE20E-S4 %%01OSPF/6/OSPF_INTF_STATE_CHANGE(l):CID=0x8082046e;Interface 131.100.250.73 state changed from DR to BackupDR. (Event=NeighborChange, ProcessId=1, AreaId=0.0.3.11)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 19 2021 10:46:47"
+            },
+            {
+                "key": "",
+                "value": "HD-NE20E-S4"
+            },
+            {
+                "key": "CID",
+                "value": "0x8082046e"
+            },
+            {
+                "key": "Event",
+                "value": "NeighborChange"
+            },
+            {
+                "key": "ProcessId",
+                "value": "1"
+            },
+            {
+                "key": "AreaId",
+                "value": "0.0.3.11"
+            }
+        ]
+    },
+    {
+        "logId": 323,
+        "logText": "Jun 1 12:35:52 2000 8F-S5120-A8 %%01SEC/4/BLACKLIST(l): -DevIP=129.168.60.212;  (vpn: public ) <129.168.60.210> is removed from blacklist",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jun 1 12:35:52 2000"
+            },
+            {
+                "key": "",
+                "value": "8F-S5120-A8"
+            },
+            {
+                "key": "-DevIP",
+                "value": "129.168.60.212"
+            },
+            {
+                "key": "vpn",
+                "value": "public"
+            }
+        ]
+    },
+    {
+        "logId": 324,
+        "logText": "<149>Oct 21 2021 10:33:16 SJHJ-01 %%01SSH/5/SSHC_LOGIN_FAIL(s):CID=0x80920437;SSH client login failed. (ServiceType=stelnet, FailedReason=Failed to connect to the remote host, UserName=Could not extract user name, IPAddress=143.32.254.54, VPNInstanceName=_public_)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 21 2021 10:33:16"
+            },
+            {
+                "key": "",
+                "value": "SJHJ-01"
+            },
+            {
+                "key": "CID",
+                "value": "0x80920437"
+            },
+            {
+                "key": "ServiceType",
+                "value": "stelnet"
+            },
+            {
+                "key": "FailedReason",
+                "value": "Failed to connect to the remote host"
+            },
+            {
+                "key": "UserName",
+                "value": "Could not extract user name"
+            },
+            {
+                "key": "IPAddress",
+                "value": "143.32.254.54"
+            },
+            {
+                "key": "VPNInstanceName",
+                "value": "_public_"
+            }
+        ]
+    },
+    {
+        "logId": 325,
+        "logText": "<190>Mar  9 2018 04:07:04 Huawei_12700 %%01OSPF/6/IF_CHG_E(l)[114144]:Interface 10.100.3.65 received event NeighborChange, interface state changed from BackupDR to DR. (ProcessId=100)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar  9 2018 04:07:04"
+            },
+            {
+                "key": "",
+                "value": "Huawei_12700"
+            },
+            {
+                "key": "",
+                "value": "114144"
+            },
+            {
+                "key": "ProcessId",
+                "value": "100"
+            }
+        ]
+    },
+    {
+        "logId": 326,
+        "logText": "<172>Apr  2 18:29:16.9 WLZX-INT-NE8KM8-A %%01SSH/4/SSHS_IP_BLOCK_CLIENT(s):CID=0x80930446;SSH client IP blocked due to authentication failure in last 1 hour. (IpAddress=81.161.63.254, VpnName=_public_, BlockCount=1)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Apr  2 18:29:16.9"
+            },
+            {
+                "key": "",
+                "value": "WLZX-INT-NE8KM8-A"
+            },
+            {
+                "key": "CID",
+                "value": "0x80930446"
+            },
+            {
+                "key": "IpAddress",
+                "value": "81.161.63.254"
+            },
+            {
+                "key": "VpnName",
+                "value": "_public_"
+            },
+            {
+                "key": "BlockCount",
+                "value": "1"
+            }
+        ]
+    },
+    {
+        "logId": 327,
+        "logText": "<189>Jan 11 2013 08:00:19 HuaweiA %%01FTPS/5/SENDDATA(l)[128]:The FTP server sent 3958656 bytes to the client admin. (IpAddress=193.168.1.2, VpnInstanceName=\"\")",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jan 11 2013 08:00:19"
+            },
+            {
+                "key": "",
+                "value": "HuaweiA"
+            },
+            {
+                "key": "",
+                "value": "128"
+            },
+            {
+                "key": "IpAddress",
+                "value": "193.168.1.2"
+            }
+        ]
+    },
+    {
+        "logId": 328,
+        "logText": "<190>Dec  9 2023 08:02:40 HLW-FW02 %%01AAA/6/LOCALACCESSACCOUNT_MODIFY(s):Service=nac_main0;Local access account password has been modified. (Account=gaoruilong, OperatorName=gaoruilong, UserIp=221.192.127.117)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec  9 2023 08:02:40"
+            },
+            {
+                "key": "",
+                "value": "HLW-FW02"
+            },
+            {
+                "key": "Service",
+                "value": "nac_main0"
+            },
+            {
+                "key": "Account",
+                "value": "gaoruilong"
+            },
+            {
+                "key": "UserIp",
+                "value": "221.192.127.117"
+            }
+        ]
+    },
+    {
+        "logId": 329,
+        "logText": "<190>Feb 28 2023 23:53:07 BY-6140-2 %%01OSPF/6/TRAP_ORG_LSA(l)[36886]:Router originating LSA. (ProcessId=100, RouterId=10.41.223.226, LsdbAreaId=0.0.0.0, LsdbType=2, LsdbLsId=10.41.223.14, LsdbRouterId=10.41.223.226)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Feb 28 2023 23:53:07"
+            },
+            {
+                "key": "",
+                "value": "BY-6140-2"
+            },
+            {
+                "key": "ProcessId",
+                "value": "100"
+            },
+            {
+                "key": "RouterId",
+                "value": "10.41.223.226"
+            },
+            {
+                "key": "LsdbAreaId",
+                "value": "0.0.0.0"
+            },
+            {
+                "key": "LsdbType",
+                "value": "2"
+            },
+            {
+                "key": "LsdbLsId",
+                "value": "10.41.223.14"
+            }
+        ]
+    },
+    {
+        "logId": 330,
+        "logText": "<188>Dec 10 2023 02:59:09 HLW-FW02 %%01HPP/4/HOST_KPI_ABNORMAL(l):Service=hppd-hsd0;The number of discarded packets on the host changed suddenly. (SlotID=1-0,CpuID=0,CurrentValue=136,PreviousValue=5)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 10 2023 02:59:09"
+            },
+            {
+                "key": "",
+                "value": "HLW-FW02"
+            },
+            {
+                "key": "Service",
+                "value": "hppd-hsd0"
+            },
+            {
+                "key": "SlotID",
+                "value": "1-0"
+            },
+            {
+                "key": "CpuID",
+                "value": "0"
+            },
+            {
+                "key": "CurrentValue",
+                "value": "136"
+            },
+            {
+                "key": "PreviousValue",
+                "value": "5"
+            }
+        ]
+    },
+    {
+        "logId": 331,
+        "logText": "<188>2016-12-07 11:30:27 USG6680A %%01HTTPD/4/FAIL(l): User admin(IP:169.169.204.20 ID:28) login failed",
+        "logField": [
+            {
+                "key": "",
+                "value": "2016-12-07 11:30:27"
+            },
+            {
+                "key": "",
+                "value": "USG6680A"
+            }
+        ]
+    },
+    {
+        "logId": 332,
+        "logText": "<188>Dec 28 2023 11:03:30 USG6625F %%01IPSEC/4/hwIPSecPolicyAdd_active(l):CID=0x814f042e-alarmID=0x00f10338;An IPSec policy is added. (SeqNum=2, PolicyName=ipsec1710166113, VsysName=public)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 28 2023 11:03:30"
+            },
+            {
+                "key": "",
+                "value": "USG6625F"
+            },
+            {
+                "key": "CID",
+                "value": "0x814f042"
+            },
+            {
+                "key": "armID",
+                "value": "0x00f10338"
+            },
+            {
+                "key": "SeqNum",
+                "value": "2"
+            },
+            {
+                "key": "PolicyName",
+                "value": "ipsec1710166113"
+            },
+            {
+                "key": "VsysName",
+                "value": "public"
+            }
+        ]
+    },
+    {
+        "logId": 333,
+        "logText": "Mar 30 2013 09:36:48 SPU-1 %%01OSPF/6/PHY_IF_INFO(l)[104]:OSPF physical interface information (InterfaceName=Eth-Trunk0.5, PhysicalInterfaceIndex=0x9, RM physicalInterfaceIndex=0xa, RmInterfaceType=1, RmInterfaceBandwidth=2820130816, RmInterfaceMtu=1500, ChangeType=0x1)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 30 2013 09:36:48"
+            },
+            {
+                "key": "",
+                "value": "SPU-1"
+            },
+            {
+                "key": "InterfaceName",
+                "value": "Eth-Trunk0.5"
+            },
+            {
+                "key": "PhysicalInterfaceIndex",
+                "value": "0x9"
+            },
+            {
+                "key": "RM physicalInterfaceIndex",
+                "value": "0xa"
+            },
+            {
+                "key": "RmInterfaceType",
+                "value": "1"
+            },
+            {
+                "key": "RmInterfaceBandwidth",
+                "value": "2820130816"
+            },
+            {
+                "key": "RmInterfaceMtu",
+                "value": "1500"
+            },
+            {
+                "key": "ChangeType",
+                "value": "0x1"
+            }
+        ]
+    },
+    {
+        "logId": 334,
+        "logText": "<131>Jun  4 2019 02:55:21 SD-LY-NF-ITV-BYSW-1.MAN %%01LACP/3/LAG_DOWN_REASON_EVENT(l)[2349]:The member of the LACP mode Eth-Trunk interface went down. (TrunkName=Eth-Trunk13, PortName=XGigabitEthernet4/0/4, Reason=PortDown)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jun  4 2019 02:55:21"
+            },
+            {
+                "key": "",
+                "value": "SD-LY-NF-ITV-BYSW-1.MAN"
+            },
+            {
+                "key": "TrunkName",
+                "value": "Eth-Trunk13"
+            },
+            {
+                "key": "PortName",
+                "value": "XGigabitEthernet4/0/4"
+            },
+            {
+                "key": "Reason",
+                "value": "PortDown"
+            }
+        ]
+    },
+    {
+        "logId": 335,
+        "logText": "<188>Oct 26 2023 17:13:09 fw001.cn-lvliang-2 %%01UPDATE/4/DOWNLOAD_FAIL(l):CID=0x814f0432;Failed to download the new version. (SyslogId=41, User=SystemTimer, IP=**, Module=SA-SDB, Status=auto-update, Duration(s)=5, Reason=Failed to perform DNS resolution, Suggestion=Check the Internet settings and try again later)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 26 2023 17:13:09"
+            },
+            {
+                "key": "",
+                "value": "fw001.cn-lvliang-2"
+            },
+            {
+                "key": "CID",
+                "value": "0x814f0432"
+            },
+            {
+                "key": "SyslogId",
+                "value": "41"
+            },
+            {
+                "key": "User",
+                "value": "SystemTimer"
+            },
+            {
+                "key": "Module",
+                "value": "SA-SDB"
+            },
+            {
+                "key": "Status",
+                "value": "auto-update"
+            },
+            {
+                "key": "Duration(s)",
+                "value": "5"
+            },
+            {
+                "key": "Reason",
+                "value": "Failed to perform DNS resolution"
+            }
+        ]
+    },
+    {
+        "logId": 336,
+        "logText": "<188>Nov  5 2015 19:58:33 Quidway %%01UPDATE/5/SUCCESS(l)[7]:The signature database update succeeded. (SyslogId=11, Module=AV-SDB, Pre-UpdateVersion=, UpdateVersion=2014120302, Status=local-update, Duration(s)=53)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov  5 2015 19:58:33"
+            },
+            {
+                "key": "",
+                "value": "Quidway"
+            },
+            {
+                "key": "SyslogId",
+                "value": "11"
+            },
+            {
+                "key": "Module",
+                "value": "AV-SDB"
+            },
+            {
+                "key": "UpdateVersion",
+                "value": "2014120302"
+            },
+            {
+                "key": "Status",
+                "value": "local-update"
+            },
+            {
+                "key": "Duration(s)",
+                "value": "53"
+            }
+        ]
+    },
+    {
+        "logId": 337,
+        "logText": "<190>Nov 19 2020 08:03:14 hexin 12 %%01HTTP/6/LOGINOK(s)[544]:User logged in successfully. (UserName=huawei, IPAddress=172.26.251.2, VpnName=)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 19 2020 08:03:14"
+            },
+            {
+                "key": "",
+                "value": "hexin 12"
+            },
+            {
+                "key": "UserName",
+                "value": "huawei"
+            },
+            {
+                "key": "IPAddress",
+                "value": "172.26.251.2"
+            }
+        ]
+    },
+    {
+        "logId": 338,
+        "logText": "<186>Nov 20 2023 08:17:22 B-Area4-G1-16U-FabC-Acc %%01IFNET/2/linkDown_active(l):CID=0x807a0417-alarmID=0x08520003;The interface status changes. (ifName=GE1/0/1, AdminStatus=UP, OperStatus=DOWN, Reason=Interface physical link is down, mainIfname=GE1/0/1)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 20 2023 08:17:22"
+            },
+            {
+                "key": "",
+                "value": "B-Area4-G1-16U-FabC-Acc"
+            },
+            {
+                "key": "CID",
+                "value": "0x807a0417"
+            },
+            {
+                "key": "alarmID",
+                "value": "0x08520003"
+            },
+            {
+                "key": "AdminStatus",
+                "value": "UP"
+            },
+            {
+                "key": "OperStatus",
+                "value": "DOWN"
+            },
+            {
+                "key": "Reason",
+                "value": "Interface physical link is down"
+            },
+            {
+                "key": "mainIfname",
+                "value": "GE1/0/1"
+            }
+        ]
+    },
+    {
+        "logId": 339,
+        "logText": "<149>Dec 20 2016 10:01:49 11F-Dong %%01OSPF/5/LSA_CHANGE_FREQUENT(l)[10833]:LSAs change frequently now. (ProcessId=2, AdvertiseRouterId=100.78.141.134, TotalCount=1064, BeginTime=2016-12-19 21:19:59+00:00, EndTime=2016-12-19 22:19:59+00:00, Type-1LsaCount=0, Type-2LsaCount=0, Type-3LsaCount=0, Type-4LsaCount=0, Type-5LsaCount=1064, Type-7LsaCount=0, Type-9LsaCount=0, Type-10LsaCount=0, Type-11LsaCount=0)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 20 2016 10:01:49"
+            },
+            {
+                "key": "",
+                "value": "11F-Dong"
+            },
+            {
+                "key": "ProcessId",
+                "value": "2"
+            },
+            {
+                "key": "AdvertiseRouterId",
+                "value": "100.78.141.134"
+            },
+            {
+                "key": "TotalCount",
+                "value": "1064"
+            },
+            {
+                "key": "BeginTime",
+                "value": "2016-12-19 21:19:59+00:00"
+            },
+            {
+                "key": "Type-1LsaCount",
+                "value": "0"
+            }
+        ]
+    },
+    {
+        "logId": 340,
+        "logText": "<186>Jun 21 2023 06:57:08 SC-CD-DYH-G-XDXCTYZXYYG-A2-2.STN.ATN980C %%01BFD/2/hwBfdSessFaultDown_active(l):CID=0x80740422-alarmID=0x00f102ce;The BFD session went Down.(Index=16395, SessName=dyn_16395, LocalDiscriminator=16395, Diagnosis=0, BindIfName=Eth-Trunk2)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jun 21 2023 06:57:08"
+            },
+            {
+                "key": "",
+                "value": "SC-CD-DYH-G-XDXCTYZXYYG-A2-2.STN.ATN980C"
+            },
+            {
+                "key": "CID",
+                "value": "0x80740422"
+            },
+            {
+                "key": "alarmID",
+                "value": "0x00f102ce"
+            },
+            {
+                "key": "Index",
+                "value": "16395"
+            },
+            {
+                "key": "SessName",
+                "value": "dyn_16395"
+            },
+            {
+                "key": "Diagnosis",
+                "value": "0"
+            },
+            {
+                "key": "BindIfName",
+                "value": "Eth-Trunk2"
+            }
+        ]
+    },
+    {
+        "logId": 341,
+        "logText": "<14>Sep  6 20:48:49 edr-center {\"logType\":\"alert\",\"appVersion\":\"3.1.0.102\",\"collectorReceiptTime\":\"2024-09-06 20:48:44\",\"sendHostAddress\":\"10.50.86.144\",\"deviceReceiptTime\":\"2024-09-06 20:48:44\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.144\",\"destAddress\":\"10.50.109.113\",\"ruleType\":\"/SuspEndpoint/FileTempering\",\"eventTime\":\"2024-09-06\",\"startTime\":\"2024-09-06 20:49:14\",\"srcGeoAddress\":\"\",\"eventNum\":6014,\"severity\":\"3\",\"eventId\":\"241a8d06-5401-415c-a912-5c8b628efe64\",\"indexTime\":\"2024-09\",\"machineCode\":\"1d8e5883d7cc193c5262b98374c9bbf07c18dad4bdcfd423a5ddda7d88085a1e\",\"srcUserName\":\"SOAR\",\"clientOperatingSystem\":\"windows\",\"suggestion\":\"[\\\"* \u6682\u65e0\\\"]\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"hostId\":\"1d8e5883d7cc193c5262b98374c9bbf07c18dad4bdcfd423a5ddda7d88085a1e\",\"deviceVersion\":\"3.1.0.100\",\"message\":\"C:\\\\Windows\\\\System32\\\\svchost.exe \u521b\u5efa\u6587\u4ef6 C:\\\\Windows\\\\ServiceProfiles\\\\LocalService\\\\AppData\\\\Local\\\\lastalive0.dat, \u5df2\u653e\u884c\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"oldAgent\":1,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u6587\u4ef6\u8bbf\u95ee\u76d1\u63a7\",\"endTime\":\"2024-09-06 20:49:14\",\"deviceAssetSubTypeId\":\"56\",\"catOutcome\":\"OK\",\"status\":0,\"assetName\":\"CXD-Win\",\"assetAddress\":\"10.50.109.113\",\"tenantName\":\"SOAR\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  6 20:48:49"
+            },
+            {
+                "key": "logType",
+                "value": "alert"
+            },
+            {
+                "key": "collectorReceiptTime",
+                "value": "2024-09-06 20:48:44"
+            },
+            {
+                "key": "sendHostAddress",
+                "value": "10.50.86.144"
+            },
+            {
+                "key": "clientOperatingSystem",
+                "value": "windows"
+            },
+            {
+                "key": "suggestion",
+                "value": "[\\\"* \u6682\u65e0\\\"]"
+            },
+            {
+                "key": "deviceVersion",
+                "value": "3.1.0.100"
+            },
+            {
+                "key": "deviceSendProductName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            },
+            {
+                "key": "name",
+                "value": "\u6587\u4ef6\u8bbf\u95ee\u76d1\u63a7"
+            },
+            {
+                "key": "tenantName",
+                "value": "SOAR"
+            }
+        ]
+    },
+    {
+        "logId": 342,
+        "logText": "<178>Jul 30 00:03:24 10-50-86-12 DBAppWAF: {\"id\": \"820\", \"code\": \"15100\", \"timestamp\": \"2024-07-30 00:03:19+08:00\", \"user\": \"system\", \"ip\": \"10.50.86.12\", \"device_id\": \"9cdb4d6f-500e-5c8e-902e-69e209ef546c\", \"target\": \"\u65e5\u5fd7\u5206\u533a\u6e05\u7406\", \"opt_type\": \"\u5220\u9664\", \"opt_res\": \"success\", \"detail\": \"{'res_body': '', 'req_body': '', 'msg_en': 'According to the log cleanup policy, the log dated 20240111\u5e94\u7528\u9632\u62a4\u65e5\u5fd7(\u8be6\u60c5) has been deleted', 'msg_zh': '\u6839\u636e\u65e5\u5fd7\u6e05\u7406\u7b56\u7565\uff0c\u65e5\u671f\u4e3a20240111\u5e94\u7528\u9632\u62a4\u65e5\u5fd7(\u8be6\u60c5)\u5df2\u5220\u9664'}\", \"level\": \"medium\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 30 00:03:24"
+            },
+            {
+                "key": "",
+                "value": "10-50-86-12"
+            },
+            {
+                "key": "id",
+                "value": "820"
+            },
+            {
+                "key": "code",
+                "value": "15100"
+            },
+            {
+                "key": "timestamp",
+                "value": "2024-07-30 00:03:19+08:00"
+            },
+            {
+                "key": "user",
+                "value": "system"
+            },
+            {
+                "key": "ip",
+                "value": "10.50.86.12"
+            },
+            {
+                "key": "target",
+                "value": "\u65e5\u5fd7\u5206\u533a\u6e05\u7406"
+            },
+            {
+                "key": "opt_res",
+                "value": "success"
+            },
+            {
+                "key": "level",
+                "value": "medium"
+            }
+        ]
+    },
+    {
+        "logId": 343,
+        "logText": "<178>Oct 14 00:03:26 10-50-86-12 DBAppWAF: {\"id\": \"1346\", \"code\": \"15100\", \"timestamp\": \"2024-10-14 00:03:19+08:00\", \"user\": \"system\", \"ip\": \"10.50.86.12\", \"device_id\": \"9cdb4d6f-500e-5c8e-902e-69e209ef546c\", \"target\": \"\u65e5\u5fd7\u5206\u533a\u6e05\u7406\", \"opt_type\": \"\u5220\u9664\", \"opt_res\": \"success\", \"detail\": \"{'res_body': '', 'req_body': '', 'msg_en': 'According to the log cleanup policy, the log dated 20240327\u5e94\u7528\u9632\u62a4\u65e5\u5fd7(\u4e8b\u4ef6) has been deleted', 'msg_zh': '\u6839\u636e\u65e5\u5fd7\u6e05\u7406\u7b56\u7565\uff0c\u65e5\u671f\u4e3a20240327\u5e94\u7528\u9632\u62a4\u65e5\u5fd7(\u4e8b\u4ef6)\u5df2\u5220\u9664'}\", \"level\": \"medium\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 14 00:03:26"
+            },
+            {
+                "key": "id",
+                "value": "1346"
+            },
+            {
+                "key": "code",
+                "value": "15100"
+            },
+            {
+                "key": "timestamp",
+                "value": "2024-10-14 00:03:19+08:00"
+            },
+            {
+                "key": "user",
+                "value": "system"
+            },
+            {
+                "key": "ip",
+                "value": "10.50.86.12"
+            },
+            {
+                "key": "device_id",
+                "value": "9cdb4d6f-500e-5c8e-902e-69e209ef546c"
+            },
+            {
+                "key": "target",
+                "value": "\u65e5\u5fd7\u5206\u533a\u6e05\u7406"
+            },
+            {
+                "key": "opt_type",
+                "value": "\u5220\u9664"
+            },
+            {
+                "key": "opt_res",
+                "value": "success"
+            }
+        ]
+    },
+    {
+        "logId": 344,
+        "logText": "<14>Sep  4 11:13:35 edr-center {\"logType\":\"alert\",\"dnames\":[\"CommandLine\",\"Image\",\"OriginalFileName\",\"ParentImage\"],\"techniqueArray\":[\"T1136\",\"T1136.001\"],\"collectorReceiptTime\":\"2024-09-04 11:13:29\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1136\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1136.001\"],\"deviceReceiptTime\":\"2024-09-04 11:13:29\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-04 11:14:03\",\"attckWarningId\":\"6defc199-0129-476f-9586-2f48a7d1096e\",\"ruleId\":\"SY000298\",\"uKey\":\"65ad7f212a9feb46e245aef95f96dc8c\",\"timestamp\":1725419643000,\"eventNum\":60202,\"uploadtime\":1725419609906,\"severity\":\"5\",\"eventId\":\"f62668a3-cf7c-45b0-961b-46a134a9b2cc\",\"image\":\"C:\\\\Windows\\\\System32\\\\net1.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u8fdb\u7a0b\u542f\u52a8\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0003\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\Windows\\\\System32\\\\net1.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u5229\u7528\u6dfb\u52a0\u8d26\u6237\u5b9e\u73b0\u6301\u4e45\u5316\",\"createTime\":1725419609709,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-04 11:14:03\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  4 11:13:35"
+            },
+            {
+                "key": "logType",
+                "value": "alert"
+            },
+            {
+                "key": "dnames",
+                "value": "[\"CommandLine\",\"Image\",\"OriginalFileName\",\"ParentImage\"]"
+            },
+            {
+                "key": "techniqueArray",
+                "value": "[\"T1136\",\"T1136.001\"]"
+            },
+            {
+                "key": "collectorReceiptTime",
+                "value": "2024-09-04 11:13:29"
+            },
+            {
+                "key": "sendHostAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "riskType",
+                "value": "\u5165\u4fb5\u5a01\u80c1"
+            },
+            {
+                "key": "ruleType",
+                "value": "/Malware/Others"
+            },
+            {
+                "key": "eventStr",
+                "value": "[\"\u8fdb\u7a0b\u542f\u52a8\"]"
+            },
+            {
+                "key": "deviceSendProductName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            }
+        ]
+    },
+    {
+        "logId": 345,
+        "logText": "<14>Sep  5 15:57:27 edr-center {\"logType\":\"alert\",\"dnames\":[\"TargetFilename\"],\"techniqueArray\":[\"T1068\"],\"collectorReceiptTime\":\"2024-09-05 15:57:24\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1068\"],\"lessUser\":\"user01\",\"subTechnique\":[],\"deviceReceiptTime\":\"2024-09-05 15:57:24\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-05 23:28:05\",\"attckWarningId\":\"94b0ebf6-c146-433c-910e-f86ff7aa2c99\",\"ruleId\":\"FY000422\",\"uKey\":\"974eeb43c2a31e1eb35931389e87b7b0\",\"timestamp\":1725550085000,\"eventNum\":60202,\"uploadtime\":1725523044061,\"severity\":\"5\",\"eventId\":\"7b44362e-3f28-44a9-9860-1c0de58115b4\",\"image\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u6587\u4ef6\u5185\u5bb9\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0004\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u521b\u5efaCVE-2020-0787 \u6f0f\u6d1e\u5229\u7528\u7a0b\u5e8f\",\"createTime\":1725523044028,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-05 23:28:05\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  5 15:57:27"
+            },
+            {
+                "key": "ruleType",
+                "value": "\u5165\u4fb5\u5a01\u80c1"
+            },
+            {
+                "key": "destAddress",
+                "value": "10.50.109.179"
+            },
+            {
+                "key": "attckWarningId",
+                "value": "94b0ebf6-c146-433c-910e-f86ff7aa2c99"
+            },
+            {
+                "key": "ruleId",
+                "value": "FY000422"
+            },
+            {
+                "key": "uKey",
+                "value": "974eeb43c2a31e1eb35931389e87b7b0"
+            },
+            {
+                "key": "level",
+                "value": "HIGH"
+            },
+            {
+                "key": "clientOperatingSystem",
+                "value": "windows"
+            },
+            {
+                "key": "threatTarget",
+                "value": "C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe"
+            },
+            {
+                "key": "attckName",
+                "value": "\u521b\u5efaCVE-2020-0787 \u6f0f\u6d1e\u5229\u7528\u7a0b\u5e8f"
+            }
+        ]
+    },
+    {
+        "logId": 346,
+        "logText": "<14>Sep  3 16:34:24 edr-center {\"logType\":\"alert\",\"dnames\":[\"ScriptBlockText\"],\"techniqueArray\":[\"T1134\",\"T1098\",\"T1547\",\"T1555\",\"T1003\",\"T1207\",\"T1649\",\"T1558\",\"T1552\",\"T1550\",\"T1134.005\",\"T1547.005\",\"T1555.003\",\"T1555.004\",\"T1558.001\",\"T1558.002\",\"T1552.004\",\"T1550.002\",\"T1550.003\"],\"collectorReceiptTime\":\"2024-09-03 16:34:15\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1134\",\"T1098\",\"T1547\",\"T1555\",\"T1003\",\"T1207\",\"T1649\",\"T1558\",\"T1552\",\"T1550\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1134.005\",\"T1547.005\",\"T1555.003\",\"T1555.004\",\"T1558.001\",\"T1558.002\",\"T1552.004\",\"T1550.002\",\"T1550.003\"],\"deviceReceiptTime\":\"2024-09-03 16:34:15\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-03 16:34:48\",\"attckWarningId\":\"7843368a-99d4-446d-b02c-e2e0ce7a1b6e\",\"ruleId\":\"SY002550\",\"uKey\":\"957b3ea9f24dc35d53e5a21fe8c998f3\",\"timestamp\":1725352488000,\"eventNum\":60202,\"uploadtime\":1725352455572,\"severity\":\"5\",\"eventId\":\"bc0cd777-6049-4a50-9075-de4b76364319\",\"image\":\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"PowerShell\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0004\",\"TA0003\",\"TA0006\",\"TA0005\",\"TA0008\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"powershell_mimikatz\",\"createTime\":1725352455409,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-03 16:34:48\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  3 16:34:24"
+            },
+            {
+                "key": "logType",
+                "value": "alert"
+            },
+            {
+                "key": "dnames",
+                "value": "[\"ScriptBlockText\"]"
+            },
+            {
+                "key": "techniqueArray",
+                "value": "[\"T1134\",\"T1098\",\"T1547\",\"T1555\",\"T1003\",\"T1207\",\"T1649\",\"T1558\",\"T1552\",\"T1550\",\"T1134.005\",\"T1547.005\",\"T1555.003\",\"T1555.004\",\"T1558.001\",\"T1558.002\",\"T1552.004\",\"T1550.002\",\"T1550.003\"]"
+            },
+            {
+                "key": "collectorReceiptTime",
+                "value": "2024-09-03 16:34:15"
+            },
+            {
+                "key": "sendHostAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "deviceName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            },
+            {
+                "key": "riskType",
+                "value": "\u5165\u4fb5\u5a01\u80c1"
+            },
+            {
+                "key": "deviceVersion",
+                "value": "3.0.9.114"
+            }
+        ]
+    },
+    {
+        "logId": 347,
+        "logText": "<14>Sep  9 18:07:12 edr-center {\"logType\":\"alert\",\"dnames\":[\"CommandLine\"],\"techniqueArray\":[\"T1087\",\"T1087.002\"],\"collectorReceiptTime\":\"2024-09-09 18:07:11\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1087\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1087.002\"],\"deviceReceiptTime\":\"2024-09-09 18:07:11\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-09 18:07:57\",\"attckWarningId\":\"f0437616-3974-4d51-8aa0-dd819fda6c97\",\"ruleId\":\"SY000196\",\"uKey\":\"7692d73c875a5774ec25031e4eab1115\",\"timestamp\":1725876477000,\"eventNum\":60202,\"uploadtime\":1725876431169,\"severity\":\"5\",\"eventId\":\"92d2f386-49d5-43c0-a22a-7231e1e1fbe1\",\"image\":\"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0uu8791_kerbrute_windows_amd64.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u8fdb\u7a0b\u542f\u52a8\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0007\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0uu8791_kerbrute_windows_amd64.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u4f7f\u7528kerbrute\u679a\u4e3e\u57df\u7528\u6237\",\"createTime\":1725876431051,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-09 18:07:57\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  9 18:07:12"
+            },
+            {
+                "key": "eventNum",
+                "value": "60202"
+            },
+            {
+                "key": "uploadtime",
+                "value": "1725876431169"
+            },
+            {
+                "key": "eventId",
+                "value": "92d2f386-49d5-43c0-a22a-7231e1e1fbe1"
+            },
+            {
+                "key": "image",
+                "value": "C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0uu8791_kerbrute_windows_amd64.exe"
+            },
+            {
+                "key": "clientOperatingSystem",
+                "value": "windows"
+            },
+            {
+                "key": "deviceVersion",
+                "value": "3.0.9.114"
+            },
+            {
+                "key": "userName",
+                "value": "user01"
+            },
+            {
+                "key": "attckName",
+                "value": "\u4f7f\u7528kerbrute\u679a\u4e3e\u57df\u7528\u6237"
+            }
+        ]
+    },
+    {
+        "logId": 348,
+        "logText": "<14>Sep  5 10:19:16 edr-center {\"logType\":\"alert\",\"dnames\":[\"CommandLine\",\"Image\"],\"techniqueArray\":[\"T1082\"],\"collectorReceiptTime\":\"2024-09-05 10:19:07\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1082\"],\"lessUser\":\"user01\",\"subTechnique\":[],\"deviceReceiptTime\":\"2024-09-05 10:19:07\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-05 10:19:40\",\"attckWarningId\":\"d48dc33b-2977-4b15-80eb-e1a4e8b832cb\",\"ruleId\":\"SY004956\",\"uKey\":\"6863696634c375922c25d116103fd993\",\"timestamp\":1725502780000,\"eventNum\":60202,\"uploadtime\":1725502747051,\"severity\":\"5\",\"eventId\":\"86ebdd43-d4f7-4e84-b310-540c81747949\",\"image\":\"C:\\\\Windows\\\\System32\\\\wbem\\\\WMIC.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u8fdb\u7a0b\u542f\u52a8\"],\"level\":\"LOW\",\"tacticIds\":[\"TA0007\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\Windows\\\\System32\\\\wbem\\\\WMIC.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u4f7f\u7528wmic\u83b7\u53d6\u5f00\u673a\u65f6\u95f4\",\"createTime\":1725502746967,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-05 10:19:40\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  5 10:19:16"
+            },
+            {
+                "key": "logType",
+                "value": "alert"
+            },
+            {
+                "key": "dnames",
+                "value": "[\"CommandLine\",\"Image\"]"
+            },
+            {
+                "key": "collectorReceiptTime",
+                "value": "2024-09-05 10:19:07"
+            },
+            {
+                "key": "sendHostAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "riskType",
+                "value": "\u5165\u4fb5\u5a01\u80c1"
+            },
+            {
+                "key": "ruleType",
+                "value": "/Malware/Others"
+            },
+            {
+                "key": "destAddress",
+                "value": "10.50.109.179"
+            },
+            {
+                "key": "attckWarningId",
+                "value": "d48dc33b-2977-4b15-80eb-e1a4e8b832cb"
+            }
+        ]
+    },
+    {
+        "logId": 349,
+        "logText": "<14>Sep  4 11:12:36 edr-center {\"logType\":\"alert\",\"dnames\":[\"CommandLine\"],\"techniqueArray\":[\"T1059\",\"T1059.001\"],\"collectorReceiptTime\":\"2024-09-04 11:12:29\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1059\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1059.001\"],\"deviceReceiptTime\":\"2024-09-04 11:12:29\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-04 11:13:01\",\"attckWarningId\":\"7ae66821-4ece-4f5f-87aa-b48e231bab88\",\"ruleId\":\"SY000421\",\"uKey\":\"002dd9f5cd7b089bdf24004d69a98a89\",\"timestamp\":1725419581000,\"eventNum\":60202,\"uploadtime\":1725419549557,\"severity\":\"5\",\"eventId\":\"77f4f4ca-605e-461b-9985-8ffbf114e479\",\"image\":\"C:\\\\Windows\\\\System32\\\\reg.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u8fdb\u7a0b\u542f\u52a8\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0002\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\Windows\\\\System32\\\\reg.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u5229\u7528powershell\u4e00\u53e5\u8bdd\u4e0a\u7ebf\",\"createTime\":1725419549356,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-04 11:13:01\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  4 11:12:36"
+            },
+            {
+                "key": "techniqueArray",
+                "value": "[\"T1059\",\"T1059.001\"]"
+            },
+            {
+                "key": "collectorReceiptTime",
+                "value": "2024-09-04 11:12:29"
+            },
+            {
+                "key": "sendHostAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "technique",
+                "value": "[\"T1059\"]"
+            },
+            {
+                "key": "deviceName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            },
+            {
+                "key": "ruleType",
+                "value": "/Malware/Others"
+            },
+            {
+                "key": "destAddress",
+                "value": "10.50.109.179"
+            },
+            {
+                "key": "attckName",
+                "value": "\u5229\u7528powershell\u4e00\u53e5\u8bdd\u4e0a\u7ebf"
+            }
+        ]
+    },
+    {
+        "logId": 350,
+        "logText": "<14>Sep  5 10:23:54 edr-center {\"logType\":\"alert\",\"dnames\":[\"TargetFilename\"],\"techniqueArray\":[\"T1134\",\"T1134.001\"],\"collectorReceiptTime\":\"2024-09-05 10:23:53\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1134\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1134.001\"],\"deviceReceiptTime\":\"2024-09-05 10:23:53\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-05 10:24:22\",\"attckWarningId\":\"e0bb9250-509c-443c-b992-8837d972eda1\",\"ruleId\":\"FY000455\",\"uKey\":\"f9c2a51a3a0bbbf376a02e57dcfc21db\",\"timestamp\":1725503062000,\"eventNum\":60202,\"uploadtime\":1725503033001,\"severity\":\"5\",\"eventId\":\"dd04dc57-b430-4dc7-be4b-e5a43cac6e15\",\"image\":\"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0omytvu_incognito.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u8fdb\u7a0b\u542f\u52a8\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0004\",\"TA0005\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0omytvu_incognito.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u6267\u884cincognito \u6f0f\u6d1e\u5229\u7528\u7a0b\u5e8f\",\"createTime\":1725503032829,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-05 10:24:22\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  5 10:23:54"
+            },
+            {
+                "key": "sendHostAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "deviceReceiptTime",
+                "value": "2024-09-05 10:23:53"
+            },
+            {
+                "key": "riskType",
+                "value": "\u5165\u4fb5\u5a01\u80c1"
+            },
+            {
+                "key": "ruleType",
+                "value": "/Malware/Others\",\"destAddress"
+            },
+            {
+                "key": "ruleId",
+                "value": "FY000455"
+            },
+            {
+                "key": "uKey",
+                "value": "f9c2a51a3a0bbbf376a02e57dcfc21db"
+            },
+            {
+                "key": "eventStr",
+                "value": "[\"\u8fdb\u7a0b\u542f\u52a8\"]"
+            },
+            {
+                "key": "level",
+                "value": "HIGH"
+            }
+        ]
+    },
+    {
+        "logId": 351,
+        "logText": "<14>Sep  4 11:19:07 edr-center {\"logType\":\"alert\",\"dnames\":[\"TargetFilename\"],\"techniqueArray\":[\"T1090\",\"T1090.002\"],\"collectorReceiptTime\":\"2024-09-04 11:18:56\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1090\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1090.002\"],\"deviceReceiptTime\":\"2024-09-04 11:18:56\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-04 11:19:28\",\"attckWarningId\":\"4450a37a-02db-4674-9b1e-a7dd41187795\",\"ruleId\":\"FY000509\",\"uKey\":\"e91b1a250d756075e148fdae8fc6b798\",\"timestamp\":1725419968000,\"eventNum\":60202,\"uploadtime\":1725419936283,\"severity\":\"5\",\"eventId\":\"1be9ca93-7725-4793-ac71-4772e99217f5\",\"image\":\"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0n9b2uz_Portforward.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u8fdb\u7a0b\u542f\u52a8\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0011\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0n9b2uz_Portforward.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u6267\u884cPortForward \u6076\u610f\u7a0b\u5e8f\",\"createTime\":1725419936076,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-04 11:19:28\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  4 11:19:07"
+            },
+            {
+                "key": "deviceName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            },
+            {
+                "key": "ruleType",
+                "value": "/Malware/Others\",\"destAddress"
+            },
+            {
+                "key": "destAddress",
+                "value": "10.50.109.179"
+            },
+            {
+                "key": "attckWarningId",
+                "value": "4450a37a-02db-4674-9b1e-a7dd41187795"
+            },
+            {
+                "key": "machineCode",
+                "value": "EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3"
+            },
+            {
+                "key": "tacticIds",
+                "value": "[\"TA0011\"]"
+            },
+            {
+                "key": "clientOperatingSystem",
+                "value": "windows"
+            },
+            {
+                "key": "threatTarget",
+                "value": "C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0n9b2uz_Portforward.exe"
+            },
+            {
+                "key": "deviceVersion",
+                "value": "3.0.9.114"
+            }
+        ]
+    },
+    {
+        "logId": 352,
+        "logText": "<14>Sep  4 11:34:17 edr-center {\"logType\":\"alert\",\"dnames\":[\"CommandLine\"],\"techniqueArray\":[\"T1558\",\"T1558.001\"],\"collectorReceiptTime\":\"2024-09-04 11:34:10\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1558\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1558.001\"],\"deviceReceiptTime\":\"2024-09-04 11:34:10\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-04 11:34:41\",\"attckWarningId\":\"3178e2d9-937e-49cf-ad5f-317b50a9f85c\",\"ruleId\":\"SY000244\",\"uKey\":\"e3667fab820694b73d267305f0d13a9f\",\"timestamp\":1725420881000,\"eventNum\":60202,\"uploadtime\":1725420850071,\"severity\":\"5\",\"eventId\":\"a276f7ac-2bc0-4be1-8926-66260ec23711\",\"image\":\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u8fdb\u7a0b\u542f\u52a8\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0006\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u975e\u7ea6\u675f\u59d4\u6d3e\u5229\u7528\",\"createTime\":1725420850054,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-04 11:34:41\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  4 11:34:17"
+            },
+            {
+                "key": "logType",
+                "value": "alert"
+            },
+            {
+                "key": "sendHostAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "technique",
+                "value": "[\"T1558\"]"
+            },
+            {
+                "key": "lessUser",
+                "value": "user01"
+            },
+            {
+                "key": "ruleId",
+                "value": "SY000244"
+            },
+            {
+                "key": "uploadtime",
+                "value": "1725420850071"
+            },
+            {
+                "key": "threatTarget",
+                "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+            },
+            {
+                "key": "deviceAssetSubType",
+                "value": "\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)"
+            },
+            {
+                "key": "attckName",
+                "value": "\u975e\u7ea6\u675f\u59d4\u6d3e\u5229\u7528"
+            }
+        ]
+    },
+    {
+        "logId": 353,
+        "logText": "<14>Sep  5 15:00:52 edr-center {\"logType\":\"alert\",\"dnames\":[\"TargetFilename\"],\"techniqueArray\":[\"T1021\",\"T1021.003\"],\"collectorReceiptTime\":\"2024-09-05 15:00:40\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1021\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1021.003\"],\"deviceReceiptTime\":\"2024-09-05 15:00:40\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-05 22:37:34\",\"attckWarningId\":\"c17244ed-86d0-4bf5-b8d8-88f6de904b0d\",\"ruleId\":\"FY000607\",\"uKey\":\"6b7466cf3544b942c9cbca89c62b2423\",\"timestamp\":1725547054000,\"eventNum\":60202,\"uploadtime\":1725519640142,\"severity\":\"5\",\"eventId\":\"bc767036-330a-4023-83a4-04df454831cf\",\"image\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u6587\u4ef6\u5185\u5bb9\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0008\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u521b\u5efadcomexec.exe \u6076\u610f\u7a0b\u5e8f\",\"createTime\":1725519640068,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-05 22:37:34\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  5 15:00:52"
+            },
+            {
+                "key": "logType",
+                "value": "alert"
+            },
+            {
+                "key": "collectorReceiptTime",
+                "value": "2024-09-05 15:00:40"
+            },
+            {
+                "key": "deviceName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            },
+            {
+                "key": "riskType",
+                "value": "\u5165\u4fb5\u5a01\u80c1"
+            },
+            {
+                "key": "ruleType",
+                "value": "/Malware/Others"
+            },
+            {
+                "key": "eventId",
+                "value": "bc767036-330a-4023-83a4-04df454831cf"
+            },
+            {
+                "key": "image",
+                "value": "C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe"
+            }
+        ]
+    },
+    {
+        "logId": 354,
+        "logText": "<14>Sep  3 16:48:34 edr-center {\"logType\":\"alert\",\"dnames\":[\"CommandLine\"],\"techniqueArray\":[\"T1070\",\"T1070.001\"],\"collectorReceiptTime\":\"2024-09-03 16:48:29\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1070\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1070.001\"],\"deviceReceiptTime\":\"2024-09-03 16:48:29\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-03 16:49:04\",\"attckWarningId\":\"d16763dc-069e-4ae6-9bce-22ce05a5b6e0\",\"ruleId\":\"SY000653\",\"uKey\":\"42e9ae6924b4eba44cf3de6e201860c7\",\"timestamp\":1725353344000,\"eventNum\":60202,\"uploadtime\":1725353309413,\"severity\":\"5\",\"eventId\":\"e1ac9200-cccc-40b8-81a1-0d6ec7f2336a\",\"image\":\"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0m6890k-O8iyXt-1-cmd.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u8fdb\u7a0b\u542f\u52a8\"],\"level\":\"MEDIUM\",\"tacticIds\":[\"TA0005\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0m6890k-O8iyXt-1-cmd.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u6682\u505c\u65e5\u5fd7\u8bb0\u5f55\",\"createTime\":1725353309262,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-03 16:49:04\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  3 16:48:34"
+            },
+            {
+                "key": "logType",
+                "value": "alert"
+            },
+            {
+                "key": "timestamp",
+                "value": "1725353344000"
+            },
+            {
+                "key": "severity",
+                "value": "5"
+            },
+            {
+                "key": "eventId",
+                "value": "e1ac9200-cccc-40b8-81a1-0d6ec7f2336a"
+            },
+            {
+                "key": "eventStr",
+                "value": "[\"\u8fdb\u7a0b\u542f\u52a8\"]"
+            },
+            {
+                "key": "level",
+                "value": "MEDIUM"
+            },
+            {
+                "key": "threatTarget",
+                "value": "C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0m6890k-O8iyXt-1-cmd.exe"
+            },
+            {
+                "key": "deviceVersion",
+                "value": "3.0.9.114"
+            },
+            {
+                "key": "attckName",
+                "value": "\u6682\u505c\u65e5\u5fd7\u8bb0\u5f55"
+            }
+        ]
+    },
+    {
+        "logId": 355,
+        "logText": "<14>Sep  4 19:29:45 edr-center {\"logType\":\"alert\",\"dnames\":[\"CommandLine\"],\"techniqueArray\":[\"T1560\"],\"collectorReceiptTime\":\"2024-09-04 19:29:41\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1560\"],\"lessUser\":\"user01\",\"subTechnique\":[],\"deviceReceiptTime\":\"2024-09-04 19:29:41\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-04 19:30:15\",\"attckWarningId\":\"9cc7b53f-7e75-4f80-80fe-aa2fbfbe9337\",\"ruleId\":\"SY001432\",\"uKey\":\"29106c899de4b0b0df12245888ce5b6e\",\"timestamp\":1725449415000,\"eventNum\":60202,\"uploadtime\":1725449381590,\"severity\":\"5\",\"eventId\":\"4f65f722-dfa2-43e9-8b44-5e3214872b1d\",\"image\":\"C:\\\\Windows\\\\System32\\\\cmd.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u8fdb\u7a0b\u542f\u52a8\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0009\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\Windows\\\\System32\\\\cmd.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u4f7f\u7528SharpHound\u83b7\u53d6\u57df\u4fe1\u606f\",\"createTime\":1725449381546,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-04 19:30:15\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  4 19:29:45"
+            },
+            {
+                "key": "logType",
+                "value": "alert"
+            },
+            {
+                "key": "dnames",
+                "value": "[\"CommandLine\"]"
+            },
+            {
+                "key": "deviceReceiptTime",
+                "value": "2024-09-04 19:29:41"
+            },
+            {
+                "key": "deviceName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            },
+            {
+                "key": "deviceAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "riskType",
+                "value": "\u5165\u4fb5\u5a01\u80c1"
+            },
+            {
+                "key": "ruleType",
+                "value": "/Malware/Others"
+            },
+            {
+                "key": "image",
+                "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+            }
+        ]
+    },
+    {
+        "logId": 356,
+        "logText": "<14>Sep  3 17:45:26 edr-center {\"logType\":\"alert\",\"dnames\":[\"TargetFilename\"],\"techniqueArray\":[\"T1558\",\"T1558.001\"],\"collectorReceiptTime\":\"2024-09-03 17:45:23\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1558\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1558.001\"],\"deviceReceiptTime\":\"2024-09-03 17:45:23\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-03 17:45:57\",\"attckWarningId\":\"8d770d88-4691-4060-914e-aa18af0ed468\",\"ruleId\":\"FY000331\",\"uKey\":\"af1a51679b39b70fd870cc06088e302d\",\"timestamp\":1725356757000,\"eventNum\":60202,\"uploadtime\":1725356723411,\"severity\":\"5\",\"eventId\":\"4a1b91dd-9d0d-461c-a0fc-532e4267389c\",\"image\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u6587\u4ef6\u5185\u5bb9\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0006\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u521b\u5efaMS14-068\u6f0f\u6d1e\u5229\u7528\u7a0b\u5e8f\",\"createTime\":1725356723328,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-03 17:45:57\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  3 17:45:26"
+            },
+            {
+                "key": "logType",
+                "value": "alert"
+            },
+            {
+                "key": "deviceReceiptTime",
+                "value": "2024-09-03 17:45:23"
+            },
+            {
+                "key": "deviceName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            },
+            {
+                "key": "deviceAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "riskType",
+                "value": "\u5165\u4fb5\u5a01\u80c1"
+            },
+            {
+                "key": "attckWarningId",
+                "value": "8d770d88-4691-4060-914e-aa18af0ed468"
+            },
+            {
+                "key": "ruleId",
+                "value": "FY000331"
+            },
+            {
+                "key": "tacticIds",
+                "value": "[\"TA0006\"]"
+            },
+            {
+                "key": "deviceVersion",
+                "value": "3.0.9.114"
+            }
+        ]
+    },
+    {
+        "logId": 357,
+        "logText": "<14>Sep  5 15:35:16 edr-center {\"logType\":\"alert\",\"dnames\":[\"TargetFilename\"],\"techniqueArray\":[\"T1090\",\"T1090.002\"],\"collectorReceiptTime\":\"2024-09-05 15:35:08\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1090\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1090.002\"],\"deviceReceiptTime\":\"2024-09-05 15:35:08\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-05 23:07:56\",\"attckWarningId\":\"c85cbfa9-09f0-4269-8225-95c9097a50f4\",\"ruleId\":\"FY003119\",\"uKey\":\"da5ff3bfc3b902a99b3921880b8a58e0\",\"timestamp\":1725548876000,\"eventNum\":60202,\"uploadtime\":1725521708650,\"severity\":\"5\",\"eventId\":\"4822ab1a-c52f-4b45-b9b8-c647c686511f\",\"image\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u6587\u4ef6\u5185\u5bb9\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0011\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u521b\u5efaiox\u6076\u610f\u7a0b\u5e8f\",\"createTime\":1725521708550,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-05 23:07:56\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  5 15:35:16"
+            },
+            {
+                "key": "collectorReceiptTime",
+                "value": "2024-09-05 15:35:08"
+            },
+            {
+                "key": "sendHostAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "riskType",
+                "value": "\u5165\u4fb5\u5a01\u80c1"
+            },
+            {
+                "key": "ruleType",
+                "value": "/Malware/Others"
+            },
+            {
+                "key": "destAddress",
+                "value": "10.50.109.179"
+            },
+            {
+                "key": "attckWarningId",
+                "value": "c85cbfa9-09f0-4269-8225-95c9097a50f4"
+            },
+            {
+                "key": "image",
+                "value": "C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe"
+            },
+            {
+                "key": "clientOperatingSystem",
+                "value": "windows"
+            }
+        ]
+    },
+    {
+        "logId": 358,
+        "logText": "<14>Sep  3 16:14:34 edr-center {\"logType\":\"alert\",\"serviceType\":\"SSH\",\"collectorReceiptTime\":\"2024-09-03 16:14:30\",\"sendHostAddress\":\"10.50.86.44\",\"deviceReceiptTime\":\"2024-09-03 16:14:30\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"destAddress\":\"10.50.109.90\",\"ruleType\":\"/AccountRisk/BruteForce\",\"startTime\":\"2024-09-03 16:13:53\",\"srcGeoAddress\":\"\u5c40\u57df\u7f51\",\"eventNum\":6012,\"severity\":\"7\",\"eventId\":\"756258d6-6066-4a58-9174-6971f76e5432\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"srcUserName\":\"admin\",\"clientOperatingSystem\":\"linux\",\"suggestion\":\"[\\\"* \u675c\u7edd\u5f31\u53e3\u4ee4\uff0c\u5b9a\u671f\u66f4\u6362\u53e3\u4ee4\\\",\\\"* \u4fee\u6539\u9ed8\u8ba4\u670d\u52a1(RDP\u3001SSH)\u7aef\u53e3\uff0cLinux\u4f7f\u7528SSH\u5bc6\u94a5\uff0c\u7981\u7528\u53e3\u4ee4\u8ba4\u8bc1\\\",\\\"* \u9488\u5bf9\u591a\u6b21\u5c1d\u8bd5\u66b4\u529b\u7834\u89e3\u7684IP\uff0c\u5efa\u8bae\u6dfb\u52a0\u5fae\u9694\u79bb\u7b56\u7565\uff0c\u6c38\u4e45\u5c4f\u853dIP\\\",\\\"* \u5efa\u8bae\u8bbe\u7f6e\u767b\u5f55\u9632\u62a4\u7b56\u7565\uff0c\u4f7f\u7528\u53cc\u91cd\u8ba4\u8bc1\u9632\u6b62\u88ab\u7206\u7834\u540e\u767b\u5f55\u4e3b\u673a\\\"]\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.190\",\"srcAddress\":\"10.50.86.35\",\"message\":\"\u53d1\u73b0\u5df2\u77e5\u6076\u610fIP\u8fdc\u7a0b\u767b\u5f55\u66b4\u529b\u7834\u89e3\uff0cIP\uff1a10.50.86.35\uff0c\u66b4\u7834\u8d26\u53f7\uff1aadmin\uff0c\u5df2\u4e34\u65f6\u5c01\u9501[480]\u79d2\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u66b4\u529b\u7834\u89e3\u9632\u62a4\",\"endTime\":\"2024-09-03 16:13:53\",\"deviceAssetSubTypeId\":\"56\",\"catOutcome\":\"OK\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  3 16:14:34"
+            },
+            {
+                "key": "logType",
+                "value": "alert"
+            },
+            {
+                "key": "serviceType",
+                "value": "SSH"
+            },
+            {
+                "key": "sendHostAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "deviceName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            },
+            {
+                "key": "startTime",
+                "value": "2024-09-03 16:13:53"
+            },
+            {
+                "key": "srcGeoAddress",
+                "value": "\u5c40\u57df\u7f51"
+            },
+            {
+                "key": "suggestion",
+                "value": "[\\\"* \u675c\u7edd\u5f31\u53e3\u4ee4\uff0c\u5b9a\u671f\u66f4\u6362\u53e3\u4ee4\\\",\\\"* \u4fee\u6539\u9ed8\u8ba4\u670d\u52a1(RDP\u3001SSH)\u7aef\u53e3\uff0cLinux\u4f7f\u7528SSH\u5bc6\u94a5\uff0c\u7981\u7528\u53e3\u4ee4\u8ba4\u8bc1\\\",\\\"* \u9488\u5bf9\u591a\u6b21\u5c1d\u8bd5\u66b4\u529b\u7834\u89e3\u7684IP\uff0c\u5efa\u8bae\u6dfb\u52a0\u5fae\u9694\u79bb\u7b56\u7565\uff0c\u6c38\u4e45\u5c4f\u853dIP\\\",\\\"* \u5efa\u8bae\u8bbe\u7f6e\u767b\u5f55\u9632\u62a4\u7b56\u7565\uff0c\u4f7f\u7528\u53cc\u91cd\u8ba4\u8bc1\u9632\u6b62\u88ab\u7206\u7834\u540e\u767b\u5f55\u4e3b\u673a\\\"]"
+            },
+            {
+                "key": "name",
+                "value": "\u66b4\u529b\u7834\u89e3\u9632\u62a4"
+            }
+        ]
+    },
+    {
+        "logId": 359,
+        "logText": "<14>Sep  3 17:12:26 edr-center {\"logType\":\"alert\",\"dnames\":[\"TargetFilename\"],\"techniqueArray\":[\"T1134\",\"T1098\",\"T1547\",\"T1555\",\"T1003\",\"T1207\",\"T1649\",\"T1558\",\"T1552\",\"T1550\",\"T1134.005\",\"T1547.005\",\"T1555.003\",\"T1555.004\",\"T1558.001\",\"T1558.002\",\"T1552.004\",\"T1550.002\",\"T1550.003\"],\"collectorReceiptTime\":\"2024-09-03 17:12:20\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1134\",\"T1098\",\"T1547\",\"T1555\",\"T1003\",\"T1207\",\"T1649\",\"T1558\",\"T1552\",\"T1550\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1134.005\",\"T1547.005\",\"T1555.003\",\"T1555.004\",\"T1558.001\",\"T1558.002\",\"T1552.004\",\"T1550.002\",\"T1550.003\"],\"deviceReceiptTime\":\"2024-09-03 17:12:20\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-03 17:12:53\",\"attckWarningId\":\"e9013056-ed25-4385-a21b-b6a5dd63520e\",\"ruleId\":\"FY000536\",\"uKey\":\"a8d518d9cdbf3a464b8a14ef2e9c1d29\",\"timestamp\":1725354773000,\"eventNum\":60202,\"uploadtime\":1725354740778,\"severity\":\"5\",\"eventId\":\"21d0b0ab-ed15-456c-b321-ae3d7e1f89b8\",\"image\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u6587\u4ef6\u5185\u5bb9\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0004\",\"TA0003\",\"TA0006\",\"TA0005\",\"TA0008\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u521b\u5efamimikatz\u6076\u610f\u7a0b\u5e8f\",\"createTime\":1725354740627,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-03 17:12:53\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  3 17:12:26"
+            },
+            {
+                "key": "collectorReceiptTime",
+                "value": "2024-09-03 17:12:20"
+            },
+            {
+                "key": "deviceName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            },
+            {
+                "key": "riskType",
+                "value": "\u5165\u4fb5\u5a01\u80c1"
+            },
+            {
+                "key": "ruleType",
+                "value": "/Malware/Others"
+            },
+            {
+                "key": "destAddress",
+                "value": "10.50.109.179"
+            },
+            {
+                "key": "attckWarningId",
+                "value": "e9013056-ed25-4385-a21b-b6a5dd63520e"
+            },
+            {
+                "key": "threatTarget",
+                "value": "C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe"
+            },
+            {
+                "key": "deviceVersion",
+                "value": "3.0.9.114"
+            }
+        ]
+    },
+    {
+        "logId": 360,
+        "logText": "<14>Sep  3 16:32:54 edr-center {\"logType\":\"alert\",\"dnames\":[\"TargetFilename\"],\"techniqueArray\":[\"T1558\",\"T1558.003\"],\"collectorReceiptTime\":\"2024-09-03 16:32:45\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1558\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1558.003\"],\"deviceReceiptTime\":\"2024-09-03 16:32:45\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-03 16:33:17\",\"attckWarningId\":\"20fdf501-8730-4636-9bf9-e9c7e7952971\",\"ruleId\":\"FY000327\",\"uKey\":\"ceff3bb9a1220708986d77b4f9fd1407\",\"timestamp\":1725352397000,\"eventNum\":60202,\"uploadtime\":1725352365284,\"severity\":\"5\",\"eventId\":\"664168eb-d6a1-4b44-91be-d329fa5499ee\",\"image\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u6587\u4ef6\u5185\u5bb9\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0006\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u521b\u5efa\u4f7f\u7528Invoke-Kerberoast\u8fdb\u884ckerberosating\u653b\u51fb\",\"createTime\":1725352365122,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-03 16:33:17\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  3 16:32:54"
+            },
+            {
+                "key": "collectorReceiptTime",
+                "value": "2024-09-03 16:32:45"
+            },
+            {
+                "key": "sendHostAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "deviceName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            },
+            {
+                "key": "uKey",
+                "value": "ceff3bb9a1220708986d77b4f9fd1407"
+            },
+            {
+                "key": "threatTarget",
+                "value": "C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe"
+            },
+            {
+                "key": "deviceVersion",
+                "value": "3.0.9.114"
+            },
+            {
+                "key": "attckName",
+                "value": "\u521b\u5efa\u4f7f\u7528Invoke-Kerberoast\u8fdb\u884ckerberosating\u653b\u51fb"
+            }
+        ]
+    },
+    {
+        "logId": 361,
+        "logText": "<14>Sep  4 20:35:17 edr-center {\"logType\":\"alert\",\"dnames\":[\"CommandLine\",\"Image\"],\"techniqueArray\":[\"T1222\",\"T1486\",\"T1210\",\"T1083\",\"T1490\",\"T1222.001\"],\"collectorReceiptTime\":\"2024-09-04 20:35:07\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1222\",\"T1486\",\"T1210\",\"T1083\",\"T1490\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1222.001\"],\"deviceReceiptTime\":\"2024-09-04 20:35:07\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-04 20:35:40\",\"attckWarningId\":\"f30e98bd-6010-4658-be12-a3075d6829af\",\"ruleId\":\"SE000138\",\"uKey\":\"fb3fe1ce8fdb3faa322321d8186085b7\",\"timestamp\":1725453340000,\"eventNum\":60202,\"uploadtime\":1725453307174,\"severity\":\"5\",\"eventId\":\"f15ed23c-41e3-4c42-8c3f-e0d3b549d190\",\"image\":\"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0nrls7y-qaaG8x-1-cmd.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u8fdb\u7a0b\u542f\u52a8\"],\"level\":\"CRITICAL\",\"tacticIds\":[\"TA0005\",\"TA0008\",\"TA0007\",\"TA0040\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0nrls7y-qaaG8x-1-cmd.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u7591\u4f3cWannaCry \u52d2\u7d22\u8f6f\u4ef6\u884c\u4e3a\",\"createTime\":1725453307137,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-04 20:35:40\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  4 20:35:17"
+            },
+            {
+                "key": "riskType",
+                "value": "\u5165\u4fb5\u5a01\u80c1"
+            },
+            {
+                "key": "destAddress",
+                "value": "10.50.109.179"
+            },
+            {
+                "key": "startTime",
+                "value": "2024-09-04 20:35:40"
+            },
+            {
+                "key": "attckWarningId",
+                "value": "f30e98bd-6010-4658-be12-a3075d6829af"
+            },
+            {
+                "key": "ruleId",
+                "value": "SE000138"
+            },
+            {
+                "key": "uploadtime",
+                "value": "1725453307174"
+            },
+            {
+                "key": "image",
+                "value": "C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0nrls7y-qaaG8x-1-cmd.exe"
+            },
+            {
+                "key": "deviceVersion",
+                "value": "3.0.9.114"
+            },
+            {
+                "key": "attckName",
+                "value": "\u7591\u4f3cWannaCry \u52d2\u7d22\u8f6f\u4ef6\u884c\u4e3a"
+            }
+        ]
+    },
+    {
+        "logId": 362,
+        "logText": "<14>Sep  4 20:39:37 edr-center {\"logType\":\"alert\",\"dnames\":[\"CommandLine\",\"Image\"],\"techniqueArray\":[\"T1220\"],\"collectorReceiptTime\":\"2024-09-04 20:39:33\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1220\"],\"lessUser\":\"user01\",\"subTechnique\":[],\"deviceReceiptTime\":\"2024-09-04 20:39:33\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-04 20:40:03\",\"attckWarningId\":\"eee0d4e6-cdf6-4dad-a707-71a235fbe6ca\",\"ruleId\":\"SY004862\",\"uKey\":\"54827bfd0fba8daeb19edfcda4624382\",\"timestamp\":1725453603000,\"eventNum\":60202,\"uploadtime\":1725453573007,\"severity\":\"5\",\"eventId\":\"fa9e4fd7-516c-4182-abce-2a693db95c02\",\"image\":\"C:\\\\Windows\\\\System32\\\\wbem\\\\WMIC.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u8fdb\u7a0b\u542f\u52a8\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0005\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\Windows\\\\System32\\\\wbem\\\\WMIC.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"WMI\u6267\u884cXSL\u811a\u672c\",\"createTime\":1725453572866,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-04 20:40:03\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  4 20:39:37"
+            },
+            {
+                "key": "sendHostAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "deviceReceiptTime",
+                "value": "2024-09-04 20:39:33"
+            },
+            {
+                "key": "deviceName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            },
+            {
+                "key": "attckWarningId",
+                "value": "eee0d4e6-cdf6-4dad-a707-71a235fbe6ca"
+            },
+            {
+                "key": "eventNum",
+                "value": "60202"
+            },
+            {
+                "key": "uploadtime",
+                "value": "1725453573007"
+            },
+            {
+                "key": "eventId",
+                "value": "fa9e4fd7-516c-4182-abce-2a693db95c02"
+            },
+            {
+                "key": "image",
+                "value": "C:\\\\Windows\\\\System32\\\\wbem\\\\WMIC.exe"
+            },
+            {
+                "key": "level",
+                "value": "HIGH"
+            }
+        ]
+    },
+    {
+        "logId": 363,
+        "logText": "<14>Sep  3 17:31:24 edr-center {\"logType\":\"alert\",\"dnames\":[\"TargetFilename\"],\"techniqueArray\":[\"T1047\"],\"collectorReceiptTime\":\"2024-09-03 17:31:14\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1047\"],\"lessUser\":\"user01\",\"subTechnique\":[],\"deviceReceiptTime\":\"2024-09-03 17:31:14\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-03 17:31:46\",\"attckWarningId\":\"07c3e8f0-ea42-46bb-bf52-be1c95973646\",\"ruleId\":\"FY000599\",\"uKey\":\"9bab89851660daba40a367b80e9ab6e9\",\"timestamp\":1725355906000,\"eventNum\":60202,\"uploadtime\":1725355874879,\"severity\":\"5\",\"eventId\":\"157e7582-1a96-4a61-8961-ce293a9d3b4f\",\"image\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u6587\u4ef6\u5185\u5bb9\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0002\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u521b\u5efaInvoke-WMIExec.ps1 \u6076\u610f\u7a0b\u5e8f\",\"createTime\":1725355874810,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-03 17:31:46\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  3 17:31:24"
+            },
+            {
+                "key": "collectorReceiptTime",
+                "value": "2024-09-03 17:31:14"
+            },
+            {
+                "key": "sendHostAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "lessUser",
+                "value": "user01"
+            },
+            {
+                "key": "deviceName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            },
+            {
+                "key": "riskType",
+                "value": "\u5165\u4fb5\u5a01\u80c1"
+            },
+            {
+                "key": "ruleType",
+                "value": "/Malware/Others"
+            },
+            {
+                "key": "attckWarningId",
+                "value": "07c3e8f0-ea42-46bb-bf52-be1c95973646"
+            },
+            {
+                "key": "eventId",
+                "value": "157e7582-1a96-4a61-8961-ce293a9d3b4f"
+            },
+            {
+                "key": "image",
+                "value": "C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe"
+            }
+        ]
+    },
+    {
+        "logId": 364,
+        "logText": "<14>Sep  5 16:11:58 edr-center {\"logType\":\"alert\",\"dnames\":[\"CommandLine\",\"Image\"],\"techniqueArray\":[\"T1218\",\"T1218.005\"],\"collectorReceiptTime\":\"2024-09-05 16:11:51\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1218\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1218.005\"],\"deviceReceiptTime\":\"2024-09-05 16:11:51\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-05 23:42:34\",\"attckWarningId\":\"1ab9c98d-724b-4da7-b73b-4ed94916783c\",\"ruleId\":\"SE000283\",\"uKey\":\"002221502adb9ba9d3b08399912dc45a\",\"timestamp\":1725550954000,\"eventNum\":60202,\"uploadtime\":1725523911354,\"severity\":\"5\",\"eventId\":\"0c7444eb-629d-4344-86bf-59f5373475e9\",\"image\":\"C:\\\\Windows\\\\System32\\\\mshta.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u8fdb\u7a0b\u542f\u52a8\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0005\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\Windows\\\\System32\\\\mshta.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"Mshta JavaScript \u6267\u884c\",\"createTime\":1725523911297,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-05 23:42:34\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  5 16:11:58"
+            },
+            {
+                "key": "deviceName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            },
+            {
+                "key": "deviceAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "destAddress",
+                "value": "10.50.109.179"
+            },
+            {
+                "key": "startTime",
+                "value": "2024-09-05 23:42:34"
+            },
+            {
+                "key": "attckWarningId",
+                "value": "1ab9c98d-724b-4da7-b73b-4ed94916783c"
+            },
+            {
+                "key": "ruleId",
+                "value": "SE000283"
+            },
+            {
+                "key": "uploadtime",
+                "value": "1725523911354"
+            },
+            {
+                "key": "clientOperatingSystem",
+                "value": "windows"
+            },
+            {
+                "key": "deviceVersion",
+                "value": "3.0.9.114"
+            }
+        ]
+    },
+    {
+        "logId": 365,
+        "logText": "<14>Sep  3 16:48:26 edr-center {\"logType\":\"alert\",\"dnames\":[\"ScriptBlockText\"],\"techniqueArray\":[\"T1069\"],\"collectorReceiptTime\":\"2024-09-03 16:48:24\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1069\"],\"lessUser\":\"user01\",\"subTechnique\":[],\"deviceReceiptTime\":\"2024-09-03 16:48:24\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-03 16:48:56\",\"attckWarningId\":\"441957d6-9838-4bc1-9939-65bff7ec23a9\",\"ruleId\":\"SY004951\",\"uKey\":\"f2518fa7f734a5785d9e67b526b30446\",\"timestamp\":1725353336000,\"eventNum\":60202,\"uploadtime\":1725353304348,\"severity\":\"5\",\"eventId\":\"5731c611-714f-49e0-b4ed-6c14e21c70b6\",\"image\":\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"PowerShell\"],\"level\":\"MEDIUM\",\"tacticIds\":[\"TA0007\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u4f7f\u7528powershell\u679a\u4e3e\u57df\u5185\u673a\u5668\u4fe1\u606f\",\"createTime\":1725353304257,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-03 16:48:56\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  3 16:48:26"
+            },
+            {
+                "key": "timestamp",
+                "value": "1725353336000"
+            },
+            {
+                "key": "eventNum",
+                "value": "60202"
+            },
+            {
+                "key": "uploadtime",
+                "value": "1725353304348"
+            },
+            {
+                "key": "severity",
+                "value": "5"
+            },
+            {
+                "key": "clientOperatingSystem",
+                "value": "windows"
+            },
+            {
+                "key": "threatTarget",
+                "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+            },
+            {
+                "key": "deviceAssetSubType",
+                "value": "\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)"
+            },
+            {
+                "key": "deviceVersion",
+                "value": "3.0.9.114"
+            },
+            {
+                "key": "groupName",
+                "value": "\u7cfb\u7edf\u9ed8\u8ba4\u7ec4"
+            }
+        ]
+    },
+    {
+        "logId": 366,
+        "logText": "<14>Sep  3 17:16:45 edr-center {\"logType\":\"alert\",\"dnames\":[\"TargetFilename\"],\"techniqueArray\":[\"T1090\",\"T1090.002\"],\"collectorReceiptTime\":\"2024-09-03 17:16:36\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1090\"],\"lessUser\":\"user01\",\"subTechnique\":[\"T1090.002\"],\"deviceReceiptTime\":\"2024-09-03 17:16:36\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-03 17:17:09\",\"attckWarningId\":\"4628685b-e37e-4c8d-8e78-88d33cd4c871\",\"ruleId\":\"FY000509\",\"uKey\":\"7dbb090bb868edd56b6c99e9741fba3a\",\"timestamp\":1725355029000,\"eventNum\":60202,\"uploadtime\":1725354996508,\"severity\":\"5\",\"eventId\":\"68550de0-9aea-49a9-9a72-fbf5862e0881\",\"image\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u6587\u4ef6\u5185\u5bb9\"],\"level\":\"HIGH\",\"tacticIds\":[\"TA0011\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u521b\u5efaPortForward \u6076\u610f\u7a0b\u5e8f\",\"createTime\":1725354996349,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-03 17:17:09\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  3 17:16:45"
+            },
+            {
+                "key": "clientOperatingSystem",
+                "value": "windows"
+            },
+            {
+                "key": "threatTarget",
+                "value": "C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe"
+            },
+            {
+                "key": "deviceAssetSubType",
+                "value": "\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)"
+            },
+            {
+                "key": "deviceVersion",
+                "value": "3.0.9.114"
+            },
+            {
+                "key": "userName",
+                "value": "user01"
+            },
+            {
+                "key": "groupName",
+                "value": "\u7cfb\u7edf\u9ed8\u8ba4\u7ec4"
+            },
+            {
+                "key": "attckName",
+                "value": "\u521b\u5efaPortForward \u6076\u610f\u7a0b\u5e8f"
+            },
+            {
+                "key": "createTime",
+                "value": "1725354996349"
+            },
+            {
+                "key": "deviceSendProductName",
+                "value": "\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6"
+            }
+        ]
+    },
+    {
+        "logId": 367,
+        "logText": "<14>Sep  2 16:41:57 edr-center {\"logType\":\"alert\",\"parentProcessMd5\":\"660154a17d7d1914e68b7b1af8e0a85b\",\"collectorReceiptTime\":\"2024-09-02 16:41:52\",\"sendHostAddress\":\"10.50.86.44\",\"opType\":\"\u672a\u77e5\u64cd\u4f5c\",\"deviceReceiptTime\":\"2024-09-02 16:41:52\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"processChain\":\"wininit.exe(SYSTEM) -> services.exe(SYSTEM) -> svchost.exe(SYSTEM) -> explorer.exe(Administrator) -> cmd.exe(Administrator) -> rm-pro-peer-defend.exe(Administrator) -> cmd.exe(Administrator) -> hdpeer.exe(Administrator) -> cmd.exe(EEDR\\\\administrator) -> hdcommand.exe(EEDR\\\\administrator) -> cmd.exe(EEDR\\\\administrator)\",\"parentProcessId\":19308,\"processId\":8956,\"destAddress\":\"10.50.109.179\",\"ruleType\":\"/Malware/BotTrojWorm\",\"parentImage\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe\",\"startTime\":\"2024-09-02 16:42:26\",\"srcGeoAddress\":\"\",\"eventNum\":6015,\"severity\":\"7\",\"eventId\":\"7d23b8ab-beea-4662-9c8e-95aaf8915830\",\"image\":\"C:\\\\Windows\\\\System32\\\\cmd.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"virusName\":\"HackTool/Mikatz.k\",\"srcUserName\":\"user01\",\"clientOperatingSystem\":\"windows\",\"processMd5\":\"f4f684066175b77e0c3a000549d2922c\",\"suggestion\":\"[\\\"* \u8fd0\u884c\u5feb\u901f\u626b\u63cf\uff0c\u68c0\u67e5\u5e76\u6e05\u7406\u53ef\u80fd\u5b58\u5728\u7684\u6301\u4e45\u5316\u6076\u610f\u6587\u4ef6\\\",\\\"* \u68c0\u67e5\u81ea\u542f\u52a8\u9879\uff0c\u5305\u62ec\u7cfb\u7edf\u670d\u52a1\u3001\u6ce8\u518c\u8868\u3001\u8ba1\u5212\u4efb\u52a1\u3001WMI\u7b49\uff0c\u67e5\u627e\u5e76\u6e05\u7406\u5f02\u5e38\u7684\u9879\\\",\\\"* \u675c\u7edd\u5f31\u53e3\u4ee4\uff0c\u6bcf\u6708\u5b89\u88c5\u6708\u5ea6\u5b89\u5168\u66f4\u65b0\\\",\\\"* \u5bf9\u4e8e\u65e0\u6cd5\u5b89\u88c5\u5b89\u5168\u66f4\u65b0\u7684\u4e3b\u673a\uff0c\u5efa\u8bae\u5173\u95ed445-SMB\u670d\u52a1\u7aef\u53e3\uff0c\u9632\u6b62\u6f5c\u5728\u7684\u6f0f\u6d1e\u5229\u7528\u653b\u51fb\\\"]\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.190\",\"srcAddress\":\"\",\"fileMd5\":\"\",\"message\":\"cmd.exe \u6267\u884c\u53c2\u6570\u4e2d\u53d1\u73b0\u75c5\u6bd2\u5a01\u80c1 C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0ko1izz_evernotefree.exe (HackTool/Mikatz.k)\uff0c\u672a\u77e5\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"parentCommandLine\":\"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe  -ef C:\\\\hd\\\\peer\\\\attackVector\\\\scriptFile\\\\T1212_silverticket.yaml -id 30000260 -bid hd_tag_m0ko1izz -pf C:\\\\hd\\\\peer\\\\attackVector\\\\temp\\\\m0ko1izz\\\\hd_tag_m0ko1izz_silverticket.exe,C:\\\\hd\\\\peer\\\\attackVector\\\\temp\\\\m0ko1izz\\\\hd_tag_m0ko1izz_evernotefree.exe -o C:\\\\hd\\\\peer\\\\execresult\\\\AtomicClient\\\\m0ko1izz -isc -d -oe -custom-envs Path=C:\\\\hd\\\\peer\\\\tools\\\\dependent\\\\bin\\\\jdk\\\\bin;C:\\\\hd\\\\peer\\\\tools\\\\dependent\\\\bin\\\\python;C:\\\\hd\\\\peer\\\\tools\\\\dependent\\\\bin\\\\python\\\\Scripts,JAVA_HOME=C:\\\\hd\\\\peer\\\\tools\\\\dependent\\\\bin\\\\jdk,JRE_HOME=C:\\\\hd\\\\peer\\\\tools\\\\dependent\\\\bin\\\\jdk\\\\jre\",\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"processUserName\":\"EEDR\\\\administrator\",\"targetFilename\":\"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0ko1izz_evernotefree.exe\",\"name\":\"\u75c5\u6bd2\u9632\u62a4\",\"endTime\":\"2024-09-02 16:42:26\",\"deviceAssetSubTypeId\":\"56\",\"commandLine\":\"/v:on /c C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0ko1izz_silverticket.exe -f C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0ko1izz_evernotefree.exe & echo !errorlevel!\",\"catOutcome\":\"OK\",\"parentProcessUserName\":\"EEDR\\\\administrator\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  2 16:41:57"
+            },
+            {
+                "key": "parentProcessMd5",
+                "value": "660154a17d7d1914e68b7b1af8e0a85b"
+            },
+            {
+                "key": "collectorReceiptTime",
+                "value": "2024-09-02 16:41:52"
+            },
+            {
+                "key": "opType",
+                "value": "\u672a\u77e5\u64cd\u4f5c"
+            },
+            {
+                "key": "processChain",
+                "value": "wininit.exe(SYSTEM) -> services.exe(SYSTEM) -> svchost.exe(SYSTEM) -> explorer.exe(Administrator) -> cmd.exe(Administrator) -> rm-pro-peer-defend.exe(Administrator) -> cmd.exe(Administrator) -> hdpeer.exe(Administrator) -> cmd.exe(EEDR\\\\administrator) -> hdcommand.exe(EEDR\\\\administrator) -> cmd.exe(EEDR\\\\administrator)"
+            },
+            {
+                "key": "parentProcessId",
+                "value": "19308"
+            },
+            {
+                "key": "parentImage",
+                "value": "C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcommand.exe"
+            },
+            {
+                "key": "virusName",
+                "value": "HackTool/Mikatz.k"
+            },
+            {
+                "key": "srcUserName",
+                "value": "user01"
+            },
+            {
+                "key": "suggestion",
+                "value": "[\\\"* \u8fd0\u884c\u5feb\u901f\u626b\u63cf\uff0c\u68c0\u67e5\u5e76\u6e05\u7406\u53ef\u80fd\u5b58\u5728\u7684\u6301\u4e45\u5316\u6076\u610f\u6587\u4ef6\\\",\\\"* \u68c0\u67e5\u81ea\u542f\u52a8\u9879\uff0c\u5305\u62ec\u7cfb\u7edf\u670d\u52a1\u3001\u6ce8\u518c\u8868\u3001\u8ba1\u5212\u4efb\u52a1\u3001WMI\u7b49\uff0c\u67e5\u627e\u5e76\u6e05\u7406\u5f02\u5e38\u7684\u9879\\\",\\\"* \u675c\u7edd\u5f31\u53e3\u4ee4\uff0c\u6bcf\u6708\u5b89\u88c5\u6708\u5ea6\u5b89\u5168\u66f4\u65b0\\\",\\\"* \u5bf9\u4e8e\u65e0\u6cd5\u5b89\u88c5\u5b89\u5168\u66f4\u65b0\u7684\u4e3b\u673a\uff0c\u5efa\u8bae\u5173\u95ed445-SMB\u670d\u52a1\u7aef\u53e3\uff0c\u9632\u6b62\u6f5c\u5728\u7684\u6f0f\u6d1e\u5229\u7528\u653b\u51fb\\\"]"
+            }
+        ]
+    },
+    {
+        "logId": 368,
+        "logText": "<14>Sep  4 11:21:30 edr-center {\"logType\":\"alert\",\"dnames\":[\"CommandLine\",\"Image\"],\"techniqueArray\":[\"T1482\"],\"collectorReceiptTime\":\"2024-09-04 11:21:26\",\"sendHostAddress\":\"10.50.86.44\",\"technique\":[\"T1482\"],\"lessUser\":\"user01\",\"subTechnique\":[],\"deviceReceiptTime\":\"2024-09-04 11:21:26\",\"deviceName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"deviceAddress\":\"10.50.86.44\",\"riskType\":\"\u5165\u4fb5\u5a01\u80c1\",\"ruleType\":\"/Malware/Others\",\"destAddress\":\"10.50.109.179\",\"startTime\":\"2024-09-04 11:21:57\",\"attckWarningId\":\"a99c52ee-7626-446c-a25f-24bfe34f505f\",\"ruleId\":\"SE000281\",\"uKey\":\"d59c278e5e924c519bf95279f01598b7\",\"timestamp\":1725420117000,\"eventNum\":60202,\"uploadtime\":1725420086515,\"severity\":\"5\",\"eventId\":\"cef2de8f-1b47-4c61-80a8-88db556daca0\",\"image\":\"C:\\\\Windows\\\\System32\\\\nltest.exe\",\"machineCode\":\"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3\",\"eventStr\":[\"\u8fdb\u7a0b\u542f\u52a8\"],\"level\":\"MEDIUM\",\"tacticIds\":[\"TA0007\"],\"author\":\"\",\"clientOperatingSystem\":\"windows\",\"threatTarget\":\"C:\\\\Windows\\\\System32\\\\nltest.exe\",\"deviceAssetSubType\":\"\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)\",\"deviceVersion\":\"3.0.9.114\",\"userName\":\"user01\",\"productVendorName\":\"\u5b89\u6052\u4fe1\u606f\u80a1\u4efd\u6709\u9650\u516c\u53f8\",\"groupName\":\"\u7cfb\u7edf\u9ed8\u8ba4\u7ec4\",\"machineId\":\"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0\",\"newName\":\"WIN-RH45I247P86\",\"attckName\":\"\u57df\u4fe1\u4efb\u53d1\u73b0\",\"createTime\":1725420086410,\"deviceSendProductName\":\"\u4e3b\u673a\u5b89\u5168\u9632\u62a4\u7ec4\u4ef6\",\"name\":\"\u5165\u4fb5\u68c0\u6d4b\",\"deviceAssetSubTypeId\":\"56\",\"endTime\":\"2024-09-04 11:21:57\"}",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep  4 11:21:30"
+            },
+            {
+                "key": "deviceAddress",
+                "value": "10.50.86.44"
+            },
+            {
+                "key": "riskType",
+                "value": "\u5165\u4fb5\u5a01\u80c1"
+            },
+            {
+                "key": "ruleType",
+                "value": "/Malware/Others"
+            },
+            {
+                "key": "destAddress",
+                "value": "10.50.109.179"
+            },
+            {
+                "key": "attckWarningId",
+                "value": "a99c52ee-7626-446c-a25f-24bfe34f505f"
+            },
+            {
+                "key": "machineCode",
+                "value": "EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3"
+            },
+            {
+                "key": "threatTarget",
+                "value": "C:\\\\Windows\\\\System32\\\\nltest.exe"
+            },
+            {
+                "key": "deviceAssetSubType",
+                "value": "\u4e3b\u673a\u5b89\u5168\u7ba1\u7406\u7cfb\u7edf(EDR)"
+            },
+            {
+                "key": "groupName",
+                "value": "\u7cfb\u7edf\u9ed8\u8ba4\u7ec4"
+            }
+        ]
+    },
+    {
+        "logId": 369,
+        "logText": "<128>April 26 13:30:32 2013 apt APT~0~1~2013-04-26 13:30:25~127.0.0.1:0~127.0.0.1:0~\u7cfb\u7edf\u544a\u8b66~~NULL~\u9ad8~55~~\u63a2\u6d4b\u5668:{0},\u4e1a\u52a1\u4e3b\u673a\u7fa4\u8868{1}\u540c\u6b65\u5931\u8d25\uff0c\u76f8\u5173\u529f\u80fd\u53ef\u80fd\u4f1a\u51fa\u73b0\u5f02\u5e38\uff01",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 26 13:30:32 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-26 13:30:25"
+            },
+            {
+                "key": "",
+                "value": "127.0.0.1:0"
+            },
+            {
+                "key": "",
+                "value": "\u7cfb\u7edf\u544a\u8b66"
+            },
+            {
+                "key": "",
+                "value": "\u9ad8"
+            },
+            {
+                "key": "",
+                "value": "55"
+            }
+        ]
+    },
+    {
+        "logId": 370,
+        "logText": "<128>April 26 13:30:32 2013 apt APT~0~1~2013-04-26 13:30:25~127.0.0.1:0~127.0.0.1:0~\u7cfb\u7edf\u544a\u8b66~~NULL~\u9ad8~55~~\u63a2\u6d4b\u5668:{0},\u6765\u8bbf\u5ba2\u6237\u7f51\u7edc\u5173\u8054\u8868{1}\u540c\u6b65\u5931\u8d25\uff0c\u76f8\u5173\u529f\u80fd\u53ef\u80fd\u4f1a\u51fa\u73b0\u5f02\u5e38\uff01",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 26 13:30:32 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-26 13:30:25"
+            },
+            {
+                "key": "",
+                "value": "127.0.0.1:0"
+            },
+            {
+                "key": "",
+                "value": "\u7cfb\u7edf\u544a\u8b66"
+            },
+            {
+                "key": "",
+                "value": "\u9ad8"
+            },
+            {
+                "key": "",
+                "value": "55"
+            }
+        ]
+    },
+    {
+        "logId": 371,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~\u5f02\u5e38\u6587\u4ef6\u6269\u5c55\u540d\u5b57\u8bbf\u95ee~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "\u5f02\u5e38\u6587\u4ef6\u6269\u5c55\u540d\u5b57\u8bbf\u95ee"
+            }
+        ]
+    },
+    {
+        "logId": 372,
+        "logText": "<128>May 16 14:54:09 2024 dbapp APT~30~1~2024-05-16 14:54:09~10.50.134.18:47013~1.1.1.1:53~\u8fdc\u7a0b\u63a7\u5236~\u6f0f\u6d1e\u5229\u7528\u653b\u51fb\u4e8b\u4ef6~\u7c7b\u578b:    C&C~\u9ad8~2405161454090000256~~\u8bf7\u6c42DNS\u670d\u52a1\u5668 [1.1.1.1] \u89e3\u6790\u57df\u540d: oast.pro~~~0~4~2~60:db:15:73:46:01~00:00:5e:00:01:0a~0~Host: oast.pro~~~~\u6210\u529f~12~1~630~212002",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 16 14:54:09 2024"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2024-05-16 14:54:09"
+            },
+            {
+                "key": "",
+                "value": "10.50.134.18:47013"
+            },
+            {
+                "key": "",
+                "value": "1.1.1.1:53"
+            },
+            {
+                "key": "",
+                "value": "\u8fdc\u7a0b\u63a7\u5236"
+            },
+            {
+                "key": "",
+                "value": "\u6f0f\u6d1e\u5229\u7528\u653b\u51fb\u4e8b\u4ef6"
+            },
+            {
+                "key": "\u7c7b\u578b",
+                "value": "C&C"
+            },
+            {
+                "key": "Host",
+                "value": "oast.pro"
+            }
+        ]
+    },
+    {
+        "logId": 373,
+        "logText": "<128>April 26 13:30:32 2013 apt APT~0~1~2013-04-26 13:30:25~127.0.0.1:0~127.0.0.1:0~\u7cfb\u7edf\u544a\u8b66~~NULL~\u9ad8~55~~\u8bb8\u53ef\u8bc1\u6709\u95ee\u9898: \u4f60\u7684\u8bb8\u53ef\u8bc1\u6587\u4ef6 \u4ec0\u4e48\u4e3a\u4ec0\u4e48\u4e0d\u4e3a\u4ec0\u4e48 \u4e0d\u5b58\u5728",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 26 13:30:32 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-26 13:30:25"
+            },
+            {
+                "key": "",
+                "value": "127.0.0.1:0"
+            },
+            {
+                "key": "",
+                "value": "\u7cfb\u7edf\u544a\u8b66"
+            },
+            {
+                "key": "",
+                "value": "\u9ad8"
+            }
+        ]
+    },
+    {
+        "logId": 374,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~mssql\u5371\u9669\u6269\u5c55~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "mssql\u5371\u9669\u6269\u5c55"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 375,
+        "logText": "<128>April 26 13:30:32 2013 apt APT~0~1~2013-04-26 13:30:25~127.0.0.1:0~127.0.0.1:0~\u7cfb\u7edf\u544a\u8b66~~NULL~\u9ad8~55~~\u63a2\u6d4b\u5668:{0},\u901a\u77e5\u8868{1}\u540c\u6b65\u5931\u8d25\uff0c\u76f8\u5173\u529f\u80fd\u53ef\u80fd\u4f1a\u51fa\u73b0\u5f02\u5e38\uff01",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 26 13:30:32 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-26 13:30:25"
+            },
+            {
+                "key": "",
+                "value": "127.0.0.1:0"
+            },
+            {
+                "key": "",
+                "value": "\u7cfb\u7edf\u544a\u8b66"
+            },
+            {
+                "key": "",
+                "value": "\u9ad8"
+            }
+        ]
+    },
+    {
+        "logId": 376,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~\u7edd\u5bf9\u8def\u5f84\u654f\u611f\u6587\u4ef6\u8bbf\u95ee~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "\u7edd\u5bf9\u8def\u5f84\u654f\u611f\u6587\u4ef6\u8bbf\u95ee"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 377,
+        "logText": "<128>April 26 13:30:32 2013 apt APT~0~1~2013-04-26 13:30:25~127.0.0.1:0~127.0.0.1:0~\u7cfb\u7edf\u544a\u8b66~~NULL~\u9ad8~55~~Get wdd_sql table info failed!",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 26 13:30:32 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-26 13:30:25"
+            },
+            {
+                "key": "",
+                "value": "127.0.0.1:0"
+            },
+            {
+                "key": "",
+                "value": "\u7cfb\u7edf\u544a\u8b66"
+            },
+            {
+                "key": "",
+                "value": "\u9ad8"
+            }
+        ]
+    },
+    {
+        "logId": 378,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~onkeydown\u8de8\u7ad9~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "onkeydown\u8de8\u7ad9"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 379,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~confirm\u5c5e\u6027\u8de8\u7ad9~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "confirm\u5c5e\u6027\u8de8\u7ad9"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 380,
+        "logText": "<128>October 24 20:11:31 2013 dbapp APT~2~1~2013-10-24 20:11:19~192.168.29.124:0~122.224.213.5:0~\u6076\u610f\u884c\u4e3a~WEB\u81ea\u52a8\u626b\u63cf~NULL~\u9ad8~1310242011199910111~NULL~POST /new/jeecms/ajax/cms/search/trsSearch.do",
+        "logField": [
+            {
+                "key": "",
+                "value": "October 24 20:11:31 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-10-24 20:11:19"
+            },
+            {
+                "key": "",
+                "value": "192.168.29.124:0"
+            },
+            {
+                "key": "",
+                "value": "122.224.213.5:0"
+            },
+            {
+                "key": "",
+                "value": "\u6076\u610f\u884c\u4e3a"
+            },
+            {
+                "key": "",
+                "value": "WEB\u81ea\u52a8\u626b\u63cf"
+            },
+            {
+                "key": "",
+                "value": "\u9ad8"
+            }
+        ]
+    },
+    {
+        "logId": 381,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~and or \u903b\u8f91\u5224\u65ad~NULL~\u4f4e~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.102:80"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "and or \u903b\u8f91\u5224\u65ad"
+            },
+            {
+                "key": "",
+                "value": "\u4f4e"
+            }
+        ]
+    },
+    {
+        "logId": 382,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~STYLE\u5c5e\u6027\u8de8\u7ad9~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "STYLE\u5c5e\u6027\u8de8\u7ad9"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 383,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~ondragdrop\u8de8\u7ad9~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.102:80"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "ondragdrop\u8de8\u7ad9"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 384,
+        "logText": "<128>October 14 10:39:26 2014 dbapp APT~2~1~2014-10-14 10:38:05~172.16.40.227:1395~58.67.149.240:80~\u6076\u610f\u4ee3\u7801\u653b\u51fb~\u63d0\u5347\u6743\u9650~\u63d0\u5347\u6743\u9650\u3002~\u9ad8~1410141038050000014~1410141038050000114_TreasureBox20140928144937_4.4.0.3419.zip [ aliedit.exe ]~GET /L1/44/1/seccli/publish/TreasureBox20140928144937_4.4.0.3419.zip",
+        "logField": [
+            {
+                "key": "",
+                "value": "October 14 10:39:26 2014"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2014-10-14 10:38:05"
+            },
+            {
+                "key": "",
+                "value": "172.16.40.227:1395"
+            },
+            {
+                "key": "",
+                "value": "58.67.149.240:80"
+            },
+            {
+                "key": "",
+                "value": "\u6076\u610f\u4ee3\u7801\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "\u9ad8"
+            }
+        ]
+    },
+    {
+        "logId": 385,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~style expression\u8de8\u7ad9~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.102:80"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "style expression\u8de8\u7ad9"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 386,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~telnet\u547d\u4ee4\u6ce8\u5165~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.102:80"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "telnet\u547d\u4ee4\u6ce8\u5165"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 387,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~fromcharcode alert eval\u5d4c\u5165\u6807\u7b7e\u8de8\u7ad9~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.102:80"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 388,
+        "logText": "<128>May 16 10:39:41 2024 dbapp APT~2~1~2024-05-16 10:39:41~10.50.24.9:53172~210.28.32.158:80~WEB\u653b\u51fb~\u901a\u7528\u76ee\u5f55\u904d\u5386(..\\/)~~\u4f4e~2405161039410000121~~GET /photoalbum/index.php?urlancien=&url=../../../../../../../../../../../../etc/passwd ~~marxism.jou.edu.cn~~1~1~14:18:77:4c:7f:88~60:db:15:73:46:01~0~Host: marxism.jou.edu.cn<br/>User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; rv 11.0) like Gecko<br/>Cookie: JSESSIONID=18EA05CDD9BF01C5C3DCA28367911739<br/>Accept: */*<br/>Accept-Encoding: gzip,deflate<br/>Accept-Language: zh-cn,en-us;q=0.7,en;q=0.3<br/>Referer: https://marxism.jou.edu.cn/<br/>~~~~\u5c1d\u8bd5~1~4~21600803~21600803",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 16 10:39:41 2024"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2024-05-16 10:39:41"
+            },
+            {
+                "key": "",
+                "value": "10.50.24.9:53172"
+            },
+            {
+                "key": "",
+                "value": "210.28.32.158:80"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "\u901a\u7528\u76ee\u5f55\u904d\u5386(..\\/)"
+            },
+            {
+                "key": "",
+                "value": "\u4f4e"
+            }
+        ]
+    },
+    {
+        "logId": 389,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~createtextrange\u8de8\u7ad9~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.102:80"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "createtextrange\u8de8\u7ad9"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 390,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~php $_get\u4ee3\u7801\u6ce8\u5165~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.102:80"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "php $_get\u4ee3\u7801\u6ce8\u5165"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 391,
+        "logText": "<128>April 26 13:30:32 2013 apt APT~0~1~2013-04-26 13:30:25~127.0.0.1:0~127.0.0.1:0~\u7cfb\u7edf\u544a\u8b66~~NULL~\u9ad8~55~~\u4e3b\u673a\u5f53\u524d\u5185\u5b58\u4f7f\u7528\u7387[100.0%]\u5df2\u8d85\u8fc7[100.0%]\u7684\u9650\u5b9a\u95e8\u9650!",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 26 13:30:32 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-26 13:30:25"
+            },
+            {
+                "key": "",
+                "value": "127.0.0.1:0"
+            },
+            {
+                "key": "",
+                "value": "\u7cfb\u7edf\u544a\u8b66"
+            },
+            {
+                "key": "",
+                "value": "\u9ad8"
+            }
+        ]
+    },
+    {
+        "logId": 392,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~onmouseup\u8de8\u7ad9~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.102:80"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "onmouseup\u8de8\u7ad9"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 393,
+        "logText": "<128>May 16 10:51:24 2024 dbapp APT~2~1~2024-05-16 10:51:24~10.50.24.7:40128~112.4.237.242:80~WEB\u653b\u51fb~\u68c0\u6d4b\u5230\u547d\u4ee4\u6267\u884c\u6f0f\u6d1e\u653b\u51fb(exec)~~\u9ad8~2405161051240000263~~GET /m/${\\\"\\\"[\\\"cl\\\"+\\\"ass\\\"].forName(\\\"jav\\\"+\\\"ax.sc\\\"+\\\"ript.S\\\"+\\\"criptEngineManager\\\").newInstance().getEngineByName(\\\"js\\\").eval(\\\"com.opensymphony.webwork.ServletActionContext.getResponse().setHeader('X-Cmd-Response',org.apache.commo\\\"+\\\"ns.io.IOUtils.toString(java.lang.Runti\\\"+\\\"me.getRuntime().exec(['bash','-c','id']).getInputStream(),'utf-8'))\\\")}/~~lygzzx.cn~404~1~1~14:18:77:38:39:80~60:db:15:73:46:01~346~Host: lygzzx.cn<br/>User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; rv 11.0) like Gecko<br/>Cookie: ll429_P8SESSION=6817a12c16ca0513; ll429_UID=deleted; ll429_USERNAME=deleted; ll429_IS_ADMIN=deleted; ll429_LOGIN=deleted<br/>Accept: */*<br/>Accept-Encoding: gzip,deflate<br/>Accept-Language: zh-cn,en-us;q=0.7,en;q=0.3<br/>Referer: http://lygzzx.cn/m<br/>~~<br/>s6.'...621}<br/>2y.8w.....7gwg3..;}<br/>.responsive11-pic52383 .slider-item .item .pic img{width:100%;h.......y..2'o3 pilld18.2oi2y.8w... C621.8hs.t11p\\\".nr class=se..8h.dd.ps/temwg3..*/-webkit-transition: .5s; /* Safari ... Chrome */-o-transition: .57gwg3..y..2oc18.d5s; 0....pt/j6.0/in-w.....fs\\\"><br/>.re.\\\"\\\".c......... type=\\\"text/css\\\">C62113w...dd.p&& .2o.......p~~\u5931\u8d25~1~4~14260603~14260603",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 16 10:51:24 2024"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2024-05-16 10:51:24"
+            },
+            {
+                "key": "",
+                "value": "10.50.24.7:40128"
+            },
+            {
+                "key": "",
+                "value": "112.4.237.242:80"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "\u68c0\u6d4b\u5230\u547d\u4ee4\u6267\u884c\u6f0f\u6d1e\u653b\u51fb(exec)"
+            },
+            {
+                "key": "",
+                "value": "\u9ad8"
+            }
+        ]
+    },
+    {
+        "logId": 394,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~getspecialfolder\u51fd\u6570\u8de8\u7ad9~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.102:80"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "getspecialfolder\u51fd\u6570\u8de8\u7ad9"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 395,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~wget\u6ce8\u518c\u8868\u547d\u4ee4~NULL~\u4e2d~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.102:80"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "wget\u6ce8\u518c\u8868\u547d\u4ee4"
+            },
+            {
+                "key": "",
+                "value": "\u4e2d"
+            }
+        ]
+    },
+    {
+        "logId": 396,
+        "logText": "<128>April 26 13:30:32 2013 apt APT~0~1~2013-04-26 13:30:25~127.0.0.1:0~127.0.0.1:0~\u7cfb\u7edf\u544a\u8b66~~NULL~\u9ad8~55~~BackupAudit Fail:have other process doing!",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 26 13:30:32 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-26 13:30:25"
+            },
+            {
+                "key": "",
+                "value": "127.0.0.1:0"
+            },
+            {
+                "key": "",
+                "value": "\u7cfb\u7edf\u544a\u8b66"
+            },
+            {
+                "key": "",
+                "value": "\u9ad8"
+            },
+            {
+                "key": "",
+                "value": "55"
+            }
+        ]
+    },
+    {
+        "logId": 397,
+        "logText": "<128>April 25 19:52:48 2013 apt APT~2~1~2013-04-25 17:28:02~192.168.58.200:36720~192.168.58.102:80~WEB\u653b\u51fb~\u811a\u672c\u6587\u4ef6\u4e0a\u4f20~NULL~\u9ad8~1304251728020000001~ NULL~POST /apt/files?action=add",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 25 19:52:48 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-25 17:28:02"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.200:36720"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.102:80"
+            },
+            {
+                "key": "",
+                "value": "WEB\u653b\u51fb"
+            },
+            {
+                "key": "",
+                "value": "\u811a\u672c\u6587\u4ef6\u4e0a\u4f20"
+            },
+            {
+                "key": "",
+                "value": "\u9ad8"
+            }
+        ]
+    },
+    {
+        "logId": 398,
+        "logText": "<128>April 26 13:30:32 2013 apt APT~0~1~2013-04-26 13:30:25~127.0.0.1:0~127.0.0.1:0~\u7cfb\u7edf\u544a\u8b66~~NULL~\u9ad8~55~~\u63a2\u6d4b\u5668:{0},\u62a5\u8868\u76f8\u5173\u8868{1}\u540c\u6b65\u5931\u8d25\uff0c\u76f8\u5173\u529f\u80fd\u53ef\u80fd\u4f1a\u51fa\u73b0\u5f02\u5e38\uff01",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 26 13:30:32 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-26 13:30:25"
+            },
+            {
+                "key": "",
+                "value": "127.0.0.1:0"
+            },
+            {
+                "key": "",
+                "value": "\u7cfb\u7edf\u544a\u8b66"
+            },
+            {
+                "key": "",
+                "value": "\u9ad8"
+            },
+            {
+                "key": "",
+                "value": "55"
+            }
+        ]
+    },
+    {
+        "logId": 399,
+        "logText": "<128>April 26 13:30:32 2013 apt APT~0~1~2013-04-26 13:30:25~127.0.0.1:0~127.0.0.1:0~\u7cfb\u7edf\u544a\u8b66~~NULL~\u9ad8~55~~\u8bb8\u53ef\u8bc1\u6709\u95ee\u9898: \u4f60\u73b0\u5728\u62e5\u6709\u7684\u8bb8\u53ef\u8bc1\u65e0\u6548!",
+        "logField": [
+            {
+                "key": "",
+                "value": "April 26 13:30:32 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-04-26 13:30:25"
+            },
+            {
+                "key": "",
+                "value": "127.0.0.1:0"
+            },
+            {
+                "key": "",
+                "value": "\u7cfb\u7edf\u544a\u8b66"
+            },
+            {
+                "key": "",
+                "value": "\u9ad8"
+            },
+            {
+                "key": "",
+                "value": "55"
+            }
+        ]
+    }
+]

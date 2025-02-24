@@ -1,0 +1,3042 @@
+[
+    {
+        "logId": 0,
+        "logText": "<21>Aug 13 09:04:02 soc-32 systemd-logind: Removed session 3831379.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 13 09:04:02"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "3831379"
+            }
+        ]
+    },
+    {
+        "logId": 1,
+        "logText": "<21>Oct 28 18:00:09 soc-32 ntpdate[172578]: adjust time server 120.25.115.20 offset 0.000752 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 18:00:09"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "172578"
+            },
+            {
+                "key": "",
+                "value": "120.25.115.20"
+            }
+        ]
+    },
+    {
+        "logId": 2,
+        "logText": "<21>Oct 28 17:58:09 soc-32 systemd: lgent.service: main process exited, code=exited, status=2/INVALIDARGUMENT",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 17:58:09"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "code",
+                "value": "exited"
+            },
+            {
+                "key": "status",
+                "value": "2/INVALIDARGUMENT"
+            }
+        ]
+    },
+    {
+        "logId": 3,
+        "logText": "<21>Aug 12 08:06:01 soc-32 sshd[16209]: Postponed publickey for root from 3.66.0.23 port 38316 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 08:06:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "16209"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "38316"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 4,
+        "logText": "<21>Aug 12 08:11:56 soc-32 sshd[33101]: pam_unix(sshd:session): session closed for user root",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 08:11:56"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "33101"
+            }
+        ]
+    },
+    {
+        "logId": 5,
+        "logText": "<21>Oct 28 17:57:09 soc-32 systemd-logind: New session 4996668 of user root.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 17:57:09"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "4996668"
+            }
+        ]
+    },
+    {
+        "logId": 6,
+        "logText": "<21>Aug 12 07:38:43 soc-32 sshd[138033]: Postponed publickey for root from 3.66.0.23 port 38140 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:38:43"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "138033"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "38140"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 7,
+        "logText": "<21>Jul 29 07:31:56 soc-32 sshd[60636]: Postponed publickey for root from 3.66.0.23 port 48454 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:31:56"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "60636"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "48454"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 8,
+        "logText": "<21>Jul 29 07:42:11 soc-32 sshd[89018]: Postponed publickey for root from 3.66.0.23 port 42736 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:42:11"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "89018"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "42736"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 9,
+        "logText": "<21>Aug 12 07:14:12 soc-32 sshd[71841]: Postponed publickey for root from 3.66.0.23 port 43604 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:14:12"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "71841"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "43604"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 10,
+        "logText": "Oct 29 00:00:01 soc-32 CROND[26434]: (root) CMD (/usr/lib64/sa/sa1 1 1)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 29 00:00:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "26434"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 11,
+        "logText": "<21>Aug 13 09:05:17 soc-32 systemd: lgent.service holdoff time over, scheduling restart.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 13 09:05:17"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            }
+        ]
+    },
+    {
+        "logId": 12,
+        "logText": "<21>Jul 16 16:33:39 soc-32 systemd: Started Session 3405658 of user root.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 16 16:33:39"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "3405658"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 13,
+        "logText": "<21>Jul 29 07:12:58 soc-32 sshd[7246]: Postponed publickey for root from 3.66.0.23 port 35052 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:12:58"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "7246"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "35052"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 14,
+        "logText": "<21>Oct 28 10:11:01 soc-32 CROND[2100]: (root) CMD (/usr/bin/bash /data/soc/soc_upgrade_dir/scripts/check_status.sh &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 10:11:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "2100"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 15,
+        "logText": "<21>Jul 29 16:57:28 soc-32 systemd: Started Client agent got collecting & sending logs & metrics..",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 16:57:28"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            }
+        ]
+    },
+    {
+        "logId": 16,
+        "logText": "<21>Aug 12 08:04:16 soc-32 sshd[10791]: Postponed publickey for root from 3.66.0.23 port 34650 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 08:04:16"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "10791"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "34650"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 17,
+        "logText": "<21>Aug 12 08:08:52 soc-32 sshd[24720]: Postponed publickey for root from 3.66.0.23 port 44196 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 08:08:52"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "24720"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 18,
+        "logText": "<21>Jul 29 07:01:43 soc-32 sshd[173168]: pam_unix(sshd:session): session closed for user root",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:01:43"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "173168"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 19,
+        "logText": "<21>Aug 12 07:51:29 soc-32 sshd[172326]: Postponed publickey for root from 3.66.0.23 port 36424 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:51:29"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "172326"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "36424"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 20,
+        "logText": "<21>Jul 29 07:02:20 soc-32 sshd[174980]: Postponed publickey for root from 3.66.0.23 port 40030 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:02:20"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "174980"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "40030"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 21,
+        "logText": "<21>Aug 13 09:26:10 soc-32 ntpdate[41916]: adjust time server 120.25.115.20 offset -0.000046 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 13 09:26:10"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "41916"
+            },
+            {
+                "key": "",
+                "value": "120.25.115.20"
+            }
+        ]
+    },
+    {
+        "logId": 22,
+        "logText": "<21>Jul 29 07:01:43 soc-32 sshd[173168]: Accepted publickey for root from 3.66.0.23 port 38666 ssh2: RSA SHA256:M/HclYq1V9UXKEtEyF03gXBB7IyFJKcs8tU6lqWNuyM",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:01:43"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "173168"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "38666"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            }
+        ]
+    },
+    {
+        "logId": 23,
+        "logText": "<21>Oct 28 10:01:01 soc-32 CROND[170594]: (root) CMD (run-parts /etc/cron.hourly)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 10:01:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "170594"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 24,
+        "logText": "<21>Aug 12 07:13:10 soc-32 sshd[69034]: Accepted publickey for root from 3.66.0.23 port 41484 ssh2: RSA SHA256:M/HclYq1V9UXKEtEyF03gXBB7IyFJKcs8tU6lqWNuyM",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:13:10"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "69034"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "41484"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            }
+        ]
+    },
+    {
+        "logId": 25,
+        "logText": "<21>Jul 29 17:01:24 soc-32 systemd: Started Session 3604702 of user root.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 17:01:24"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "3604702"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 26,
+        "logText": "<21>Aug 12 08:07:20 soc-32 sshd[20315]: Postponed publickey for root from 3.66.0.23 port 41070 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 08:07:20"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "20315"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "41070"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 27,
+        "logText": "<21>Oct 28 18:00:13 soc-32 systemd-logind: New session 4996702 of user root.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 18:00:13"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "4996702"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 28,
+        "logText": "<21>Jul 29 07:20:09 soc-32 sshd[28635]: Postponed publickey for root from 3.66.0.23 port 50848 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:20:09"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "28635"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "50848"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 29,
+        "logText": "<21>Jul 29 16:56:04 soc-32 systemd-logind: New session 3604644 of user root.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 16:56:04"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "3604644"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 30,
+        "logText": "<21>Jul 29 16:58:07 soc-32 ntpdate[38841]: adjust time server 120.25.115.20 offset 0.001189 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 16:58:07"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "38841"
+            },
+            {
+                "key": "",
+                "value": "120.25.115.20"
+            }
+        ]
+    },
+    {
+        "logId": 31,
+        "logText": "<21>Jul 29 07:10:08 soc-32 sshd[195746]: Accepted publickey for root from 3.66.0.252 port 52800 ssh2: RSA SHA256:M/HclYq1V9UXKEtEyF03gXBB7IyFJKcs8tU6lqWNuyM",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:10:08"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "195746"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.252"
+            },
+            {
+                "key": "",
+                "value": "52800"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            }
+        ]
+    },
+    {
+        "logId": 32,
+        "logText": "<21>Jul 16 16:34:01 soc-32 CROND[52003]: (root) CMD (/usr/sbin/ntpdate -s ntp1.aliyun.com &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 16 16:34:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "52003"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 33,
+        "logText": "<21>Jul 16 16:34:01 soc-32 CROND[52006]: (root) CMD (/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep k3s) &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 16 16:34:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "52006"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 34,
+        "logText": "Oct 29 00:00:01 soc-32 systemd-logind[10324]: Removed session 5000479.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 29 00:00:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "10324"
+            },
+            {
+                "key": "",
+                "value": "5000479"
+            }
+        ]
+    },
+    {
+        "logId": 35,
+        "logText": "<21>Aug 12 10:00:01 soc-32 CROND[131152]: (root) CMD (/usr/lib64/sa/sa1 1 1)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 10:00:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "131152"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 36,
+        "logText": "<21>Aug 12 07:44:51 soc-32 sshd[154494]: Postponed publickey for root from 3.66.0.23 port 50808 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:44:51"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "154494"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "50808"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 37,
+        "logText": "<21>Aug 13 09:05:18 soc-32 systemd: lgent.service failed.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 13 09:05:18"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            }
+        ]
+    },
+    {
+        "logId": 38,
+        "logText": "<21>Jul 29 16:56:09 soc-32 ntpdate[33598]: no server suitable for synchronization found",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 16:56:09"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "33598"
+            }
+        ]
+    },
+    {
+        "logId": 39,
+        "logText": "<21>Aug 12 07:24:38 soc-32 sshd[100387]: pam_unix(sshd:session): session closed for user root",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:24:38"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "100387"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 40,
+        "logText": "<21>Aug 12 09:30:01 soc-32 CROND[49952]: (root) CMD (/usr/local/lgent/scheduled.sh)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 09:30:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "49952"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 41,
+        "logText": "<21>Aug 12 07:40:46 soc-32 sshd[143619]: Postponed publickey for root from 3.66.0.23 port 42378 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:40:46"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "143619"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "42378"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 42,
+        "logText": "<21>Jul 29 07:21:10 soc-32 sshd[31569]: Postponed publickey for root from 3.66.0.23 port 53116 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:21:10"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "31569"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "53116"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 43,
+        "logText": "<21>Jul 29 07:01:43 soc-32 sshd[173168]: pam_unix(sshd:session): session opened for user root by (uid=0)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:01:43"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "173168"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "uid",
+                "value": "0"
+            }
+        ]
+    },
+    {
+        "logId": 44,
+        "logText": "Oct 29 00:00:01 soc-32 CROND[26439]: (root) CMD (/usr/local/lgent/scheduled.sh)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 29 00:00:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "26439"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 45,
+        "logText": "<21>Jul 29 07:04:16 soc-32 sshd[180002]: Postponed publickey for root from 3.66.0.23 port 44244 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:04:16"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "180002"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "44244"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 46,
+        "logText": "Oct 29 00:00:01 soc-32 CROND[26436]: (root) CMD (/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep etcd) &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 29 00:00:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "26436"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 47,
+        "logText": "Sep 23 22:39:01 soc-32 CROND[135607]: (root) CMD (/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep k3s) &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 23 22:39:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "135607"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 48,
+        "logText": "<21>Oct 28 18:00:14 soc-32 systemd-logind: Removed session 4996702.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 18:00:14"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "4996702"
+            }
+        ]
+    },
+    {
+        "logId": 49,
+        "logText": "<21>Oct 28 10:10:01 soc-32 CROND[195722]: (root) CMD (/usr/bin/bash /data/AiLogAuditor-develop-9dfc79aaa--20230529030421/unison_copy.sh &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 10:10:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "195722"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 50,
+        "logText": "<21>Aug 12 07:15:23 soc-32 sshd[75210]: Postponed publickey for root from 3.66.0.23 port 46188 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:15:23"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "75210"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "46188"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 51,
+        "logText": "<21>Aug 12 09:06:01 soc-32 CROND[179552]: (root) CMD (/usr/bin/bash /data/soc/soc_upgrade_dir/scripts/check_status.sh &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 09:06:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "179552"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 52,
+        "logText": "Sep 23 22:39:01 soc-32 CROND[135612]: (root) CMD (/usr/sbin/ntpdate -s ntp1.aliyun.com &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 23 22:39:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "135612"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 53,
+        "logText": "<21>Aug 12 07:57:37 soc-32 sshd[188602]: Postponed publickey for root from 3.66.0.23 port 49206 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:57:37"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "188602"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "49206"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 54,
+        "logText": "<21>Jul 29 17:01:07 soc-32 ntpdate[47472]: adjust time server 120.25.115.20 offset 0.000530 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 17:01:07"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "47472"
+            },
+            {
+                "key": "",
+                "value": "120.25.115.20"
+            }
+        ]
+    },
+    {
+        "logId": 55,
+        "logText": "<21>Jul 29 07:01:43 soc-32 sshd[173168]: Postponed publickey for root from 3.66.0.23 port 38666 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:01:43"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "173168"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "38666"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 56,
+        "logText": "Sep 23 22:38:24 soc-32 systemd[1]: Started Session 4463096 of user root.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 23 22:38:24"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "1"
+            },
+            {
+                "key": "",
+                "value": "4463096"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 57,
+        "logText": "<21>Oct 28 17:58:08 soc-32 systemd: lgent.service holdoff time over, scheduling restart.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 17:58:08"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            }
+        ]
+    },
+    {
+        "logId": 58,
+        "logText": "<21>Jul 29 10:00:01 soc-32 CROND[71608]: (root) CMD (/usr/lib64/sa/sa1 1 1)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 10:00:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "71608"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 59,
+        "logText": "<21>Jul 29 17:02:10 soc-32 ntpdate[50140]: adjust time server 120.25.115.20 offset 0.000091 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 17:02:10"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "50140"
+            },
+            {
+                "key": "",
+                "value": "120.25.115.20"
+            }
+        ]
+    },
+    {
+        "logId": 60,
+        "logText": "<21>Aug 12 09:10:01 soc-32 CROND[190037]: (root) CMD (/usr/lib64/sa/sa1 1 1)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 09:10:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "190037"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 61,
+        "logText": "<21>Jul 29 07:13:29 soc-32 sshd[8703]: Postponed publickey for root from 3.66.0.23 port 36196 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:13:29"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "8703"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "36196"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 62,
+        "logText": "<21>Oct 28 09:17:01 soc-32 CROND[44095]: (root) CMD (/usr/bin/bash /data/soc/soc_upgrade_dir/scripts/check_cluster_status.sh &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 09:17:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "44095"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 63,
+        "logText": "<21>Oct 28 17:57:01 soc-32 systemd: Started Session 4996662 of user root.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 17:57:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "4996662"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 64,
+        "logText": "<21>Jul 29 16:56:00 soc-32 systemd: Started Session 3604636 of user root.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 16:56:00"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "3604636"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 65,
+        "logText": "<21>Aug 12 07:18:17 soc-32 sshd[83574]: Postponed publickey for root from 3.66.0.23 port 52224 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:18:17"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "83574"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "52224"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 66,
+        "logText": "<21>Oct 28 17:58:09 soc-32 systemd: Unit lgent.service entered failed state.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 17:58:09"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            }
+        ]
+    },
+    {
+        "logId": 67,
+        "logText": "<21>Aug 12 07:33:05 soc-32 sshd[123145]: Postponed publickey for root from 3.66.0.23 port 54666 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:33:05"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "123145"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "54666"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 68,
+        "logText": "Sep 23 22:38:24 soc-32 sshd[133804]: pam_unix(sshd:session): session opened for user root by (uid=0)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 23 22:38:24"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "133804"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "uid",
+                "value": "0"
+            }
+        ]
+    },
+    {
+        "logId": 69,
+        "logText": "<21> 12 09:05:02 soc-32 CROND[176817]: (root) CMD (/usr/bin/bash /data/AiLogAuditor-develop-9dfc79aaa--20230529030421/unison_copy.sh &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "12 09:05:02"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "176817"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 70,
+        "logText": "<21>Aug 12 07:08:27 soc-32 sshd[56212]: pam_unix(sshd:session): session closed for user root",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:08:27"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "56212"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 71,
+        "logText": "Sep 23 22:39:01 soc-32 CROND[135609]: (root) CMD (/usr/bin/bash /data/AiLogAuditor-develop-9dfc79aaa--20230529030421/daemon_start.sh check &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 23 22:39:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "135609"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 72,
+        "logText": "<21>Jul 29 07:43:12 soc-32 sshd[91677]: Postponed publickey for root from 3.66.0.23 port 44984 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:43:12"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "91677"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "44984"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 73,
+        "logText": "<21>Aug 12 07:09:05 soc-32 sshd[57855]: Postponed publickey for root from 3.66.0.23 port 33000 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:09:05"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "57855"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "33000"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 74,
+        "logText": "<21>Jul 16 16:33:39 soc-32 systemd-logind: New session 3405658 of user root.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 16 16:33:39"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "3405658"
+            }
+        ]
+    },
+    {
+        "logId": 75,
+        "logText": "<21>Aug 13 09:10:18 soc-32 systemd-logind: Removed session 3831445.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 13 09:10:18"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "3831445"
+            }
+        ]
+    },
+    {
+        "logId": 76,
+        "logText": "<21>Aug 13 09:08:09 soc-32 ntpdate[187386]: adjust time server 120.25.115.20 offset 0.002019 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 13 09:08:09"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "187386"
+            },
+            {
+                "key": "",
+                "value": "120.25.115.20"
+            }
+        ]
+    },
+    {
+        "logId": 77,
+        "logText": "<21>Jul 29 09:01:01 soc-32 run-parts(/etc/cron.hourly)[107521]: finished 0anacron",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 09:01:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "run-parts"
+            },
+            {
+                "key": "",
+                "value": "/etc/cron.hourly"
+            },
+            {
+                "key": "",
+                "value": "107521"
+            }
+        ]
+    },
+    {
+        "logId": 78,
+        "logText": "<21>Jul 29 07:26:08 soc-32 sshd[44715]: Postponed publickey for root from 3.66.0.23 port 35766 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:26:08"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "44715"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "35766"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 79,
+        "logText": "<21>Aug 12 09:06:01 soc-32 CROND[179550]: (root) CMD (/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep k3s) &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 09:06:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "179550"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 80,
+        "logText": "<21>Oct 28 17:57:09 soc-32 systemd-logind: Removed session 4996668.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 17:57:09"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "4996668"
+            }
+        ]
+    },
+    {
+        "logId": 81,
+        "logText": "<21>Aug 12 07:12:40 soc-32 sshd[67716]: Postponed publickey for root from 3.66.0.23 port 40452 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:12:40"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "67716"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "40452"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 82,
+        "logText": "<21>Aug 12 07:08:26 soc-32 sshd[56212]: pam_unix(sshd:session): session opened for user root by (uid=0)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:08:26"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "56212"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "uid",
+                "value": "0"
+            }
+        ]
+    },
+    {
+        "logId": 83,
+        "logText": "Sep 23 22:39:01 soc-32 CROND[135608]: (root) CMD (/usr/bin/bash /data/AiLogAuditor-develop-9dfc79aaa--20230529030421/unison_copy.sh &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 23 22:39:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "135608"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 84,
+        "logText": "<21>Aug 12 07:08:35 soc-32 sshd[56542]: Postponed publickey for root from 3.66.0.23 port 60188 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:08:35"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "56542"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "60188"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 85,
+        "logText": "Sep 23 22:38:24 soc-32 systemd-logind[10324]: New session 4463096 of user root.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 23 22:38:24"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "10324"
+            },
+            {
+                "key": "",
+                "value": "4463096"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 86,
+        "logText": "<21>Aug 13 09:05:10 soc-32 systemd: Started Session 3831391 of user root.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 13 09:05:10"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "3831391"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 87,
+        "logText": "Sep 23 22:38:24 soc-32 sshd[105154]: pam_unix(sshd:session): session closed for user root",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 23 22:38:24"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "105154"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 88,
+        "logText": "<21>Oct 28 18:10:10 soc-32 ntpdate[4832]: adjust time server 120.25.115.20 offset 0.000639 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 28 18:10:10"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "4832"
+            },
+            {
+                "key": "",
+                "value": "120.25.115.20"
+            }
+        ]
+    },
+    {
+        "logId": 89,
+        "logText": "<21>Aug 12 09:05:02 soc-32 CROND[176818]: (root) CMD (/usr/local/lgent/scheduled.sh)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 09:05:02"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "176818"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 90,
+        "logText": "<21>Jul 16 16:33:13 soc-32 sshd[49704]: Accepted publickey for root from 3.66.0.216 port 37132 ssh2: RSA SHA256:M/HclYq1V9UXKEtEyF03gXBB7IyFJKcs8tU6lqWNuyM",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 16 16:33:13"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "49704"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.216"
+            },
+            {
+                "key": "",
+                "value": "37132"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            }
+        ]
+    },
+    {
+        "logId": 91,
+        "logText": "<21>Aug 12 07:10:06 soc-32 sshd[60640]: Postponed publickey for root from 3.66.0.23 port 35096 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 07:10:06"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "60640"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "35096"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 92,
+        "logText": "<21>Jul 29 09:01:01 soc-32 run-parts(/etc/cron.hourly)[107452]: starting 0anacron",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 09:01:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "run-parts"
+            },
+            {
+                "key": "",
+                "value": "/etc/cron.hourly"
+            },
+            {
+                "key": "",
+                "value": "107452"
+            }
+        ]
+    },
+    {
+        "logId": 93,
+        "logText": "<21>Aug 12 10:10:01 soc-32 CROND[158241]: (root) CMD (/usr/local/lgent/scheduled.sh)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 10:10:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "158241"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 94,
+        "logText": "<21>Jul 29 07:19:07 soc-32 sshd[25804]: Postponed publickey for root from 3.66.0.23 port 48590 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 07:19:07"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "25804"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "3.66.0.23"
+            },
+            {
+                "key": "",
+                "value": "48590"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 95,
+        "logText": "<21>Jul 29 17:00:13 soc-32 systemd-logind: Removed session 3604540.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 29 17:00:13"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "3604540"
+            }
+        ]
+    },
+    {
+        "logId": 96,
+        "logText": "<21> 13 09:04:01 soc-32 systemd: Started Session 3831378 of user root.",
+        "logField": [
+            {
+                "key": "",
+                "value": "13 09:04:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "3831378"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    },
+    {
+        "logId": 97,
+        "logText": "<21>Aug 12 10:01:02 soc-32 run-parts(/etc/cron.hourly)[134172]: starting 0anacron",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 10:01:02"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "run-parts"
+            },
+            {
+                "key": "",
+                "value": "/etc/cron.hourly"
+            },
+            {
+                "key": "",
+                "value": "134172"
+            }
+        ]
+    },
+    {
+        "logId": 98,
+        "logText": "Oct 29 00:00:24 soc-32 systemd[1]: lgent.service: main process exited, code=exited, status=2/INVALIDARGUMENT",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 29 00:00:24"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "1"
+            },
+            {
+                "key": "code",
+                "value": "exited"
+            },
+            {
+                "key": "status",
+                "value": "2/INVALIDARGUMENT"
+            }
+        ]
+    },
+    {
+        "logId": 99,
+        "logText": "May 28 10:01:01 localhost systemd: Started Session 72 of user root.",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 28 10:01:01"
+            },
+            {
+                "key": "",
+                "value": "localhost"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "72"
+            },
+            {
+                "key": "",
+                "value": "root"
+            }
+        ]
+    }
+]
