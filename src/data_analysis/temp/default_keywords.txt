@@ -1,4 +1,0 @@
-{
-    "keywords": ["key_value", "hostname", "date", "pid", "ip_port", "session",  
-    "webport", "web_attack", "sys_attack", "json_str", "email", "function", "segment"]
-}

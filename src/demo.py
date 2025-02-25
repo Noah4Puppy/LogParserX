@@ -47,6 +47,8 @@ use_llm_model = "qwen2.5-72b-instruct"
 # response = get_chat_completions(messages, api_key, base_url, use_llm_model)
 # reply_content = response.choices[0].message.content
 # print(reply_content)
+
+# money ?
 # check_money()
 
 # response = ChatCompletion(id='chatcmpl-e3086a05-a198-96d3-9dab-8543c566134e', 

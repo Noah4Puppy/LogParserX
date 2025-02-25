@@ -48,6 +48,7 @@ def get_all_reports(dir_path: str) -> list:
         file_list.sort(key=lambda x: x[0])
         rename_lst = [item[1].replace("report_", "opt_") for item in file_list]
         rename_lst = [item.replace(".md", ".py") for item in rename_lst]
+        rename_lst = [item.replace("gen/reports", "opt") for item in rename_lst]
 
         return [item[1] for item in file_list], rename_lst
     
@@ -146,10 +147,11 @@ class ExtractedCodes:
 
     def rewrite_codes(self, log_text: str, code_str: str) -> str:
         self.main_function = self.get_main_function(code_str)
+        print(f"log_text: {log_text}")
         if self.main_function:
-            # print("Check")
-            new_main_function = re.sub(r"log_text = '(.*?)'", f'log_text = f\'{log_text}\'', self.main_function)
-            # print(new_main_function)
+            print("Check")
+            new_main_function = re.sub(r"log_text\s*=\s*[\"'].*?[\"']", f'log_text = f\'{log_text}\'', self.main_function)
+            print(new_main_function)
             new_code = code_str.replace(self.main_function, new_main_function)
             return new_code
         else:
@@ -184,7 +186,8 @@ def calculate_coverage(original, testing):
 def get_testing_result(opt_path, log_text, opt_code, obj):
     # log_text = "<21>Aug 13 09:08:09 soc-32 ntpdate[187386]: adjust time server 120.25.115.20 offset 0.002019 sec" 
     new_code = obj.rewrite_codes(log_text, opt_code)
-    new_code_path = opt_path.replace("gen", "test")
+    print(new_code)
+    new_code_path = opt_path.replace("opt", "test")
     with open(new_code_path, "w", encoding="utf-8") as f:
         f.write(new_code)
     result = execute_python_code(new_code_path)
@@ -194,48 +197,73 @@ def TestUnit(class_dataset_path, output_dir):
     with open(class_dataset_path, "r", encoding="utf-8") as f:
         data_set = json.load(f)
     testing_data = data_set[:50]
+    print(len(testing_data))
     scores = []
     # report -> /gen/report_0.md, rename -> /gen/opt_0.py, new_code -> /test/opt_0.py
     report_list, rename_list = get_all_reports(output_dir)
+    print(len(report_list))
+    print(len(rename_list))
     for i, j in zip(report_list, rename_list):
         code_path = Path(i).read_text()
         codes = extract_python_code_from_md(code_path)
         with open(j, "w", encoding="utf-8") as f:
             f.write(codes[0])
-        # idx = i.split("\\")[-1].split("_")[1].replace(".md", "")
-        # idx = int(idx)
+        idx = i.split("\\")[-1].split("_")[1].replace(".md", "")
+        idx = int(idx)
         score = 0.0
-        for idx in range(0, 10):
-            testing_id = testing_data[idx]["logId"]
-            testing_logText = testing_data[idx]["logText"]
-            testing_logField = testing_data[idx]["logField"]
-            obj = ExtractedCodes()
-            gen_result = get_testing_result(j, testing_logText, codes[0], obj)
-            gen_result = gen_result["output"]
-            gen_result = ast.literal_eval(gen_result)
-            # 验证结果
-            print(f"Testing ID: {testing_id}:")
-            print(f"Testing LogText: {testing_logText}")
-            print(f"Testing LogField: {testing_logField}")
-            print(f"Generated LogField: {gen_result}")
-            if is_perfect_match(testing_logField, gen_result):
-                print(f"完全匹配！")
-                score += 1.0
-            elif has_any_match(testing_logField, gen_result):
-                coverage = calculate_coverage(testing_logField, gen_result)
-                score += coverage
-                print(f"至少有一个匹配！full_coverage: {coverage:.2f}%")
-            else:
-                print(f"完全不匹配！")
-        scores.append(score/10.0)
+        testing_id = testing_data[idx]["logId"]
+        testing_logText = testing_data[idx]["logText"]
+        testing_logField = testing_data[idx]["logField"]
+        obj = ExtractedCodes()
+        gen_result = get_testing_result(j, testing_logText, codes[0], obj)
+        gen_result = gen_result["output"]
+        gen_result = ast.literal_eval(gen_result)
+        # 验证结果
+        print(f"Testing ID: {testing_id}:")
+        print(f"Testing LogText: {testing_logText}")
+        print(f"Testing LogField: {testing_logField}")
+        print(f"Generated LogField: {gen_result}")
+        if is_perfect_match(testing_logField, gen_result):
+            print(f"完全匹配！")
+            score += 100.0
+        elif has_any_match(testing_logField, gen_result):
+            coverage = calculate_coverage(testing_logField, gen_result)
+            score += coverage
+            print(f"至少有一个匹配！full_coverage: {coverage:.2f}%")
+        else:
+            print(f"完全不匹配！")
+
+        # for idx in range(0, 3):
+        #     testing_id = testing_data[idx]["logId"]
+        #     testing_logText = testing_data[idx]["logText"]
+        #     testing_logField = testing_data[idx]["logField"]
+        #     obj = ExtractedCodes()
+        #     gen_result = get_testing_result(j, testing_logText, codes[0], obj)
+        #     gen_result = gen_result["output"]
+        #     gen_result = ast.literal_eval(gen_result)
+        #     # 验证结果
+        #     print(f"Testing ID: {testing_id}:")
+        #     print(f"Testing LogText: {testing_logText}")
+        #     print(f"Testing LogField: {testing_logField}")
+        #     print(f"Generated LogField: {gen_result}")
+        #     if is_perfect_match(testing_logField, gen_result):
+        #         print(f"完全匹配！")
+        #         score += 1.0
+        #     elif has_any_match(testing_logField, gen_result):
+        #         coverage = calculate_coverage(testing_logField, gen_result)
+        #         score += coverage
+        #         print(f"至少有一个匹配！full_coverage: {coverage:.2f}%")
+        #     else:
+        #         print(f"完全不匹配！")
+        scores.append(score)
 
     print(f"Scores: {scores}")
 
 
 if __name__ == "__main__":
     # TestUnit
-    class_dataset_path = r"data\classified_data\class_1.json"
-    output_dir = r"src\LogParserX\output\gen"
+    class_dataset_path = "data/generated_data/class_1.json"
+    output_dir = "src/LogParserX/output/gen/reports"
     TestUnit(class_dataset_path=class_dataset_path, output_dir=output_dir)
 
 

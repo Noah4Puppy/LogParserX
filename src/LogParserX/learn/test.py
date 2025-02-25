@@ -1,12 +1,29 @@
-str_code = """
 import re
-i=0
-if __name__ == '__main__':
-    log_text = "<21>Aug 13 09:04:02 soc-32 systemd-logind: Removed session 3831379."
-    keyword = ['key_value', 'date', 'hostname', 'session']
-    result = get_components(keyword=keyword, log_text=log_text)
-    print(result)"""
-import re
-logText = "RRRR"
-str_code_ = re.sub(r'log_text = "(.*?)"', f'log_text = f"{logText}"', str_code)
-print(str_code_)
+keywords = [
+    "root",
+    "system-logind",
+    "systemd",
+    "APT",
+    "run-parts",
+    "URL地址",
+    "发生时间",
+    "服务器IP",
+    "服务器端口",
+    "主机名",
+    "攻击特征串",
+    "触发规则",
+    "访问唯一编号",
+    "国家",
+    "事件",
+    "请求方法",
+    "标签",
+    "动作",
+    "威胁",
+    "POST数据",
+    "省",
+    "HTTP/S响应码",
+]
+
+pattern = r"\b(" + "|".join(re.escape(keyword) for keyword in keywords) + r")\b"
+
+print(pattern)

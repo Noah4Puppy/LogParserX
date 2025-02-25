@@ -332,3 +332,87 @@ App输出：
         ]
     }
 ```
+
+## Generated DATA by QWEN
+`DataGeneration.py`用于批量生成同源的测试数据，确认是一条一条对应。
+从`classified_data/*.json`里面的元数据派生而来，用于测试llm生成的代码。
+例如元数据来源于`class_1.json`：
+这是前三条派生出来的数据：
+```json
+[
+    {
+        "logId": 1,
+        "logText": "<21>Oct 05 14:22:30 soc-32 systemd-logind: Removed session 4567890.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 05 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "4567890"
+            }
+        ]
+    },
+    {
+        "logId": 2,
+        "logText": "<21>Nov 15 14:22:33 soc-32 ntpdate[214748]: adjust time server 192.168.1.1 offset -0.000456 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "214748"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.1"
+            }
+        ]
+    },
+    {
+        "logId": 3,
+        "logText": "<21>Nov 15 09:22:34 soc-32 systemd: lgent.service: main process exited, code=exited, status=1/FAILURE",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 09:22:34"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "code",
+                "value": "exited"
+            },
+            {
+                "key": "status",
+                "value": "1/FAILURE"
+            }
+        ]
+    }
+]
+```

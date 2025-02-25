@@ -32,34 +32,7 @@ def add_main(logtext, path):
     with open(path, 'a', encoding='utf-8') as f:
         f.write(main_code)
     print(f"添加main函数成功，并保存为 {path}")
-
-# def execute_python_code(file_path):
-#     """
-#     执行Python代码，并捕获打印内容。
     
-#     参数:
-#         file_path (str): 输入的Python文件路径。
-    
-#     返回:
-#         dict: 包含执行结果（success）和打印内容（data）。
-#     """
-#     try:
-#         # 使用io.StringIO捕获打印输出
-#         stdout_capture = io.StringIO()
-#         with open(file_path, 'r', encoding='utf-8') as f:
-#             code = f.read()
-#         # 重定向标准输出到捕获对象
-#         sys.stdout = stdout_capture
-#         # 执行代码
-#         exec(code)
-#         # 恢复标准输出
-#         sys.stdout = sys.__stdout__
-#         # 获取打印内容
-#         print_output = stdout_capture.getvalue().strip()
-#         return {'success': True, 'data': print_output}
-#     except Exception as e:
-#         # 捕获执行过程中的异常
-#         return {'success': False, 'data': str(e)}
 import subprocess
 import sys
 from pathlib import Path

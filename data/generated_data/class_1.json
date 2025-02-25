@@ -1,0 +1,3058 @@
+[
+    {
+        "logId": 1,
+        "logText": "<21>Oct 25 14:22:30 soc-32 systemd-logind: Removed session 4567890.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 25 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "4567890"
+            }
+        ]
+    },
+    {
+        "logId": 2,
+        "logText": "<21>Nov 15 14:22:33 soc-32 ntpdate[123456]: adjust time server 192.168.1.1 offset -0.000456 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "123456"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.1"
+            }
+        ]
+    },
+    {
+        "logId": 3,
+        "logText": "<21>Nov 15 09:22:34 soc-32 systemd: lgent.service: main process exited, code=exited, status=1/FAILURE",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 09:22:34"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "code",
+                "value": "exited"
+            },
+            {
+                "key": "status",
+                "value": "1/FAILURE"
+            }
+        ]
+    },
+    {
+        "logId": 5,
+        "logText": "<21>Mar 15 14:22:33 soc-32 sshd[27458]: Postponed publickey for admin from 192.168.1.100 port 54321 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "27458"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "54321"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 5,
+        "logText": "<21>Mar 15 14:22:33 srv-45 sshd[24680]: pam_unix(sshd:session): session closed for user admin",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "srv-45"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "24680"
+            }
+        ]
+    },
+    {
+        "logId": 6,
+        "logText": "<21>Nov 15 09:22:14 soc-32 systemd-logind: New session 5001234 of user admin.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 09:22:14"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "5001234"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 7,
+        "logText": "<21>Oct 15 14:22:37 soc-32 sshd[24680]: Postponed publickey for admin from 192.168.1.100 port 56789 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:37"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "24680"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "56789"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 8,
+        "logText": "<21>Oct 15 14:22:33 soc-32 sshd[78901]: Postponed publickey for admin from 192.168.1.100 port 56789 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "78901"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "56789"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 9,
+        "logText": "<21>Oct 15 14:22:33 soc-32 sshd[12345]: Postponed publickey for admin from 192.168.1.100 port 54321 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "12345"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "54321"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 10,
+        "logText": "<21>Mar 15 14:22:33 soc-32 sshd[82915]: Postponed publickey for admin from 192.168.1.10 port 54321 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "82915"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "54321"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 11,
+        "logText": "Oct 30 01:00:01 soc-32 CROND[26435]: (admin) CMD (/usr/lib64/sa/sa1 1 1)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 30 01:00:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "26435"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 12,
+        "logText": "<21>Oct 21 14:32:45 soc-32 systemd: lgent.service start request repeated too quickly, refusing to start.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 21 14:32:45"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            }
+        ]
+    },
+    {
+        "logId": 13,
+        "logText": "<21>Oct 22 14:45:22 soc-32 systemd: Started Session 4567890 of user admin.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 22 14:45:22"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "4567890"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 14,
+        "logText": "<21>Oct 15 14:22:33 soc-32 sshd[8910]: Postponed publickey for admin from 192.168.1.100 port 22222 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "8910"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "22222"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 15,
+        "logText": "<21>Nov 15 14:22:33 soc-32 CROND[2101]: (root) CMD (/usr/bin/bash /data/soc/soc_upgrade_dir/scripts/backup_data.sh &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "2101"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 16,
+        "logText": "<21>Oct 15 14:22:33 soc-32 cron: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "cron"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)"
+            }
+        ]
+    },
+    {
+        "logId": 17,
+        "logText": "<21>Oct 15 14:22:33 soc-32 sshd[12345]: Postponed publickey for admin from 192.168.1.100 port 56789 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "12345"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "56789"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 18,
+        "logText": "<21>Oct 15 14:22:33 soc-32 sshd[25678]: Postponed publickey for admin from 192.168.1.10 port 55555 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "25678"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 19,
+        "logText": "<21>Mar 15 14:22:30 soc-45 sshd[24680]: pam_unix(sshd:session): session closed for user admin",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-45"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "24680"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 20,
+        "logText": "<21>Sep 15 14:22:33 soc-32 sshd[28543]: Postponed publickey for admin from 192.168.1.100 port 50022 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "28543"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "50022"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 21,
+        "logText": "<21>Oct 15 14:22:35 soc-32 sshd[215432]: Postponed publickey for admin from 192.168.1.10 port 22222 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:35"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "215432"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "22222"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 22,
+        "logText": "<21>Oct 05 14:32:45 soc-32 ntpdate[42017]: adjust time server 192.168.1.1 offset 0.000123 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 05 14:32:45"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "42017"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.1"
+            }
+        ]
+    },
+    {
+        "logId": 23,
+        "logText": "<21>Oct 15 14:22:30 soc-32 sshd[20480]: Accepted publickey for admin from 192.168.1.10 port 50000 ssh2: RSA SHA256:ZxYbWcDvEaRfTgH",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "20480"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "50000"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            }
+        ]
+    },
+    {
+        "logId": 24,
+        "logText": "<21>Nov 15 14:30:12 soc-32 CROND[170595]: (admin) CMD (run-parts /etc/cron.daily)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 14:30:12"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "170595"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 25,
+        "logText": "<21>Oct 15 14:22:30 soc-32 sshd[78901]: Accepted publickey for admin from 192.168.1.10 port 50000 ssh2: RSA SHA256:ZxWvQaBcDeFgHiJkLmNoPqRsTuVwXyZ1",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "78901"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "50000"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            }
+        ]
+    },
+    {
+        "logId": 26,
+        "logText": "<21>Oct 15 14:22:33 soc-32 systemd: Started Session 4567890 of user admin.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "4567890"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 27,
+        "logText": "<21>Mar 15 14:22:30 soc-32 sshd[21456]: Postponed publickey for admin from 192.168.1.10 port 50000 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "21456"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "50000"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 28,
+        "logText": "<21>Nov 15 09:22:30 soc-32 systemd-logind: New session 5001234 of user admin.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 09:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "5001234"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 29,
+        "logText": "<21>Aug 15 14:30:12 soc-32 sshd[30456]: Postponed publickey for admin from 192.168.1.100 port 55555 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 15 14:30:12"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "30456"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "55555"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 30,
+        "logText": "<21>Oct 15 14:22:18 soc-32 systemd-logind: New session 3604645 of user admin.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:18"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "3604645"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 31,
+        "logText": "<21>Oct 15 14:22:33 soc-32 ntpdate[45678]: adjust time server 192.168.1.1 offset -0.000543 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "45678"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.1"
+            }
+        ]
+    },
+    {
+        "logId": 32,
+        "logText": "<21>Oct 15 14:22:33 soc-32 sshd[204812]: Accepted publickey for admin from 192.168.1.100 port 34567 ssh2: RSA SHA256:ZxWvQaBcDeFgHiJkLmNoPqRsTuVwXyZaBcDeFgHiJkL",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "204812"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "34567"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            }
+        ]
+    },
+    {
+        "logId": 33,
+        "logText": "<21>Oct 21 14:22:15 soc-32 CROND[52004]: (admin) CMD (/usr/sbin/ntpdate -s ntp2.aliyun.com &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 21 14:22:15"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "52004"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 34,
+        "logText": "<21>Oct 22 19:45:30 soc-32 CROND[52007]: (admin) CMD (/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep nginx) &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 22 19:45:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "52007"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 35,
+        "logText": "Oct 30 01:02:03 soc-32 systemd-logind[10325]: Removed session 5000480.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 30 01:02:03"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "10325"
+            },
+            {
+                "key": "",
+                "value": "5000480"
+            }
+        ]
+    },
+    {
+        "logId": 36,
+        "logText": "<21>Sep 15 14:22:33 soc-32 CROND[131153]: (admin) CMD (/usr/lib64/sa/sa1 1 1)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "131153"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 37,
+        "logText": "<21>Aug 12 09:22:33 soc-32 sshd[154495]: Postponed publickey for admin from 192.168.1.10 port 50809 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 09:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "154495"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "50809"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 38,
+        "logText": "<21>Aug 14 10:15:22 soc-32 systemd: lgent.service started.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 14 10:15:22"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            }
+        ]
+    },
+    {
+        "logId": 39,
+        "logText": "<21>Oct 15 14:22:17 soc-32 ntpdate[45678]: no server suitable for synchronization found",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:17"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "45678"
+            }
+        ]
+    },
+    {
+        "logId": 40,
+        "logText": "<21>Mar 15 14:32:17 soc-32 sshd[20481]: pam_unix(sshd:session): session closed for user admin",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 14:32:17"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "20481"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 41,
+        "logText": "<21>Oct 15 14:45:30 soc-32 CROND[50001]: (admin) CMD (/usr/local/admin/scripts/backup.sh)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:45:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "50001"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 42,
+        "logText": "<21>Sep 15 14:22:33 soc-32 sshd[254321]: Postponed publickey for admin from 192.168.1.10 port 56789 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "254321"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "56789"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 43,
+        "logText": "<21>Oct 15 14:32:22 soc-32 sshd[31570]: Postponed publickey for admin from 192.168.1.10 port 22222 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:32:22"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "31570"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "22222"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 45,
+        "logText": "<21>Mar 15 14:22:33 soc-32 sshd[21456]: pam_unix(sshd:session): session opened for user admin by (uid=1000)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "21456"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "uid",
+                "value": "1000"
+            }
+        ]
+    },
+    {
+        "logId": 45,
+        "logText": "Oct 30 01:00:01 soc-32 CROND[26440]: (admin) CMD (/usr/local/admin/scheduled.sh)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 30 01:00:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "26440"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 46,
+        "logText": "<21>Oct 15 14:22:33 soc-32 sshd[200001]: Postponed publickey for admin from 192.168.1.100 port 55555 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "200001"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "55555"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 47,
+        "logText": "Nov 01 01:00:01 soc-32 CROND[26437]: (root) CMD (/usr/bin/bash /bin/nice -n19 -p $(pgrep nginx) &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 01 01:00:01"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "26437"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 48,
+        "logText": "Oct 01 03:45:12 soc-32 CROND[135608]: (admin) CMD (/usr/bin/python3 /home/admin/scripts/backup.py &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 01 03:45:12"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "135608"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 49,
+        "logText": "<21>Nov 15 12:30:45 soc-32 systemd-logind: Removed session 5001234.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 12:30:45"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "5001234"
+            }
+        ]
+    },
+    {
+        "logId": 50,
+        "logText": "<21>Nov 15 14:22:30 soc-32 CROND[204815]: (admin) CMD (/usr/bin/python3 /data/backup_script.py &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "204815"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 51,
+        "logText": "<21>Oct 15 14:22:30 soc-32 sshd[89123]: Postponed publickey for admin from 192.168.1.10 port 50621 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "89123"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "50621"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 52,
+        "logText": "<21>Aug 12 10:15:30 soc-32 CROND[179553]: (admin) CMD (/usr/bin/python /data/soc/soc_upgrade_dir/scripts/backup_data.py &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 10:15:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "179553"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 53,
+        "logText": "Oct 15 14:22:15 soc-32 CROND[135613]: (admin) CMD (/usr/sbin/ntpdate -s ntp2.aliyun.com &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:15"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "135613"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 54,
+        "logText": "<21>Aug 12 08:22:15 soc-32 sshd[188603]: Postponed publickey for admin from 192.168.1.10 port 50001 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 08:22:15"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "188603"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "50001"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 55,
+        "logText": "<21>Oct 15 14:22:33 soc-32 ntpdate[56789]: adjust time server 192.168.1.1 offset -0.000210 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "56789"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.1"
+            }
+        ]
+    },
+    {
+        "logId": 56,
+        "logText": "<21>Oct 15 14:22:30 soc-32 sshd[20480]: Postponed publickey for admin from 192.168.1.10 port 50000 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "20480"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "50000"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 57,
+        "logText": "Sep 24 09:45:12 soc-32 systemd[1]: Started Session 4463100 of user admin.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 24 09:45:12"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "1"
+            },
+            {
+                "key": "",
+                "value": "4463100"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 58,
+        "logText": "<21>Nov 15 09:22:33 soc-32 systemd: lgent.service start request repeated too quickly, refusing to start.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 09:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            }
+        ]
+    },
+    {
+        "logId": 59,
+        "logText": "<21>Oct 15 14:22:30 soc-32 CROND[82719]: (admin) CMD (/usr/lib64/sa/sa1 1 1)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "82719"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 60,
+        "logText": "<21>Oct 15 14:25:30 soc-32 ntpdate[50141]: adjust time server 192.168.1.1 offset -0.000023 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:25:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "50141"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.1"
+            }
+        ]
+    },
+    {
+        "logId": 61,
+        "logText": "<21>Oct 15 14:22:30 soc-32 CROND[200048]: (admin) CMD (/usr/lib64/sa/sa1 2 2)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "200048"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 62,
+        "logText": "<21>Aug 15 14:22:33 soc-32 sshd[9123]: Postponed publickey for admin from 192.168.1.100 port 54321 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "9123"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "54321"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 63,
+        "logText": "<21>Nov 15 14:22:30 soc-32 CROND[44096]: (admin) CMD (/usr/bin/bash /data/soc/soc_backup_dir/scripts/backup_database.sh &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "44096"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 64,
+        "logText": "<21>Nov 15 09:22:33 soc-32 systemd: Started Session 5001234 of user admin.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 09:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "5001234"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 65,
+        "logText": "<21>Oct 15 14:22:30 soc-32 systemd: Started Session 4712345 of user admin.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "4712345"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 66,
+        "logText": "<21>Sep 15 14:22:33 soc-32 sshd[94721]: Postponed publickey for admin from 192.168.1.100 port 34567 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "94721"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "34567"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 67,
+        "logText": "<21>Nov 15 09:22:33 soc-32 systemd: Unit nginx.service entered failed state.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 09:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "nginx.service"
+            }
+        ]
+    },
+    {
+        "logId": 68,
+        "logText": "<21>Aug 12 09:45:30 soc-32 sshd[123146]: Postponed publickey for admin from 192.168.1.10 port 54667 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 09:45:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "123146"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "54667"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 70,
+        "logText": "Oct 15 14:22:15 soc-32 sshd[133805]: pam_unix(sshd:session): session opened for user admin by (uid=1000)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:15"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "133805"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "uid",
+                "value": "1000"
+            }
+        ]
+    },
+    {
+        "logId": 70,
+        "logText": "<21> 12 10:15:30 soc-32 CROND[176818]: (admin) CMD (/usr/bin/python3 /data/BackupScript-develop-abc123456--20230601040000/backup.py &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "12 10:15:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "176818"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 71,
+        "logText": "<21>Mar 15 14:22:33 soc-45 sshd[67890]: pam_unix(sshd:session): session closed for user admin",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-45"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "67890"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 72,
+        "logText": "Oct 15 14:22:15 soc-32 CROND[135610]: (admin) CMD (/usr/bin/python3 /data/BackupScript-v1.2-20230615120000/backup.py &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:15"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "135610"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 73,
+        "logText": "<21>Aug 15 14:22:33 soc-32 sshd[91678]: Postponed publickey for admin from 192.168.1.100 port 56789 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "91678"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "56789"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 74,
+        "logText": "<21>Oct 15 14:22:33 soc-32 sshd[67890]: Postponed publickey for admin from 192.168.1.10 port 22222 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "67890"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "22222"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 75,
+        "logText": "<21>Jul 17 10:45:22 soc-32 systemd-logind: New session 3405659 of user admin.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 17 10:45:22"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "3405659"
+            }
+        ]
+    },
+    {
+        "logId": 76,
+        "logText": "<21>Aug 14 10:20:25 soc-32 systemd-logind: Removed session 3831446.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 14 10:20:25"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "3831446"
+            }
+        ]
+    },
+    {
+        "logId": 77,
+        "logText": "<21>Sep 15 14:22:33 soc-32 ntpdate[198452]: adjust time server 192.168.1.1 offset -0.001542 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "198452"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.1"
+            }
+        ]
+    },
+    {
+        "logId": 78,
+        "logText": "<21>Aug 15 14:22:33 soc-32 run-parts(/etc/cron.daily)[107522]: finished 0anacron",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "run-parts"
+            },
+            {
+                "key": "",
+                "value": "/etc/cron.daily"
+            },
+            {
+                "key": "",
+                "value": "107522"
+            }
+        ]
+    },
+    {
+        "logId": 79,
+        "logText": "<21>Oct 15 14:32:17 soc-32 sshd[56789]: Postponed publickey for admin from 192.168.1.10 port 50001 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:32:17"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "56789"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "50001"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 80,
+        "logText": "<21>Aug 12 10:15:30 soc-32 CROND[179551]: (admin) CMD (/usr/bin/bash /bin/nice -n 10 -p $(pgrep nginx) &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 10:15:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "179551"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 81,
+        "logText": "<21>Nov 15 09:23:45 soc-32 systemd-logind: Removed session 5001234.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 09:23:45"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "5001234"
+            }
+        ]
+    },
+    {
+        "logId": 82,
+        "logText": "<21>Aug 15 14:23:55 soc-32 sshd[78901]: Postponed publickey for admin from 192.168.1.10 port 50505 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 15 14:23:55"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "78901"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "50505"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 83,
+        "logText": "<21>Mar 15 14:22:33 soc-45 sshd[67890]: pam_unix(sshd:session): session opened for user admin by (uid=1000)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-45"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "67890"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "uid",
+                "value": "1000"
+            }
+        ]
+    },
+    {
+        "logId": 84,
+        "logText": "Sep 24 01:45:32 soc-32 CROND[135610]: (root) CMD (/usr/bin/python3 /data/backup_script.py &> /dev/null)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 24 01:45:32"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "135610"
+            },
+            {
+                "key": "",
+                "value": "root"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 85,
+        "logText": "<21>Oct 15 14:22:45 soc-32 sshd[67890]: Postponed publickey for admin from 192.168.1.100 port 22222 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:45"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "67890"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "22222"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 86,
+        "logText": "Sep 24 01:45:32 soc-32 systemd-logind[10325]: New session 4463097 of user admin.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 24 01:45:32"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "10325"
+            },
+            {
+                "key": "",
+                "value": "4463097"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 87,
+        "logText": "<21>Oct 21 14:22:35 soc-32 systemd: Started Session 4567890 of user admin.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 21 14:22:35"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "4567890"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 88,
+        "logText": "Oct 15 14:22:11 srv-45 sshd[20456]: pam_unix(sshd:session): session closed for user admin",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:11"
+            },
+            {
+                "key": "",
+                "value": "srv-45"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "20456"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 89,
+        "logText": "<21>Nov 15 07:25:30 soc-32 ntpdate[5120]: adjust time server 192.168.1.1 offset -0.000456 sec",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 07:25:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "ntpdate"
+            },
+            {
+                "key": "",
+                "value": "5120"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.1"
+            }
+        ]
+    },
+    {
+        "logId": 90,
+        "logText": "<21>Aug 15 14:22:30 soc-32 CROND[176819]: (admin) CMD (/usr/local/admin/scheduled.sh)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "176819"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 91,
+        "logText": "<21>Jul 17 10:45:22 soc-32 sshd[50123]: Accepted publickey for admin from 192.168.1.10 port 54321 ssh2: RSA SHA256:zXyWvUtSRQPONMLKJIHGFEDCBA9876543210",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 17 10:45:22"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "50123"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "54321"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            }
+        ]
+    },
+    {
+        "logId": 92,
+        "logText": "<21>Aug 13 14:25:30 soc-32 sshd[60641]: Postponed publickey for admin from 192.168.1.10 port 49152 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 13 14:25:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "60641"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "",
+                "value": "49152"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 93,
+        "logText": "<21>Oct 15 14:22:33 soc-32 run-parts(/etc/cron.daily)[207452]: starting 0anacron",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "run-parts"
+            },
+            {
+                "key": "",
+                "value": "/etc/cron.daily"
+            },
+            {
+                "key": "",
+                "value": "207452"
+            }
+        ]
+    },
+    {
+        "logId": 94,
+        "logText": "<21>Aug 12 11:15:30 soc-32 CROND[158242]: (admin) CMD (/usr/local/admin/scheduled.sh)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 12 11:15:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "CROND"
+            },
+            {
+                "key": "",
+                "value": "158242"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "CMD"
+            }
+        ]
+    },
+    {
+        "logId": 95,
+        "logText": "<21>Aug 15 14:22:33 soc-32 sshd[26001]: Postponed publickey for admin from 192.168.1.100 port 50000 ssh2 [preauth]",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "sshd"
+            },
+            {
+                "key": "",
+                "value": "26001"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100"
+            },
+            {
+                "key": "",
+                "value": "50000"
+            },
+            {
+                "key": "",
+                "value": "ssh2"
+            },
+            {
+                "key": "",
+                "value": "preauth"
+            }
+        ]
+    },
+    {
+        "logId": 96,
+        "logText": "<21>Aug 15 14:22:30 soc-32 systemd-logind: Removed session 3604541.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd-logind"
+            },
+            {
+                "key": "",
+                "value": "3604541"
+            }
+        ]
+    },
+    {
+        "logId": 97,
+        "logText": "<21>Mar 15 14:22:30 soc-32 systemd: Started Session 3831379 of user admin.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "3831379"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    },
+    {
+        "logId": 98,
+        "logText": "<21>Sep 15 14:22:33 soc-32 run-parts(/etc/cron.daily)[134173]: starting 0anacron",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "run-parts"
+            },
+            {
+                "key": "",
+                "value": "/etc/cron.daily"
+            },
+            {
+                "key": "",
+                "value": "134173"
+            }
+        ]
+    },
+    {
+        "logId": 99,
+        "logText": "Nov 05 12:34:56 soc-32 systemd[1]: httpd.service: main process exited, code=exited, status=1/FAILURE",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 05 12:34:56"
+            },
+            {
+                "key": "",
+                "value": "soc-32"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "1"
+            },
+            {
+                "key": "code",
+                "value": "exited"
+            },
+            {
+                "key": "status",
+                "value": "1/FAILURE"
+            }
+        ]
+    },
+    {
+        "logId": 100,
+        "logText": "Jun 15 14:22:33 server1 systemd: Started Session 85 of user admin.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jun 15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "server1"
+            },
+            {
+                "key": "",
+                "value": "systemd"
+            },
+            {
+                "key": "",
+                "value": "85"
+            },
+            {
+                "key": "",
+                "value": "admin"
+            }
+        ]
+    }
+]
