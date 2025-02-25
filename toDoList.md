@@ -103,4 +103,45 @@ graph LR
     F -->|update rules| G[Knowledge Base]
 ```
 提取report里面的代码并验证它的提取率。
+输入输出IO文件流：
+```mermaid
+graph LR
+   A[Start Point]
+   B[Regex Pattern Checker]
+   C[Code Generation]
+   D[Code Validation]
+   E[Code Extrator]
+   F[Testing Unit]
+   A --> |manual patterns| B
+   A --> |logText, logField| B
+   B --> |optimized regex patterns| C
+   B --> |logText, logField| C
+   B --> |py codes template| C
+   C --> |output py codes| D
+   D --> |optimized report| E
+   E --> |new codes| F
+   E --> |logText, logField| F
+   F --> G[testing info]
+```
+其中B-D是agents交互llm生成, E-F用于验证。
+生成中间量是trace：大模型交互日志，py codes：优化后的规则代码，report：提取结果。
+## Agents & Tasks 
+agents 均两两之间上下文开启，并允许代码编译。
+输入的logText, logField为训练集的日志。
+### Pattern Checker & pattern check task
+输入manual_patterns, logText, logField, 用于验证pattern的正确性并优化输出patterns.md
+### Code Generation & code generation task
+输入patterns.md(默认)，py codes template, logText, logField, 输出优化后的output.py.
+### Code Validation & code validation task
+输入output.py, logText, logField, 输出优化后的报告report.md，包含codes, 覆盖率分析等。
+## Testing Part
+输入的logText, logField为测试集的日志。
+这里主要是验证优化后的opt.py是否能正确提取测试集的logText, logField。
+### Code Extrator & code extrator task
+输入report.md , 输出提取结果opt.py。
+### Testing Unit & testing unit task
+输入opt.py, 测试集的logText, logField, 输出测试结果result.txt。
 
+# 2025.2.25-2.26
+## 测试结果
+首先先进行小样本测试 只选简单类别的100条划分训练测试集，验证是否能跑通。
