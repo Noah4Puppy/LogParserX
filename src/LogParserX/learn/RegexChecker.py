@@ -44,7 +44,7 @@ def get_all_reports(dir_path: str) -> list:
                     full_path            # 完整路径
                 ))
         file_list.sort(key=lambda x: x[0])
-        rename_lst = [item[1].replace("report_", "output_") for item in file_list]
+        rename_lst = [item[1].replace("report_", "opt_") for item in file_list]
         rename_lst = [item.replace(".md", ".py") for item in rename_lst]
 
         return [item[1] for item in file_list], rename_lst
@@ -65,6 +65,13 @@ class ExtractedCodes:
         self.libs = []
         self.func_fields = []
         self.param_fields = []
+        self.testing_main_function = []
+    
+    def get_libs(self, code: str) -> list:
+        """提取所有库导入代码"""
+        pattern = r"import\s+([\w\.]+)"
+        matches = re.findall(pattern, code)
+        return matches
 
     def get_main_function(self, code: str) -> str:
         """提取main函数代码"""
@@ -135,13 +142,23 @@ class ExtractedCodes:
             functions[func_name] = func_def.strip()
         return functions
 
+    def rewrite_codes(self, log_text: str, code_str: str) -> str:
+        self.main_function = self.get_main_function(code_str)
+        if self.main_function:
+            # print("Check")
+            new_main_function = re.sub(r"log_text = '(.*?)'", f'log_text = f\'{log_text}\'', self.main_function)
+            # print(new_main_function)
+            new_code = code_str.replace(self.main_function, new_main_function)
+            return new_code
+        else:
+            return code_str
 
-
-
+            
 
 if __name__ == "__main__":
     reports, rename_lst = get_all_reports(r"src\LogParserX\output\gen")
     print(reports)
+    print(rename_lst)
     results = []
     ex_codes = ExtractedCodes()
     for i, j in zip(reports, rename_lst):
@@ -155,15 +172,21 @@ if __name__ == "__main__":
         # print(f"func_fields: {ex_codes.func_fields}")
         with open(f"{j}", "w", encoding="utf-8") as f:
             f.write(codes[0])
-        result = execute_python_code(j)
-        if result["return_code"] == 0:
-            gen_logField = result["output"]
-            item = {
-                "report_path": i,
-                "output_path": j,
-                "gen_logField": gen_logField
-            }
-            results.append(item)
+        # result = execute_python_code(j)
+        # print(f"original_codes: {codes[0]}, result: {result}")
+        log_text = "Replaced Contents" 
+        new_code = ex_codes.rewrite_codes(log_text, codes[0])
+        print(f"new_code: {new_code}")
+        # print(f"main_function: {new_code}")
+        # if result["return_code"] == 0:
+        #     gen_logField = result["output"]
+        #     item = {
+        #         "report_path": i,
+        #         "output_path": j,
+        #         "gen_logField": gen_logField
+        #     }
+        #     results.append(item)
+        
     print(results)
 
 
