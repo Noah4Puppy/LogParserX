@@ -1,6 +1,7 @@
 import ast
 import json
 import os
+import sys
 from Executor import execute_python_code
 import re
 from pathlib import Path
@@ -157,7 +158,6 @@ class ExtractedCodes:
         else:
             return code_str
 
-
 def is_perfect_match(original, test):
     """完全匹配：所有字段的key和value都正确且数量一致"""
     if len(original) != len(test):
@@ -202,18 +202,47 @@ def get_json_dict(text):
     # 返回转换后的JSON字典
     return data
 
+class TeeStream:
+    # 初始化函数，传入文件路径和标准输出流
+    def __init__(self, file_path, stdout):
+        # 打开文件，以写入模式，编码为utf-8
+        self.file = open(file_path, 'w', encoding='utf-8')
+        # 保存标准输出流
+        self.stdout = stdout
+
+    # 写入函数，传入要写入的文本
+    def write(self, text):
+        # 将文本写入标准输出流
+        self.stdout.write(text)
+        # 将文本写入文件
+        self.file.write(text)
+
+    # 刷新函数，刷新标准输出流和文件
+    def flush(self):
+        # 刷新标准输出流
+        self.stdout.flush()
+        # 刷新文件
+        self.file.flush()
+
+    # 关闭函数，关闭文件
+    def close(self):
+        self.file.close()
+
+
+
 def TestUnit(class_dataset_path, output_dir):
+    tee = TeeStream("src/LogParserX/output/result.txt", sys.stdout)
+    original_stdout = sys.stdout
+    sys.stdout = tee
+
     with open(class_dataset_path, "r", encoding="utf-8") as f:
         data_set = json.load(f)
     testing_data = data_set[:50]
-    print(len(testing_data))
     scores = []
     match_rate = 0.0
     perfect_match_rate = 0.0
     # report -> /gen/report_0.md, rename -> /gen/opt_0.py, new_code -> /test/opt_0.py
     report_list, rename_list = get_all_reports(output_dir)
-    print(len(report_list))
-    print(len(rename_list))
     for i, j in zip(report_list, rename_list):
         code_path = Path(i).read_text()
         codes = extract_python_code_from_md(code_path)
@@ -258,8 +287,14 @@ def TestUnit(class_dataset_path, output_dir):
     print(f"Perfect Match Rate: {perfect_match_rate / len(rename_list)}")
     print(f"Official Score (1 for full): {official_score}")
 
+    sys.stdout = original_stdout
+
 
 def MultiTestUnit(class_dataset_path: str, output_dir: str):
+    tee = TeeStream("src/LogParserX/output/result_multi.txt", sys.stdout)
+    original_stdout = sys.stdout
+    sys.stdout = tee
+
     with open(class_dataset_path, "r", encoding="utf-8") as f:
             data_set = json.load(f)
     testing_data = data_set[:50]
@@ -313,6 +348,8 @@ def MultiTestUnit(class_dataset_path: str, output_dir: str):
         print(f"Perfect Match Rate: {perfect_match_rate / len(rename_list)}")
         print(f"Official Score (1 for full): {official_score}")
         k+=1
+
+    sys.stdout = original_stdout
 
 if __name__ == "__main__":
     # TestUnit
