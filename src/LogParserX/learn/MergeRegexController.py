@@ -297,9 +297,9 @@ def run(test_data, pattern, python_code, output_file, output_file_p, output_file
 def launcher(S, E):
     python_tool = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/knowledge/faster_tool.py"
     python_pattern = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/knowledge/pattern.py"
-    output_file = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/output/test/output_{}.py"
-    output_file_p = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/output/test/pattern_{}.md"
-    output_file_md = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/output/test/report_{}.md"
+    output_file = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/output/gen/output_{}.py"
+    output_file_p = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/output/gen/pattern_{}.md"
+    output_file_md = r"D:/Competition_Xihu/Resources/LogParserX/src/LogParserX/output/gen/report_{}.md"
     json_path = r"D:/Competition_Xihu/Resources/LogParserX/data/dataset.json"
     with open(python_tool, "r", encoding="utf-8")as f:
         python_code = f.read()

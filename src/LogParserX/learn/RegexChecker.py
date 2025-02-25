@@ -1,3 +1,5 @@
+import ast
+import json
 import os
 from Executor import execute_python_code
 import re
@@ -153,41 +155,136 @@ class ExtractedCodes:
         else:
             return code_str
 
-            
 
-if __name__ == "__main__":
-    reports, rename_lst = get_all_reports(r"src\LogParserX\output\gen")
-    print(reports)
-    print(rename_lst)
-    results = []
-    ex_codes = ExtractedCodes()
-    for i, j in zip(reports, rename_lst):
+def is_perfect_match(original, test):
+    """完全匹配：所有字段的key和value都正确且数量一致"""
+    if len(original) != len(test):
+        return False  # 字段数量不一致直接判定不匹配
+    
+    original_dict = {f['key']: f['value'] for f in original}
+    test_dict = {f['key']: f['value'] for f in test}
+    return original_dict == test_dict  # 字典比对自动校验key-value对
+
+def has_any_match(original, test):
+    """至少有一个字段的key和value都正确"""
+
+    original_set = {(f['key'], f['value']) for f in original}
+    test_set = {(f['key'], f['value']) for f in test}
+    return len(original_set & test_set) > 0  # 集合交集判断
+
+def calculate_coverage(original, testing):
+    if original and testing:
+        original_values = {item["value"] for item in original}
+        testing_values = {item["value"] for item in testing}
+        common = original_values & testing_values
+        return len(common) / len(original_values) * 100
+    else:
+        return 0.0
+    
+def get_testing_result(opt_path, log_text, opt_code, obj):
+    # log_text = "<21>Aug 13 09:08:09 soc-32 ntpdate[187386]: adjust time server 120.25.115.20 offset 0.002019 sec" 
+    new_code = obj.rewrite_codes(log_text, opt_code)
+    new_code_path = opt_path.replace("gen", "test")
+    with open(new_code_path, "w", encoding="utf-8") as f:
+        f.write(new_code)
+    result = execute_python_code(new_code_path)
+    return result
+            
+def TestUnit(class_dataset_path, output_dir):
+    with open(class_dataset_path, "r", encoding="utf-8") as f:
+        data_set = json.load(f)
+    testing_data = data_set[:50]
+    scores = []
+    # report -> /gen/report_0.md, rename -> /gen/opt_0.py, new_code -> /test/opt_0.py
+    report_list, rename_list = get_all_reports(output_dir)
+    for i, j in zip(report_list, rename_list):
         code_path = Path(i).read_text()
         codes = extract_python_code_from_md(code_path)
-        # ex_codes.main_function = ex_codes.get_main_function(codes[0])
-        # ex_codes.param_fields = ex_codes.get_param_field(codes[0])
-        # ex_codes.func_fields = ex_codes.extract_functions(codes[0])
-        # print(f"main_function: {ex_codes.main_function}")
-        # print(f"param_fields: {ex_codes.param_fields}")
-        # print(f"func_fields: {ex_codes.func_fields}")
-        with open(f"{j}", "w", encoding="utf-8") as f:
+        with open(j, "w", encoding="utf-8") as f:
             f.write(codes[0])
-        # result = execute_python_code(j)
-        # print(f"original_codes: {codes[0]}, result: {result}")
-        log_text = "Replaced Contents" 
-        new_code = ex_codes.rewrite_codes(log_text, codes[0])
-        print(f"new_code: {new_code}")
-        # print(f"main_function: {new_code}")
-        # if result["return_code"] == 0:
-        #     gen_logField = result["output"]
-        #     item = {
-        #         "report_path": i,
-        #         "output_path": j,
-        #         "gen_logField": gen_logField
-        #     }
-        #     results.append(item)
+        # idx = i.split("\\")[-1].split("_")[1].replace(".md", "")
+        # idx = int(idx)
+        score = 0.0
+        for idx in range(0, 10):
+            testing_id = testing_data[idx]["logId"]
+            testing_logText = testing_data[idx]["logText"]
+            testing_logField = testing_data[idx]["logField"]
+            obj = ExtractedCodes()
+            gen_result = get_testing_result(j, testing_logText, codes[0], obj)
+            gen_result = gen_result["output"]
+            gen_result = ast.literal_eval(gen_result)
+            # 验证结果
+            print(f"Testing ID: {testing_id}:")
+            print(f"Testing LogText: {testing_logText}")
+            print(f"Testing LogField: {testing_logField}")
+            print(f"Generated LogField: {gen_result}")
+            if is_perfect_match(testing_logField, gen_result):
+                print(f"完全匹配！")
+                score += 1.0
+            elif has_any_match(testing_logField, gen_result):
+                coverage = calculate_coverage(testing_logField, gen_result)
+                score += coverage
+                print(f"至少有一个匹配！full_coverage: {coverage:.2f}%")
+            else:
+                print(f"完全不匹配！")
+        scores.append(score/10.0)
+
+    print(f"Scores: {scores}")
+
+
+if __name__ == "__main__":
+    # TestUnit
+    class_dataset_path = r"data\classified_data\class_1.json"
+    output_dir = r"src\LogParserX\output\gen"
+    TestUnit(class_dataset_path=class_dataset_path, output_dir=output_dir)
+
+
+    # reports, rename_lst = get_all_reports(r"src\LogParserX\output\gen")
+    # print(reports)
+    # print(rename_lst)
+    # results = []
+    # ex_codes = ExtractedCodes()
+
+    # data_set_path = r"data\classified_data\class_1.json"
+    # with open(data_set_path, "r", encoding="utf-8") as f:
+    #     data_set = json.load(f)
+    
+    # training_data = data_set[:50]
+    # testing_data = data_set[50:]
+
+    # for i, j in zip(reports, rename_lst):
+    #     code_path = Path(i).read_text()
+    #     codes = extract_python_code_from_md(code_path)
+    #     # ex_codes.main_function = ex_codes.get_main_function(codes[0])
+    #     # ex_codes.param_fields = ex_codes.get_param_field(codes[0])
+    #     # ex_codes.func_fields = ex_codes.extract_functions(codes[0])
+    #     # print(f"main_function: {ex_codes.main_function}")
+    #     # print(f"param_fields: {ex_codes.param_fields}")
+    #     # print(f"func_fields: {ex_codes.func_fields}")
+    #     with open(f"{j}", "w", encoding="utf-8") as f:
+    #         f.write(codes[0])
+    #     # result = execute_python_code(j)
+    #     # print(f"original_codes: {codes[0]}, result: {result}")
+    #     log_text = "<21>Aug 13 09:08:09 soc-32 ntpdate[187386]: adjust time server 120.25.115.20 offset 0.002019 sec" 
+    #     # new_code = ex_codes.rewrite_codes(log_text, codes[0])
+    #     # new_code_path = j.replace("gen", "test")
+    #     # with open(new_code_path, "w", encoding="utf-8") as f:
+    #     #     f.write(new_code)
+    #     # result = execute_python_code(new_code_path)
+    #     # print(result)
+    #     result = get_testing_result(j, log_text, codes[0])
+    #     print(result)
+    #     # print(f"main_function: {new_code}")
+    #     # if result["return_code"] == 0:
+    #     #     gen_logField = result["output"]
+    #     #     item = {
+    #     #         "report_path": i,
+    #     #         "output_path": j,
+    #     #         "gen_logField": gen_logField
+    #     #     }
+    #     #     results.append(item)
         
-    print(results)
+    # print(results)
 
 
     # report_path = Path(r"src\LogParserX\output\gen\report_0.md")
