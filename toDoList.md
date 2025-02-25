@@ -77,7 +77,6 @@
 | 300 - 400 | 71.0% |  99.0% | 0.0% |  39 |
 
 
-
 # 2025.2.22-2.24
 这里修改了相关逻辑，把原来很复杂的代理优化成三个，并且要求知识库合并这个难题去掉。
 
@@ -144,4 +143,74 @@ agents 均两两之间上下文开启，并允许代码编译。
 
 # 2025.2.25-2.26
 ## 测试结果
-首先先进行小样本测试 只选简单类别的100条划分训练测试集，验证是否能跑通。
+### 0-9:10条AI生成代码 1->1日志 能力评估  `TestUnit`
+```txt
+My Scores (1 for full): [0.75, 0.8, 0.8, 0.67, 1.0, 0.6, 0.67, 0.67, 0.67, 0.67]
+My Average Score: 0.73
+Match Rate:  1.0
+Perfect Match Rate: 0.1
+Official Score (1 for full): 0.46
+```
+### 0-9:10条AI生成代码 1->10日志 能力评估  `MultiTestUnit`
+```txt
+Index: 0 ======================================================================
+My Scores (1 for full): [0.75, 0.4, 0.8, 0.33, 0.5, 0.6, 0.33, 0.33, 0.33, 0.33]
+My Average Score: 0.47
+Match Rate:  1.0
+Perfect Match Rate: 0.0
+Official Score (1 for full): 0.4
+Index: 1 ======================================================================
+My Scores (1 for full): [0.5, 0.8, 0.8, 0.44, 1.0, 0.4, 0.44, 0.44, 0.44, 0.44]
+My Average Score: 0.57
+Match Rate:  1.0
+Perfect Match Rate: 0.1
+Official Score (1 for full): 0.46
+Index: 2 ======================================================================
+My Scores (1 for full): [0.5, 0.4, 0.8, 0.22, 0.5, 0.4, 0.22, 0.22, 0.22, 0.22]
+My Average Score: 0.37
+Match Rate:  1.0
+Perfect Match Rate: 0.0
+Official Score (1 for full): 0.4
+Index: 3 ======================================================================
+My Scores (1 for full): [0.5, 0.8, 0.8, 0.67, 1.0, 0.4, 0.67, 0.67, 0.67, 0.67]
+My Average Score: 0.69
+Match Rate:  1.0
+Perfect Match Rate: 0.1
+Official Score (1 for full): 0.46
+Index: 4 ======================================================================
+My Scores (1 for full): [0.5, 0.8, 0.4, 0.44, 1.0, 0.4, 0.44, 0.44, 0.44, 0.44]
+My Average Score: 0.53
+Match Rate:  1.0
+Perfect Match Rate: 0.1
+Official Score (1 for full): 0.46
+Index: 5 ======================================================================
+My Scores (1 for full): [1.0, 0.4, 0.4, 0.22, 0.5, 0.6, 0.22, 0.22, 0.22, 0.22]
+My Average Score: 0.4
+Match Rate:  1.0
+Perfect Match Rate: 0.1
+Official Score (1 for full): 0.46
+Index: 6 ======================================================================
+My Scores (1 for full): [0.5, 0.8, 0.8, 0.67, 1.0, 0.4, 0.67, 0.67, 0.67, 0.67]
+My Average Score: 0.69
+Match Rate:  1.0
+Perfect Match Rate: 0.1
+Official Score (1 for full): 0.46
+Index: 7 ======================================================================
+My Scores (1 for full): [0.5, 0.8, 0.8, 0.67, 1.0, 0.4, 0.67, 0.67, 0.67, 0.67]
+My Average Score: 0.69
+Match Rate:  1.0
+Perfect Match Rate: 0.1
+Official Score (1 for full): 0.46
+Index: 8 ======================================================================
+My Scores (1 for full): [0.5, 0.8, 0.8, 0.67, 1.0, 0.4, 0.67, 0.67, 0.67, 0.67]
+My Average Score: 0.69
+Match Rate:  1.0
+Perfect Match Rate: 0.0
+Official Score (1 for full): 0.4
+Index: 9 ======================================================================
+My Scores (1 for full): [0.5, 0.8, 0.8, 0.67, 1.0, 0.4, 0.67, 0.67, 0.67, 0.67]
+My Average Score: 0.69
+Match Rate:  1.0
+Perfect Match Rate: 0.1
+Official Score (1 for full): 0.46
+```

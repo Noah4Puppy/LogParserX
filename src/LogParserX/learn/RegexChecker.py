@@ -147,11 +147,11 @@ class ExtractedCodes:
 
     def rewrite_codes(self, log_text: str, code_str: str) -> str:
         self.main_function = self.get_main_function(code_str)
-        print(f"log_text: {log_text}")
+        # print(f"log_text: {log_text}")
         if self.main_function:
-            print("Check")
+            # print("Check")
             new_main_function = re.sub(r"log_text\s*=\s*[\"'].*?[\"']", f'log_text = f\'{log_text}\'', self.main_function)
-            print(new_main_function)
+            # print(new_main_function)
             new_code = code_str.replace(self.main_function, new_main_function)
             return new_code
         else:
@@ -179,26 +179,37 @@ def calculate_coverage(original, testing):
         original_values = {item["value"] for item in original}
         testing_values = {item["value"] for item in testing}
         common = original_values & testing_values
-        return len(common) / len(original_values) * 100
+        c = len(common) / len(original_values)
+        return round(c, 2)
     else:
         return 0.0
     
 def get_testing_result(opt_path, log_text, opt_code, obj):
     # log_text = "<21>Aug 13 09:08:09 soc-32 ntpdate[187386]: adjust time server 120.25.115.20 offset 0.002019 sec" 
     new_code = obj.rewrite_codes(log_text, opt_code)
-    print(new_code)
+    # print(new_code)
     new_code_path = opt_path.replace("opt", "test")
     with open(new_code_path, "w", encoding="utf-8") as f:
         f.write(new_code)
     result = execute_python_code(new_code_path)
     return result
             
+def get_json_dict(text):
+    # 将文本中的单引号替换为双引号
+    valid_json = text.replace("'", "\"")
+    # 将替换后的文本转换为JSON字典
+    data = json.loads(valid_json)
+    # 返回转换后的JSON字典
+    return data
+
 def TestUnit(class_dataset_path, output_dir):
     with open(class_dataset_path, "r", encoding="utf-8") as f:
         data_set = json.load(f)
     testing_data = data_set[:50]
     print(len(testing_data))
     scores = []
+    match_rate = 0.0
+    perfect_match_rate = 0.0
     # report -> /gen/report_0.md, rename -> /gen/opt_0.py, new_code -> /test/opt_0.py
     report_list, rename_list = get_all_reports(output_dir)
     print(len(report_list))
@@ -217,7 +228,8 @@ def TestUnit(class_dataset_path, output_dir):
         obj = ExtractedCodes()
         gen_result = get_testing_result(j, testing_logText, codes[0], obj)
         gen_result = gen_result["output"]
-        gen_result = ast.literal_eval(gen_result)
+        gen_result = get_json_dict(gen_result)
+        print(gen_result)
         # 验证结果
         print(f"Testing ID: {testing_id}:")
         print(f"Testing LogText: {testing_logText}")
@@ -225,102 +237,89 @@ def TestUnit(class_dataset_path, output_dir):
         print(f"Generated LogField: {gen_result}")
         if is_perfect_match(testing_logField, gen_result):
             print(f"完全匹配！")
-            score += 100.0
+            score = 1.0
+            perfect_match_rate += 1.0
+            match_rate += 1.0
         elif has_any_match(testing_logField, gen_result):
             coverage = calculate_coverage(testing_logField, gen_result)
-            score += coverage
-            print(f"至少有一个匹配！full_coverage: {coverage:.2f}%")
+            score = coverage
+            match_rate += 1.0
+            print(f"至少有一个匹配！full_coverage: {coverage*100:.2f}%")
         else:
             print(f"完全不匹配！")
 
-        # for idx in range(0, 3):
-        #     testing_id = testing_data[idx]["logId"]
-        #     testing_logText = testing_data[idx]["logText"]
-        #     testing_logField = testing_data[idx]["logField"]
-        #     obj = ExtractedCodes()
-        #     gen_result = get_testing_result(j, testing_logText, codes[0], obj)
-        #     gen_result = gen_result["output"]
-        #     gen_result = ast.literal_eval(gen_result)
-        #     # 验证结果
-        #     print(f"Testing ID: {testing_id}:")
-        #     print(f"Testing LogText: {testing_logText}")
-        #     print(f"Testing LogField: {testing_logField}")
-        #     print(f"Generated LogField: {gen_result}")
-        #     if is_perfect_match(testing_logField, gen_result):
-        #         print(f"完全匹配！")
-        #         score += 1.0
-        #     elif has_any_match(testing_logField, gen_result):
-        #         coverage = calculate_coverage(testing_logField, gen_result)
-        #         score += coverage
-        #         print(f"至少有一个匹配！full_coverage: {coverage:.2f}%")
-        #     else:
-        #         print(f"完全不匹配！")
         scores.append(score)
+    
+    official_score = 0.4 * match_rate / len(rename_list) + 0.6 * perfect_match_rate / len(rename_list)
+    print(f"{70*'='}")
+    print(f"My Scores (1 for full): {scores}")
+    print(f"My Average Score: {round(sum(scores) / len(scores), 2)}")
+    print(f"Match Rate:  {match_rate / len(rename_list)}")
+    print(f"Perfect Match Rate: {perfect_match_rate / len(rename_list)}")
+    print(f"Official Score (1 for full): {official_score}")
 
-    print(f"Scores: {scores}")
 
+def MultiTestUnit(class_dataset_path: str, output_dir: str):
+    with open(class_dataset_path, "r", encoding="utf-8") as f:
+            data_set = json.load(f)
+    testing_data = data_set[:50]
+    # scores = []
+    # match_rate = 0.0
+    # perfect_match_rate = 0.0
+    # report -> /gen/report_0.md, rename -> /gen/opt_0.py, new_code -> /test/opt_0.py
+    report_list, rename_list = get_all_reports(output_dir)
+    k = 0
+    for i, j in zip(report_list, rename_list):
+        code_path = Path(i).read_text()
+        codes = extract_python_code_from_md(code_path)
+        with open(j, "w", encoding="utf-8") as f:
+            f.write(codes[0])
+        scores = []
+        match_rate = 0.0
+        perfect_match_rate = 0.0
+        for idx in range(0, len(rename_list)):
+            score = 0.0
+            testing_id = testing_data[idx]["logId"]
+            testing_logText = testing_data[idx]["logText"]
+            testing_logField = testing_data[idx]["logField"]
+            obj = ExtractedCodes()
+            gen_result = get_testing_result(j, testing_logText, codes[0], obj)
+            gen_result = gen_result["output"]
+            gen_result = get_json_dict(gen_result)
+            # 验证结果
+            # print(f"Testing ID: {testing_id}:")
+            # print(f"Testing LogText: {testing_logText}")
+            # print(f"Testing LogField: {testing_logField}")
+            # print(f"Generated LogField: {gen_result}")
+            if is_perfect_match(testing_logField, gen_result):
+                # print(f"完全匹配！")
+                score = 1.0
+                perfect_match_rate += 1.0
+                match_rate += 1.0
+            elif has_any_match(testing_logField, gen_result):
+                coverage = calculate_coverage(testing_logField, gen_result)
+                score = coverage
+                match_rate += 1.0
+                # print(f"至少有一个匹配！full_coverage: {coverage:.2f}%")
+            else:
+                # print(f"完全不匹配！")
+                pass
+            scores.append(score)
+        print(f"Index: {k} {70*'='}")
+        official_score = 0.4 * match_rate / len(rename_list) + 0.6 * perfect_match_rate / len(rename_list)
+        print(f"My Scores (1 for full): {scores}")
+        print(f"My Average Score: {round(sum(scores) / len(scores), 2)}")
+        print(f"Match Rate:  {match_rate / len(rename_list)}")
+        print(f"Perfect Match Rate: {perfect_match_rate / len(rename_list)}")
+        print(f"Official Score (1 for full): {official_score}")
+        k+=1
 
 if __name__ == "__main__":
     # TestUnit
     class_dataset_path = "data/generated_data/class_1.json"
     output_dir = "src/LogParserX/output/gen/reports"
+    # TestUnit: for one code, testing corresponding log to see if it can match 1->1
     TestUnit(class_dataset_path=class_dataset_path, output_dir=output_dir)
-
-
-    # reports, rename_lst = get_all_reports(r"src\LogParserX\output\gen")
-    # print(reports)
-    # print(rename_lst)
-    # results = []
-    # ex_codes = ExtractedCodes()
-
-    # data_set_path = r"data\classified_data\class_1.json"
-    # with open(data_set_path, "r", encoding="utf-8") as f:
-    #     data_set = json.load(f)
-    
-    # training_data = data_set[:50]
-    # testing_data = data_set[50:]
-
-    # for i, j in zip(reports, rename_lst):
-    #     code_path = Path(i).read_text()
-    #     codes = extract_python_code_from_md(code_path)
-    #     # ex_codes.main_function = ex_codes.get_main_function(codes[0])
-    #     # ex_codes.param_fields = ex_codes.get_param_field(codes[0])
-    #     # ex_codes.func_fields = ex_codes.extract_functions(codes[0])
-    #     # print(f"main_function: {ex_codes.main_function}")
-    #     # print(f"param_fields: {ex_codes.param_fields}")
-    #     # print(f"func_fields: {ex_codes.func_fields}")
-    #     with open(f"{j}", "w", encoding="utf-8") as f:
-    #         f.write(codes[0])
-    #     # result = execute_python_code(j)
-    #     # print(f"original_codes: {codes[0]}, result: {result}")
-    #     log_text = "<21>Aug 13 09:08:09 soc-32 ntpdate[187386]: adjust time server 120.25.115.20 offset 0.002019 sec" 
-    #     # new_code = ex_codes.rewrite_codes(log_text, codes[0])
-    #     # new_code_path = j.replace("gen", "test")
-    #     # with open(new_code_path, "w", encoding="utf-8") as f:
-    #     #     f.write(new_code)
-    #     # result = execute_python_code(new_code_path)
-    #     # print(result)
-    #     result = get_testing_result(j, log_text, codes[0])
-    #     print(result)
-    #     # print(f"main_function: {new_code}")
-    #     # if result["return_code"] == 0:
-    #     #     gen_logField = result["output"]
-    #     #     item = {
-    #     #         "report_path": i,
-    #     #         "output_path": j,
-    #     #         "gen_logField": gen_logField
-    #     #     }
-    #     #     results.append(item)
-        
-    # print(results)
-
-
-    # report_path = Path(r"src\LogParserX\output\gen\report_0.md")
-    # report_path = Path(r"src\LogParserX\output\gen\report_1.md")
-    # output_path = Path(r"src\LogParserX\output\opt\output_1.py")
-    # x = extract_python_code_from_md(report_path.read_text())
-    # with output_path.open("w", encoding="utf-8") as f:
-    #     f.write(x[0])
-    # result = execute_python_code(output_path)
-    # print(result)
+    # MultiTestUnit: for one code, testing num sample log to testing its coverage 1->N
+    MultiTestUnit(class_dataset_path=class_dataset_path, output_dir=output_dir)
 

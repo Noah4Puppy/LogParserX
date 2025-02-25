@@ -133,7 +133,7 @@ code_generation_task = Task(
     - Use python format instead of markdown format for better readability
     - Only python codes are allowed, no markdown format is allowed
 
-    For example(clean codes), your codes should be like this:
+    For example(clean codes), your codes should be **strict** like this, main function only change log_text contents:
     import re
     from functools import lru_cache
     @lru_cache(maxsize=100)
@@ -191,6 +191,11 @@ code_validation_task = Task(
     description="""Validate the generated Python codes by executing them and checking the results.
     You should execute the generated codes and check if the results match the logField.
     Pay attention to the key-value pairs, the key and value should all come from the logText, allow key to be empty, but value should not be empty.
+    Do not try to assign type for key when key does not occur in logText!
+    For example:
+    logText = "2023-10-10 10:10:10 ABC ERROR: This is an error message"
+    logField = [{"key": "", "value": "2023-10-10 10:10:10"}, {"key": "", "value": "ABC"}, {"key": "", "value": "ERROR"}]
+    In this logField, three key is empty because they are not in logText. Date, hostname and level these types are pattern types.
     Your pattern should be correct and precise to match to the logText and get results as logField (cover more items as possible). 
     If the results do not match, you should modify the codes and re-run the validation task.
     If the results match, you can submit the codes to the code review team for review.
@@ -280,7 +285,7 @@ def run(test_data, pattern, python_code, output_file, output_file_p, output_file
             "output_file_md": output_file_md.format(log_id),
         }
         result = single_crew.kickoff(inputs=inputs)
-        
+
         print(40*"#")
         print(result)
         print(40*"#")

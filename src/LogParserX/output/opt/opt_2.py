@@ -1,4 +1,3 @@
-```python
 import re
 from functools import lru_cache
 
@@ -10,8 +9,6 @@ def _compile_regex(pattern: str, flags: int = 0) -> re.Pattern:
 patterns = {
     "date": r"\b[A-Za-z]{3}\s{1,2}\d{1,2}\s\d{2}:\d{2}:\d{2}\b",
     "hostname": r"(?<=:\d{2}) ([a-zA-Z0-9._-]+)(?=\s)",
-    "process": r"(\S+)\s+\[(.*?)\]",
-    "session": r"session (\d+)",
     "key_value": r"""
         (?:                        # Start delimiter detection
         (?<=[;:,=(\-])|       # Key correction: add colon : and hyphen - as valid delimiters
@@ -19,7 +16,7 @@ patterns = {
         \s*                        # Allow leading spaces
         (?P<key>                   # Key name rule
             (?![\d\-])             # Cannot start with a digit or hyphen
-            [\w\s.-]+              # Allow letters/numbers/spaces/dots/hyphens
+            [\w\s.-]+              # Allow letters/digits/spaces/dots/hyphens
         )
         \s*=\s*                    # Equal sign with optional spaces on both sides
         (?P<value>                 # Value part
@@ -28,7 +25,7 @@ patterns = {
                 [^,;)=\-]+         # Basic match (added exclusion of -)
             )+
         )
-        (?=                        # Lookahead assertion
+        (?=                        # Lookahead to truncate
             \s*[,;)=\-]|           # Delimiters (added -)
             \s*$|                  # End of string
             (?=\S+\s*=)            # Followed by a new key (including space key names)
@@ -36,7 +33,7 @@ patterns = {
     """
 }
 
-# Define functions to match each pattern
+# Define functions to match patterns
 def match_date(text):
     compiled_re = _compile_regex(patterns['date'])
     match = compiled_re.search(text)
@@ -55,26 +52,7 @@ def match_hostname(text):
         results.append({"key": "", "value": hostname})
     return results
 
-def match_process(text):
-    compiled_re = _compile_regex(patterns['process'])
-    match = compiled_re.search(text)
-    results = []
-    if match:
-        process = match.group(1)
-        pid = match.group(2)
-        results.append({"key": "", "value": process})
-    return results
-
-def match_session(text):
-    compiled_re = _compile_regex(patterns['session'])
-    match = compiled_re.search(text)
-    results = []
-    if match:
-        session = match.group(1)
-        results.append({"key": "", "value": session})
-    return results
-
-def match_key_value(text):
+def match_key_value_pairs(text):
     compiled_re = _compile_regex(patterns['key_value'], re.VERBOSE)
     matches = compiled_re.finditer(text)
     results = []
@@ -84,19 +62,14 @@ def match_key_value(text):
         results.append({"key": key, "value": value})
     return results
 
-# Main function to extract all components
 def get_components(log_text):
     res = []
     res.extend(match_date(log_text))
     res.extend(match_hostname(log_text))
-    res.extend(match_process(log_text))
-    res.extend(match_session(log_text))
-    res.extend(match_key_value(log_text))
+    res.extend(match_key_value_pairs(log_text))
     return res
 
 if __name__ == '__main__':
-    log_text = "<21>Aug 13 09:04:02 soc-32 systemd-logind: Removed session 3831379."
+    log_text = "<21>Oct 28 17:58:09 soc-32 systemd: lgent.service: main process exited, code=exited, status=2/INVALIDARGUMENT"
     res = get_components(log_text)
     print(res)
-```
-```
