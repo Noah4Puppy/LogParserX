@@ -214,3 +214,7 @@ Match Rate:  1.0
 Perfect Match Rate: 0.1
 Official Score (1 for full): 0.46
 ```
+
+### 2025.2.26-2.27
+准备Slides AND 修bugs
+尤其是生成日志的bug json中转义字符的分类处理

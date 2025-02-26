@@ -1,0 +1,307 @@
+[{'key': '', 'value': 'Aug 13 09:04:02'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '09'}, {'key': '', 'value': '3831379'}]
+Testing ID: 0:
+Testing LogText: <21>Aug 13 09:04:02 soc-32 systemd-logind: Removed session 3831379.
+Testing LogField: [{'key': '', 'value': 'Aug 13 09:04:02'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '3831379'}]
+Generated LogField: [{'key': '', 'value': 'Aug 13 09:04:02'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '09'}, {'key': '', 'value': '3831379'}]
+完全匹配！
+[{'key': '', 'value': 'Oct 28 18:00:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '172578'}]
+Testing ID: 1:
+Testing LogText: <21>Oct 28 18:00:09 soc-32 ntpdate[172578]: adjust time server 120.25.115.20 offset 0.000752 sec
+Testing LogField: [{'key': '', 'value': 'Oct 28 18:00:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '172578'}, {'key': '', 'value': '120.25.115.20'}]
+Generated LogField: [{'key': '', 'value': 'Oct 28 18:00:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '172578'}]
+至少有一个匹配！full_coverage: 80.00%
+[{'key': '', 'value': 'soc-32'}, {'key': 'code', 'value': 'exited'}, {'key': 'status', 'value': '2/INVALIDARGUMENT'}]
+Testing ID: 2:
+Testing LogText: <21>Oct 28 17:58:09 soc-32 systemd: lgent.service: main process exited, code=exited, status=2/INVALIDARGUMENT
+Testing LogField: [{'key': '', 'value': 'Oct 28 17:58:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}, {'key': 'code', 'value': 'exited'}, {'key': 'status', 'value': '2/INVALIDARGUMENT'}]
+Generated LogField: [{'key': '', 'value': 'soc-32'}, {'key': 'code', 'value': 'exited'}, {'key': 'status', 'value': '2/INVALIDARGUMENT'}]
+至少有一个匹配！full_coverage: 60.00%
+[{'key': '', 'value': 'Aug 12 08:06:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '16209'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38316'}]
+Testing ID: 3:
+Testing LogText: <21>Aug 12 08:06:01 soc-32 sshd[16209]: Postponed publickey for root from 3.66.0.23 port 38316 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Aug 12 08:06:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '16209'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38316'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Aug 12 08:06:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '16209'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38316'}]
+至少有一个匹配！full_coverage: 67.00%
+[{'key': '', 'value': '21'}]
+Testing ID: 4:
+Testing LogText: <21>Aug 12 08:11:56 soc-32 sshd[33101]: pam_unix(sshd:session): session closed for user root
+Testing LogField: [{'key': '', 'value': 'Aug 12 08:11:56'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '33101'}]
+Generated LogField: [{'key': '', 'value': '21'}]
+完全不匹配！
+[{'key': '', 'value': 'Oct 28 17:57:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '17'}, {'key': '', 'value': '4996668'}]
+Testing ID: 5:
+Testing LogText: <21>Oct 28 17:57:09 soc-32 systemd-logind: New session 4996668 of user root.
+Testing LogField: [{'key': '', 'value': 'Oct 28 17:57:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '4996668'}]
+Generated LogField: [{'key': '', 'value': 'Oct 28 17:57:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '17'}, {'key': '', 'value': '4996668'}]
+完全匹配！
+[{'key': '', 'value': 'Aug 12 07:38:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '138033'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38140'}]
+Testing ID: 6:
+Testing LogText: <21>Aug 12 07:38:43 soc-32 sshd[138033]: Postponed publickey for root from 3.66.0.23 port 38140 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Aug 12 07:38:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '138033'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38140'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Aug 12 07:38:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '138033'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38140'}]
+至少有一个匹配！full_coverage: 67.00%
+[{'key': '', 'value': 'Jul 29 07:31:56'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '60636'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '48454'}]
+Testing ID: 7:
+Testing LogText: <21>Jul 29 07:31:56 soc-32 sshd[60636]: Postponed publickey for root from 3.66.0.23 port 48454 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Jul 29 07:31:56'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '60636'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '48454'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 07:31:56'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '60636'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '48454'}]
+至少有一个匹配！full_coverage: 67.00%
+[{'key': '', 'value': 'Jul 29 07:42:11'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '89018'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42736'}]
+Testing ID: 8:
+Testing LogText: <21>Jul 29 07:42:11 soc-32 sshd[89018]: Postponed publickey for root from 3.66.0.23 port 42736 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Jul 29 07:42:11'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '89018'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42736'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 07:42:11'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '89018'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42736'}]
+至少有一个匹配！full_coverage: 67.00%
+[{'key': '', 'value': 'Aug 12 07:14:12'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '71841'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '43604'}]
+Testing ID: 9:
+Testing LogText: <21>Aug 12 07:14:12 soc-32 sshd[71841]: Postponed publickey for root from 3.66.0.23 port 43604 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Aug 12 07:14:12'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '71841'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '43604'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Aug 12 07:14:12'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '71841'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '43604'}]
+至少有一个匹配！full_coverage: 67.00%
+[{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26434'}]
+Testing ID: 10:
+Testing LogText: Oct 29 00:00:01 soc-32 CROND[26434]: (root) CMD (/usr/lib64/sa/sa1 1 1)
+Testing LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26434'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'CMD'}]
+Generated LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26434'}]
+至少有一个匹配！full_coverage: 67.00%
+[]
+Testing ID: 11:
+Testing LogText: <21>Aug 13 09:05:17 soc-32 systemd: lgent.service holdoff time over, scheduling restart.
+Testing LogField: [{'key': '', 'value': 'Aug 13 09:05:17'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}]
+Generated LogField: []
+完全不匹配！
+[{'key': '', 'value': 'Jul 16 16:33:39'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'root'}]
+Testing ID: 12:
+Testing LogText: <21>Jul 16 16:33:39 soc-32 systemd: Started Session 3405658 of user root.
+Testing LogField: [{'key': '', 'value': 'Jul 16 16:33:39'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}, {'key': '', 'value': '3405658'}, {'key': '', 'value': 'root'}]
+Generated LogField: [{'key': '', 'value': 'Jul 16 16:33:39'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'root'}]
+至少有一个匹配！full_coverage: 60.00%
+[{'key': '', 'value': 'Jul 29 07:12:58'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '7246'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '35052'}]
+Testing ID: 13:
+Testing LogText: <21>Jul 29 07:12:58 soc-32 sshd[7246]: Postponed publickey for root from 3.66.0.23 port 35052 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Jul 29 07:12:58'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '7246'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '35052'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 07:12:58'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '7246'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '35052'}]
+至少有一个匹配！full_coverage: 75.00%
+[{'key': '', 'value': 'Oct 28 10:11:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '2100'}]
+Testing ID: 14:
+Testing LogText: <21>Oct 28 10:11:01 soc-32 CROND[2100]: (root) CMD (/usr/bin/bash /data/soc/soc_upgrade_dir/scripts/check_status.sh &> /dev/null)
+Testing LogField: [{'key': '', 'value': 'Oct 28 10:11:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '2100'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'CMD'}]
+Generated LogField: [{'key': '', 'value': 'Oct 28 10:11:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '2100'}]
+至少有一个匹配！full_coverage: 67.00%
+[{'key': '', 'value': 'Jul 29 16:57:28'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}]
+Testing ID: 15:
+Testing LogText: <21>Jul 29 16:57:28 soc-32 systemd: Started Client agent got collecting & sending logs & metrics..
+Testing LogField: [{'key': '', 'value': 'Jul 29 16:57:28'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 16:57:28'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}]
+完全匹配！
+[{'key': '', 'value': 'Aug 12 08:04:16'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '10791'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '34650'}]
+Testing ID: 16:
+Testing LogText: <21>Aug 12 08:04:16 soc-32 sshd[10791]: Postponed publickey for root from 3.66.0.23 port 34650 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Aug 12 08:04:16'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '10791'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '34650'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Aug 12 08:04:16'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '10791'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '34650'}]
+至少有一个匹配！full_coverage: 75.00%
+[{'key': '', 'value': 'Aug 12 08:08:52'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '24720'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '44196'}, {'key': '', 'value': '24720'}]
+Testing ID: 17:
+Testing LogText: <21>Aug 12 08:08:52 soc-32 sshd[24720]: Postponed publickey for root from 3.66.0.23 port 44196 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Aug 12 08:08:52'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '24720'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Aug 12 08:08:52'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '24720'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '44196'}, {'key': '', 'value': '24720'}]
+至少有一个匹配！full_coverage: 71.00%
+[{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}]
+Testing ID: 18:
+Testing LogText: <21>Jul 29 07:01:43 soc-32 sshd[173168]: pam_unix(sshd:session): session closed for user root
+Testing LogField: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': '', 'value': 'root'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}]
+至少有一个匹配！full_coverage: 80.00%
+[{'key': '', 'value': 'Aug 12 07:51:29'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '172326'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '36424'}]
+Testing ID: 19:
+Testing LogText: <21>Aug 12 07:51:29 soc-32 sshd[172326]: Postponed publickey for root from 3.66.0.23 port 36424 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Aug 12 07:51:29'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '172326'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '36424'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Aug 12 07:51:29'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '172326'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '36424'}]
+至少有一个匹配！full_coverage: 75.00%
+[{'key': '', 'value': 'Jul 29 07:02:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '174980'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '40030'}, {'key': '', 'value': '21'}, {'key': '', 'value': '[preauth]'}]
+Testing ID: 20:
+Testing LogText: <21>Jul 29 07:02:20 soc-32 sshd[174980]: Postponed publickey for root from 3.66.0.23 port 40030 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Jul 29 07:02:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '174980'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '40030'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 07:02:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '174980'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '40030'}, {'key': '', 'value': '21'}, {'key': '', 'value': '[preauth]'}]
+至少有一个匹配！full_coverage: 75.00%
+[{'key': '', 'value': 'Aug 13 09:26:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '41916'}, {'key': '', 'value': '120.25.115.20'}]
+Testing ID: 21:
+Testing LogText: <21>Aug 13 09:26:10 soc-32 ntpdate[41916]: adjust time server 120.25.115.20 offset -0.000046 sec
+Testing LogField: [{'key': '', 'value': 'Aug 13 09:26:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '41916'}, {'key': '', 'value': '120.25.115.20'}]
+Generated LogField: [{'key': '', 'value': 'Aug 13 09:26:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '41916'}, {'key': '', 'value': '120.25.115.20'}]
+完全匹配！
+[{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38666'}]
+Testing ID: 22:
+Testing LogText: <21>Jul 29 07:01:43 soc-32 sshd[173168]: Accepted publickey for root from 3.66.0.23 port 38666 ssh2: RSA SHA256:M/HclYq1V9UXKEtEyF03gXBB7IyFJKcs8tU6lqWNuyM
+Testing LogField: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38666'}, {'key': '', 'value': 'ssh2'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38666'}]
+至少有一个匹配！full_coverage: 86.00%
+[{'key': '', 'value': 'Oct 28 10:01:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '170594'}]
+Testing ID: 23:
+Testing LogText: <21>Oct 28 10:01:01 soc-32 CROND[170594]: (root) CMD (run-parts /etc/cron.hourly)
+Testing LogField: [{'key': '', 'value': 'Oct 28 10:01:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '170594'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'CMD'}]
+Generated LogField: [{'key': '', 'value': 'Oct 28 10:01:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '170594'}]
+至少有一个匹配！full_coverage: 67.00%
+[{'key': '', 'value': 'Aug 12 07:13:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '69034'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41484'}, {'key': '', 'value': 'ssh2'}]
+Testing ID: 24:
+Testing LogText: <21>Aug 12 07:13:10 soc-32 sshd[69034]: Accepted publickey for root from 3.66.0.23 port 41484 ssh2: RSA SHA256:M/HclYq1V9UXKEtEyF03gXBB7IyFJKcs8tU6lqWNuyM
+Testing LogField: [{'key': '', 'value': 'Aug 12 07:13:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '69034'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41484'}, {'key': '', 'value': 'ssh2'}]
+Generated LogField: [{'key': '', 'value': 'Aug 12 07:13:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '69034'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41484'}, {'key': '', 'value': 'ssh2'}]
+完全匹配！
+[{'key': '', 'value': 'Jul 29 17:01:24'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '17'}, {'key': '', 'value': '3604702'}, {'key': '', 'value': 'root.'}]
+Testing ID: 25:
+Testing LogText: <21>Jul 29 17:01:24 soc-32 systemd: Started Session 3604702 of user root.
+Testing LogField: [{'key': '', 'value': 'Jul 29 17:01:24'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}, {'key': '', 'value': '3604702'}, {'key': '', 'value': 'root'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 17:01:24'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '17'}, {'key': '', 'value': '3604702'}, {'key': '', 'value': 'root.'}]
+至少有一个匹配！full_coverage: 60.00%
+[{'key': '', 'value': 'Aug 12 08:07:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '20315'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41070'}]
+Testing ID: 26:
+Testing LogText: <21>Aug 12 08:07:20 soc-32 sshd[20315]: Postponed publickey for root from 3.66.0.23 port 41070 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Aug 12 08:07:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '20315'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41070'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Aug 12 08:07:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '20315'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41070'}]
+至少有一个匹配！full_coverage: 75.00%
+[{'key': '', 'value': 'Oct 28 18:00:13'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '18'}, {'key': '', 'value': '4996702'}, {'key': '', 'value': 'root'}]
+Testing ID: 27:
+Testing LogText: <21>Oct 28 18:00:13 soc-32 systemd-logind: New session 4996702 of user root.
+Testing LogField: [{'key': '', 'value': 'Oct 28 18:00:13'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '4996702'}, {'key': '', 'value': 'root'}]
+Generated LogField: [{'key': '', 'value': 'Oct 28 18:00:13'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '18'}, {'key': '', 'value': '4996702'}, {'key': '', 'value': 'root'}]
+完全匹配！
+[{'key': '', 'value': 'Jul 29 07:20:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '28635'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50848'}]
+Testing ID: 28:
+Testing LogText: <21>Jul 29 07:20:09 soc-32 sshd[28635]: Postponed publickey for root from 3.66.0.23 port 50848 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Jul 29 07:20:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '28635'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50848'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 07:20:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '28635'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50848'}]
+至少有一个匹配！full_coverage: 75.00%
+[{'key': '', 'value': 'Jul 29 16:56:04'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '16'}, {'key': '', 'value': '3604644'}, {'key': '', 'value': 'root'}]
+Testing ID: 29:
+Testing LogText: <21>Jul 29 16:56:04 soc-32 systemd-logind: New session 3604644 of user root.
+Testing LogField: [{'key': '', 'value': 'Jul 29 16:56:04'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '3604644'}, {'key': '', 'value': 'root'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 16:56:04'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '16'}, {'key': '', 'value': '3604644'}, {'key': '', 'value': 'root'}]
+完全匹配！
+[{'key': '', 'value': 'Jul 29 16:58:07'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '38841'}, {'key': '', 'value': '120.25.115.20'}]
+Testing ID: 30:
+Testing LogText: <21>Jul 29 16:58:07 soc-32 ntpdate[38841]: adjust time server 120.25.115.20 offset 0.001189 sec
+Testing LogField: [{'key': '', 'value': 'Jul 29 16:58:07'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '38841'}, {'key': '', 'value': '120.25.115.20'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 16:58:07'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '38841'}, {'key': '', 'value': '120.25.115.20'}]
+完全匹配！
+[{'key': '', 'value': 'Jul 29 07:10:08'}, {'key': '', 'value': '<21>Jul'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '195746'}, {'key': '', 'value': '3.66.0.252'}, {'key': '', 'value': '52800'}, {'key': '', 'value': 'ssh2'}]
+Testing ID: 31:
+Testing LogText: <21>Jul 29 07:10:08 soc-32 sshd[195746]: Accepted publickey for root from 3.66.0.252 port 52800 ssh2: RSA SHA256:M/HclYq1V9UXKEtEyF03gXBB7IyFJKcs8tU6lqWNuyM
+Testing LogField: [{'key': '', 'value': 'Jul 29 07:10:08'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '195746'}, {'key': '', 'value': '3.66.0.252'}, {'key': '', 'value': '52800'}, {'key': '', 'value': 'ssh2'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 07:10:08'}, {'key': '', 'value': '<21>Jul'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '195746'}, {'key': '', 'value': '3.66.0.252'}, {'key': '', 'value': '52800'}, {'key': '', 'value': 'ssh2'}]
+完全匹配！
+[{'key': '', 'value': 'Jul 16 16:34:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '52003'}]
+Testing ID: 32:
+Testing LogText: <21>Jul 16 16:34:01 soc-32 CROND[52003]: (root) CMD (/usr/sbin/ntpdate -s ntp1.aliyun.com &> /dev/null)
+Testing LogField: [{'key': '', 'value': 'Jul 16 16:34:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '52003'}, {'key': '', 'value': 'root'}]
+Generated LogField: [{'key': '', 'value': 'Jul 16 16:34:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '52003'}]
+至少有一个匹配！full_coverage: 80.00%
+[{'key': '', 'value': 'Jul 16 16:34:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '52006'}]
+Testing ID: 33:
+Testing LogText: <21>Jul 16 16:34:01 soc-32 CROND[52006]: (root) CMD (/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep k3s) &> /dev/null)
+Testing LogField: [{'key': '', 'value': 'Jul 16 16:34:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '52006'}, {'key': '', 'value': 'root'}]
+Generated LogField: [{'key': '', 'value': 'Jul 16 16:34:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '52006'}]
+至少有一个匹配！full_coverage: 80.00%
+[{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '10324'}, {'key': '', 'value': '5000479'}]
+Testing ID: 34:
+Testing LogText: Oct 29 00:00:01 soc-32 systemd-logind[10324]: Removed session 5000479.
+Testing LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '10324'}, {'key': '', 'value': '5000479'}]
+Generated LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '10324'}, {'key': '', 'value': '5000479'}]
+完全匹配！
+[{'key': '', 'value': 'Aug 12 10:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '131152'}]
+Testing ID: 35:
+Testing LogText: <21>Aug 12 10:00:01 soc-32 CROND[131152]: (root) CMD (/usr/lib64/sa/sa1 1 1)
+Testing LogField: [{'key': '', 'value': 'Aug 12 10:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '131152'}, {'key': '', 'value': 'root'}]
+Generated LogField: [{'key': '', 'value': 'Aug 12 10:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '131152'}]
+至少有一个匹配！full_coverage: 80.00%
+[{'key': '', 'value': 'Aug 12 07:44:51'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '154494'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50808'}]
+Testing ID: 36:
+Testing LogText: <21>Aug 12 07:44:51 soc-32 sshd[154494]: Postponed publickey for root from 3.66.0.23 port 50808 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Aug 12 07:44:51'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '154494'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50808'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Aug 12 07:44:51'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '154494'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50808'}]
+至少有一个匹配！full_coverage: 75.00%
+[{'key': '', 'value': 'Aug 13 09:05:18'}, {'key': '', 'value': 'soc-32'}]
+Testing ID: 37:
+Testing LogText: <21>Aug 13 09:05:18 soc-32 systemd: lgent.service failed.
+Testing LogField: [{'key': '', 'value': 'Aug 13 09:05:18'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}]
+Generated LogField: [{'key': '', 'value': 'Aug 13 09:05:18'}, {'key': '', 'value': 'soc-32'}]
+至少有一个匹配！full_coverage: 67.00%
+[{'key': '', 'value': 'Jul 29 16:56:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '33598'}]
+Testing ID: 38:
+Testing LogText: <21>Jul 29 16:56:09 soc-32 ntpdate[33598]: no server suitable for synchronization found
+Testing LogField: [{'key': '', 'value': 'Jul 29 16:56:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '33598'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 16:56:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '33598'}]
+完全匹配！
+[{'key': '', 'value': 'Aug 12 07:24:38'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '100387'}]
+Testing ID: 39:
+Testing LogText: <21>Aug 12 07:24:38 soc-32 sshd[100387]: pam_unix(sshd:session): session closed for user root
+Testing LogField: [{'key': '', 'value': 'Aug 12 07:24:38'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '100387'}, {'key': '', 'value': 'root'}]
+Generated LogField: [{'key': '', 'value': 'Aug 12 07:24:38'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '100387'}]
+至少有一个匹配！full_coverage: 80.00%
+[{'key': '', 'value': 'Aug 12 09:30:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '49952'}]
+Testing ID: 40:
+Testing LogText: <21>Aug 12 09:30:01 soc-32 CROND[49952]: (root) CMD (/usr/local/lgent/scheduled.sh)
+Testing LogField: [{'key': '', 'value': 'Aug 12 09:30:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '49952'}, {'key': '', 'value': 'root'}]
+Generated LogField: [{'key': '', 'value': 'Aug 12 09:30:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '49952'}]
+至少有一个匹配！full_coverage: 80.00%
+[{'key': '', 'value': 'Aug 12 07:40:46'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '143619'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42378'}]
+Testing ID: 41:
+Testing LogText: <21>Aug 12 07:40:46 soc-32 sshd[143619]: Postponed publickey for root from 3.66.0.23 port 42378 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Aug 12 07:40:46'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '143619'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42378'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Aug 12 07:40:46'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '143619'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42378'}]
+至少有一个匹配！full_coverage: 75.00%
+[{'key': '', 'value': 'Jul 29 07:21:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '31569'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '53116'}]
+Testing ID: 42:
+Testing LogText: <21>Jul 29 07:21:10 soc-32 sshd[31569]: Postponed publickey for root from 3.66.0.23 port 53116 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Jul 29 07:21:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '31569'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '53116'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 07:21:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '31569'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '53116'}]
+至少有一个匹配！full_coverage: 75.00%
+[{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': 'uid', 'value': '0'}]
+Testing ID: 43:
+Testing LogText: <21>Jul 29 07:01:43 soc-32 sshd[173168]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Testing LogField: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': '', 'value': 'root'}, {'key': 'uid', 'value': '0'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': 'uid', 'value': '0'}]
+至少有一个匹配！full_coverage: 83.00%
+[{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26439'}, {'key': '', 'value': 'root'}]
+Testing ID: 44:
+Testing LogText: Oct 29 00:00:01 soc-32 CROND[26439]: (root) CMD (/usr/local/lgent/scheduled.sh)
+Testing LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26439'}, {'key': '', 'value': 'root'}]
+Generated LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26439'}, {'key': '', 'value': 'root'}]
+完全匹配！
+[{'key': '', 'value': 'Jul 29 07:04:16'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '180002'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '44244'}]
+Testing ID: 45:
+Testing LogText: <21>Jul 29 07:04:16 soc-32 sshd[180002]: Postponed publickey for root from 3.66.0.23 port 44244 ssh2 [preauth]
+Testing LogField: [{'key': '', 'value': 'Jul 29 07:04:16'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '180002'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '44244'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
+Generated LogField: [{'key': '', 'value': 'Jul 29 07:04:16'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '180002'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '44244'}]
+至少有一个匹配！full_coverage: 67.00%
+[{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26436'}, {'key': '', 'value': '/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep etcd'}]
+Testing ID: 46:
+Testing LogText: Oct 29 00:00:01 soc-32 CROND[26436]: (root) CMD (/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep etcd) &> /dev/null)
+Testing LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26436'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'CMD'}]
+Generated LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26436'}, {'key': '', 'value': '/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep etcd'}]
+至少有一个匹配！full_coverage: 67.00%
+[{'key': '', 'value': 'Sep 23 22:39:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '135607'}, {'key': '', 'value': 'CMD'}, {'key': '', 'value': 'root'}]
+Testing ID: 47:
+Testing LogText: Sep 23 22:39:01 soc-32 CROND[135607]: (root) CMD (/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep k3s) &> /dev/null)
+Testing LogField: [{'key': '', 'value': 'Sep 23 22:39:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '135607'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'CMD'}]
+Generated LogField: [{'key': '', 'value': 'Sep 23 22:39:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '135607'}, {'key': '', 'value': 'CMD'}, {'key': '', 'value': 'root'}]
+至少有一个匹配！full_coverage: 100.00%
+[{'key': '', 'value': 'Oct 28 18:00:14'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '18'}, {'key': '', 'value': '4996702'}]
+Testing ID: 48:
+Testing LogText: <21>Oct 28 18:00:14 soc-32 systemd-logind: Removed session 4996702.
+Testing LogField: [{'key': '', 'value': 'Oct 28 18:00:14'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '4996702'}]
+Generated LogField: [{'key': '', 'value': 'Oct 28 18:00:14'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '18'}, {'key': '', 'value': '4996702'}]
+完全匹配！
+[{'key': '', 'value': 'Oct 28 10:10:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '195722'}]
+Testing ID: 49:
+Testing LogText: <21>Oct 28 10:10:01 soc-32 CROND[195722]: (root) CMD (/usr/bin/bash /data/AiLogAuditor-develop-9dfc79aaa--20230529030421/unison_copy.sh &> /dev/null)
+Testing LogField: [{'key': '', 'value': 'Oct 28 10:10:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '195722'}, {'key': '', 'value': 'root'}]
+Generated LogField: [{'key': '', 'value': 'Oct 28 10:10:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '195722'}]
+至少有一个匹配！full_coverage: 80.00%
+======================================================================
+My Scores (1 for full): [1.0, 0.8, 0.6, 0.67, 0.0, 1.0, 0.67, 0.67, 0.67, 0.67, 0.67, 0.0, 0.6, 0.75, 0.67, 1.0, 0.75, 0.71, 0.8, 0.75, 0.75, 1.0, 0.86, 0.67, 1.0, 0.6, 0.75, 1.0, 0.75, 1.0, 1.0, 1.0, 0.8, 0.8, 1.0, 0.8, 0.75, 0.67, 1.0, 0.8, 0.8, 0.75, 0.75, 0.83, 1.0, 0.67, 0.67, 1.0, 1.0, 0.8]
+My Average Score: 0.77
+Match Rate:  0.96
+Perfect Match Rate: 0.26
+Official Score (1 for full): 0.54
+Bad Case: 16

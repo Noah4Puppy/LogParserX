@@ -117,6 +117,7 @@ code_generation_task = Task(
     description="""Generate code based on verification results:
     Log sample: {logText}
     Target field: {logField},
+    Python Code Template: {python_code},
     Read Report from Pattern Checker, and use the optimized pattern to generate Python codes.
     If the optimized pattern is not correct, you can modify it and re-run the code generation task.
     Execute the generated codes and check if the results match the logField.
@@ -125,8 +126,8 @@ code_generation_task = Task(
     For example: ```python```""", # Explicitly reference upstream output
     agent=code_generator,
     context=[pattern_check_task], # Establish dependency chain
-    
-    expected_output="""Python function containing the following elements:
+    expected_output =
+    """Python function containing the following elements:
     - Use the optimized patterns
     - Complete all functions and variables with proper values
     - The codes can be executed and return the expected results
@@ -142,7 +143,7 @@ code_generation_task = Task(
     # use optimized pattern
     patterns = {
         "pattern_name": "",
-        "date": r"\b[A-Za-z]{3}\s{1,2}\d{1,2}\s\d{2}:\d{2}:\d{2}\b",
+        "date": r"\b[A-Za-z]{{3}}\s{1,2}\d{1,2}\s\d{2}:\d{2}:\d{2}\b",
         "hostname": r"(?<=:\d{2}) ([a-zA-Z0-9._-]+)",
         "pid": r"([a-zA-Z0-9_-]+)\[(\d+)\]",
         ...
@@ -194,7 +195,7 @@ code_validation_task = Task(
     Do not try to assign type for key when key does not occur in logText!
     For example:
     logText = "2023-10-10 10:10:10 ABC ERROR: This is an error message"
-    logField = [{"key": "", "value": "2023-10-10 10:10:10"}, {"key": "", "value": "ABC"}, {"key": "", "value": "ERROR"}]
+    logField = [{{"key": "", "value": "2023-10-10 10:10:10"}}, {{"key": "", "value": "ABC"}}, {{"key": "", "value": "ERROR"}}]
     In this logField, three key is empty because they are not in logText. Date, hostname and level these types are pattern types.
     Your pattern should be correct and precise to match to the logText and get results as logField (cover more items as possible). 
     If the results do not match, you should modify the codes and re-run the validation task.
@@ -317,5 +318,5 @@ def launcher(S, E, class_path):
     print("Done!")
 
 if __name__ == '__main__':
-    class_path = r"data/classified_data/class_1.json"
-    launcher(S=0,E=10, class_path=class_path)
+    class_path = r"data/classified_data/class_2.json"
+    launcher(S=0,E=50, class_path=class_path)

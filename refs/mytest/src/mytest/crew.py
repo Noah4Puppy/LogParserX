@@ -1,35 +1,35 @@
 # src/latest_ai_development/crew.py
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from crewai_tools import GithubSearchTool
+# from crewai_tools import GithubSearchTool
 from langchain_openai import ChatOpenAI  
 from dotenv import load_dotenv
 import os
 load_dotenv(override=True)
 
-search_tool = GithubSearchTool(
- config=dict(
-        llm=dict(
-            provider="openai",
-            config=dict(
-                base_url=os.getenv("OPENAI_API_BASE"),  
-                api_key=os.getenv("OPENAI_API_KEY"),
-                model=os.getenv("MODEL_NAME"),  
-            ),
-        ),
-        embedder=dict(
-            provider="openai",
-            config=dict(
-                api_base=os.getenv("OPENAI_API_BASE"),  
-                api_key=os.getenv("OPENAI_API_KEY"),
-                model=os.getenv("EMBED_MODEL_NAME"), 
-            ),
-        ),
-    ),
-	gh_token=os.getenv("GITHUB_TOKEN"),
-	# github_repo="",
-	content_types=['code', 'issue']
-)
+# search_tool = GithubSearchTool(
+#  config=dict(
+#         llm=dict(
+#             provider="openai",
+#             config=dict(
+#                 base_url=os.getenv("OPENAI_API_BASE"),  
+#                 api_key=os.getenv("OPENAI_API_KEY"),
+#                 model=os.getenv("MODEL_NAME"),  
+#             ),
+#         ),
+#         embedder=dict(
+#             provider="openai",
+#             config=dict(
+#                 api_base=os.getenv("OPENAI_API_BASE"),  
+#                 api_key=os.getenv("OPENAI_API_KEY"),
+#                 model=os.getenv("EMBED_MODEL_NAME"), 
+#             ),
+#         ),
+#     ),
+# 	gh_token=os.getenv("GITHUB_TOKEN"),
+# 	# github_repo="",
+# 	content_types=['code', 'issue']
+# )
 
 @CrewBase
 class MyTest():

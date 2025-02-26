@@ -231,7 +231,7 @@ class TeeStream:
 
 
 def TestUnit(class_dataset_path, output_dir):
-    tee = TeeStream("src/LogParserX/output/result.txt", sys.stdout)
+    tee = TeeStream("src/LogParserX/output/result_ori.txt", sys.stdout)
     original_stdout = sys.stdout
     sys.stdout = tee
 
@@ -278,7 +278,7 @@ def TestUnit(class_dataset_path, output_dir):
             print(f"完全不匹配！")
 
         scores.append(score)
-    
+    bad_len = len([i for i in scores if i < 0.7])
     official_score = 0.4 * match_rate / len(rename_list) + 0.6 * perfect_match_rate / len(rename_list)
     print(f"{70*'='}")
     print(f"My Scores (1 for full): {scores}")
@@ -286,6 +286,7 @@ def TestUnit(class_dataset_path, output_dir):
     print(f"Match Rate:  {match_rate / len(rename_list)}")
     print(f"Perfect Match Rate: {perfect_match_rate / len(rename_list)}")
     print(f"Official Score (1 for full): {official_score}")
+    print(f"Bad Case: {bad_len}")
 
     sys.stdout = original_stdout
 
@@ -353,10 +354,11 @@ def MultiTestUnit(class_dataset_path: str, output_dir: str):
 
 if __name__ == "__main__":
     # TestUnit
-    class_dataset_path = "data/generated_data/class_1.json"
+    # class_dataset_path = "data/generated_data/class_1.json"
+    class_dataset_path = "data/classified_data/class_1.json"
     output_dir = "src/LogParserX/output/gen/reports"
     # TestUnit: for one code, testing corresponding log to see if it can match 1->1
     TestUnit(class_dataset_path=class_dataset_path, output_dir=output_dir)
     # MultiTestUnit: for one code, testing num sample log to testing its coverage 1->N
-    MultiTestUnit(class_dataset_path=class_dataset_path, output_dir=output_dir)
+    # MultiTestUnit(class_dataset_path=class_dataset_path, output_dir=output_dir)
 

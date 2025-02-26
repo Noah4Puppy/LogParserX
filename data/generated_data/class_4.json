@@ -1,0 +1,3556 @@
+{
+        "logId": 301,
+        "logText": "<188>2021-02-23 11:45:12 WT_BianJie_USG5310_B %%01SHELL/4/CMD(l): -DevIP=172.28.18.63; :vt0 :172.28.24.199 :** :public :dis version",
+        "logField": [
+            {
+                "key": "",
+                "value": "2021-02-23 11:45:12"
+            },
+            {
+                "key": "",
+                "value": "WT_BianJie_USG5310_B"
+            },
+            {
+                "key": "-DevIP",
+                "value": "172.28.18.63"
+            }
+        ]
+    }
+{
+    "logId": 302,
+    "logText": "<190>2015-07-21 14:20:45 USG5310_Railwaynet %%01RT/6/CM(l): -DevIP=10.32.250.20; cpu=15 totalmemory=418369056 curmemory=136000000",
+    "logField": [
+        {
+            "key": "",
+            "value": "2015-07-21 14:20:45"
+        },
+        {
+            "key": "",
+            "value": "USG5310_Railwaynet"
+        },
+        {
+            "key": "-DevIP",
+            "value": "10.32.250.20"
+        },
+        {
+            "key": "cpu",
+            "value": "15"
+        },
+        {
+            "key": "totalmemory",
+            "value": "418369056"
+        },
+        {
+            "key": "curmemory",
+            "value": "136000000"
+        }
+    ]
+}
+{
+        "logId": 303,
+        "logText": "<189>Mar 15 2013 14:30:45 HuaweiB %%01FTPS/5/REQUEST(l)[129]:The user had a request. (UserName=\"guest\", IpAddress=192.168.1.10, VpnInstanceName=\"\", Request=RETR)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 2013 14:30:45"
+            },
+            {
+                "key": "",
+                "value": "HuaweiB"
+            },
+            {
+                "key": "",
+                "value": "129"
+            },
+            {
+                "key": "UserName",
+                "value": "guest"
+            },
+            {
+                "key": "IpAddress",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "Request",
+                "value": "RETR"
+            }
+        ]
+    }
+{
+        "logId": 304,
+        "logText": "<188>2023-09-15 14:45:22 BCJN_Inter_FW_HW_02 %%01HTTPD/4/PASS(l): User operator(IP:52.0.0.44 ID:301) login succeeded",
+        "logField": [
+            {
+                "key": "",
+                "value": "2023-09-15 14:45:22"
+            },
+            {
+                "key": "",
+                "value": "BCJN_Inter_FW_HW_02"
+            },
+            {
+                "key": "IP",
+                "value": "52.0.0.44"
+            },
+            {
+                "key": "ID",
+                "value": "301"
+            }
+        ]
+    }
+{
+        "logId": 305,
+        "logText": "<189>Jan 22 2024 09:27:15+08:00 FAB_C-Area_07-PROD_B-02*5 %%01SRM/5/TXPOWER_RESUME(l)[7543210]:Optical module in interface XGigabitEthernet0/0/5, Tx power resume.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jan 22 2024 09:27:15+08:00"
+            },
+            {
+                "key": "",
+                "value": "7543210"
+            }
+        ]
+    }
+{
+    "logId": 306,
+    "logText": "<148>Jan 15 2017 14:22:33 12G-West %%01L2IF/4/hwMacHopAlarm_active(l):VS=Admin-VS-CID=0x808c043e-alarmID=0x00f10008;Mac-hopping exist . (VlanId=202, Vsi=-, BDId=1, the port list of Mac-hopping = GigabitEthernet0/3/8, -, -, -, the PW list of Mac-hopping = -)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jan 15 2017 14:22:33 12G-West"
+        },
+        {
+            "key": "",
+            "value": "12G-West"
+        },
+        {
+            "key": "VS",
+            "value": "Admin"
+        },
+        {
+            "key": "VS-CID",
+            "value": "0x808c043e"
+        },
+        {
+            "key": "alarmID",
+            "value": "0x00f10008"
+        },
+        {
+            "key": "VlanId",
+            "value": "202"
+        },
+        {
+            "key": "BDId",
+            "value": "1"
+        }
+    ]
+}
+{
+        "logId": 307,
+        "logText": "<188>Mar 15 2014 10:15:45 Core9300B %%01SHELL/4/LOGINFAILED(l)[7]:Failed to login. (Ip=192.168.1.10, UserName=admin, Times=1, AccessType=SSH)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 2014 10:15:45"
+            },
+            {
+                "key": "",
+                "value": "Core9300B"
+            },
+            {
+                "key": "",
+                "value": "7"
+            },
+            {
+                "key": "AccessType",
+                "value": "SSH"
+            }
+        ]
+    }
+{
+    "logId": 308,
+    "logText": "<189>Jul  5 2016 15:45:30 KS_IDC_ISSCloud_CS_CE6810_03 %%01CLI/5/INTER_CMDRECORD(s):CID=0x80e3a4b6;Recorded command information. (Task=vty1, Ip=10.44.36.198, VpnName=_public_, User=admin, Command="", PromptInfo=\"Warning: The initial password poses security risks. The password needs to be changed. Change now? [Y/N]:\", UserInput=\"Y\".)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jul  5 2016 15:45:30"
+        },
+        {
+            "key": "",
+            "value": "KS_IDC_ISSCloud_CS_CE6810_03"
+        },
+        {
+            "key": "CID",
+            "value": "0x80e3a4b6"
+        },
+        {
+            "key": "Task",
+            "value": "vty1"
+        },
+        {
+            "key": "Ip",
+            "value": "10.44.36.198"
+        },
+        {
+            "key": "VpnName",
+            "value": "_public_"
+        },
+        {
+            "key": "User",
+            "value": "admin"
+        },
+        {
+            "key": "UserInput",
+            "value": "Y"
+        }
+    ]
+}
+{
+        "logId": 309,
+        "logText": "<187>Nov 15 2022 14:45:22 Access-AP %%01SECE/3/ARPS_DROP_PACKET_GLOBAL_SPDLMT(l)[25713]:Rate of global arp packets exceeds the limit. (SourceMAC=f2b0-e0f5-ebf2, SourceIP=172.16.121.103, SourceInterface=GigabitEthernet0/0/7, DropTime=2022/11/15 14:45:22)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 2022 14:45:22"
+            },
+            {
+                "key": "",
+                "value": "Access-AP"
+            },
+            {
+                "key": "",
+                "value": "25713"
+            },
+            {
+                "key": "SourceMAC",
+                "value": "f2b0-e0f5-ebf2"
+            },
+            {
+                "key": "SourceIP",
+                "value": "172.16.121.103"
+            },
+            {
+                "key": "SourceInterface",
+                "value": "GigabitEthernet0/0/7"
+            },
+            {
+                "key": "DropTime",
+                "value": "2022/11/15 14:45:22"
+            }
+        ]
+    }
+{
+        "logId": 310,
+        "logText": "<187>Dec 10 2015 14:22:45 Quidway %%01FTPS/3/LOGINFAILED(s)[20]:Failed to login. (UserName=\"b\", IpAddress=192.168.100.3, VpnInstanceName=\" \", Reason=\"Password incorrect\")",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 10 2015 14:22:45"
+            },
+            {
+                "key": "",
+                "value": "Quidway"
+            },
+            {
+                "key": "",
+                "value": "20"
+            },
+            {
+                "key": "UserName",
+                "value": "b"
+            },
+            {
+                "key": "IpAddress",
+                "value": "192.168.100.3"
+            },
+            {
+                "key": "Reason",
+                "value": "Password incorrect"
+            }
+        ]
+    }
+{
+        "logId": 311,
+        "logText": "<189>May 22 2023 10:45:30 AGW-2#lou-CSS-S7706 %%01SSH/5/SSH_CONNECT_CLOSED(s)[10245]:SSH connect was closed. (IP=192.168.1.200, VPNInstanceName= , UserName=john)",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 22 2023 10:45:30"
+            },
+            {
+                "key": "",
+                "value": "AGW-2"
+            },
+            {
+                "key": "",
+                "value": "10245"
+            },
+            {
+                "key": "IP",
+                "value": "192.168.1.200"
+            },
+            {
+                "key": "UserName",
+                "value": "john"
+            }
+        ]
+    }
+{
+    "logId": 312,
+    "logText": "<190>2023/04/15 14:25:45 USG6300 %%01AUDIT/6/HTTP(l): The HTTP audit policy was matched. (SyslogId=73056, VSys=\"public\", AuditPolicy=\"audit_bk\", SrcIp=192.168.1.100, DstIp=172.16.0.1, SrcPort=443, DstPort=56789, SrcZone=untrust, DstZone=untrust, User=\"admin\", Protocol=TCP, Application=\"HTTPS\", Profile=\"audit.websecurity\", AuditType=\"File Download\", EventNum=1, Direction=upload, URL=\"https://example.com/file.zip\", Subject=\"\", Content=\"\", FileName=\"file.zip\", FileSize=123456, URLCategory=\"Business\")",
+    "logField": [
+        {
+            "key": "",
+            "value": "2023/04/15 14:25:45"
+        },
+        {
+            "key": "",
+            "value": "USG6300"
+        },
+        {
+            "key": "SyslogId",
+            "value": "73056"
+        },
+        {
+            "key": "VSys",
+            "value": "public"
+        },
+        {
+            "key": "AuditPolicy",
+            "value": "audit_bk"
+        },
+        {
+            "key": "SrcIp",
+            "value": "192.168.1.100"
+        },
+        {
+            "key": "DstIp",
+            "value": "172.16.0.1"
+        },
+        {
+            "key": "SrcPort",
+            "value": "443"
+        },
+        {
+            "key": "DstPort",
+            "value": "56789"
+        },
+        {
+            "key": "Direction",
+            "value": "upload"
+        }
+    ]
+}
+{
+        "logId": 313,
+        "logText": "<188>Oct 22 2021 14:45:30 HD-NE20E-S4 %%01CPUDEFEND/4/FREEARPFILTERENHANCECAR(s):CID=0x80c4047b-Slot=6;The port GigabitEthernet0/3/1 pevlan 800 cevlan 0 is released from attacks. Arp vlan car is cancelled.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 22 2021 14:45:30"
+            },
+            {
+                "key": "",
+                "value": "HD-NE20E-S4"
+            },
+            {
+                "key": "CID",
+                "value": "0x80c4047b"
+            },
+            {
+                "key": "Slot",
+                "value": "6"
+            }
+        ]
+    }
+{
+    "logId": 314,
+    "logText": "<189>Jul 15 2024 12:34:56 XJDL102_OTUSR_AS_06 %%01CFM/5/SAVE_FILE_RECORD(s)[54217]:The system automatically saved the current configuration to the file. (FileName=flash:/backupcfg.zip)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jul 15 2024 12:34:56"
+        },
+        {
+            "key": "",
+            "value": "XJDL102_OTUSR_AS_06"
+        },
+        {
+            "key": "",
+            "value": "54217"
+        },
+        {
+            "key": "FileName",
+            "value": "flash:/backupcfg.zip"
+        }
+    ]
+}
+{
+    "logId": 315,
+    "logText": "<188>Dec 15 2023 14:45:22 B-Area7-G2-24U-FabD-Acc %%01MSTP/4/MSTPLOG_PROPORT_STATE_LEARNING(l):CID=0x80547553;The MSTP process's port has been set to learning state. (ProcessID=1, InstanceID=0, PortID=2, IfIndex=4, PortName=GE2/0/2, PwName=-)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Dec 15 2023 14:45:22"
+        },
+        {
+            "key": "",
+            "value": "B-Area7-G2-24U-FabD-Acc"
+        },
+        {
+            "key": "CID",
+            "value": "0x80547553"
+        },
+        {
+            "key": "ProcessID",
+            "value": "1"
+        },
+        {
+            "key": "PortID",
+            "value": "2"
+        },
+        {
+            "key": "IfIndex",
+            "value": "4"
+        },
+        {
+            "key": "PortName",
+            "value": "GE2/0/2"
+        }
+    ]
+}
+{
+        "logId": 316,
+        "logText": "<188>Mar 22 2023 09:45:30 BRC-FZ-MGMT-SW-HW5720-10 %%01CFM/4/SAVE_FILE(s)[2023]:When deciding whether to save the configuration to the file flash:/backupFtpNew.cfg, the user chose N.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 22 2023 09:45:30"
+            },
+            {
+                "key": "",
+                "value": "BRC-FZ-MGMT-SW-HW5720-10"
+            },
+            {
+                "key": "",
+                "value": "2023"
+            }
+        ]
+    }
+{
+    "logId": 317,
+    "logText": "<147>Jan 15 2017 14:22:33 11G-West %%01OSPF/3/NBR_DOWN_REASON(l)[10744]:Neighbor state leaves full or changed to Down. (ProcessId=3, NeighborRouterId=100.78.141.132, NeighborAreaId=0, NeighborInterface=Vlanif20,NeighborDownImmediate reason=Neighbor Down Due to Inactivity, NeighborDownPrimeReason=Hello Not Seen, NeighborChangeTime=2017-01-14 15:45:12+00:00)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jan 15 2017 14:22:33"
+        },
+        {
+            "key": "",
+            "value": "11G-West"
+        },
+        {
+            "key": "",
+            "value": "10744"
+        },
+        {
+            "key": "ProcessId",
+            "value": "3"
+        },
+        {
+            "key": "NeighborRouterId",
+            "value": "100.78.141.132"
+        },
+        {
+            "key": "NeighborAreaId",
+            "value": "0"
+        },
+        {
+            "key": "NeighborInterface",
+            "value": "Vlanif20"
+        },
+        {
+            "key": "NeighborDownImmediate reason",
+            "value": "Neighbor Down Due to Inactivity"
+        },
+        {
+            "key": "NeighborDownPrimeReason",
+            "value": "Hello Not Seen"
+        },
+        {
+            "key": "NeighborChangeTime",
+            "value": "2017-01-14 15:45:12+00:00"
+        }
+    ]
+}
+{
+        "logId": 318,
+        "logText": "<164>Dec 10 2021 14:22:45+08:00 ME60-2 %%01BRASAM/4/hwAllocUserIPFailAlarm (t):VS=Admin-VS-CID=0x81d80421-OID=1.3.6.1.4.1.2011.6.8.2.2.0.3;Fail to alloc IP address from domain. (DomainNo.=73,DomainName=vlan3261)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 10 2021 14:22:45+08:00"
+            },
+            {
+                "key": "",
+                "value": "ME60-2"
+            },
+            {
+                "key": "VS",
+                "value": "Admin"
+            },
+            {
+                "key": "VS-CID",
+                "value": "0x81d80421"
+            },
+            {
+                "key": "OID",
+                "value": "1.3.6.1.4.1.2011.6.8.2.2.0.3"
+            },
+            {
+                "key": "DomainNo.",
+                "value": "73"
+            },
+            {
+                "key": "DomainName",
+                "value": "vlan3261"
+            }
+        ]
+    }
+{
+        "logId": 319,
+        "logText": "<188>Mar 15 2013 14:22:45 HuaweiA %%01HRP/4/CORE_STATE(l)[124]:HRP core state changed, old_state = standby, new_state = master, local_priority = 47018, peer_priority = 47015.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 2013 14:22:45"
+            },
+            {
+                "key": "",
+                "value": "HuaweiA"
+            },
+            {
+                "key": "old_state",
+                "value": "standby"
+            },
+            {
+                "key": "new_state",
+                "value": "master"
+            },
+            {
+                "key": "local_priority",
+                "value": "47018"
+            },
+            {
+                "key": "peer_priority",
+                "value": "47015"
+            }
+        ]
+    }
+{
+    "logId": 320,
+    "logText": "<190>Jan 22 2018 14:30:45 ANC-FZ-Bak&Test-SW-HW8860-S2-02 %%01OSPF/6/ospfMaxAgeLsa(t):CID=0x80830441-OID=1.3.6.1.2.1.14.16.2.13;An LSA is aged. (RouterId=10.50.240.237, LsdbAreaId=0.0.0.0, LsdbType=2, LsdbLsid=10.50.255.23, LsdbRouterId=10.50.240.246)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jan 22 2018 14:30:45"
+        },
+        {
+            "key": "",
+            "value": "ANC-FZ-Bak&Test-SW-HW8860-S2-02"
+        },
+        {
+            "key": "CID",
+            "value": "0x80830441"
+        },
+        {
+            "key": "OID",
+            "value": "1.3.6.1.2.1.14.16.2.13"
+        },
+        {
+            "key": "RouterId",
+            "value": "10.50.240.237"
+        },
+        {
+            "key": "LsdbAreaId",
+            "value": "0.0.0.0"
+        },
+        {
+            "key": "LsdbType",
+            "value": "2"
+        },
+        {
+            "key": "LsdbLsid",
+            "value": "10.50.255.23"
+        },
+        {
+            "key": "LsdbRouterId",
+            "value": "10.50.240.246"
+        }
+    ]
+}
+{
+        "logId": 321,
+        "logText": "<189>Dec 10 2023 14:15:22 B-Area7-G5-20U-FabD-Acc %%01TRUNK/5/hwTrunkBwChange(t):CID=0x807b0418-OID=1.3.6.1.4.1.2011.5.25.41.3.57;The trunk interface bandwidth changes. (TrunkName=Eth-Trunk2, OldBandwidth=2000000000, NewBandwidth=1000000000)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 10 2023 14:15:22"
+            },
+            {
+                "key": "",
+                "value": "B-Area7-G5-20U-FabD-Acc"
+            },
+            {
+                "key": "CID",
+                "value": "0x807b0418"
+            },
+            {
+                "key": "OID",
+                "value": "1.3.6.1.4.1.2011.5.25.41.3.57"
+            },
+            {
+                "key": "TrunkName",
+                "value": "Eth-Trunk2"
+            },
+            {
+                "key": "OldBandwidth",
+                "value": "2000000000"
+            },
+            {
+                "key": "NewBandwidth",
+                "value": "1000000000"
+            }
+        ]
+    }
+{
+        "logId": 322,
+        "logText": "<188>Mar 15 2021 10:45:32 SYHX-DMZ-Core_SW-CE16804-02 %%01SSH/4/IP_LOCKED(s):CID=0x80932725;IP was locked. (IpAddress=192.168.1.10, VpnName=INTERNAL, Period=10 minutes)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 2021 10:45:32"
+            },
+            {
+                "key": "",
+                "value": "SYHX-DMZ-Core_SW-CE16804-02"
+            },
+            {
+                "key": "CID",
+                "value": "0x80932725"
+            },
+            {
+                "key": "IpAddress",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "VpnName",
+                "value": "INTERNAL"
+            },
+            {
+                "key": "Period",
+                "value": "10 minutes"
+            }
+        ]
+    }
+{
+        "logId": 323,
+        "logText": "<190>Jul 20 2021 11:52:34 HD-NE20E-S4 %%01OSPF/6/OSPF_INTF_STATE_CHANGE(l):CID=0x8082046f;Interface 131.100.250.74 state changed from BackupDR to DR. (Event=NeighborChange, ProcessId=2, AreaId=0.0.3.12)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 20 2021 11:52:34"
+            },
+            {
+                "key": "",
+                "value": "HD-NE20E-S4"
+            },
+            {
+                "key": "CID",
+                "value": "0x8082046f"
+            },
+            {
+                "key": "Event",
+                "value": "NeighborChange"
+            },
+            {
+                "key": "ProcessId",
+                "value": "2"
+            },
+            {
+                "key": "AreaId",
+                "value": "0.0.3.12"
+            }
+        ]
+    }
+{
+    "logId": 324,
+    "logText": "Jul 15 14:45:30 2000 8F-S5120-B9 %%01SEC/4/BLACKLIST(l): -DevIP=192.168.10.100;  (vpn: private ) <192.168.10.102> is added to blacklist",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jul 15 14:45:30 2000"
+        },
+        {
+            "key": "",
+            "value": "8F-S5120-B9"
+        },
+        {
+            "key": "-DevIP",
+            "value": "192.168.10.100"
+        },
+        {
+            "key": "vpn",
+            "value": "private"
+        }
+    ]
+}
+{
+    "logId": 325,
+    "logText": "<149>Nov 15 2021 14:45:22 XYZ-02 %%01SSH/5/SSHC_LOGIN_FAIL(s):CID=0x80920438;SSH client login failed. (ServiceType=stelnet, FailedReason=Authentication failure, UserName=admin, IPAddress=192.168.1.10, VPNInstanceName=_public_)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Nov 15 2021 14:45:22"
+        },
+        {
+            "key": "",
+            "value": "XYZ-02"
+        },
+        {
+            "key": "CID",
+            "value": "0x80920438"
+        },
+        {
+            "key": "ServiceType",
+            "value": "stelnet"
+        },
+        {
+            "key": "FailedReason",
+            "value": "Authentication failure"
+        },
+        {
+            "key": "UserName",
+            "value": "admin"
+        },
+        {
+            "key": "IPAddress",
+            "value": "192.168.1.10"
+        },
+        {
+            "key": "VPNInstanceName",
+            "value": "_public_"
+        }
+    ]
+}
+{
+        "logId": 326,
+        "logText": "<190>Apr 15 2018 12:34:56 Huawei_12700 %%01OSPF/6/IF_CHG_E(l)[114145]:Interface 10.100.3.66 received event NeighborChange, interface state changed from DR to BackupDR. (ProcessId=101)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Apr 15 2018 12:34:56"
+            },
+            {
+                "key": "",
+                "value": "Huawei_12700"
+            },
+            {
+                "key": "",
+                "value": "114145"
+            },
+            {
+                "key": "ProcessId",
+                "value": "101"
+            }
+        ]
+    }
+{
+    "logId": 327,
+    "logText": "<172>May  5 12:34:56.7 WLZX-EXT-NE8KM8-B %%01SSH/4/SSHS_IP_BLOCK_CLIENT(s):CID=0x80930447;SSH client IP blocked due to authentication failure in last 1 hour. (IpAddress=192.168.1.100, VpnName=_private_, BlockCount=2)",
+    "logField": [
+        {
+            "key": "",
+            "value": "May  5 12:34:56.7"
+        },
+        {
+            "key": "",
+            "value": "WLZX-EXT-NE8KM8-B"
+        },
+        {
+            "key": "CID",
+            "value": "0x80930447"
+        },
+        {
+            "key": "IpAddress",
+            "value": "192.168.1.100"
+        },
+        {
+            "key": "VpnName",
+            "value": "_private_"
+        },
+        {
+            "key": "BlockCount",
+            "value": "2"
+        }
+    ]
+}
+{
+        "logId": 328,
+        "logText": "<189>Mar 15 2013 14:30:45 HuaweiB %%01FTPS/5/SENDDATA(l)[129]:The FTP server sent 4567890 bytes to the client user1. (IpAddress=192.168.1.10, VpnInstanceName=\"\")",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 2013 14:30:45"
+            },
+            {
+                "key": "",
+                "value": "HuaweiB"
+            },
+            {
+                "key": "",
+                "value": "129"
+            },
+            {
+                "key": "IpAddress",
+                "value": "192.168.1.10"
+            }
+        ]
+    }
+{
+        "logId": 329,
+        "logText": "<190>Jan 15 2024 14:30:25 HLW-FW03 %%01AAA/6/LOCALACCESSACCOUNT_MODIFY(s):Service=nac_main1;Local access account password has been modified. (Account=johndoe, OperatorName=johndoe, UserIp=192.168.1.10)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jan 15 2024 14:30:25"
+            },
+            {
+                "key": "",
+                "value": "HLW-FW03"
+            },
+            {
+                "key": "Service",
+                "value": "nac_main1"
+            },
+            {
+                "key": "Account",
+                "value": "johndoe"
+            },
+            {
+                "key": "UserIp",
+                "value": "192.168.1.10"
+            }
+        ]
+    }
+{
+        "logId": 330,
+        "logText": "<190>Mar 01 2023 01:22:15 BY-6140-2 %%01OSPF/6/TRAP_ORG_LSA(l)[36887]:Router originating LSA. (ProcessId=101, RouterId=10.41.223.227, LsdbAreaId=0.0.0.1, LsdbType=1, LsdbLsId=10.41.223.15, LsdbRouterId=10.41.223.227)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 01 2023 01:22:15"
+            },
+            {
+                "key": "",
+                "value": "BY-6140-2"
+            },
+            {
+                "key": "ProcessId",
+                "value": "101"
+            },
+            {
+                "key": "RouterId",
+                "value": "10.41.223.227"
+            },
+            {
+                "key": "LsdbAreaId",
+                "value": "0.0.0.1"
+            },
+            {
+                "key": "LsdbType",
+                "value": "1"
+            },
+            {
+                "key": "LsdbLsId",
+                "value": "10.41.223.15"
+            }
+        ]
+    }
+{
+    "logId": 331,
+    "logText": "<188>Dec 11 2023 03:05:12 HLW-FW03 %%01HPP/4/HOST_KPI_ABNORMAL(l):Service=hppd-hsd1;The number of discarded packets on the host changed suddenly. (SlotID=2-0,CpuID=1,CurrentValue=215,PreviousValue=10)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Dec 11 2023 03:05:12"
+        },
+        {
+            "key": "",
+            "value": "HLW-FW03"
+        },
+        {
+            "key": "Service",
+            "value": "hppd-hsd1"
+        },
+        {
+            "key": "SlotID",
+            "value": "2-0"
+        },
+        {
+            "key": "CpuID",
+            "value": "1"
+        },
+        {
+            "key": "CurrentValue",
+            "value": "215"
+        },
+        {
+            "key": "PreviousValue",
+            "value": "10"
+        }
+    ]
+}
+{
+        "logId": 332,
+        "logText": "<188>2016-12-08 14:45:32 USG6680B %%01HTTPD/4/FAIL(l): User guest(IP:169.169.204.21 ID:29) login failed",
+        "logField": [
+            {
+                "key": "",
+                "value": "2016-12-08 14:45:32"
+            },
+            {
+                "key": "",
+                "value": "USG6680B"
+            }
+        ]
+    }
+{
+    "logId": 333,
+    "logText": "<188>Jan 15 2024 14:25:45 USG6625F %%01IPSEC/4/hwIPSecPolicyAdd_active(l):CID=0x9a5b1cde-alarmID=0x00f10338;An IPSec policy is added. (SeqNum=3, PolicyName=ipsec1710166114, VsysName=private)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jan 15 2024 14:25:45"
+        },
+        {
+            "key": "",
+            "value": "USG6625F"
+        },
+        {
+            "key": "CID",
+            "value": "0x9a5b1cde"
+        },
+        {
+            "key": "armID",
+            "value": "0x00f10338"
+        },
+        {
+            "key": "SeqNum",
+            "value": "3"
+        },
+        {
+            "key": "PolicyName",
+            "value": "ipsec1710166114"
+        },
+        {
+            "key": "VsysName",
+            "value": "private"
+        }
+    ]
+}
+{
+    "logId": 334,
+    "logText": "Apr 05 2013 14:22:37 SPU-2 %%01OSPF/6/PHY_IF_INFO(l)[104]:OSPF physical interface information (InterfaceName=Eth-Trunk1.10, PhysicalInterfaceIndex=0xA, RM physicalInterfaceIndex=0xB, RmInterfaceType=2, RmInterfaceBandwidth=1410065408, RmInterfaceMtu=9000, ChangeType=0x2)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Apr 05 2013 14:22:37"
+        },
+        {
+            "key": "",
+            "value": "SPU-2"
+        },
+        {
+            "key": "InterfaceName",
+            "value": "Eth-Trunk1.10"
+        },
+        {
+            "key": "PhysicalInterfaceIndex",
+            "value": "0xA"
+        },
+        {
+            "key": "RM physicalInterfaceIndex",
+            "value": "0xB"
+        },
+        {
+            "key": "RmInterfaceType",
+            "value": "2"
+        },
+        {
+            "key": "RmInterfaceBandwidth",
+            "value": "1410065408"
+        },
+        {
+            "key": "RmInterfaceMtu",
+            "value": "9000"
+        },
+        {
+            "key": "ChangeType",
+            "value": "0x2"
+        }
+    ]
+}
+{
+    "logId": 335,
+    "logText": "<131>Jul  7 2019 14:22:33 SD-LY-NF-ITV-BYSW-2.MAN %%01LACP/3/LAG_DOWN_REASON_EVENT(l)[2350]:The member of the LACP mode Eth-Trunk interface went down. (TrunkName=Eth-Trunk15, PortName=XGigabitEthernet5/0/2, Reason=LinkDown)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jul  7 2019 14:22:33"
+        },
+        {
+            "key": "",
+            "value": "SD-LY-NF-ITV-BYSW-2.MAN"
+        },
+        {
+            "key": "TrunkName",
+            "value": "Eth-Trunk15"
+        },
+        {
+            "key": "PortName",
+            "value": "XGigabitEthernet5/0/2"
+        },
+        {
+            "key": "Reason",
+            "value": "LinkDown"
+        }
+    ]
+}
+{
+        "logId": 336,
+        "logText": "<188>Nov 15 2023 09:25:42 fw002.cn-shanghai-1 %%01UPDATE/4/DOWNLOAD_FAIL(l):CID=0x9a2b1c3d;Failed to download the new version. (SyslogId=42, User=SystemTimer, IP=**, Module=SA-SDB, Status=auto-update, Duration(s)=10, Reason=Connection timed out, Suggestion=Check the network connection and try again later)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 2023 09:25:42"
+            },
+            {
+                "key": "",
+                "value": "fw002.cn-shanghai-1"
+            },
+            {
+                "key": "CID",
+                "value": "0x9a2b1c3d"
+            },
+            {
+                "key": "SyslogId",
+                "value": "42"
+            },
+            {
+                "key": "User",
+                "value": "SystemTimer"
+            },
+            {
+                "key": "Module",
+                "value": "SA-SDB"
+            },
+            {
+                "key": "Status",
+                "value": "auto-update"
+            },
+            {
+                "key": "Duration(s)",
+                "value": "10"
+            },
+            {
+                "key": "Reason",
+                "value": "Connection timed out"
+            }
+        ]
+    }
+{
+        "logId": 337,
+        "logText": "<188>Dec  10 2015 14:22:45 Quidway %%01UPDATE/5/SUCCESS(l)[12]:The signature database update succeeded. (SyslogId=12, Module=IPS-SDB, Pre-UpdateVersion=, UpdateVersion=2015010101, Status=remote-update, Duration(s)=60)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec  10 2015 14:22:45"
+            },
+            {
+                "key": "",
+                "value": "Quidway"
+            },
+            {
+                "key": "SyslogId",
+                "value": "12"
+            },
+            {
+                "key": "Module",
+                "value": "IPS-SDB"
+            },
+            {
+                "key": "UpdateVersion",
+                "value": "2015010101"
+            },
+            {
+                "key": "Status",
+                "value": "remote-update"
+            },
+            {
+                "key": "Duration(s)",
+                "value": "60"
+            }
+        ]
+    }
+{
+        "logId": 338,
+        "logText": "<190>Dec 21 2020 10:15:22 hexin 12 %%01HTTP/6/LOGINOK(s)[545]:User logged in successfully. (UserName=admin, IPAddress=192.168.1.10, VpnName=)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 21 2020 10:15:22"
+            },
+            {
+                "key": "",
+                "value": "hexin 12"
+            },
+            {
+                "key": "UserName",
+                "value": "admin"
+            },
+            {
+                "key": "IPAddress",
+                "value": "192.168.1.10"
+            }
+        ]
+    }
+{
+    "logId": 339,
+    "logText": "<186>Dec 15 2023 14:22:45 B-Area4-G1-16U-FabD-Acc %%01IFNET/2/linkDown_active(l):CID=0x807a0418-alarmID=0x08520004;The interface status changes. (ifName=GE2/0/1, AdminStatus=UP, OperStatus=DOWN, Reason=Interface physical link is down, mainIfname=GE2/0/1)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Dec 15 2023 14:22:45"
+        },
+        {
+            "key": "",
+            "value": "B-Area4-G1-16U-FabD-Acc"
+        },
+        {
+            "key": "CID",
+            "value": "0x807a0418"
+        },
+        {
+            "key": "alarmID",
+            "value": "0x08520004"
+        },
+        {
+            "key": "AdminStatus",
+            "value": "UP"
+        },
+        {
+            "key": "OperStatus",
+            "value": "DOWN"
+        },
+        {
+            "key": "Reason",
+            "value": "Interface physical link is down"
+        },
+        {
+            "key": "mainIfname",
+            "value": "GE2/0/1"
+        }
+    ]
+}
+{
+        "logId": 340,
+        "logText": "<149>Jan 15 2017 14:22:33 12G-Xi %%01OSPF/5/LSA_CHANGE_FREQUENT(l)[10833]:LSAs change frequently now. (ProcessId=3, AdvertiseRouterId=100.78.141.135, TotalCount=1200, BeginTime=2017-01-14 22:00:00+00:00, EndTime=2017-01-14 23:00:00+00:00, Type-1LsaCount=0, Type-2LsaCount=0, Type-3LsaCount=0, Type-4LsaCount=0, Type-5LsaCount=1200, Type-7LsaCount=0, Type-9LsaCount=0, Type-10LsaCount=0, Type-11LsaCount=0)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jan 15 2017 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "12G-Xi"
+            },
+            {
+                "key": "ProcessId",
+                "value": "3"
+            },
+            {
+                "key": "AdvertiseRouterId",
+                "value": "100.78.141.135"
+            },
+            {
+                "key": "TotalCount",
+                "value": "1200"
+            },
+            {
+                "key": "BeginTime",
+                "value": "2017-01-14 22:00:00+00:00"
+            },
+            {
+                "key": "Type-1LsaCount",
+                "value": "0"
+            }
+        ]
+    }
+{
+    "logId": 341,
+    "logText": "<186>Jul 15 2023 14:22:30 SC-CD-DYH-G-XDXCTYZXYYG-A2-2.STN.ATN980C %%01BFD/2/hwBfdSessFaultDown_active(l):CID=0x80740423-alarmID=0x00f102cf;The BFD session went Down.(Index=16396, SessName=dyn_16396, LocalDiscriminator=16396, Diagnosis=1, BindIfName=Eth-Trunk3)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jul 15 2023 14:22:30"
+        },
+        {
+            "key": "",
+            "value": "SC-CD-DYH-G-XDXCTYZXYYG-A2-2.STN.ATN980C"
+        },
+        {
+            "key": "CID",
+            "value": "0x80740423"
+        },
+        {
+            "key": "alarmID",
+            "value": "0x00f102cf"
+        },
+        {
+            "key": "Index",
+            "value": "16396"
+        },
+        {
+            "key": "SessName",
+            "value": "dyn_16396"
+        },
+        {
+            "key": "Diagnosis",
+            "value": "1"
+        },
+        {
+            "key": "BindIfName",
+            "value": "Eth-Trunk3"
+        }
+    ]
+}
+{
+    "logId": 342,
+    "logText": "<14>Oct  7 15:30:22 edr-center {"logType":"alert","appVersion":"3.1.0.102","collectorReceiptTime":"2024-10-07 15:30:18","sendHostAddress":"10.50.86.144","deviceReceiptTime":"2024-10-07 15:30:18","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.144","destAddress":"10.50.109.114","ruleType":"/SuspEndpoint/ProcessInjection","eventTime":"2024-10-07","startTime":"2024-10-07 15:30:48","srcGeoAddress":"","eventNum":6015,"severity":"3","eventId":"241a8d06-5401-415c-a912-5c8b628efe65","indexTime":"2024-10","machineCode":"1d8e5883d7cc193c5262b98374c9bbf07c18dad4bdcfd423a5ddda7d88085a1f","srcUserName":"SOAR","clientOperatingSystem":"windows","suggestion":"[\\"* 暂无\\"]","deviceAssetSubType":"主机安全管理系统(EDR)","hostId":"1d8e5883d7cc193c5262b98374c9bbf07c18dad4bdcfd423a5ddda7d88085a1f","deviceVersion":"3.1.0.100","message":"C:\\\\Windows\\\\System32\\\\explorer.exe 注入进程 C:\\\\Windows\\\\System32\\\\notepad.exe, 已拦截","productVendorName":"安恒信息股份有限公司","oldAgent":1,"deviceSendProductName":"主机安全防护组件","name":"进程注入监控","endTime":"2024-10-07 15:30:48","deviceAssetSubTypeId":"56","catOutcome":"BLOCK","status":1,"assetName":"CXD-Win-2","assetAddress":"10.50.109.114","tenantName":"SOAR"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct  7 15:30:22"
+        },
+        {
+            "key": "logType",
+            "value": "alert"
+        },
+        {
+            "key": "collectorReceiptTime",
+            "value": "2024-10-07 15:30:18"
+        },
+        {
+            "key": "sendHostAddress",
+            "value": "10.50.86.144"
+        },
+        {
+            "key": "clientOperatingSystem",
+            "value": "windows"
+        },
+        {
+            "key": "suggestion",
+            "value": "[\"* 暂无\"]"
+        },
+        {
+            "key": "deviceVersion",
+            "value": "3.1.0.100"
+        },
+        {
+            "key": "deviceSendProductName",
+            "value": "主机安全防护组件"
+        },
+        {
+            "key": "name",
+            "value": "进程注入监控"
+        },
+        {
+            "key": "tenantName",
+            "value": "SOAR"
+        }
+    ]
+}
+{
+    "logId": 343,
+    "logText": "<178>Aug 15 12:15:45 10-50-86-12 DBAppWAF: {\"id\": \"821\", \"code\": \"15101\", \"timestamp\": \"2024-08-15 12:15:40+08:00\", \"user\": \"admin\", \"ip\": \"10.50.86.12\", \"device_id\": \"9cdb4d6f-500e-5c8e-902e-69e209ef546c\", \"target\": \"系统配置更新\", \"opt_type\": \"修改\", \"opt_res\": \"success\", \"detail\": \"{\\'res_body\\': \\'\\', \\'req_body\\': \\'\\', \\'msg_en\\': \\'System configuration has been updated successfully.\\', \\'msg_zh\\': \\'系统配置已成功更新。\\'}\", \"level\": \"medium\"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Aug 15 12:15:45"
+        },
+        {
+            "key": "",
+            "value": "10-50-86-12"
+        },
+        {
+            "key": "id",
+            "value": "821"
+        },
+        {
+            "key": "code",
+            "value": "15101"
+        },
+        {
+            "key": "timestamp",
+            "value": "2024-08-15 12:15:40+08:00"
+        },
+        {
+            "key": "user",
+            "value": "admin"
+        },
+        {
+            "key": "ip",
+            "value": "10.50.86.12"
+        },
+        {
+            "key": "target",
+            "value": "系统配置更新"
+        },
+        {
+            "key": "opt_res",
+            "value": "success"
+        },
+        {
+            "key": "level",
+            "value": "medium"
+        }
+    ]
+}
+{
+    "logId": 344,
+    "logText": "<178>Oct 15 01:15:42 10-50-86-12 DBAppWAF: {\"id\": \"1347\", \"code\": \"15101\", \"timestamp\": \"2024-10-15 01:15:35+08:00\", \"user\": \"admin\", \"ip\": \"10.50.86.12\", \"device_id\": \"9cdb4d6f-500e-5c8e-902e-69e209ef546c\", \"target\": \"系统更新\", \"opt_type\": \"安装\", \"opt_res\": \"success\", \"detail\": \"{\\'res_body\\': \\'\\', \\'req_body\\': \\'\\', \\'msg_en\\': \\'System update package version 2.1.0 has been successfully installed.\', \\'msg_zh\\': \\'系统更新包版本2.1.0已成功安装。\\'}\", \"level\": \"medium\"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct 15 01:15:42"
+        },
+        {
+            "key": "id",
+            "value": "1347"
+        },
+        {
+            "key": "code",
+            "value": "15101"
+        },
+        {
+            "key": "timestamp",
+            "value": "2024-10-15 01:15:35+08:00"
+        },
+        {
+            "key": "user",
+            "value": "admin"
+        },
+        {
+            "key": "ip",
+            "value": "10.50.86.12"
+        },
+        {
+            "key": "device_id",
+            "value": "9cdb4d6f-500e-5c8e-902e-69e209ef546c"
+        },
+        {
+            "key": "target",
+            "value": "系统更新"
+        },
+        {
+            "key": "opt_type",
+            "value": "安装"
+        },
+        {
+            "key": "opt_res",
+            "value": "success"
+        }
+    ]
+}
+{
+    "logId": 345,
+    "logText": "<14>Sep  4 11:15:45 edr-center {"logType":"alert","dnames":["CommandLine","Image","OriginalFileName","ParentImage"],"techniqueArray":["T1136","T1136.001"],"collectorReceiptTime":"2024-09-04 11:15:39","sendHostAddress":"10.50.86.44","technique":["T1136"],"lessUser":"user02","subTechnique":["T1136.001"],"deviceReceiptTime":"2024-09-04 11:15:39","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.44","riskType":"恶意软件","ruleType":"/Malware/Backdoor","destAddress":"10.50.109.180","startTime":"2024-09-04 11:16:03","attckWarningId":"7defc199-0129-476f-9586-2f48a7d1096e","ruleId":"SY000299","uKey":"65ad7f212a9feb46e245aef95f96dc8d","timestamp":1725419743000,"eventNum":60203,"uploadtime":1725419709906,"severity":"5","eventId":"f62668a3-cf7c-45b0-961b-46a134a9b2cd","image":"C:\\\\Windows\\\\System32\\\\cmd.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["进程启动"],"level":"HIGH","tacticIds":["TA0003"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\Windows\\\\System32\\\\cmd.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.114","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-RH45I247P87","attckName":"利用添加账户实现持久化","createTime":1725419709709,"deviceSendProductName":"主机安全防护组件","name":"入侵检测","deviceAssetSubTypeId":"56","endTime":"2024-09-04 11:16:03"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  4 11:15:45"
+        },
+        {
+            "key": "logType",
+            "value": "alert"
+        },
+        {
+            "key": "dnames",
+            "value": '["CommandLine","Image","OriginalFileName","ParentImage"]'
+        },
+        {
+            "key": "techniqueArray",
+            "value": '["T1136","T1136.001"]'
+        },
+        {
+            "key": "collectorReceiptTime",
+            "value": "2024-09-04 11:15:39"
+        },
+        {
+            "key": "sendHostAddress",
+            "value": "10.50.86.44"
+        },
+        {
+            "key": "riskType",
+            "value": "恶意软件"
+        },
+        {
+            "key": "ruleType",
+            "value": "/Malware/Backdoor"
+        },
+        {
+            "key": "eventStr",
+            "value": '["进程启动"]'
+        },
+        {
+            "key": "deviceSendProductName",
+            "value": "主机安全防护组件"
+        }
+    ]
+}
+{
+    "logId": 346,
+    "logText": "<14>Oct 10 10:30:45 edr-center {"logType":"alert","dnames":["TargetFilename"],"techniqueArray":["T1068"],"collectorReceiptTime":"2024-10-10 10:30:42","sendHostAddress":"10.50.86.45","technique":["T1068"],"lessUser":"user02","subTechnique":[],"deviceReceiptTime":"2024-10-10 10:30:42","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件","ruleType":"/Malware/Backdoor","destAddress":"10.50.109.180","startTime":"2024-10-10 18:15:20","attckWarningId":"a1b2c3d4-e5f6-7890-1234-567890abcdef","ruleId":"FY000423","uKey":"a1b2c3d4e5f678901234567890abcdef","timestamp":1728633642000,"eventNum":60203,"uploadtime":1728606642061,"severity":"4","eventId":"8c9d0e1f-2a3b-4c5d-6e7f-8g9h0i1j2k3l","image":"C:\\\\users\\\\user02\\\\downloads\\\\malware.exe","machineCode":"A1B2C3D4E5F678901234567890ABCDEF1234567890ABCDEF1234567890ABCDEF","eventStr":["文件内容"],"level":"MEDIUM","tacticIds":["TA0005"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\users\\\\user02\\\\downloads\\\\malware.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.115","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8g9h0i1j2k3l","newName":"WIN-USER02-PC","attckName":"下载并执行恶意软件","createTime":1728606642028,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"57","endTime":"2024-10-10 18:15:20"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct 10 10:30:45"
+        },
+        {
+            "key": "ruleType",
+            "value": "恶意软件"
+        },
+        {
+            "key": "destAddress",
+            "value": "10.50.109.180"
+        },
+        {
+            "key": "attckWarningId",
+            "value": "a1b2c3d4-e5f6-7890-1234-567890abcdef"
+        },
+        {
+            "key": "ruleId",
+            "value": "FY000423"
+        },
+        {
+            "key": "uKey",
+            "value": "a1b2c3d4e5f678901234567890abcdef"
+        },
+        {
+            "key": "level",
+            "value": "MEDIUM"
+        },
+        {
+            "key": "clientOperatingSystem",
+            "value": "windows"
+        },
+        {
+            "key": "threatTarget",
+            "value": "C:\\\\users\\\\user02\\\\downloads\\\\malware.exe"
+        },
+        {
+            "key": "attckName",
+            "value": "下载并执行恶意软件"
+        }
+    ]
+}
+{
+    "logId": 347,
+    "logText": "<14>Oct  5 10:22:30 edr-center {"logType":"alert","dnames":["ScriptBlockText"],"techniqueArray":["T1134","T1098","T1547","T1555","T1003","T1207","T1649","T1558","T1552","T1550","T1134.005","T1547.005","T1555.003","T1555.004","T1558.001","T1558.002","T1552.004","T1550.002","T1550.003"],"collectorReceiptTime":"2024-10-05 10:22:20","sendHostAddress":"10.50.86.45","technique":["T1134","T1098","T1547","T1555","T1003","T1207","T1649","T1558","T1552","T1550"],"lessUser":"user02","subTechnique":["T1134.005","T1547.005","T1555.003","T1555.004","T1558.001","T1558.002","T1552.004","T1550.002","T1550.003"],"deviceReceiptTime":"2024-10-05 10:22:20","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件","ruleType":"/Malware/Backdoor","destAddress":"10.50.109.180","startTime":"2024-10-05 10:22:50","attckWarningId":"8943368a-99d4-446d-b02c-e2e0ce7a1b6e","ruleId":"SY002551","uKey":"a57b3ea9f24dc35d53e5a21fe8c998f3","timestamp":1728042170000,"eventNum":60203,"uploadtime":1728042140572,"severity":"4","eventId":"bd0cd777-6049-4a50-9075-de4b76364319","image":"C:\\\\Windows\\\\System32\\\\cmd.exe","machineCode":"FDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3","eventStr":["cmd"],"level":"MEDIUM","tacticIds":["TA0004","TA0003","TA0006","TA0005","TA0008"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\Windows\\\\System32\\\\cmd.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.114","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"4df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0","newName":"WIN-RH45I247P87","attckName":"cmd_backdoor","createTime":1728042140409,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"56","endTime":"2024-10-05 10:22:50"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct  5 10:22:30"
+        },
+        {
+            "key": "logType",
+            "value": "alert"
+        },
+        {
+            "key": "dnames",
+            "value": '["ScriptBlockText"]'
+        },
+        {
+            "key": "techniqueArray",
+            "value": '["T1134","T1098","T1547","T1555","T1003","T1207","T1649","T1558","T1552","T1550","T1134.005","T1547.005","T1555.003","T1555.004","T1558.001","T1558.002","T1552.004","T1550.002","T1550.003"]'
+        },
+        {
+            "key": "collectorReceiptTime",
+            "value": "2024-10-05 10:22:20"
+        },
+        {
+            "key": "sendHostAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "deviceName",
+            "value": "主机安全防护组件"
+        },
+        {
+            "key": "riskType",
+            "value": "恶意软件"
+        },
+        {
+            "key": "deviceVersion",
+            "value": "3.0.9.114"
+        }
+    ]
+}
+{
+    "logId": 348,
+    "logText": "<14>Sep 10 19:15:23 edr-center {"logType":"alert","dnames":["CommandLine"],"techniqueArray":["T1087","T1087.002"],"collectorReceiptTime":"2024-09-10 19:15:22","sendHostAddress":"10.50.86.45","technique":["T1087"],"lessUser":"user02","subTechnique":["T1087.002"],"deviceReceiptTime":"2024-09-10 19:15:22","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"入侵威胁","ruleType":"/Malware/Others","destAddress":"10.50.109.180","startTime":"2024-09-10 19:15:58","attckWarningId":"f0437616-3974-4d51-8aa0-dd819fda6c98","ruleId":"SY000197","uKey":"7692d73c875a5774ec25031e4eab1116","timestamp":1725962722000,"eventNum":60203,"uploadtime":1725962722170,"severity":"5","eventId":"92d2f386-49d5-43c0-a22a-7231e1e1fbe2","image":"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0uu8792_kerbrute_windows_amd64.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["进程启动"],"level":"HIGH","tacticIds":["TA0007"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0uu8792_kerbrute_windows_amd64.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.115","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-RH45I247P87","attckName":"使用kerbrute枚举域用户","createTime":1725962722052,"deviceSendProductName":"主机安全防护组件","name":"入侵检测","deviceAssetSubTypeId":"56","endTime":"2024-09-10 19:15:58"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep 10 19:15:23"
+        },
+        {
+            "key": "eventNum",
+            "value": "60203"
+        },
+        {
+            "key": "uploadtime",
+            "value": "1725962722170"
+        },
+        {
+            "key": "eventId",
+            "value": "92d2f386-49d5-43c0-a22a-7231e1e1fbe2"
+        },
+        {
+            "key": "image",
+            "value": "C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0uu8792_kerbrute_windows_amd64.exe"
+        },
+        {
+            "key": "clientOperatingSystem",
+            "value": "windows"
+        },
+        {
+            "key": "deviceVersion",
+            "value": "3.0.9.115"
+        },
+        {
+            "key": "userName",
+            "value": "user02"
+        },
+        {
+            "key": "attckName",
+            "value": "使用kerbrute枚举域用户"
+        }
+    ]
+}
+{
+    "logId": 349,
+    "logText": "<14>Oct 10 14:22:30 edr-center {"logType":"alert","dnames":["CommandLine","Image"],"techniqueArray":["T1082"],"collectorReceiptTime":"2024-10-10 14:22:21","sendHostAddress":"10.50.86.45","technique":["T1082"],"lessUser":"user02","subTechnique":[],"deviceReceiptTime":"2024-10-10 14:22:21","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件","ruleType":"/Malware/Backdoor","destAddress":"10.50.109.180","startTime":"2024-10-10 14:22:50","attckWarningId":"a5c7d2e1-f8a9-4c16-9d7b-2b9c8d7a1234","ruleId":"SY004957","uKey":"7a8b9c6d5e4f3g2h1i0j9k8l7m6n5o4p3q2r1s0t","timestamp":1728672150000,"eventNum":60203,"uploadtime":1728672131051,"severity":"5","eventId":"9a8b7c6d5e4f3g2h1i0j9k8l7m6n5o4p3q2r1s0t","image":"C:\\\\Windows\\\\System32\\\\notepad.exe","machineCode":"FDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3","eventStr":["进程启动"],"level":"LOW","tacticIds":["TA0007"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\Windows\\\\System32\\\\notepad.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.114","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z2a3b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6y7z8a9b0c1d2e3f4g5h6i7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4a5b6c7d8e9f0g1h2i3j4k5l6m7n8o9p0q1r2s3t4u5v6w7x8y9z","newName":"WIN-XYZ123456789","attckName":"使用notepad获取系统信息","createTime":1728672130967,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"56","endTime":"2024-10-10 14:22:50"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct 10 14:22:30"
+        },
+        {
+            "key": "logType",
+            "value": "alert"
+        },
+        {
+            "key": "dnames",
+            "value": '["CommandLine","Image"]'
+        },
+        {
+            "key": "collectorReceiptTime",
+            "value": "2024-10-10 14:22:21"
+        },
+        {
+            "key": "sendHostAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "riskType",
+            "value": "恶意软件"
+        },
+        {
+            "key": "ruleType",
+            "value": "/Malware/Backdoor"
+        },
+        {
+            "key": "destAddress",
+            "value": "10.50.109.180"
+        },
+        {
+            "key": "attckWarningId",
+            "value": "a5c7d2e1-f8a9-4c16-9d7b-2b9c8d7a1234"
+        }
+    ]
+}
+{
+    "logId": 350,
+    "logText": "<14>Sep  5 12:15:47 edr-center {"logType":"alert","dnames":["CommandLine"],"techniqueArray":["T1059","T1059.001"],"collectorReceiptTime":"2024-09-05 12:15:40","sendHostAddress":"10.50.86.45","technique":["T1059"],"lessUser":"user02","subTechnique":["T1059.001"],"deviceReceiptTime":"2024-09-05 12:15:40","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件","ruleType":"/Malware/Backdoor","destAddress":"10.50.109.180","startTime":"2024-09-05 12:16:02","attckWarningId":"8be77932-5f7d-4e5f-87ab-c48e231bab89","ruleId":"SY000422","uKey":"002dd9f5cd7b089bdf24004d69a98a90","timestamp":1725505942000,"eventNum":60203,"uploadtime":1725505900558,"severity":"5","eventId":"88f4f4ca-605e-461b-9985-8ffbf114e47a","image":"C:\\\\Windows\\\\System32\\\\cmd.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["进程启动"],"level":"HIGH","tacticIds":["TA0002"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\Windows\\\\System32\\\\cmd.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.114","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-RH45I247P87","attckName":"利用cmd执行恶意命令","createTime":1725505900357,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"56","endTime":"2024-09-05 12:16:02"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  5 12:15:47"
+        },
+        {
+            "key": "techniqueArray",
+            "value": '["T1059","T1059.001"]'
+        },
+        {
+            "key": "collectorReceiptTime",
+            "value": "2024-09-05 12:15:40"
+        },
+        {
+            "key": "sendHostAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "technique",
+            "value": '["T1059"]'
+        },
+        {
+            "key": "deviceName",
+            "value": "主机安全防护组件"
+        },
+        {
+            "key": "ruleType",
+            "value": "/Malware/Backdoor"
+        },
+        {
+            "key": "destAddress",
+            "value": "10.50.109.180"
+        },
+        {
+            "key": "attckName",
+            "value": "利用cmd执行恶意命令"
+        }
+    ]
+}
+{
+    "logId": 351,
+    "logText": "<14>Sep  6 11:30:45 edr-center {"logType":"alert","dnames":["TargetFilename"],"techniqueArray":["T1134","T1134.001"],"collectorReceiptTime":"2024-09-06 11:30:44","sendHostAddress":"10.50.86.45","technique":["T1134"],"lessUser":"user02","subTechnique":["T1134.001"],"deviceReceiptTime":"2024-09-06 11:30:44","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件","ruleType":"/Malware/Backdoor","destAddress":"10.50.109.180","startTime":"2024-09-06 11:31:12","attckWarningId":"e0bb9250-509c-443c-b992-8837d972eda2","ruleId":"FY000456","uKey":"f9c2a51a3a0bbbf376a02e57dcfc21dc","timestamp":1725589844000,"eventNum":60203,"uploadtime":1725589815001,"severity":"5","eventId":"dd04dc57-b430-4dc7-be4b-e5a43cac6e16","image":"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0omytvu_backdoor.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["进程启动"],"level":"HIGH","tacticIds":["TA0004","TA0005"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0omytvu_backdoor.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.114","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-RH45I247P87","attckName":"执行backdoor 漏洞利用程序","createTime":1725589814829,"deviceSendProductName":"主机安全防护组件","name":"入侵检测","deviceAssetSubTypeId":"56","endTime":"2024-09-06 11:31:12"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  6 11:30:45"
+        },
+        {
+            "key": "sendHostAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "deviceReceiptTime",
+            "value": "2024-09-06 11:30:44"
+        },
+        {
+            "key": "riskType",
+            "value": "恶意软件"
+        },
+        {
+            "key": "ruleType",
+            "value": "/Malware/Backdoor\",\"destAddress"
+        },
+        {
+            "key": "ruleId",
+            "value": "FY000456"
+        },
+        {
+            "key": "uKey",
+            "value": "f9c2a51a3a0bbbf376a02e57dcfc21dc"
+        },
+        {
+            "key": "eventStr",
+            "value": "[\"进程启动\"]"
+        },
+        {
+            "key": "level",
+            "value": "HIGH"
+        }
+    ]
+}
+{
+    "logId": 352,
+    "logText": "<14>Sep  5 12:22:15 edr-center {"logType":"alert","dnames":["TargetFilename"],"techniqueArray":["T1090","T1090.002"],"collectorReceiptTime":"2024-09-05 12:22:04","sendHostAddress":"10.50.86.45","technique":["T1090"],"lessUser":"user02","subTechnique":["T1090.002"],"deviceReceiptTime":"2024-09-05 12:22:04","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"入侵威胁","ruleType":"/Malware/Others","destAddress":"10.50.109.180","startTime":"2024-09-05 12:22:35","attckWarningId":"4450a37a-02db-4674-9b1e-a7dd41187796","ruleId":"FY000510","uKey":"e91b1a250d756075e148fdae8fc6b799","timestamp":1725423735000,"eventNum":60203,"uploadtime":1725423704284,"severity":"5","eventId":"1be9ca93-7725-4793-ac71-4772e99217f6","image":"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0n9b2uz_Portforward2.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["进程启动"],"level":"HIGH","tacticIds":["TA0011"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0n9b2uz_Portforward2.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.115","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-RH45I247P87","attckName":"执行PortForward 恶意程序","createTime":1725423704077,"deviceSendProductName":"主机安全防护组件","name":"入侵检测","deviceAssetSubTypeId":"56","endTime":"2024-09-05 12:22:35"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  5 12:22:15"
+        },
+        {
+            "key": "deviceName",
+            "value": "主机安全防护组件"
+        },
+        {
+            "key": "ruleType",
+            "value": "/Malware/Others","destAddress"
+        },
+        {
+            "key": "destAddress",
+            "value": "10.50.109.180"
+        },
+        {
+            "key": "attckWarningId",
+            "value": "4450a37a-02db-4674-9b1e-a7dd41187796"
+        },
+        {
+            "key": "machineCode",
+            "value": "EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4"
+        },
+        {
+            "key": "tacticIds",
+            "value": "['TA0011']"
+        },
+        {
+            "key": "clientOperatingSystem",
+            "value": "windows"
+        },
+        {
+            "key": "threatTarget",
+            "value": "C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0n9b2uz_Portforward2.exe"
+        },
+        {
+            "key": "deviceVersion",
+            "value": "3.0.9.115"
+        }
+    ]
+}
+{
+    "logId": 353,
+    "logText": "<14>Sep  5 12:45:23 edr-center {"logType":"alert","dnames":["CommandLine"],"techniqueArray":["T1059","T1059.001"],"collectorReceiptTime":"2024-09-05 12:45:15","sendHostAddress":"10.50.86.45","technique":["T1059"],"lessUser":"user02","subTechnique":["T1059.001"],"deviceReceiptTime":"2024-09-05 12:45:15","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件","ruleType":"/Malware/Backdoor","destAddress":"10.50.109.180","startTime":"2024-09-05 12:45:36","attckWarningId":"3178e2d9-937e-49cf-ad5f-317b50a9f85d","ruleId":"SY000245","uKey":"e3667fab820694b73d267305f0d13a9g","timestamp":1725507936000,"eventNum":60203,"uploadtime":1725507915072,"severity":"4","eventId":"a276f7ac-2bc0-4be1-8926-66260ec23712","image":"C:\\\\Windows\\\\System32\\\\cmd.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["进程启动"],"level":"MEDIUM","tacticIds":["TA0002"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\Windows\\\\System32\\\\cmd.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.114","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-RH45I247P87","attckName":"命令行注入","createTime":1725507915055,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"56","endTime":"2024-09-05 12:45:36"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  5 12:45:23"
+        },
+        {
+            "key": "logType",
+            "value": "alert"
+        },
+        {
+            "key": "sendHostAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "technique",
+            "value": '["T1059"]'
+        },
+        {
+            "key": "lessUser",
+            "value": "user02"
+        },
+        {
+            "key": "ruleId",
+            "value": "SY000245"
+        },
+        {
+            "key": "uploadtime",
+            "value": "1725507915072"
+        },
+        {
+            "key": "threatTarget",
+            "value": "C:\\\\Windows\\\\System32\\\\cmd.exe"
+        },
+        {
+            "key": "deviceAssetSubType",
+            "value": "主机安全管理系统(EDR)"
+        },
+        {
+            "key": "attckName",
+            "value": "命令行注入"
+        }
+    ]
+}
+{
+    "logId": 354,
+    "logText": "<14>Sep  6 16:15:22 edr-center {"logType":"alert","dnames":["TargetFilename"],"techniqueArray":["T1021","T1021.003"],"collectorReceiptTime":"2024-09-06 16:15:10","sendHostAddress":"10.50.86.45","technique":["T1021"],"lessUser":"user02","subTechnique":["T1021.003"],"deviceReceiptTime":"2024-09-06 16:15:10","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件","ruleType":"/Malware/Backdoor","destAddress":"10.50.109.180","startTime":"2024-09-06 23:45:30","attckWarningId":"d17244ed-86d0-4bf5-b8d8-88f6de904b0e","ruleId":"FY000608","uKey":"7b7466cf3544b942c9cbca89c62b2424","timestamp":1725633322000,"eventNum":60203,"uploadtime":1725605710142,"severity":"4","eventId":"bd767036-330a-4023-83a4-04df454831cf","image":"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\malware.exe","machineCode":"FDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3","eventStr":["文件内容"],"level":"MEDIUM","tacticIds":["TA0008"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\malware.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.114","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"4df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0","newName":"WIN-RH45I247P87","attckName":"创建malware.exe 恶意程序","createTime":1725605710068,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"56","endTime":"2024-09-06 23:45:30"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  6 16:15:22"
+        },
+        {
+            "key": "logType",
+            "value": "alert"
+        },
+        {
+            "key": "collectorReceiptTime",
+            "value": "2024-09-06 16:15:10"
+        },
+        {
+            "key": "deviceName",
+            "value": "主机安全防护组件"
+        },
+        {
+            "key": "riskType",
+            "value": "恶意软件"
+        },
+        {
+            "key": "ruleType",
+            "value": "/Malware/Backdoor"
+        },
+        {
+            "key": "eventId",
+            "value": "bd767036-330a-4023-83a4-04df454831cf"
+        },
+        {
+            "key": "image",
+            "value": "C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\malware.exe"
+        }
+    ]
+}
+{
+    "logId": 355,
+    "logText": "<14>Sep  4 10:22:15 edr-center {"logType":"alert","dnames":["CommandLine"],"techniqueArray":["T1070","T1070.001"],"collectorReceiptTime":"2024-09-04 10:22:00","sendHostAddress":"10.50.86.45","technique":["T1070"],"lessUser":"user02","subTechnique":["T1070.001"],"deviceReceiptTime":"2024-09-04 10:22:00","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件","ruleType":"/Malware/Trojan","destAddress":"10.50.109.180","startTime":"2024-09-04 10:22:30","attckWarningId":"d16763dc-069e-4ae6-9bce-22ce05a5b6e1","ruleId":"SY000654","uKey":"42e9ae6924b4eba44cf3de6e201860c8","timestamp":1725439335000,"eventNum":60203,"uploadtime":1725439300413,"severity":"5","eventId":"e1ac9200-cccc-40b8-81a1-0d6ec7f2336b","image":"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0m6890k-O8iyXt-2-cmd.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["进程启动"],"level":"MEDIUM","tacticIds":["TA0005"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0m6890k-O8iyXt-2-cmd.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.115","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-RH45I247P87","attckName":"删除日志文件","createTime":1725439300262,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"57","endTime":"2024-09-04 10:22:30"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  4 10:22:15"
+        },
+        {
+            "key": "logType",
+            "value": "alert"
+        },
+        {
+            "key": "timestamp",
+            "value": "1725439335000"
+        },
+        {
+            "key": "severity",
+            "value": "5"
+        },
+        {
+            "key": "eventId",
+            "value": "e1ac9200-cccc-40b8-81a1-0d6ec7f2336b"
+        },
+        {
+            "key": "eventStr",
+            "value": "['进程启动']"
+        },
+        {
+            "key": "level",
+            "value": "MEDIUM"
+        },
+        {
+            "key": "threatTarget",
+            "value": "C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_m0m6890k-O8iyXt-2-cmd.exe"
+        },
+        {
+            "key": "deviceVersion",
+            "value": "3.0.9.115"
+        },
+        {
+            "key": "attckName",
+            "value": "删除日志文件"
+        }
+    ]
+}
+{
+    "logId": 356,
+    "logText": "<14>Sep  5 10:15:30 edr-center {"logType":"alert","dnames":["FileOperation"],"techniqueArray":["T1059"],"collectorReceiptTime":"2024-09-05 10:15:25","sendHostAddress":"10.50.86.45","technique":["T1059"],"lessUser":"user02","subTechnique":[],"deviceReceiptTime":"2024-09-05 10:15:25","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件","ruleType":"/Malware/Backdoor","destAddress":"10.50.109.180","startTime":"2024-09-05 10:16:00","attckWarningId":"a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6","ruleId":"SY001433","uKey":"3a4b5c6d7e8f9g0h1i2j3k4l5m6n7o8p","timestamp":1725535200000,"eventNum":60203,"uploadtime":1725535225590,"severity":"4","eventId":"b2c3d4e5-f6g7-h8i9-j0k1-l2m3n4o5p6","image":"C:\\\\Windows\\\\System32\\\\powershell.exe","machineCode":"BDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3","eventStr":["文件创建"],"level":"MEDIUM","tacticIds":["TA0002"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\Windows\\\\System32\\\\powershell.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.114","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"4df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0","newName":"WIN-ABCD12345678","attckName":"使用PowerShell执行命令","createTime":1725535225546,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"56","endTime":"2024-09-05 10:16:00"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  5 10:15:30"
+        },
+        {
+            "key": "logType",
+            "value": "alert"
+        },
+        {
+            "key": "dnames",
+            "value": '["FileOperation"]'
+        },
+        {
+            "key": "deviceReceiptTime",
+            "value": "2024-09-05 10:15:25"
+        },
+        {
+            "key": "deviceName",
+            "value": "主机安全防护组件"
+        },
+        {
+            "key": "deviceAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "riskType",
+            "value": "恶意软件"
+        },
+        {
+            "key": "ruleType",
+            "value": "/Malware/Backdoor"
+        },
+        {
+            "key": "image",
+            "value": "C:\\\\Windows\\\\System32\\\\powershell.exe"
+        }
+    ]
+}
+{
+    "logId": 357,
+    "logText": "<14>Oct  5 09:22:15 edr-center {"logType":"alert","dnames":["TargetFilename"],"techniqueArray":["T1059","T1059.001"],"collectorReceiptTime":"2024-10-05 09:22:12","sendHostAddress":"10.50.86.45","technique":["T1059"],"lessUser":"user02","subTechnique":["T1059.001"],"deviceReceiptTime":"2024-10-05 09:22:12","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件","ruleType":"/Malware/Backdoor","destAddress":"10.50.109.180","startTime":"2024-10-05 09:22:45","attckWarningId":"9e8f7d6c-5b4a-41c0-8d2e-1a2b3c4d5e6f","ruleId":"FY000332","uKey":"b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0","timestamp":1728048165000,"eventNum":60203,"uploadtime":1728048132411,"severity":"4","eventId":"5b2c3d4e-6f7g-8h9i-j0k1-l2m3n4o5p6q7","image":"C:\\\\users\\\\user02\\\\documents\\\\malware.exe","machineCode":"FDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3","eventStr":["文件执行"],"level":"MEDIUM","tacticIds":["TA0002"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\users\\\\user02\\\\documents\\\\malware.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.115","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"4df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-ABCD1234567","attckName":"使用PowerShell执行命令","createTime":1728048132328,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"57","endTime":"2024-10-05 09:22:45"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct  5 09:22:15"
+        },
+        {
+            "key": "logType",
+            "value": "alert"
+        },
+        {
+            "key": "deviceReceiptTime",
+            "value": "2024-10-05 09:22:12"
+        },
+        {
+            "key": "deviceName",
+            "value": "主机安全防护组件"
+        },
+        {
+            "key": "deviceAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "riskType",
+            "value": "恶意软件"
+        },
+        {
+            "key": "attckWarningId",
+            "value": "9e8f7d6c-5b4a-41c0-8d2e-1a2b3c4d5e6f"
+        },
+        {
+            "key": "ruleId",
+            "value": "FY000332"
+        },
+        {
+            "key": "tacticIds",
+            "value": '["TA0002"]'
+        },
+        {
+            "key": "deviceVersion",
+            "value": "3.0.9.115"
+        }
+    ]
+}
+{
+    "logId": 358,
+    "logText": "<14>Sep  6 10:45:22 edr-center {"logType":"alert","dnames":["TargetFilename"],"techniqueArray":["T1090","T1090.002"],"collectorReceiptTime":"2024-09-06 10:45:15","sendHostAddress":"10.50.86.45","technique":["T1090"],"lessUser":"user02","subTechnique":["T1090.002"],"deviceReceiptTime":"2024-09-06 10:45:15","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件","ruleType":"/Malware/Trojan","destAddress":"10.50.109.180","startTime":"2024-09-06 01:12:34","attckWarningId":"d96cbfa9-09f0-4269-8225-95c9097a50f5","ruleId":"FY003120","uKey":"eb5ff3bfc3b902a99b3921880b8a58e1","timestamp":1725635122000,"eventNum":60203,"uploadtime":1725608115650,"severity":"4","eventId":"5822ab1a-c52f-4b45-b9b8-c647c686511f","image":"C:\\\\temp\\\\malware\\\\tools\\\\malware.exe","machineCode":"FDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE3","eventStr":["文件内容"],"level":"MEDIUM","tacticIds":["TA0011"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\temp\\\\malware\\\\tools\\\\malware.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.114","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"4df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee0","newName":"WIN-ABCD12345678","attckName":"创建malware恶意程序","createTime":1725608115550,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"56","endTime":"2024-09-06 01:12:34"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  6 10:45:22"
+        },
+        {
+            "key": "collectorReceiptTime",
+            "value": "2024-09-06 10:45:15"
+        },
+        {
+            "key": "sendHostAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "riskType",
+            "value": "恶意软件"
+        },
+        {
+            "key": "ruleType",
+            "value": "/Malware/Trojan"
+        },
+        {
+            "key": "destAddress",
+            "value": "10.50.109.180"
+        },
+        {
+            "key": "attckWarningId",
+            "value": "d96cbfa9-09f0-4269-8225-95c9097a50f5"
+        },
+        {
+            "key": "image",
+            "value": "C:\\\\temp\\\\malware\\\\tools\\\\malware.exe"
+        },
+        {
+            "key": "clientOperatingSystem",
+            "value": "windows"
+        }
+    ]
+}
+{
+    "logId": 359,
+    "logText": "<14>Sep  4 10:22:15 edr-center {"logType":"alert","serviceType":"RDP","collectorReceiptTime":"2024-09-04 10:22:10","sendHostAddress":"10.50.86.45","deviceReceiptTime":"2024-09-04 10:22:10","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","destAddress":"10.50.109.91","ruleType":"/AccountRisk/BruteForce","startTime":"2024-09-04 10:21:32","srcGeoAddress":"局域网","eventNum":6013,"severity":"7","eventId":"756258d6-6066-4a58-9174-6971f76e5433","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","srcUserName":"root","clientOperatingSystem":"windows","suggestion":"[\\"* 杜绝弱口令，定期更换口令\\",\\"* 修改默认服务(RDP、SSH)端口，Windows使用证书认证，禁用口令认证\\",\\"* 针对多次尝试暴力破解的IP，建议添加微隔离策略，永久屏蔽IP\\",\\"* 建议设置登录防护策略，使用双重认证防止被爆破后登录主机\\"]","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.190","srcAddress":"10.50.86.36","message":"发现已知恶意IP远程登录暴力破解，IP：10.50.86.36，暴破账号：root，已临时封锁[480]秒","productVendorName":"安恒信息股份有限公司","deviceSendProductName":"主机安全防护组件","name":"暴力破解防护","endTime":"2024-09-04 10:21:32","deviceAssetSubTypeId":"56","catOutcome":"OK"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  4 10:22:15"
+        },
+        {
+            "key": "logType",
+            "value": "alert"
+        },
+        {
+            "key": "serviceType",
+            "value": "RDP"
+        },
+        {
+            "key": "sendHostAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "deviceName",
+            "value": "主机安全防护组件"
+        },
+        {
+            "key": "startTime",
+            "value": "2024-09-04 10:21:32"
+        },
+        {
+            "key": "srcGeoAddress",
+            "value": "局域网"
+        },
+        {
+            "key": "suggestion",
+            "value": "[\"* 杜绝弱口令，定期更换口令\",\"* 修改默认服务(RDP、SSH)端口，Windows使用证书认证，禁用口令认证\",\"* 针对多次尝试暴力破解的IP，建议添加微隔离策略，永久屏蔽IP\",\"* 建议设置登录防护策略，使用双重认证防止被爆破后登录主机\"]"
+        },
+        {
+            "key": "name",
+            "value": "暴力破解防护"
+        }
+    ]
+}
+{
+    "logId": 360,
+    "logText": "<14>Oct  5 19:23:45 edr-center {"logType":"alert","dnames":["TargetFilename"],"techniqueArray":["T1134","T1098","T1547","T1555","T1003","T1207","T1649","T1558","T1552","T1550","T1134.005","T1547.005","T1555.003","T1555.004","T1558.001","T1558.002","T1552.004","T1550.002","T1550.003"],"collectorReceiptTime":"2024-10-05 19:23:30","sendHostAddress":"10.50.86.45","technique":["T1134","T1098","T1547","T1555","T1003","T1207","T1649","T1558","T1552","T1550"],"lessUser":"user02","subTechnique":["T1134.005","T1547.005","T1555.003","T1555.004","T1558.001","T1558.002","T1552.004","T1550.002","T1550.003"],"deviceReceiptTime":"2024-10-05 19:23:30","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件威胁","ruleType":"/Malware/Trojan","destAddress":"10.50.109.180","startTime":"2024-10-05 19:23:53","attckWarningId":"f9013056-ed25-4385-a21b-b6a5dd63520e","ruleId":"FY000537","uKey":"b8d518d9cdbf3a464b8a14ef2e9c1d29","timestamp":1728044623000,"eventNum":60203,"uploadtime":1728044600778,"severity":"5","eventId":"31d0b0ab-ed15-456c-b321-ae3d7e1f89b9","image":"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\malware.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["文件内容"],"level":"HIGH","tacticIds":["TA0004","TA0003","TA0006","TA0005","TA0008"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\malware.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.115","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"4df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-RH45I247P87","attckName":"创建恶意软件程序","createTime":1728044600627,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"56","endTime":"2024-10-05 19:23:53"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct  5 19:23:45"
+        },
+        {
+            "key": "collectorReceiptTime",
+            "value": "2024-10-05 19:23:30"
+        },
+        {
+            "key": "deviceName",
+            "value": "主机安全防护组件"
+        },
+        {
+            "key": "riskType",
+            "value": "恶意软件威胁"
+        },
+        {
+            "key": "ruleType",
+            "value": "/Malware/Trojan"
+        },
+        {
+            "key": "destAddress",
+            "value": "10.50.109.180"
+        },
+        {
+            "key": "attckWarningId",
+            "value": "f9013056-ed25-4385-a21b-b6a5dd63520e"
+        },
+        {
+            "key": "threatTarget",
+            "value": "C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\malware.exe"
+        },
+        {
+            "key": "deviceVersion",
+            "value": "3.0.9.115"
+        }
+    ]
+}
+{
+    "logId": 361,
+    "logText": "<14>Oct  5 10:45:22 edr-center {"logType":"alert","dnames":["TargetFilename"],"techniqueArray":["T1558","T1558.003"],"collectorReceiptTime":"2024-10-05 10:45:10","sendHostAddress":"10.50.86.45","technique":["T1558"],"lessUser":"user02","subTechnique":["T1558.003"],"deviceReceiptTime":"2024-10-05 10:45:10","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"入侵威胁","ruleType":"/Malware/Others","destAddress":"10.50.109.180","startTime":"2024-10-05 10:45:32","attckWarningId":"20fdf501-8730-4636-9bf9-e9c7e7952972","ruleId":"FY000328","uKey":"ceff3bb9a1220708986d77b4f9fd1408","timestamp":1728082397000,"eventNum":60203,"uploadtime":1728082365284,"severity":"5","eventId":"664168eb-d6a1-4b44-91be-d329fa5499ee","image":"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcmd.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["文件内容"],"level":"HIGH","tacticIds":["TA0006"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcmd.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.115","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-RH45I247P87","attckName":"创建使用Invoke-Kerberoast进行kerberosating攻击","createTime":1728082365122,"deviceSendProductName":"主机安全防护组件","name":"入侵检测","deviceAssetSubTypeId":"56","endTime":"2024-10-05 10:45:32"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct  5 10:45:22"
+        },
+        {
+            "key": "collectorReceiptTime",
+            "value": "2024-10-05 10:45:10"
+        },
+        {
+            "key": "sendHostAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "deviceName",
+            "value": "主机安全防护组件"
+        },
+        {
+            "key": "uKey",
+            "value": "ceff3bb9a1220708986d77b4f9fd1408"
+        },
+        {
+            "key": "threatTarget",
+            "value": "C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcmd.exe"
+        },
+        {
+            "key": "deviceVersion",
+            "value": "3.0.9.115"
+        },
+        {
+            "key": "attckName",
+            "value": "创建使用Invoke-Kerberoast进行kerberosating攻击"
+        }
+    ]
+}
+{
+    "logId": 362,
+    "logText": "<14>Sep  5 14:22:33 edr-center {"logType":"alert","dnames":["CommandLine","Image"],"techniqueArray":["T1222","T1486","T1210","T1083","T1490","T1222.001"],"collectorReceiptTime":"2024-09-05 14:22:23","sendHostAddress":"10.50.86.45","technique":["T1222","T1486","T1210","T1083","T1490"],"lessUser":"user02","subTechnique":["T1222.001"],"deviceReceiptTime":"2024-09-05 14:22:23","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件威胁","ruleType":"/Malware/Trojan","destAddress":"10.50.109.180","startTime":"2024-09-05 14:22:56","attckWarningId":"a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6","ruleId":"SE000139","uKey":"a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6","timestamp":1725539376000,"eventNum":60203,"uploadtime":1725539343174,"severity":"5","eventId":"a2b3c4d5-e6f7-g8h9-i0j1-k2l3m4n5o6p7","image":"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_x1y2z3-w4v5u6-1-cmd.exe","machineCode":"A1B2C3D4E5F6G7H8I9J0K1L2M3N4O5P6Q7R8S9T0U1V2W3X4Y5Z6A7B8C9D0E1F2G3H4I5J6K7L8M9N0O1P2Q3R4S5T6U7V8W9X0Y1Z2","eventStr":["进程启动"],"level":"CRITICAL","tacticIds":["TA0005","TA0008","TA0007","TA0040"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_x1y2z3-w4v5u6-1-cmd.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.115","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z2","newName":"WIN-ABCD1234EFGH","attckName":"疑似Emotet 恶意软件行为","createTime":1725539343137,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"56","endTime":"2024-09-05 14:22:56"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  5 14:22:33"
+        },
+        {
+            "key": "riskType",
+            "value": "恶意软件威胁"
+        },
+        {
+            "key": "destAddress",
+            "value": "10.50.109.180"
+        },
+        {
+            "key": "startTime",
+            "value": "2024-09-05 14:22:56"
+        },
+        {
+            "key": "attckWarningId",
+            "value": "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6"
+        },
+        {
+            "key": "ruleId",
+            "value": "SE000139"
+        },
+        {
+            "key": "uploadtime",
+            "value": "1725539343174"
+        },
+        {
+            "key": "image",
+            "value": "C:\\\\hd\\\\peer\\\\executeToolPath\\\\hd_tag_x1y2z3-w4v5u6-1-cmd.exe"
+        },
+        {
+            "key": "deviceVersion",
+            "value": "3.0.9.115"
+        },
+        {
+            "key": "attckName",
+            "value": "疑似Emotet 恶意软件行为"
+        }
+    ]
+}
+{
+    "logId": 363,
+    "logText": "<14>Oct  5 15:42:19 edr-center {"logType":"alert","dnames":["CommandLine","Image"],"techniqueArray":["T1220"],"collectorReceiptTime":"2024-10-05 15:42:15","sendHostAddress":"10.50.86.45","technique":["T1220"],"lessUser":"user02","subTechnique":[],"deviceReceiptTime":"2024-10-05 15:42:15","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"入侵威胁","ruleType":"/Malware/Others","destAddress":"10.50.109.180","startTime":"2024-10-05 15:42:45","attckWarningId":"fff1d4e6-cdf6-4dad-a707-71a235fbe6ca","ruleId":"SY004863","uKey":"54827bfd0fba8daeb19edfcda4624383","timestamp":1725453603001,"eventNum":60203,"uploadtime":1725453573008,"severity":"5","eventId":"fa9e4fd7-516c-4182-abce-2a693db95c03","image":"C:\\\\Windows\\\\System32\\\\wbem\\\\WMIC.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["进程启动"],"level":"HIGH","tacticIds":["TA0005"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\Windows\\\\System32\\\\wbem\\\\WMIC.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.114","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-RH45I247P87","attckName":"WMI执行XSL脚本","createTime":1725453572867,"deviceSendProductName":"主机安全防护组件","name":"入侵检测","deviceAssetSubTypeId":"56","endTime":"2024-10-05 15:42:45"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct  5 15:42:19"
+        },
+        {
+            "key": "sendHostAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "deviceReceiptTime",
+            "value": "2024-10-05 15:42:15"
+        },
+        {
+            "key": "deviceName",
+            "value": "主机安全防护组件"
+        },
+        {
+            "key": "attckWarningId",
+            "value": "fff1d4e6-cdf6-4dad-a707-71a235fbe6ca"
+        },
+        {
+            "key": "eventNum",
+            "value": "60203"
+        },
+        {
+            "key": "uploadtime",
+            "value": "1725453573008"
+        },
+        {
+            "key": "eventId",
+            "value": "fa9e4fd7-516c-4182-abce-2a693db95c03"
+        },
+        {
+            "key": "image",
+            "value": "C:\\\\Windows\\\\System32\\\\wbem\\\\WMIC.exe"
+        },
+        {
+            "key": "level",
+            "value": "HIGH"
+        }
+    ]
+}
+{
+    "logId": 364,
+    "logText": "<14>Oct  5 09:45:32 edr-center {"logType":"alert","dnames":["TargetFilename"],"techniqueArray":["T1047"],"collectorReceiptTime":"2024-10-05 09:45:22","sendHostAddress":"10.50.86.45","technique":["T1047"],"lessUser":"user02","subTechnique":[],"deviceReceiptTime":"2024-10-05 09:45:22","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件","ruleType":"/Malware/Trojan","destAddress":"10.50.109.180","startTime":"2024-10-05 09:45:54","attckWarningId":"1a2b3c4d-5e6f-7g8h-9i0j-klmnoprstuvw","ruleId":"FY000600","uKey":"abcdef1234567890abcdef1234567890","timestamp":1728087934000,"eventNum":60203,"uploadtime":1728087902879,"severity":"4","eventId":"2a3b4c5d-6e7f-8g9h-0i1j-klmnopqrstuv","image":"C:\\\\users\\\\user02\\\\downloads\\\\malware.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["文件内容"],"level":"MEDIUM","tacticIds":["TA0002"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\users\\\\user02\\\\downloads\\\\malware.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.115","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6y7z8a9b0c1d2e3f4g5h6i7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4a5b6c7d8e9f0g1h2i3j4k5l6m7n8o9p0q1r2s3t4u5v6w7x8y9z","newName":"WIN-USER02-PC","attckName":"下载并运行恶意软件","createTime":1728087902810,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"56","endTime":"2024-10-05 09:45:54"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct  5 09:45:32"
+        },
+        {
+            "key": "collectorReceiptTime",
+            "value": "2024-10-05 09:45:22"
+        },
+        {
+            "key": "sendHostAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "lessUser",
+            "value": "user02"
+        },
+        {
+            "key": "deviceName",
+            "value": "主机安全防护组件"
+        },
+        {
+            "key": "riskType",
+            "value": "恶意软件"
+        },
+        {
+            "key": "ruleType",
+            "value": "/Malware/Trojan"
+        },
+        {
+            "key": "attckWarningId",
+            "value": "1a2b3c4d-5e6f-7g8h-9i0j-klmnoprstuvw"
+        },
+        {
+            "key": "eventId",
+            "value": "2a3b4c5d-6e7f-8g9h-0i1j-klmnopqrstuv"
+        },
+        {
+            "key": "image",
+            "value": "C:\\\\users\\\\user02\\\\downloads\\\\malware.exe"
+        }
+    ]
+}
+{
+    "logId": 365,
+    "logText": "<14>Sep  6 10:23:45 edr-center {"logType":"alert","dnames":["CommandLine","Image"],"techniqueArray":["T1218","T1218.005"],"collectorReceiptTime":"2024-09-06 10:23:38","sendHostAddress":"10.50.86.45","technique":["T1218"],"lessUser":"user02","subTechnique":["T1218.005"],"deviceReceiptTime":"2024-09-06 10:23:38","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"入侵威胁","ruleType":"/Malware/Others","destAddress":"10.50.109.180","startTime":"2024-09-06 01:34:56","attckWarningId":"2bc9c98d-724b-4da7-b73b-4ed94916783c","ruleId":"SE000284","uKey":"002221502adb9ba9d3b08399912dc45b","timestamp":1725637428000,"eventNum":60203,"uploadtime":1725610363456,"severity":"5","eventId":"1c7444eb-629d-4344-86bf-59f5373475e9","image":"C:\\\\Windows\\\\System32\\\\powershell.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["进程启动"],"level":"HIGH","tacticIds":["TA0005"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\Windows\\\\System32\\\\powershell.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.115","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"4df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-RH45I247P87","attckName":"Powershell 脚本执行","createTime":1725610363400,"deviceSendProductName":"主机安全防护组件","name":"入侵检测","deviceAssetSubTypeId":"56","endTime":"2024-09-06 01:34:56"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  6 10:23:45"
+        },
+        {
+            "key": "deviceName",
+            "value": "主机安全防护组件"
+        },
+        {
+            "key": "deviceAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "destAddress",
+            "value": "10.50.109.180"
+        },
+        {
+            "key": "startTime",
+            "value": "2024-09-06 01:34:56"
+        },
+        {
+            "key": "attckWarningId",
+            "value": "2bc9c98d-724b-4da7-b73b-4ed94916783c"
+        },
+        {
+            "key": "ruleId",
+            "value": "SE000284"
+        },
+        {
+            "key": "uploadtime",
+            "value": "1725610363456"
+        },
+        {
+            "key": "clientOperatingSystem",
+            "value": "windows"
+        },
+        {
+            "key": "deviceVersion",
+            "value": "3.0.9.115"
+        }
+    ]
+}
+{
+    "logId": 366,
+    "logText": "<14>Sep  4 10:32:15 edr-center {"logType":"alert","dnames":["ScriptBlockText"],"techniqueArray":["T1069"],"collectorReceiptTime":"2024-09-04 10:32:13","sendHostAddress":"10.50.86.45","technique":["T1069"],"lessUser":"user02","subTechnique":[],"deviceReceiptTime":"2024-09-04 10:32:13","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"入侵威胁","ruleType":"/Malware/Others","destAddress":"10.50.109.180","startTime":"2024-09-04 10:32:45","attckWarningId":"441957d6-9838-4bc1-9939-65bff7ec23b0","ruleId":"SY004952","uKey":"f2518fa7f734a5785d9e67b526b30447","timestamp":1725439935000,"eventNum":60203,"uploadtime":1725439903349,"severity":"5","eventId":"5731c611-714f-49e0-b4ed-6c14e21c70b7","image":"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["PowerShell"],"level":"MEDIUM","tacticIds":["TA0007"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.114","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-RH45I247P87","attckName":"使用powershell枚举域内机器信息","createTime":1725439903258,"deviceSendProductName":"主机安全防护组件","name":"入侵检测","deviceAssetSubTypeId":"56","endTime":"2024-09-04 10:32:45"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  4 10:32:15"
+        },
+        {
+            "key": "timestamp",
+            "value": "1725439935000"
+        },
+        {
+            "key": "eventNum",
+            "value": "60203"
+        },
+        {
+            "key": "uploadtime",
+            "value": "1725439903349"
+        },
+        {
+            "key": "severity",
+            "value": "5"
+        },
+        {
+            "key": "clientOperatingSystem",
+            "value": "windows"
+        },
+        {
+            "key": "threatTarget",
+            "value": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe"
+        },
+        {
+            "key": "deviceAssetSubType",
+            "value": "主机安全管理系统(EDR)"
+        },
+        {
+            "key": "deviceVersion",
+            "value": "3.0.9.114"
+        },
+        {
+            "key": "groupName",
+            "value": "系统默认组"
+        }
+    ]
+}
+{
+    "logId": 367,
+    "logText": "<14>Sep  4 08:23:12 edr-center {"logType":"alert","dnames":["TargetFilename"],"techniqueArray":["T1090","T1090.002"],"collectorReceiptTime":"2024-09-04 08:22:59","sendHostAddress":"10.50.86.45","technique":["T1090"],"lessUser":"user02","subTechnique":["T1090.002"],"deviceReceiptTime":"2024-09-04 08:22:59","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"入侵威胁","ruleType":"/Malware/Others","destAddress":"10.50.109.180","startTime":"2024-09-04 08:23:24","attckWarningId":"4628685b-e37e-4c8d-8e78-88d33cd4c872","ruleId":"FY000510","uKey":"7dbb090bb868edd56b6c99e9741fba3b","timestamp":1725441792000,"eventNum":60203,"uploadtime":1725441765508,"severity":"5","eventId":"68550de0-9aea-49a9-9a72-fbf5862e0882","image":"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcmd.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","eventStr":["文件内容"],"level":"HIGH","tacticIds":["TA0011"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcmd.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.115","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"3df7212cd7a3bfacbb5ee3bfcba775f091ae7ecb4c00078873a4a876842a9ee1","newName":"WIN-RH45I247P87","attckName":"创建PortForward 恶意程序","createTime":1725441765349,"deviceSendProductName":"主机安全防护组件","name":"入侵检测","deviceAssetSubTypeId":"56","endTime":"2024-09-04 08:23:24"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  4 08:23:12"
+        },
+        {
+            "key": "clientOperatingSystem",
+            "value": "windows"
+        },
+        {
+            "key": "threatTarget",
+            "value": "C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\hdcmd.exe"
+        },
+        {
+            "key": "deviceAssetSubType",
+            "value": "主机安全管理系统(EDR)"
+        },
+        {
+            "key": "deviceVersion",
+            "value": "3.0.9.115"
+        },
+        {
+            "key": "userName",
+            "value": "user02"
+        },
+        {
+            "key": "groupName",
+            "value": "系统默认组"
+        },
+        {
+            "key": "attckName",
+            "value": "创建PortForward 恶意程序"
+        },
+        {
+            "key": "createTime",
+            "value": "1725441765349"
+        },
+        {
+            "key": "deviceSendProductName",
+            "value": "主机安全防护组件"
+        }
+    ]
+}
+{
+    "logId": 368,
+    "logText": "<14>Sep  3 10:22:34 edr-center {"logType":"alert","parentProcessMd5":"d41d8cd98f00b204e9800998ecf8427e","collectorReceiptTime":"2024-09-03 10:22:29","sendHostAddress":"10.50.86.45","opType":"未知操作","deviceReceiptTime":"2024-09-03 10:22:29","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","processChain":"wininit.exe(SYSTEM) -> services.exe(SYSTEM) -> svchost.exe(SYSTEM) -> explorer.exe(Administrator) -> powershell.exe(Administrator) -> script.exe(Administrator) -> cmd.exe(Administrator) -> malware.exe(Administrator) -> cmd.exe(EEDR\\\\admin) -> malicious.exe(EEDR\\\\admin) -> cmd.exe(EEDR\\\\admin)","parentProcessId":20408,"processId":9123,"destAddress":"10.50.109.180","ruleType":"/Malware/TrojanDownloader","parentImage":"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\malicious.exe","startTime":"2024-09-03 10:22:58","srcGeoAddress":"","eventNum":6016,"severity":"7","eventId":"8e23b8ab-beea-4662-9c8e-95aaf8915831","image":"C:\\\\Windows\\\\System32\\\\cmd.exe","machineCode":"EDE8237F7CE130455307EA4199B837DD42752F71EBF2A9C40DBE039BD6CBB0BF97D53DE4","virusName":"TrojanDownloader/Agent.B","srcUserName":"user02","clientOperatingSystem":"windows","processMd5":"d41d8cd98f00b204e9800998ecf8427e","suggestion":"[\\"* 运行全面扫描，检查并清除所有受感染的文件\\",\\"* 审查系统日志，查找异常活动记录\\",\\"* 更新防病毒软件和操作系统补丁\\",\\"* 禁用不必要的网络服务，减少攻击面\\"]","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.190","srcAddress":"","fileMd5":"","message":"cmd.exe 执行参数中发现病毒威胁 C:\\\\hd\\\\peer\\\\executeToolPath\\\\malicious_file.exe (TrojanDownloader/Agent.B)，未知","productVendorName":"安恒信息股份有限公司","parentCommandLine":"C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\malicious.exe  -ef C:\\\\hd\\\\peer\\\\attackVector\\\\scriptFile\\\\T1212_silverticket.yaml -id 30000261 -bid hd_tag_m0ko1izz -pf C:\\\\hd\\\\peer\\\\attackVector\\\\temp\\\\m0ko1izz\\\\malicious_file.exe -o C:\\\\hd\\\\peer\\\\execresult\\\\AtomicClient\\\\m0ko1izz -isc -d -oe -custom-envs Path=C:\\\\hd\\\\peer\\\\tools\\\\dependent\\\\bin\\\\jdk\\\\bin;C:\\\\hd\\\\peer\\\\tools\\\\dependent\\\\bin\\\\python;C:\\\\hd\\\\peer\\\\tools\\\\dependent\\\\bin\\\\python\\\\Scripts,JAVA_HOME=C:\\\\hd\\\\peer\\\\tools\\\\dependent\\\\bin\\\\jdk,JRE_HOME=C:\\\\hd\\\\peer\\\\tools\\\\dependent\\\\bin\\\\jdk\\\\jre","deviceSendProductName":"主机安全防护组件","processUserName":"EEDR\\\\admin","targetFilename":"C:\\\\hd\\\\peer\\\\executeToolPath\\\\malicious_file.exe","name":"病毒防护","endTime":"2024-09-03 10:22:58","deviceAssetSubTypeId":"56","commandLine":"/v:on /c C:\\\\hd\\\\peer\\\\executeToolPath\\\\malicious_file.exe -f C:\\\\hd\\\\peer\\\\executeToolPath\\\\malicious_file.exe & echo !errorlevel!","catOutcome":"OK","parentProcessUserName":"EEDR\\\\admin"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  3 10:22:34"
+        },
+        {
+            "key": "parentProcessMd5",
+            "value": "d41d8cd98f00b204e9800998ecf8427e"
+        },
+        {
+            "key": "collectorReceiptTime",
+            "value": "2024-09-03 10:22:29"
+        },
+        {
+            "key": "opType",
+            "value": "未知操作"
+        },
+        {
+            "key": "processChain",
+            "value": "wininit.exe(SYSTEM) -> services.exe(SYSTEM) -> svchost.exe(SYSTEM) -> explorer.exe(Administrator) -> powershell.exe(Administrator) -> script.exe(Administrator) -> cmd.exe(Administrator) -> malware.exe(Administrator) -> cmd.exe(EEDR\\\\admin) -> malicious.exe(EEDR\\\\admin) -> cmd.exe(EEDR\\\\admin)"
+        },
+        {
+            "key": "parentProcessId",
+            "value": "20408"
+        },
+        {
+            "key": "parentImage",
+            "value": "C:\\\\hd\\\\peer\\\\assembly\\\\tools\\\\malicious.exe"
+        },
+        {
+            "key": "virusName",
+            "value": "TrojanDownloader/Agent.B"
+        },
+        {
+            "key": "srcUserName",
+            "value": "user02"
+        },
+        {
+            "key": "suggestion",
+            "value": "[\\"* 运行全面扫描，检查并清除所有受感染的文件\\",\\"* 审查系统日志，查找异常活动记录\\",\\"* 更新防病毒软件和操作系统补丁\\",\\"* 禁用不必要的网络服务，减少攻击面\\"]"
+        }
+    ]
+}
+{
+    "logId": 369,
+    "logText": "<14>Sep  5 12:30:45 edr-center {"logType":"alert","dnames":["CommandLine","Image"],"techniqueArray":["T1082"],"collectorReceiptTime":"2024-09-05 12:30:40","sendHostAddress":"10.50.86.45","technique":["T1082"],"lessUser":"user02","subTechnique":[],"deviceReceiptTime":"2024-09-05 12:30:40","deviceName":"主机安全防护组件","deviceAddress":"10.50.86.45","riskType":"恶意软件","ruleType":"/Malware/Backdoor","destAddress":"10.50.109.180","startTime":"2024-09-05 12:31:00","attckWarningId":"b12d6345-8765-4321-b987-654321098765","ruleId":"SE000282","uKey":"a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6","timestamp":1725506445000,"eventNum":60203,"uploadtime":1725506405515,"severity":"4","eventId":"d1e2f3a4-b5c6-d7e8-f9a0-b1c2d3e4f5a6","image":"C:\\\\Windows\\\\System32\\\\ipconfig.exe","machineCode":"FEDCBA9876543210FEDCBA9876543210FEDCBA9876543210FEDCBA9876543210","eventStr":["进程启动"],"level":"MEDIUM","tacticIds":["TA0007"],"author":"","clientOperatingSystem":"windows","threatTarget":"C:\\\\Windows\\\\System32\\\\ipconfig.exe","deviceAssetSubType":"主机安全管理系统(EDR)","deviceVersion":"3.0.9.114","userName":"user02","productVendorName":"安恒信息股份有限公司","groupName":"系统默认组","machineId":"4a3b2c1d0e9f8g7h6i5j4k3l2m1n0o9p8q7r6s5t4u3v2w1x0y9z8","newName":"WIN-ABC12345678","attckName":"系统信息发现","createTime":1725506405410,"deviceSendProductName":"主机安全防护组件","name":"恶意软件检测","deviceAssetSubTypeId":"56","endTime":"2024-09-05 12:31:00"}",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  5 12:30:45"
+        },
+        {
+            "key": "deviceAddress",
+            "value": "10.50.86.45"
+        },
+        {
+            "key": "riskType",
+            "value": "恶意软件"
+        },
+        {
+            "key": "ruleType",
+            "value": "/Malware/Backdoor"
+        },
+        {
+            "key": "destAddress",
+            "value": "10.50.109.180"
+        },
+        {
+            "key": "attckWarningId",
+            "value": "b12d6345-8765-4321-b987-654321098765"
+        },
+        {
+            "key": "machineCode",
+            "value": "FEDCBA9876543210FEDCBA9876543210FEDCBA9876543210FEDCBA9876543210"
+        },
+        {
+            "key": "threatTarget",
+            "value": "C:\\\\Windows\\\\System32\\\\ipconfig.exe"
+        },
+        {
+            "key": "deviceAssetSubType",
+            "value": "主机安全管理系统(EDR)"
+        },
+        {
+            "key": "groupName",
+            "value": "系统默认组"
+        }
+    ]
+}
+{
+        "logId": 370,
+        "logText": "<128>May 15 09:45:12 2023 apt APT~0~1~2023-05-15 09:45:05~192.168.1.1:0~192.168.1.1:0~系统告警~~NULL~中~60~~探测器:{2},业务主机群表{3}同步失败，相关功能可能会出现异常！",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 15 09:45:12 2023"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2023-05-15 09:45:05"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.1:0"
+            },
+            {
+                "key": "",
+                "value": "系统告警"
+            },
+            {
+                "key": "",
+                "value": "中"
+            },
+            {
+                "key": "",
+                "value": "60"
+            }
+        ]
+    }
+{
+        "logId": 371,
+        "logText": "<128>May 15 09:45:12 2023 apt APT~0~1~2023-05-15 09:45:05~192.168.1.1:0~192.168.1.1:0~系统告警~~NULL~中~60~~防火墙:{0},内部网络访问外部资源{1}受限，部分服务可能受影响！",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 15 09:45:12 2023"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2023-05-15 09:45:05"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.1:0"
+            },
+            {
+                "key": "",
+                "value": "系统告警"
+            },
+            {
+                "key": "",
+                "value": "中"
+            },
+            {
+                "key": "",
+                "value": "60"
+            }
+        ]
+    }
+{
+        "logId": 372,
+        "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:05:00~192.168.58.201:45678~192.168.58.103:80~SQL注入攻击~尝试执行恶意SQL语句~NULL~高~1305101205000000002~ NULL~GET /apt/query?sql=SELECT%20*%20FROM%20users",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 10 14:30:15 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-10 12:05:00"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.201:45678"
+            },
+            {
+                "key": "",
+                "value": "SQL注入攻击"
+            },
+            {
+                "key": "",
+                "value": "尝试执行恶意SQL语句"
+            }
+        ]
+    }
+{
+    "logId": 373,
+    "logText": "<128>Jun 20 10:25:30 2024 dbapp APT~31~1~2024-06-20 10:25:30~10.50.134.19:47014~8.8.8.8:53~远程控制~漏洞利用攻击事件~类型:    C&C~中~2406201025300000257~~请求DNS服务器 [8.8.8.8] 解析域名: malicious.com~~~0~4~2~60:db:15:73:46:02~00:00:5e:00:01:0b~0~Host: malicious.com~~~~成功~12~1~630~212002",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jun 20 10:25:30 2024"
+        },
+        {
+            "key": "",
+            "value": "APT"
+        },
+        {
+            "key": "",
+            "value": "2024-06-20 10:25:30"
+        },
+        {
+            "key": "",
+            "value": "10.50.134.19:47014"
+        },
+        {
+            "key": "",
+            "value": "8.8.8.8:53"
+        },
+        {
+            "key": "",
+            "value": "远程控制"
+        },
+        {
+            "key": "",
+            "value": "漏洞利用攻击事件"
+        },
+        {
+            "key": "类型",
+            "value": "C&C"
+        },
+        {
+            "key": "Host",
+            "value": "malicious.com"
+        }
+    ]
+}
+{
+        "logId": 374,
+        "logText": "<128>May 15 09:45:12 2013 apt APT~0~1~2013-05-15 09:45:05~192.168.1.1:0~192.168.1.1:0~系统告警~~NULL~中~60~~磁盘空间不足: 根分区剩余空间小于10GB",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 15 09:45:12 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-15 09:45:05"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.1:0"
+            },
+            {
+                "key": "",
+                "value": "系统告警"
+            },
+            {
+                "key": "",
+                "value": "中"
+            }
+        ]
+    }
+{
+        "logId": 375,
+        "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:05:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~mysql危险函数~NULL~高~1305101205000000002~ NULL~GET /apt/data?action=fetch",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 10 14:30:15 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-10 12:05:00"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.201:45678"
+            },
+            {
+                "key": "",
+                "value": "SQL注入"
+            },
+            {
+                "key": "",
+                "value": "mysql危险函数"
+            },
+            {
+                "key": "",
+                "value": "高"
+            }
+        ]
+    }
+{
+        "logId": 376,
+        "logText": "<128>May 15 09:45:12 2023 apt APT~0~1~2023-05-15 09:45:05~192.168.1.1:0~192.168.1.1:0~系统告警~~NULL~中~56~~数据库:{0},连接池{1}超时，相关操作可能延迟！",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 15 09:45:12 2023"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2023-05-15 09:45:05"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.1:0"
+            },
+            {
+                "key": "",
+                "value": "系统告警"
+            },
+            {
+                "key": "",
+                "value": "中"
+            }
+        ]
+    }
+{
+        "logId": 377,
+        "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:05:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~尝试获取数据库信息~NULL~高~1305101205000000002~ NULL~GET /apt/query?action=search",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 10 14:30:15 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-10 12:05:00"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.201:45678"
+            },
+            {
+                "key": "",
+                "value": "SQL注入"
+            },
+            {
+                "key": "",
+                "value": "尝试获取数据库信息"
+            },
+            {
+                "key": "",
+                "value": "高"
+            }
+        ]
+    }
+{
+    "logId": 378,
+    "logText": "<128>May 15 14:45:20 2013 apt APT~0~1~2013-05-15 14:45:13~192.168.1.1:0~192.168.1.1:0~系统告警~~NULL~中~60~~Failed to connect to database!",
+    "logField": [
+        {
+            "key": "",
+            "value": "May 15 14:45:20 2013"
+        },
+        {
+            "key": "",
+            "value": "APT"
+        },
+        {
+            "key": "",
+            "value": "2013-05-15 14:45:13"
+        },
+        {
+            "key": "",
+            "value": "192.168.1.1:0"
+        },
+        {
+            "key": "",
+            "value": "系统告警"
+        },
+        {
+            "key": "",
+            "value": "中"
+        }
+    ]
+}
+{
+        "logId": 379,
+        "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:05:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~onload跨站~NULL~高~1305101205000000002~ NULL~GET /apt/data?action=read",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 10 14:30:15 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-10 12:05:00"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.201:45678"
+            },
+            {
+                "key": "",
+                "value": "SQL注入"
+            },
+            {
+                "key": "",
+                "value": "onload跨站"
+            },
+            {
+                "key": "",
+                "value": "高"
+            }
+        ]
+    }
+{
+        "logId": 380,
+        "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:05:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~尝试获取数据库信息~NULL~高~1305101205000000002~ NULL~GET /apt/query?action=info",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 10 14:30:15 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-10 12:05:00"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.201:45678"
+            },
+            {
+                "key": "",
+                "value": "SQL注入"
+            },
+            {
+                "key": "",
+                "value": "尝试获取数据库信息"
+            },
+            {
+                "key": "",
+                "value": "高"
+            }
+        ]
+    }
+{
+    "logId": 381,
+    "logText": "<128>November 15 14:22:45 2013 dbapp APT~2~1~2013-11-15 14:22:30~192.168.29.125:0~122.224.213.6:0~恶意行为~SQL注入攻击~NULL~中~1311151422309910112~NULL~GET /admin/login.php",
+    "logField": [
+        {
+            "key": "",
+            "value": "November 15 14:22:45 2013"
+        },
+        {
+            "key": "",
+            "value": "APT"
+        },
+        {
+            "key": "",
+            "value": "2013-11-15 14:22:30"
+        },
+        {
+            "key": "",
+            "value": "192.168.29.125:0"
+        },
+        {
+            "key": "",
+            "value": "122.224.213.6:0"
+        },
+        {
+            "key": "",
+            "value": "恶意行为"
+        },
+        {
+            "key": "",
+            "value": "SQL注入攻击"
+        },
+        {
+            "key": "",
+            "value": "中"
+        }
+    ]
+}
+{
+        "logId": 382,
+        "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:15:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~union select 1,2,3--~中~1305101215000000002~ NULL~GET /apt/query?param=1",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 10 14:30:15 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-10 12:15:00"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.201:45678"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.103:80"
+            },
+            {
+                "key": "",
+                "value": "SQL注入"
+            },
+            {
+                "key": "",
+                "value": "union select 1,2,3--"
+            },
+            {
+                "key": "",
+                "value": "中"
+            }
+        ]
+    }
+{
+    "logId": 383,
+    "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:05:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~UNION SELECT注入~NULL~高~1305101205000000002~ NULL~GET /apt/query?action=search",
+    "logField": [
+        {
+            "key": "",
+            "value": "May 10 14:30:15 2013"
+        },
+        {
+            "key": "",
+            "value": "APT"
+        },
+        {
+            "key": "",
+            "value": "2013-05-10 12:05:00"
+        },
+        {
+            "key": "",
+            "value": "192.168.58.201:45678"
+        },
+        {
+            "key": "",
+            "value": "SQL注入"
+        },
+        {
+            "key": "",
+            "value": "UNION SELECT注入"
+        },
+        {
+            "key": "",
+            "value": "高"
+        }
+    ]
+}
+{
+    "logId": 384,
+    "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:05:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~union select~NULL~高~1305101205000000001~ NULL~GET /apt/query?action=search",
+    "logField": [
+        {
+            "key": "",
+            "value": "May 10 14:30:15 2013"
+        },
+        {
+            "key": "",
+            "value": "APT"
+        },
+        {
+            "key": "",
+            "value": "2013-05-10 12:05:00"
+        },
+        {
+            "key": "",
+            "value": "192.168.58.201:45678"
+        },
+        {
+            "key": "",
+            "value": "192.168.58.103:80"
+        },
+        {
+            "key": "",
+            "value": "SQL注入"
+        },
+        {
+            "key": "",
+            "value": "union select"
+        },
+        {
+            "key": "",
+            "value": "高"
+        }
+    ]
+}
+{
+        "logId": 385,
+        "logText": "<128>November 22 15:42:31 2014 dbapp APT~2~1~2014-11-22 15:41:10~192.168.1.100:5678~104.28.12.34:443~恶意代码攻击~远程控制~远程控制。~中~1411221541100000015~1411221541100000115_Malware20141122154110_1.2.3.4.zip [ malware.exe ]~POST /api/v1/malware/Malware20141122154110_1.2.3.4.zip",
+        "logField": [
+            {
+                "key": "",
+                "value": "November 22 15:42:31 2014"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2014-11-22 15:41:10"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.100:5678"
+            },
+            {
+                "key": "",
+                "value": "104.28.12.34:443"
+            },
+            {
+                "key": "",
+                "value": "恶意代码攻击"
+            },
+            {
+                "key": "",
+                "value": "中"
+            }
+        ]
+    }
+{
+        "logId": 386,
+        "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:15:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~union select跨站~高~1305101215000000001~ NULL~GET /apt/query?action=search",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 10 14:30:15 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-10 12:15:00"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.201:45678"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.103:80"
+            },
+            {
+                "key": "",
+                "value": "SQL注入"
+            },
+            {
+                "key": "",
+                "value": "union select跨站"
+            },
+            {
+                "key": "",
+                "value": "高"
+            }
+        ]
+    }
+{
+    "logId": 387,
+    "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:15:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~select * from users~高~1305101215000000001~ NULL~GET /apt/query?action=search",
+    "logField": [
+        {
+            "key": "",
+            "value": "May 10 14:30:15 2013"
+        },
+        {
+            "key": "",
+            "value": "APT"
+        },
+        {
+            "key": "",
+            "value": "2013-05-10 12:15:00"
+        },
+        {
+            "key": "",
+            "value": "192.168.58.201:45678"
+        },
+        {
+            "key": "",
+            "value": "192.168.58.103:80"
+        },
+        {
+            "key": "",
+            "value": "SQL注入"
+        },
+        {
+            "key": "",
+            "value": "select * from users"
+        },
+        {
+            "key": "",
+            "value": "高"
+        }
+    ]
+}
+{
+        "logId": 388,
+        "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:05:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~fromcharcode alert eval嵌入标签跨站~NULL~高~1305101205000000002~ NULL~GET /apt/query?action=search",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 10 14:30:15 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-10 12:05:00"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.103:80"
+            },
+            {
+                "key": "",
+                "value": "SQL注入"
+            },
+            {
+                "key": "",
+                "value": "高"
+            }
+        ]
+    }
+{
+    "logId": 389,
+    "logText": "<128>Jun 20 15:42:30 2024 dbapp APT~2~1~2024-06-20 15:42:30~10.50.24.10:53173~210.28.32.159:80~SQL注入~SQL注入尝试~~中~2406201542300000122~~POST /login.php?username=admin' OR '1'='1' -- &password=admin ~~techblog.example.com~~1~1~14:18:77:4c:7f:89~60:db:15:73:46:02~0~Host: techblog.example.com<br/>User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36<br/>Cookie: PHPSESSID=abc123def456ghi789<br/>Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8<br/>Accept-Encoding: gzip, deflate, br<br/>Accept-Language: en-US,en;q=0.9<br/>Referer: https://techblog.example.com/login.php<br/>~~~~尝试~1~4~21600804~21600804",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jun 20 15:42:30 2024"
+        },
+        {
+            "key": "",
+            "value": "APT"
+        },
+        {
+            "key": "",
+            "value": "2024-06-20 15:42:30"
+        },
+        {
+            "key": "",
+            "value": "10.50.24.10:53173"
+        },
+        {
+            "key": "",
+            "value": "210.28.32.159:80"
+        },
+        {
+            "key": "",
+            "value": "SQL注入"
+        },
+        {
+            "key": "",
+            "value": "SQL注入尝试"
+        },
+        {
+            "key": "",
+            "value": "中"
+        }
+    ]
+}
+{
+    "logId": 390,
+    "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:05:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~exec跨站~NULL~高~1305101205000000002~ NULL~GET /apt/query?action=search",
+    "logField": [
+        {
+            "key": "",
+            "value": "May 10 14:30:15 2013"
+        },
+        {
+            "key": "",
+            "value": "APT"
+        },
+        {
+            "key": "",
+            "value": "192.168.58.201:45678"
+        },
+        {
+            "key": "",
+            "value": "192.168.58.103:80"
+        },
+        {
+            "key": "",
+            "value": "SQL注入"
+        },
+        {
+            "key": "",
+            "value": "exec跨站"
+        },
+        {
+            "key": "",
+            "value": "高"
+        }
+    ]
+}
+{
+        "logId": 391,
+        "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:00:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~尝试利用SQL注入漏洞~NULL~高~1305101200000000001~ NULL~GET /apt/users?action=login",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 10 14:30:15 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-10 12:00:00"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.103:80"
+            },
+            {
+                "key": "",
+                "value": "SQL注入"
+            },
+            {
+                "key": "",
+                "value": "尝试利用SQL注入漏洞"
+            },
+            {
+                "key": "",
+                "value": "高"
+            }
+        ]
+    }
+{
+    "logId": 392,
+    "logText": "<128>May 15 09:45:12 2023 apt APT~0~1~2023-05-15 09:45:05~192.168.1.1:0~192.168.1.1:0~系统告警~~NULL~中~60~~主机当前CPU使用率[85.0%]已超过[80.0%]的限定门限!",
+    "logField": [
+        {
+            "key": "",
+            "value": "May 15 09:45:12 2023"
+        },
+        {
+            "key": "",
+            "value": "APT"
+        },
+        {
+            "key": "",
+            "value": "2023-05-15 09:45:05"
+        },
+        {
+            "key": "",
+            "value": "192.168.1.1:0"
+        },
+        {
+            "key": "",
+            "value": "系统告警"
+        },
+        {
+            "key": "",
+            "value": "中"
+        }
+    ]
+}
+{
+        "logId": 393,
+        "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:05:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~onload事件~NULL~高~1305101205000000002~ NULL~GET /apt/query?action=search",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 10 14:30:15 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-10 12:05:00"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.201:45678"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.103:80"
+            },
+            {
+                "key": "",
+                "value": "SQL注入"
+            },
+            {
+                "key": "",
+                "value": "onload事件"
+            },
+            {
+                "key": "",
+                "value": "高"
+            }
+        ]
+    }
+{
+    "logId": 394,
+    "logText": "<128>Jun 20 14:30:15 2024 dbapp APT~2~1~2024-06-20 14:30:15~10.50.24.7:40129~112.4.237.243:80~SQL注入~检测到SQL注入攻击(select)~~中~2406201430150000264~~POST /login.php?username=admin' OR '1'='1' -- &password=pass~~example.com~200~1~1~14:18:77:38:39:80~60:db:15:73:46:01~346~Host: example.com<br/>User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36<br/>Cookie: session_id=abc123; user=admin<br/>Accept: */*<br/>Accept-Encoding: gzip, deflate<br/>Accept-Language: en-US,en;q=0.9<br/>Referer: http://example.com/login.php~~<br/>~~失败~1~4~14260603~14260603",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jun 20 14:30:15 2024"
+        },
+        {
+            "key": "",
+            "value": "APT"
+        },
+        {
+            "key": "",
+            "value": "2024-06-20 14:30:15"
+        },
+        {
+            "key": "",
+            "value": "10.50.24.7:40129"
+        },
+        {
+            "key": "",
+            "value": "112.4.237.243:80"
+        },
+        {
+            "key": "",
+            "value": "SQL注入"
+        },
+        {
+            "key": "",
+            "value": "检测到SQL注入攻击(select)"
+        },
+        {
+            "key": "",
+            "value": "中"
+        }
+    ]
+}
+{
+        "logId": 395,
+        "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:05:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~updateusers函数注入~NULL~高~1305101205000000002~ NULL~GET /apt/users?action=edit",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 10 14:30:15 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-10 12:05:00"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.201:45678"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.103:80"
+            },
+            {
+                "key": "",
+                "value": "SQL注入"
+            },
+            {
+                "key": "",
+                "value": "updateusers函数注入"
+            },
+            {
+                "key": "",
+                "value": "高"
+            }
+        ]
+    }
+{
+        "logId": 396,
+        "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:00:00~192.168.58.201:45678~192.168.58.103:80~SQL注入~尝试获取数据库信息~高~1305101200000000001~ NULL~GET /apt/query?action=info",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 10 14:30:15 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-10 12:00:00"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.201:45678"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.103:80"
+            },
+            {
+                "key": "",
+                "value": "SQL注入"
+            },
+            {
+                "key": "",
+                "value": "尝试获取数据库信息"
+            },
+            {
+                "key": "",
+                "value": "高"
+            }
+        ]
+    }
+{
+        "logId": 397,
+        "logText": "<128>May 15 09:45:12 2013 apt APT~0~1~2013-05-15 09:45:05~127.0.0.1:0~127.0.0.1:0~系统告警~~NULL~中~60~~BackupAudit Fail:disk space low!",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 15 09:45:12 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-15 09:45:05"
+            },
+            {
+                "key": "",
+                "value": "127.0.0.1:0"
+            },
+            {
+                "key": "",
+                "value": "系统告警"
+            },
+            {
+                "key": "",
+                "value": "中"
+            },
+            {
+                "key": "",
+                "value": "60"
+            }
+        ]
+    }
+{
+        "logId": 398,
+        "logText": "<128>May 10 14:30:15 2013 apt APT~2~1~2013-05-10 12:00:00~192.168.58.201:40000~192.168.58.103:80~SQL注入~尝试获取数据库信息~NULL~中~1305101200000000002~ NULL~GET /apt/query?action=search",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 10 14:30:15 2013"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2013-05-10 12:00:00"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.201:40000"
+            },
+            {
+                "key": "",
+                "value": "192.168.58.103:80"
+            },
+            {
+                "key": "",
+                "value": "SQL注入"
+            },
+            {
+                "key": "",
+                "value": "尝试获取数据库信息"
+            },
+            {
+                "key": "",
+                "value": "中"
+            }
+        ]
+    }
+{
+        "logId": 399,
+        "logText": "<128>May 15 09:45:12 2023 apt APT~0~1~2023-05-15 09:45:05~192.168.1.1:0~192.168.1.1:0~系统告警~~NULL~中~60~~数据库:{0},日志相关表{1}同步失败，相关功能可能会出现异常！",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 15 09:45:12 2023"
+            },
+            {
+                "key": "",
+                "value": "APT"
+            },
+            {
+                "key": "",
+                "value": "2023-05-15 09:45:05"
+            },
+            {
+                "key": "",
+                "value": "192.168.1.1:0"
+            },
+            {
+                "key": "",
+                "value": "系统告警"
+            },
+            {
+                "key": "",
+                "value": "中"
+            },
+            {
+                "key": "",
+                "value": "60"
+            }
+        ]
+    }
+{
+    "logId": 400,
+    "logText": "<128>May 15 14:45:20 2013 apt APT~0~1~2013-05-15 14:45:13~127.0.0.1:0~127.0.0.1:0~系统告警~~NULL~中~60~~磁盘空间不足: 根分区剩余空间小于10GB!",
+    "logField": [
+        {
+            "key": "",
+            "value": "May 15 14:45:20 2013"
+        },
+        {
+            "key": "",
+            "value": "APT"
+        },
+        {
+            "key": "",
+            "value": "2013-05-15 14:45:13"
+        },
+        {
+            "key": "",
+            "value": "127.0.0.1:0"
+        },
+        {
+            "key": "",
+            "value": "系统告警"
+        },
+        {
+            "key": "",
+            "value": "中"
+        },
+        {
+            "key": "",
+            "value": "60"
+        }
+    ]
+}

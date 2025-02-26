@@ -64,6 +64,7 @@ pdf_tool = PDFSearchTool(
 ```
 
 ## Usage
+这是官方使用配置文件的用法：
 ### agents.yaml 配置
 这里设定所有你要使用的agents, 如果你不想通过这个使用就直接把agents.yaml文件删除。
 例如：
@@ -88,7 +89,94 @@ reporting_analyst:
     your ability to turn complex data into clear and concise reports, making
     it easy for others to understand and act on the information you provide.
 ```
+### tasks.yaml 配置
+```yaml
+# src/latest_ai_development/config/tasks.yaml
+research_task:
+  description: >
+    Conduct a thorough research about {topic}
+    Make sure you find any interesting and relevant information given
+    the current year is 2025.
+  expected_output: >
+    A list with 10 bullet points of the most relevant information about {topic}
+  agent: researcher
+
+reporting_task:
+  description: >
+    Review the context you got and expand each topic into a full section for a report.
+    Make sure the report is detailed and contains any and all relevant information.
+  expected_output: >
+    A fully fledge reports with the mains topics, each with a full section of information.
+    Formatted as markdown without '```'
+  agent: reporting_analyst
+```
+
+### crew.py 使用
 注意这里的命名之后调用的时候名字要保持一致：
 ```python
-
+	def researcher(self) -> Agent:
+		return Agent(
+			config=self.agents_config['researcher'],
+			llm=self._init_llm(),
+			verbose=True,
+		)
+	
+	@task
+	def research_task(self) -> Task:
+		return Task(
+		config=self.tasks_config['research_task'],
+		)
+	
+	@agent
+	def reporting_analyst(self) -> Agent:
+		return Agent(
+		config=self.agents_config['reporting_analyst'],
+		llm=self._init_llm(),
+		verbose=True,
+		)
+	
+	@task
+	def reporting_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['reporting_task'],
+			output_file='refs/mytest/output/report.md' # This is the file that will be contain the final report.
+		)
 ```
+
+直接使用代码硬写：
+
+我更喜欢这个，定制自由，不过管理项目或者迁移的时候建议用前一个配置
+```python
+your_agent = Agent(
+    role="your role",
+    
+    goal="Final target",
+
+    backstory="""your role background""",
+
+    llm=your_model,
+)
+
+your_task = Task(
+    description= """your task
+    """,
+    agent=your_agent,
+    expected_output=
+    """
+    ???
+    """
+)
+single_crew = Crew(
+            agents=[your_agent],
+            tasks=[your_task],
+            process=Process.sequential,
+            verbose=True,
+        )
+# log 要在task.description中定义{log}使用
+inputs = {
+    "log": f"{item}",
+}
+# result 是 CrewOutput对象 写入文件要转str(result)
+result = single_crew.kickoff(inputs=inputs)
+```
+注意在Windows里的路径要加r"",Ubuntu里面就是/.

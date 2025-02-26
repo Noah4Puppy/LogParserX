@@ -1,0 +1,3148 @@
+{
+    "logId": 201,
+    "logText": "<189>Mar 15 2023 14:32:17 USG6625F %%01CONFIGURATION/5/SAVE_FILE_RECORD(s):CID=0x80cb001b;The system automatically saved the current configuration to the file. (FileName=flash:/blue.cfg)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Mar 15 2023 14:32:17"
+        },
+        {
+            "key": "",
+            "value": "USG6625F"
+        },
+        {
+            "key": "CID",
+            "value": "0x80cb001b"
+        },
+        {
+            "key": "FileName",
+            "value": "flash:/blue.cfg"
+        }
+    ]
+}
+{
+    "logId": 202,
+    "logText": "<185>Jun 20 2023 14:30:15 yamusic-dc-sw %%01DEVM/1/hwOpticalUnAuthorized_active(l):CID=0x80fc0102-alarmID=0x08132155;The optical module was not certified by Huawei Ethernet Switch.(EntPhysicalIndex=16850211, EntPhysicalName=10GE2/0/34, EntityTrapFaultID=145921, Reason=It has been observed that a transceiver has been installed that is not certified by Huawei Ethernet Switch. Huawei cannot ensure that it is completely adaptive and will not cause any adverse effects.If it is continued to be used, Huawei is not obligated to provide support to remedy defects or faults arising out of or resulting from installing and using of the non-certified transceiver.)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jun 20 2023 14:30:15"
+        },
+        {
+            "key": "",
+            "value": "yamusic-dc-sw"
+        },
+        {
+            "key": "CID",
+            "value": "0x80fc0102"
+        },
+        {
+            "key": "alarmID",
+            "value": "0x08132155"
+        },
+        {
+            "key": "EntPhysicalIndex",
+            "value": "16850211"
+        },
+        {
+            "key": "EntPhysicalName",
+            "value": "10GE2/0/34"
+        },
+        {
+            "key": "EntityTrapFaultID",
+            "value": "145921"
+        }
+    ]
+}
+{
+    "logId": 203,
+    "logText": "<189>2024-06-24 10:15:22.4 NB007_SRVXT_AS_33 %%01CLI/5/INTER_CMDRECORDFAILED(s):CID=0x80ca2714;Recorded command information. (Task=VTY1, RemoteIp=10.99.195.160, User=admin, VpnName=mgmt, Command=\"show running-config\", PromptInfo=\"Do you want to continue? [Y/N]:\", UserInput=\"Y\", Result=Command executed successfully, LocalIp=10.99.198.162.)",
+    "logField": [
+        {
+            "key": "",
+            "value": "2024-06-24 10:15:22.4"
+        },
+        {
+            "key": "",
+            "value": "NB007_SRVXT_AS_33"
+        },
+        {
+            "key": "CID",
+            "value": "0x80ca2714"
+        },
+        {
+            "key": "Task",
+            "value": "VTY1"
+        },
+        {
+            "key": "RemoteIp",
+            "value": "10.99.195.160"
+        },
+        {
+            "key": "User",
+            "value": "admin"
+        },
+        {
+            "key": "VpnName",
+            "value": "mgmt"
+        },
+        {
+            "key": "Command",
+            "value": "show running-config"
+        },
+        {
+            "key": "Result",
+            "value": "Command executed successfully"
+        },
+        {
+            "key": "LocalIp",
+            "value": "10.99.198.162"
+        }
+    ]
+}
+{
+    "logId": 204,
+    "logText": "<187>Oct 15 2023 14:32:45 KXSYS_25_A0128_16U_USG6680E_1 %%01API/3/AUTH_FAIL(l)[333155]:Callhome authentication failed.(UserName=admin, Vsys=private, IP=, Failed_Reason=User authentication failed)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct 15 2023 14:32:45"
+        },
+        {
+            "key": "",
+            "value": "KXSYS_25_A0128_16U_USG6680E_1"
+        },
+        {
+            "key": "UserName",
+            "value": "admin"
+        },
+        {
+            "key": "Vsys",
+            "value": "private"
+        },
+        {
+            "key": "Failed_Reason",
+            "value": "User authentication failed"
+        }
+    ]
+}
+{
+        "logId": 205,
+        "logText": "<188>Jan 15 2021 14:45:22  USG6600E %%01IPS/4/BOTNET(l):A botnet was detected. (SyslogId=2308, VSys=\"public\", Policy=\"êˉ±úáú1?í?IP\", SrcIp=192.168.1.100, DstIp=172.16.0.1, SrcPort=49152, DstPort=443, SrcZone=untrust, DstZone=internal, User=\"unknown\", Protocol=TCP, Application=\"HTTPS\", Profile=\"default\", SignName=\"Botnet: TrickBot\", SignId=348682, EventNum=1, Target=server, Severity=high, Os=all, Category=Botnet, Role=0, SrcLocation=\"Local\", DstLocation=\"Internal\", Action=Block)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jan 15 2021 14:45:22"
+            },
+            {
+                "key": "",
+                "value": "USG6600E"
+            },
+            {
+                "key": "DstIp",
+                "value": "172.16.0.1"
+            },
+            {
+                "key": "SrcPort",
+                "value": "49152"
+            },
+            {
+                "key": "DstPort",
+                "value": "443"
+            },
+            {
+                "key": "SrcZone",
+                "value": "untrust"
+            },
+            {
+                "key": "DstZone",
+                "value": "internal"
+            },
+            {
+                "key": "User",
+                "value": "unknown"
+            },
+            {
+                "key": "Protocol",
+                "value": "TCP"
+            },
+            {
+                "key": "Application",
+                "value": "HTTPS"
+            }
+        ]
+    }
+{
+        "logId": 206,
+        "logText": "<147>Jan 15 2017 14:22:33 11G-West %%01DRIVER/3/HWPORTDOWNREASON(l):VS=Admin-VS-CID=0xfc0429-Slot=10;The physical status of the Port6 on Card3 in slot 1 changed to Down. The possible cause is: SHUTDOWN",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jan 15 2017 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "11G-West"
+            },
+            {
+                "key": "VS",
+                "value": "Admin"
+            },
+            {
+                "key": "CID",
+                "value": "0xfc0429"
+            },
+            {
+                "key": "Slot",
+                "value": "10"
+            }
+        ]
+    }
+{
+    "logId": 207,
+    "logText": "<188>Oct 15 2023 14:22:35 CORE-HWS12708-02 %%01OSPF/4/CONFLICT_IP_ADDRESS(l)[5012345]:OSPF interface IP address conflict is detected on intra-area. (ProcessId=2, RouterId=211.199.1.3, AreaId=0.0.0.1, InterfaceName=GigabitEthernet2/3/0/19, IpAddr=211.199.161.100, AdvertiseRouterId=211.199.1.3)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct 15 2023 14:22:35"
+        },
+        {
+            "key": "",
+            "value": "CORE-HWS12708-02"
+        },
+        {
+            "key": "",
+            "value": "5012345"
+        },
+        {
+            "key": "ProcessId",
+            "value": "2"
+        },
+        {
+            "key": "RouterId",
+            "value": "211.199.1.3"
+        },
+        {
+            "key": "AreaId",
+            "value": "0.0.0.1"
+        },
+        {
+            "key": "InterfaceName",
+            "value": "GigabitEthernet2/3/0/19"
+        },
+        {
+            "key": "IpAddr",
+            "value": "211.199.161.100"
+        }
+    ]
+}
+{
+        "logId": 208,
+        "logText": "<190>Jul 20 2021 11:35:42 HD-NE20E-S4 %%01OSPF/6/OSPF_ROUTER_LSA_AGED(l):CID=0x8083046d;An OSPF Router-LSA is aged. (RouterId=131.0.254.48, LsdbAreaId=0.0.3.12, LsdbLsid=131.103.255.2, LsdbRouterId=131.103.255.2, LsdbSeqNum=2147484342, NbrRouterId=2.2.2.2, IfName=GigabitEthernet0/2/3.708)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 20 2021 11:35:42"
+            },
+            {
+                "key": "",
+                "value": "HD-NE20E-S4"
+            },
+            {
+                "key": "RouterId",
+                "value": "131.0.254.48"
+            },
+            {
+                "key": "LsdbAreaId",
+                "value": "0.0.3.12"
+            },
+            {
+                "key": "LsdbLsid",
+                "value": "131.103.255.2"
+            },
+            {
+                "key": "LsdbSeqNum",
+                "value": "2147484342"
+            }
+        ]
+    }
+{
+    "logId": 210,
+    "logText": "<174>2022-01-15 14:22:30.123.4 gyn-B1 %%01OSPF/6/TRAP_AGE_LSA(l)[1645879]:Notify LSA aged out. (ProcessId=4540, RouterId=101.4.119.204, LsdbAreaId=0.0.0.1, LsdbType=5, LsdbLsId=42.247.21.117, LsdbRouterId=101.4.119.209)",
+    "logField": [
+        {
+            "key": "",
+            "value": "2022-01-15 14:22:30.123.4"
+        },
+        {
+            "key": "",
+            "value": "gyn-B1"
+        },
+        {
+            "key": "ProcessId",
+            "value": "4540"
+        },
+        {
+            "key": "RouterId",
+            "value": "101.4.119.204"
+        },
+        {
+            "key": "LsdbAreaId",
+            "value": "0.0.0.1"
+        },
+        {
+            "key": "LsdbType",
+            "value": "5"
+        },
+        {
+            "key": "LsdbLsId",
+            "value": "42.247.21.117"
+        },
+        {
+            "key": "LsdbRouterId",
+            "value": "101.4.119.209"
+        }
+    ]
+}
+{
+        "logId": 210,
+        "logText": "<189>Dec 22 2020 14:45:12 hexin 12 %%01HTTP/5/LOGIN_TIMEOUT(s)[604]:HTTP user timed out. (UserName=admin, ConfigTimeout(min)=30, IPAddress=192.168.1.100, VpnName=Public)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 22 2020 14:45:12"
+            },
+            {
+                "key": "",
+                "value": "hexin 12"
+            },
+            {
+                "key": "UserName",
+                "value": "admin"
+            },
+            {
+                "key": "ConfigTimeout(min)",
+                "value": "30"
+            },
+            {
+                "key": "IPAddress",
+                "value": "192.168.1.100"
+            }
+        ]
+    }
+{
+        "logId": 211,
+        "logText": "<186>Jan 15 2024 14:45:22 USG6625F %%01PKI/2/hwPKILocalCertExpired_active(l):CID=0x0-alarmID=0x00f10340;The local certificate has expired. (LocalCertIssuer=/C=us/ST=California/L=SanFrancisco/O=AcmeCorp/OU=IT/CN=ca_acme/emailAddress=security@acmecorp.com, LocalCertSubject=/C=us/ST=California/L=SanFrancisco/O=AcmeCorp/OU=IT/CN=server_acme/emailAddress=admin@acmecorp.com, LocalCertStartTime=2021-01-15T08:00:00Z, LocalCertFinishTime=2024-01-15T07:59:59Z)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jan 15 2024 14:45:22"
+            },
+            {
+                "key": "",
+                "value": "USG6625F"
+            },
+            {
+                "key": "CID",
+                "value": "0x0-alarm"
+            },
+            {
+                "key": "ID",
+                "value": "0x00f10340"
+            }
+        ]
+    }
+{
+        "logId": 212,
+        "logText": "<178>Dec 15 2016 14:25:30 ZX_HXJF_D_S7712-02 %%01IFNET/2/linkdown(t):CID=0x807a040a-OID=1.3.6.1.6.3.1.1.5.3;The interface status changes. (ifName=10GE2/8/0/13, AdminStatus=DOWN, OperStatus=DOWN, Reason=Interface physical link is down, mainName=Eth-Trunk13)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 15 2016 14:25:30"
+            },
+            {
+                "key": "",
+                "value": "ZX_HXJF_D_S7712-02"
+            },
+            {
+                "key": "CID",
+                "value": "0x807a040a"
+            },
+            {
+                "key": "OID",
+                "value": "1.3.6.1.6.3.1.1.5.3"
+            },
+            {
+                "key": "ifName",
+                "value": "10GE2/8/0/13"
+            },
+            {
+                "key": "AdminStatus",
+                "value": "DOWN"
+            },
+            {
+                "key": "Reason",
+                "value": "Interface physical link is down"
+            },
+            {
+                "key": "mainName",
+                "value": "Eth-Trunk13"
+            }
+        ]
+    }
+{
+        "logId": 213,
+        "logText": "<188>Mar 22 2018 14:15:32 ANC-FZ-Dev-SW-HW8860-S3-01 %%01NTP/4/NTP_PEER_SELE(l):CID=0x90a6b3fe;The peer selected by the system is 10.50.240.246.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 22 2018 14:15:32"
+            },
+            {
+                "key": "",
+                "value": "ANC-FZ-Dev"
+            },
+            {
+                "key": "CID",
+                "value": "0x90a6b3fe"
+            },
+            {
+                "key": "",
+                "value": "10.50.240.246"
+            }
+        ]
+    }
+{
+    "logId": 214,
+    "logText": "Apr  2 2000 00:12:34 Quidway %%01L2V/6/ISSU_UNREG_CBFUN(l)[20]:Unregister ISSU callback function. (CallbackFunction=ISSU Release)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Apr  2 2000 00:12:34"
+        },
+        {
+            "key": "",
+            "value": "Quidway"
+        },
+        {
+            "key": "",
+            "value": "20"
+        },
+        {
+            "key": "CallbackFunction",
+            "value": "ISSU Release"
+        }
+    ]
+}
+{
+    "logId": 215,
+    "logText": "<188>Mar 15 2021 14:32:18 SYHX-PRO-Server_Leaf-CE6881-03 %%01DEFEND/4/hwCpcarDropPacketAlarm_clear(l):CID=0x807f0435-alarmID=0x09632008-clearType=service_resume;Rate of packets to cpu lowered the CPCAR limit in slot 2. (Protocol=ICMP)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Mar 15 2021 14:32:18"
+        },
+        {
+            "key": "",
+            "value": "SYHX-PRO-Server_Leaf-CE6881-03"
+        },
+        {
+            "key": "CID",
+            "value": "0x807f0435"
+        },
+        {
+            "key": "alarmID",
+            "value": "0x09632008"
+        },
+        {
+            "key": "clearType",
+            "value": "service_resume"
+        },
+        {
+            "key": "Protocol",
+            "value": "ICMP"
+        }
+    ]
+}
+{
+        "logId": 216,
+        "logText": "<190>2023-09-15 14:22:33 AV_Server %%01SHELL/6/DISPLAY_CMDRECORD(l): task:HTPR ip:192.168.1.10 user:john vrf:private command:display system status.",
+        "logField": [
+            {
+                "key": "",
+                "value": "2023-09-15 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "AV_Server"
+            },
+            {
+                "key": "task",
+                "value": "HTPR"
+            },
+            {
+                "key": "ip",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "user",
+                "value": "john"
+            },
+            {
+                "key": "vrf",
+                "value": "private"
+            }
+        ]
+    }
+{
+    "logId": 217,
+    "logText": "<188>Apr 20 2018 12:45:30 Huawei_12700 %%01SOCKET/4/TCP_AUTH_FAILED(s)[179342]:TCP authentication failed.  (AuthenticationType=KeyChain, Cause=invalid key, SourceAddress=192.168.1.1, SourcePort=443, ForeignAddress=8.8.8.8, ForeignPort=53, Protocol=Unknow Protocol, VpnInstanceName=)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Apr 20 2018 12:45:30"
+        },
+        {
+            "key": "",
+            "value": "Huawei_12700"
+        },
+        {
+            "key": "",
+            "value": "179342"
+        },
+        {
+            "key": "AuthenticationType",
+            "value": "KeyChain"
+        },
+        {
+            "key": "Cause",
+            "value": "invalid key"
+        },
+        {
+            "key": "SourceAddress",
+            "value": "192.168.1.1"
+        },
+        {
+            "key": "SourcePort",
+            "value": "443"
+        },
+        {
+            "key": "ForeignAddress",
+            "value": "8.8.8.8"
+        },
+        {
+            "key": "ForeignPort",
+            "value": "53"
+        },
+        {
+            "key": "Protocol",
+            "value": "Unknow Protocol"
+        }
+    ]
+}
+{
+    "logId": 218,
+    "logText": "<188>Mar 15 2013 10:30:45 HuaweiB %%01ARP/4/ARP_DUPLICATE_IPADDR(l)[129]:Slot=4;Received an ARP packet with a duplicate IP address from the interface. (IpAddress=192.168.20.3, InterfaceName=GigabitEthernet4/0/0, MacAddress=001a-1b2c-3d4e).",
+    "logField": [
+        {
+            "key": "",
+            "value": "Mar 15 2013 10:30:45"
+        },
+        {
+            "key": "",
+            "value": "HuaweiB"
+        },
+        {
+            "key": "",
+            "value": "129"
+        },
+        {
+            "key": "Slot",
+            "value": "4"
+        },
+        {
+            "key": "IpAddress",
+            "value": "192.168.20.3"
+        },
+        {
+            "key": "InterfaceName",
+            "value": "GigabitEthernet4/0/0"
+        },
+        {
+            "key": "MacAddress",
+            "value": "001a-1b2c-3d4e"
+        }
+    ]
+}
+{
+        "logId": 219,
+        "logText": "<188>Apr  5 2018 01:05:30 Huawei_12700 %%01CMD/4/REBOOT(s)[1381121]:The user chose Y when deciding whether to reboot the system. (Task=co1, Ip=**, VpnName=, User=**)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Apr  5 2018 01:05:30"
+            },
+            {
+                "key": "",
+                "value": "Huawei_12700"
+            },
+            {
+                "key": "",
+                "value": "1381121"
+            },
+            {
+                "key": "Task",
+                "value": "co1"
+            },
+            {
+                "key": "Ip",
+                "value": "**"
+            }
+        ]
+    }
+{
+        "logId": 220,
+        "logText": "<188>2015-07-30 06:30:45 BCJN_Inter_FW_HW_02 %%01UPDATE/4/FAILURE(l): Ensure that the license is purchased and activated, please purchase update service first. (SyslogId=509, Module=AV-SDB, Pre-UpdateVersion=, UpdateVersion=, Status=manual-update, Duration(s)=10)",
+        "logField": [
+            {
+                "key": "",
+                "value": "2015-07-30 06:30:45"
+            },
+            {
+                "key": "",
+                "value": "BCJN_Inter_FW_HW_02"
+            },
+            {
+                "key": "SyslogId",
+                "value": "509"
+            },
+            {
+                "key": "Module",
+                "value": "AV-SDB"
+            },
+            {
+                "key": "Status",
+                "value": "manual-update"
+            },
+            {
+                "key": "Duration(s)",
+                "value": "10"
+            }
+        ]
+    }
+{
+    "logId": 221,
+    "logText": "<189>Mar 22 2023 10:25:45 CNZWY_INT_EXT_SW_CE6855_C15&C14_1U41 %%01OPS/5/OPS_OPER_SUCCESS(s):CID=0x80b42727;OPS operation information. (UserName=_bgp_mtp.py, Ip=0.0.0.0, SessionId=11278, Operation=\"post:/bgp/ipv4/startBgpRoute:testName=\"b0\",destAddr=\"192.168.1.1\",sourceAddr=\"192.168.1.2\",vrfName=\"INT_Ext_BGP\",ifName=\"Vlanif617\",packetSize=\"1500\",packetCount=\"5\",interval=\"5\"\", Result=success)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Mar 22 2023 10:25:45"
+        },
+        {
+            "key": "",
+            "value": "CNZWY_INT_EXT_SW_CE6855_C15&C14_1U41"
+        },
+        {
+            "key": "CID",
+            "value": "0x80b42727"
+        },
+        {
+            "key": "UserName",
+            "value": "_bgp_mtp.py"
+        },
+        {
+            "key": "SessionId",
+            "value": "11278"
+        },
+        {
+            "key": "destAddr",
+            "value": "192.168.1.1"
+        },
+        {
+            "key": "sourceAddr",
+            "value": "192.168.1.2"
+        },
+        {
+            "key": "vrfName",
+            "value": "INT_Ext_BGP"
+        },
+        {
+            "key": "ifName",
+            "value": "Vlanif617"
+        },
+        {
+            "key": "packetSize",
+            "value": "1500"
+        }
+    ]
+}
+{
+        "logId": 222,
+        "logText": "<190>Mar 15 2022 14:22:45 BEIJING_XYZ_RT_2 %%01ISIS/6/NSR_MSG_PROC(l)[15]:ISIS received a message from RM. TaskID is 30, MsgType is 10, NSR configuration is 1.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 2022 14:22:45"
+            },
+            {
+                "key": "",
+                "value": "14:22:45 BEIJING_XYZ_RT_2"
+            },
+            {
+                "key": "",
+                "value": "15"
+            },
+            {
+                "key": "",
+                "value": "30"
+            },
+            {
+                "key": "",
+                "value": "10"
+            }
+        ]
+    }
+{
+        "logId": 223,
+        "logText": "<190>Dec 1 2022 10:30:45 QZ-JS-JYJ-HUAWEI-7710CSS %%01AM/6/IPRECYCLE(l)[1876151]:A conflicting IP address was recycled. (PoolName=Vlanif147, IpAddress=6.196.109.82, Reason=User logout)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 1 2022 10:30:45"
+            },
+            {
+                "key": "",
+                "value": "QZ-JS-JYJ-HUAWEI-7710CSS"
+            },
+            {
+                "key": "",
+                "value": "1876151"
+            },
+            {
+                "key": "PoolName",
+                "value": "Vlanif147"
+            },
+            {
+                "key": "IpAddress",
+                "value": "6.196.109.82"
+            },
+            {
+                "key": "Reason",
+                "value": "User logout"
+            }
+        ]
+    }
+{
+    "logId": 224,
+    "logText": "<189>Dec 10 2023 09:30:15 ZW-FW-01 %%01OSPF/5/OSPF_ABNORMAL_ASELSA_UPDATE(l):CID=0x8083045f;ASELSA changes frequently now. (ProcessId=2, AdvertiseRouterId=172.26.1.1, ASELsaCount=9001, BeginTime=2023-12-10 16:30:15, EndTime=2023-12-10 17:30:14)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Dec 10 2023 09:30:15"
+        },
+        {
+            "key": "",
+            "value": "ZW-FW-01"
+        },
+        {
+            "key": "CID",
+            "value": "0x8083045f"
+        },
+        {
+            "key": "ProcessId",
+            "value": "2"
+        },
+        {
+            "key": "AdvertiseRouterId",
+            "value": "172.26.1.1"
+        },
+        {
+            "key": "ASELsaCount",
+            "value": "9001"
+        },
+        {
+            "key": "BeginTime",
+            "value": "2023-12-10 16:30:15"
+        },
+        {
+            "key": "EndTime",
+            "value": "2023-12-10 17:30:14"
+        }
+    ]
+}
+{
+    "logId": 225,
+    "logText": "<189>Mar 22 2018 14:15:42 NYC-Prod-SW-HW8860-S3-02 %%01STACKMNG/5/hwStackLinkUp(t):CID=0x80b34567-OID=1.3.6.1.4.1.2011.5.25.183.1.22.1;The interface Stack-Port is up. (StackPortName=Stack-Port2/1)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Mar 22 2018 14:15:42"
+        },
+        {
+            "key": "",
+            "value": "NYC-Prod-SW-HW8860-S3-02"
+        },
+        {
+            "key": "CID",
+            "value": "0x80b34567"
+        },
+        {
+            "key": "OID",
+            "value": "1.3.6.1.4.1.2011.5.25.183.1.22.1"
+        },
+        {
+            "key": "StackPortName",
+            "value": "Stack-Port2/1"
+        }
+    ]
+}
+{
+        "logId": 226,
+        "logText": "Apr  2 2000 01:10:45 Quidway %%01RM/6/DISABLE_1MFIB(l)[0]:Million FIB feature was disabled.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Apr  2 2000 01:10:45"
+            },
+            {
+                "key": "",
+                "value": "Quidway"
+            },
+            {
+                "key": "",
+                "value": "0"
+            }
+        ]
+    }
+{
+        "logId": 227,
+        "logText": "Jul 22 2015 10:25:30 SPU-2 %%01CMD/4/LAN_MODE(l)[312]:The user chose N when deciding whether to change the language mode.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 22 2015 10:25:30"
+            },
+            {
+                "key": "",
+                "value": "SPU-2"
+            },
+            {
+                "key": "",
+                "value": "312"
+            }
+        ]
+    }
+{
+    "logId": 228,
+    "logText": "<178>May 15 2017 02:25:32 ZX_F4_DC_S12808-01 %%01DEVM/2/hwIfMonitorInputRateResume(t):CID=0x80fc04fa-OID=1.3.6.1.4.1.2011.5.25.41.4.6;Interface input flow bandwidth usage resumed below the trap threshold.(Interface=161, BandWidthUsage=85, TrapThreshold=90, InterfaceName=GE2/7/0/45)",
+    "logField": [
+        {
+            "key": "",
+            "value": "May 15 2017 02:25:32"
+        },
+        {
+            "key": "",
+            "value": "ZX_F4_DC_S12808-01"
+        },
+        {
+            "key": "CID",
+            "value": "0x80fc04fa"
+        },
+        {
+            "key": "OID",
+            "value": "1.3.6.1.4.1.2011.5.25.41.4.6"
+        },
+        {
+            "key": "Interface",
+            "value": "161"
+        },
+        {
+            "key": "BandWidthUsage",
+            "value": "85"
+        },
+        {
+            "key": "TrapThreshold",
+            "value": "90"
+        },
+        {
+            "key": "InterfaceName",
+            "value": "GE2/7/0/45"
+        }
+    ]
+}
+{
+    "logId": 229,
+    "logText": "<173>Jan 15 2022 10:25:30+08:00 r-sh1-fd %%01ISIS/5/IS_ADJ_CHANGE(l):CID=0x80890581;ISIS-INFO: ISIS adjacency state changed. (IfName=100GE2/0/2, AdjLevel=Level1, NbrSysId=2020.0521.9345, AdjState=Up, AddressFamily=IPV4,IPV6, Reason=Interface state go to up, LastSendHelloTime=10:25:28, LastRecvHelloTime=10:25:22, CpuUsage=5%)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jan 15 2022 10:25:30+08:00"
+        },
+        {
+            "key": "",
+            "value": "r-sh1-fd"
+        },
+        {
+            "key": "CID",
+            "value": "0x80890581"
+        },
+        {
+            "key": "IfName",
+            "value": "100GE2/0/2"
+        },
+        {
+            "key": "AdjLevel",
+            "value": "Level1"
+        },
+        {
+            "key": "NbrSysId",
+            "value": "2020.0521.9345"
+        },
+        {
+            "key": "AdjState",
+            "value": "Up"
+        },
+        {
+            "key": "AddressFamily",
+            "value": "IPV4,IPV6"
+        },
+        {
+            "key": "LastSendHelloTime",
+            "value": "10:25:28"
+        },
+        {
+            "key": "LastRecvHelloTime",
+            "value": "10:25:22"
+        },
+        {
+            "key": "CpuUsage",
+            "value": "5%"
+        }
+    ]
+}
+{
+        "logId": 230,
+        "logText": "<190>Dec 15 2023 09:22:15.47.3+00:00 AC6508 %%01NETCONF/6/LOGIN(l)[50123]:User admin login from 10.11.48.170",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 15 2023 09:22:15.47.3+00:00"
+            },
+            {
+                "key": "",
+                "value": "AC6508"
+            },
+            {
+                "key": "",
+                "value": "50123"
+            },
+            {
+                "key": "",
+                "value": "10.11.48.170"
+            }
+        ]
+    }
+{
+        "logId": 231,
+        "logText": "<189>May 15 2017 14:22:45 BGW-2#lou-CSS-S7706 %%01VFS/5/UNREGDEV_OK(l)[5420]:Succeeded in unregistering the file system on device 3/8.",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 15 2017 14:22:45"
+            },
+            {
+                "key": "",
+                "value": "BGW-2#lou-CSS-S7706"
+            },
+            {
+                "key": "",
+                "value": "5420"
+            }
+        ]
+    }
+{
+        "logId": 232,
+        "logText": "<190>Mar 01 2023 01:22:45 BY-6140-2 %%01OSPF/6/TRAP_NBR_CHG(l)[36884]:Neighbor state has changed. (ProcessId=101, RouterId=10.41.223.227, NeighborIpAddress=10.41.223.14, NeighborAddressLessIndex=1, NeighborRouterId=10.40.114.2, NeighborState=2)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 01 2023 01:22:45"
+            },
+            {
+                "key": "",
+                "value": "BY-6140-2"
+            },
+            {
+                "key": "ProcessId",
+                "value": "101"
+            },
+            {
+                "key": "RouterId",
+                "value": "10.41.223.227"
+            },
+            {
+                "key": "NeighborIpAddress",
+                "value": "10.41.223.14"
+            },
+            {
+                "key": "NeighborAddressLessIndex",
+                "value": "1"
+            },
+            {
+                "key": "NeighborRouterId",
+                "value": "10.40.114.2"
+            },
+            {
+                "key": "NeighborState",
+                "value": "2"
+            }
+        ]
+    }
+{
+        "logId": 233,
+        "logText": "<188>Apr 15 2022 07:15:45 YYZX_USG9520 %%01DDOS/4/RESOURCE(l)[2594335]:Slot=2, CPU=4, Msg=\"The SourceIP monitored table is full\", Time=\"2022-4-15 15:15:45\".",
+        "logField": [
+            {
+                "key": "",
+                "value": "Apr 15 2022 07:15:45"
+            },
+            {
+                "key": "",
+                "value": "YYZX_USG9520"
+            },
+            {
+                "key": "Slot",
+                "value": "2"
+            },
+            {
+                "key": "CPU",
+                "value": "4"
+            },
+            {
+                "key": "Msg",
+                "value": "The SourceIP monitored table is full"
+            },
+            {
+                "key": "Time",
+                "value": "2022-4-15 15:15:45"
+            }
+        ]
+    }
+{
+    "logId": 234,
+    "logText": "<190>2020-9-3 10:20:30+08:00 AC6003 %%01WSTA/6/WLAN_LOG_STA_ONLINEFAIL_OR_OFFLINE_INFO(l)[4845]:[WLAN_STA_ONLINE_FAIL_INFO]STAMAC:00-1a-2b-3c-4d-5e;APNAME:6G;RADIOID:1;WLANID:3;TIME:2020-09-03/10:20:30;OnlineFailReason:The STA is not in the VAP's whitelist.;",
+    "logField": [
+        {
+            "key": "",
+            "value": "2020-9-3 10:20:30+08:00"
+        },
+        {
+            "key": "",
+            "value": "AC6003"
+        },
+        {
+            "key": "APNAME",
+            "value": "6G"
+        },
+        {
+            "key": "RADIOID",
+            "value": "1"
+        },
+        {
+            "key": "WLANID",
+            "value": "3"
+        },
+        {
+            "key": "TIME",
+            "value": "2020-09-03/10:20:30"
+        }
+    ]
+}
+{
+    "logId": 235,
+    "logText": "<190>Mar 15 2018 10:22:33+08:00 CNZWY_GOV_CORE_SW_CE12808_B12&B11_17U03 %%01NETCONF/6/NCA_OPER_RPC_RSP(s):CID=0x80a7055f;Send RPC reply. (User-name=admin@huawei.com, IP-address=172.10.8.5, Vpn-name=_public_, Session-id=2124, Length=185, FragIndex=1, Rpc-reply=<?xml version=\"1.0\" encoding=\"UTF-8\"?><rpc-reply message-id=\"e7fba7f9-3753-4172-bf5d-12f022644c88\" xmlns=\"urn:ietf:params:xml:ns:netconf:base:1.0\" flow-id=\"2840\"><ok/></rpc-reply>)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Mar 15 2018 10:22:33+08:00"
+        },
+        {
+            "key": "",
+            "value": "CNZWY_GOV_CORE_SW_CE12808_B12&B11_17U03"
+        },
+        {
+            "key": "CID",
+            "value": "0x80a7055f"
+        },
+        {
+            "key": "User-name",
+            "value": "admin@huawei.com"
+        },
+        {
+            "key": "IP-address",
+            "value": "172.10.8.5"
+        },
+        {
+            "key": "Vpn-name",
+            "value": "_public_"
+        },
+        {
+            "key": "Session-id",
+            "value": "2124"
+        },
+        {
+            "key": "Length",
+            "value": "185"
+        },
+        {
+            "key": "FragIndex",
+            "value": "1"
+        }
+    ]
+}
+{
+    "logId": 236,
+    "logText": "<190>2023/03/01 12:34:56 USG6300 %%01AUDIT/6/IM(l): The IM audit policy was matched. (SyslogId=6884, VSys=\"public\", AuditPolicy=\"audit_ah\", SrcIp=192.168.1.100, DstIp=10.0.0.1, SrcPort=50000, DstPort=8080, SrcZone=untrust, DstZone=untrust, User=\"unknown\", Protocol=UDP, Application=\"WhatsApp\", Profile=\"audit.dbappsecurity\", AuditType=\"online\", Account=\"123456789\", Date=\"2023-03-01\", Time=\"12:34:56\")",
+    "logField": [
+        {
+            "key": "",
+            "value": "2023/03/01 12:34:56"
+        },
+        {
+            "key": "",
+            "value": "USG6300"
+        },
+        {
+            "key": "SyslogId",
+            "value": "6884"
+        },
+        {
+            "key": "VSys",
+            "value": "public"
+        },
+        {
+            "key": "AuditPolicy",
+            "value": "audit_ah"
+        },
+        {
+            "key": "SrcIp",
+            "value": "192.168.1.100"
+        },
+        {
+            "key": "DstIp",
+            "value": "10.0.0.1"
+        },
+        {
+            "key": "SrcPort",
+            "value": "50000"
+        },
+        {
+            "key": "DstPort",
+            "value": "8080"
+        },
+        {
+            "key": "SrcZone",
+            "value": "untrust"
+        }
+    ]
+}
+{
+    "logId": 237,
+    "logText": "<189>Nov 15 2023 14:22:30 fw002.cn-beijing-1 %%01OPS/5/OPS_LOGOUT(s):CID=0x80c50443;The OPS connection was disconnected. (ServiceType=web-service, Reason=the client cut the OPS connection, UserName=admin, SourceAddress=192.168.1.10, DestAddress=192.168.1.1, VpnName=_private_, AssistantName=)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Nov 15 2023 14:22:30"
+        },
+        {
+            "key": "",
+            "value": "fw002.cn-beijing-1"
+        },
+        {
+            "key": "CID",
+            "value": "0x80c50443"
+        },
+        {
+            "key": "ServiceType",
+            "value": "web-service"
+        },
+        {
+            "key": "UserName",
+            "value": "admin"
+        },
+        {
+            "key": "SourceAddress",
+            "value": "192.168.1.10"
+        },
+        {
+            "key": "DestAddress",
+            "value": "192.168.1.1"
+        },
+        {
+            "key": "VpnName",
+            "value": "_private_,"
+        }
+    ]
+}
+{
+        "logId": 238,
+        "logText": "<188>Apr  5 2018 12:15:47 Huawei_12700 %%01ALML/4/ENTRESET(l)[1381260]:LPU chassis[2] board[3] is reset. The reason is: Board reset due to hardware failure.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Apr  5 2018 12:15:47"
+            },
+            {
+                "key": "",
+                "value": "Huawei_12700"
+            },
+            {
+                "key": "",
+                "value": "1381260"
+            }
+        ]
+    }
+{
+        "logId": 239,
+        "logText": "<187>Mar 15 2013 14:30:45 S5710EI-2 %%01SRM/3/INOUT(l)[129]The optical module on interface XGigabitEthernet0/0/4 is unplugged.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 2013 14:30:45"
+            },
+            {
+                "key": "",
+                "value": "S5710EI-2"
+            },
+            {
+                "key": "",
+                "value": "129"
+            }
+        ]
+    }
+{
+        "logId": 240,
+        "logText": "<190>May 15 2023 10:22:33.456.1+00:00 AC6508 %%01DEV/6/SYSTEM_BACKUP_SUCCESS(l)[17903]:Backup current system file to backup area success.(Filename=flash:/system_backup_20230515.ini)",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 15 2023 10:22:33.456.1+00:00"
+            },
+            {
+                "key": "",
+                "value": "AC6508"
+            },
+            {
+                "key": "",
+                "value": "17903"
+            },
+            {
+                "key": "Filename",
+                "value": "flash:/system_backup_20230515.ini"
+            }
+        ]
+    }
+{
+    "logId": 241,
+    "logText": "<189>Nov 15 2023 14:32:45 fw002.cn-beijing-1 %%01CLI/5/CMDRECORD(s):CID=0x81ca2714;Recorded command information. (Task=VTY2, RemoteIp=192.168.1.10, VpnName=_public_, User=admin, AuthenticationMethod=\"None\", Command=\"display version\", LocalIp=192.168.1.1.)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Nov 15 2023 14:32:45"
+        },
+        {
+            "key": "",
+            "value": "fw002.cn-beijing-1"
+        },
+        {
+            "key": "CID",
+            "value": "0x81ca2714"
+        },
+        {
+            "key": "Task",
+            "value": "VTY2"
+        },
+        {
+            "key": "RemoteIp",
+            "value": "192.168.1.10"
+        },
+        {
+            "key": "VpnName",
+            "value": "_public_"
+        },
+        {
+            "key": "User",
+            "value": "admin"
+        },
+        {
+            "key": "Command",
+            "value": "display version"
+        }
+    ]
+}
+{
+        "logId": 242,
+        "logText": "<180>Dec 15 2016 14:22:35 ZX_HXJF_D_S7712-02 %%01VOSCPU/4/CPU_USAGE_RESUME(l)[27639]:Slot=2/11;CPU utilization recovered to the normal range.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 15 2016 14:22:35"
+            },
+            {
+                "key": "",
+                "value": "ZX_HXJF_D_S7712-02"
+            },
+            {
+                "key": "",
+                "value": "27639"
+            },
+            {
+                "key": "",
+                "value": "Slot=2/11"
+            },
+            {
+                "key": "",
+                "value": "CPU utilization recovered to the normal range"
+            }
+        ]
+    }
+{
+        "logId": 243,
+        "logText": "<190>Oct 22 2021 15:45:30 HD-NE20E-S4 %%01OSPF/6/REMOTE_ROUTER_ID_CONFLICT(l):CID=0x8083046d;Remote OSPF router ID conflict may have occurred in intra-area.(ProcessId=2, AreaId=0.0.3.12, RouterId=172.16.16.2)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 22 2021 15:45:30"
+            },
+            {
+                "key": "",
+                "value": "HD-NE20E-S4"
+            },
+            {
+                "key": "CID",
+                "value": "0x8083046d"
+            },
+            {
+                "key": "ProcessId",
+                "value": "2"
+            },
+            {
+                "key": "AreaId",
+                "value": "0.0.3.12"
+            },
+            {
+                "key": "RouterId",
+                "value": "172.16.16.2"
+            }
+        ]
+    }
+{
+        "logId": 244,
+        "logText": "Mar 15 2014 10:15:30+08:00 Core9300B %%01MSTP/4/BPDU_PROTECTION(l)[7]:This edged-port GigabitEthernet1/0/8 that enabled BPDU-Protection will be shutdown, because it received BPDU packet!",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 2014 10:15:30+08:00"
+            },
+            {
+                "key": "",
+                "value": "Core9300B"
+            },
+            {
+                "key": "",
+                "value": "7"
+            }
+        ]
+    }
+{
+    "logId": 245,
+    "logText": "<190>Mar 15 2024 09:45:32 USG6300E %%01LOCATION/6/LATEST_VERSION(l)[1930155]:The signature database is at the latest version. (SyslogId=84, User=**, IP=**, Module=LOCATION-SDB, Pre-UpdateVersion=2024011510, UpdateVersion=, Status=download, Duration(s)=2, Suggestion=\"There is no need to update online\")",
+    "logField": [
+        {
+            "key": "",
+            "value": "Mar 15 2024 09:45:32"
+        },
+        {
+            "key": "",
+            "value": "USG6300E"
+        },
+        {
+            "key": "",
+            "value": "1930155"
+        },
+        {
+            "key": "SyslogId",
+            "value": "84"
+        },
+        {
+            "key": "User",
+            "value": "**"
+        },
+        {
+            "key": "Module",
+            "value": "LOCATION-SDB"
+        },
+        {
+            "key": "Pre-UpdateVersion",
+            "value": "2024011510"
+        },
+        {
+            "key": "Status",
+            "value": "download"
+        },
+        {
+            "key": "Duration(s)",
+            "value": "2"
+        }
+    ]
+}
+{
+        "logId": 246,
+        "logText": "<187>Mar 15 2019 14:22:30 duomeiti_3.31 %%01EZOP/3/PROCESS_STOP(l)[454]:Easy-operation upgrade process has been stopped(Reason=Insufficient storage space).",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 2019 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "duomeiti_3.31"
+            },
+            {
+                "key": "",
+                "value": "454"
+            },
+            {
+                "key": "Reason",
+                "value": "Insufficient storage space"
+            }
+        ]
+    }
+{
+    "logId": 247,
+    "logText": "<185>Jun 20 2019 14:30:15 yamusic-dc-sw %%01DEVM/1/hwOpticalUnAuthorized_clear(l):CID=0x80fc0102-alarmID=0x08132155-clearType=service_resume;The alarm on optical module not certified by Huawei Ethernet Switch was cleared.(EntPhysicalIndex=16850211, EntPhysicalName=10GE1/0/34, EntityTrapFaultID=145921, Reason=The alarm on optical module not certified by Huawei Ethernet Switch does not exist on this interface.)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jun 20 2019 14:30:15"
+        },
+        {
+            "key": "",
+            "value": "yamusic-dc-sw"
+        },
+        {
+            "key": "CID",
+            "value": "0x80fc0102"
+        },
+        {
+            "key": "alarmID",
+            "value": "0x08132155"
+        },
+        {
+            "key": "clearType",
+            "value": "service_resume"
+        },
+        {
+            "key": "EntPhysicalIndex",
+            "value": "16850211"
+        },
+        {
+            "key": "EntPhysicalName",
+            "value": "10GE1/0/34"
+        },
+        {
+            "key": "EntityTrapFaultID",
+            "value": "145921"
+        }
+    ]
+}
+{
+    "logId": 248,
+    "logText": "<164>Nov 15 2021 14:22:45+08:00 USG9560-1 %%01_FWD/4/SESSCTRLENHANCE(l)[12061]:New IP reputation node is learned. SLOT=7, CPU=2, Type=DST, IP=192.168.1.100, ThreatType=Medium, SampledSessCreateRate=35000.",
+    "logField": [
+        {
+            "key": "",
+            "value": "Nov 15 2021 14:22:45+08:00"
+        },
+        {
+            "key": "",
+            "value": "USG9560-1"
+        },
+        {
+            "key": "",
+            "value": "12061"
+        },
+        {
+            "key": "SLOT",
+            "value": "7"
+        },
+        {
+            "key": "CPU",
+            "value": "2"
+        },
+        {
+            "key": "Type",
+            "value": "DST"
+        },
+        {
+            "key": "IP",
+            "value": "192.168.1.100"
+        },
+        {
+            "key": "ThreatType",
+            "value": "Medium"
+        },
+        {
+            "key": "SampledSessCreateRate",
+            "value": "35000"
+        }
+    ]
+}
+{
+        "logId": 249,
+        "logText": "<190>2013-07-04 01:22:33 AV_Server %%01SYSTATE/6/HEALTH(l): cpu=45 totalmemory=390127084 curmemory=215401280",
+        "logField": [
+            {
+                "key": "",
+                "value": "2013-07-04 01:22:33"
+            },
+            {
+                "key": "",
+                "value": "AV_Server"
+            },
+            {
+                "key": "cpu",
+                "value": "45"
+            },
+            {
+                "key": "totalmemory",
+                "value": "390127084"
+            },
+            {
+                "key": "curmemory",
+                "value": "215401280"
+            }
+        ]
+    }
+{
+        "logId": 250,
+        "logText": "<188>Jun 15 2017 14:30:22 imau-firewall %%01SNMP/4/PARSE_ERR(l)[2367245]:Failed to parse set response message. (ModuleId=1092354049, TableId=75, OperationType=SET)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jun 15 2017 14:30:22"
+            },
+            {
+                "key": "",
+                "value": "imau-firewall"
+            },
+            {
+                "key": "",
+                "value": "2367245"
+            },
+            {
+                "key": "ModuleId",
+                "value": "1092354049"
+            },
+            {
+                "key": "TableId",
+                "value": "75"
+            },
+            {
+                "key": "OperationType",
+                "value": "SET"
+            }
+        ]
+    }
+{
+    "logId": 251,
+    "logText": "<188>Nov 22 2023 14:32:15 HuangPUXiaoQu-7706-HX1 %%01L2IFPPI/4/MAC_MOVE_WARN_SLOT(l)[19553]:MAC move detected by slot. (VlanValid=1, VLAN=30, MacAddr=9a6c-7d3f-b810, Original-Port=XGigabitEthernet1/0/21, Flapping-Port=XGigabitEthernet1/0/23, SlotId=1)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Nov 22 2023 14:32:15"
+        },
+        {
+            "key": "",
+            "value": "HuangPUXiaoQu-7706-HX1"
+        },
+        {
+            "key": "",
+            "value": "19553"
+        },
+        {
+            "key": "VlanValid",
+            "value": "1"
+        },
+        {
+            "key": "VLAN",
+            "value": "30"
+        },
+        {
+            "key": "MacAddr",
+            "value": "9a6c-7d3f-b810"
+        },
+        {
+            "key": "Original-Port",
+            "value": "XGigabitEthernet1/0/21"
+        },
+        {
+            "key": "Flapping-Port",
+            "value": "XGigabitEthernet1/0/23"
+        }
+    ]
+}
+{
+    "logId": 252,
+    "logText": "<190>Jan 15 2018 14:30:15 JLSZY-CORE-S12708-CSS %%01SECE/6/PORT_ATTACK_END(l)[10393]:Auto port-defend stop.(SourceAttackInterface=GigabitEthernet2/2/1/5, AttackProtocol=ICMP-FLOOD, ExceededPacketCountInSlot=0)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jan 15 2018 14:30:15"
+        },
+        {
+            "key": "",
+            "value": "JLSZY-CORE-S12708-CSS"
+        },
+        {
+            "key": "",
+            "value": "10393"
+        },
+        {
+            "key": "SourceAttackInterface",
+            "value": "GigabitEthernet2/2/1/5"
+        },
+        {
+            "key": "AttackProtocol",
+            "value": "ICMP-FLOOD"
+        },
+        {
+            "key": "ExceededPacketCountInSlot",
+            "value": "0"
+        }
+    ]
+}
+{
+        "logId": 253,
+        "logText": "<188>Oct 15 2023 15:30:45 TYYBJJ-NE20E-02 %%01INFO/4/hwICLogFileNumThrd(t):CID=0x80600412-OID=1.3.6.1.4.1.2011.5.25.212.2.8;The logfile number is more than 90 percent. (LogFileType=log, CurNum=205, Threshold=180)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 2023 15:30:45"
+            },
+            {
+                "key": "",
+                "value": "TYYBJJ-NE20E-02"
+            },
+            {
+                "key": "CID",
+                "value": "0x80600412"
+            },
+            {
+                "key": "OID",
+                "value": "1.3.6.1.4.1.2011.5.25.212.2.8"
+            },
+            {
+                "key": "LogFileType",
+                "value": "log"
+            },
+            {
+                "key": "CurNum",
+                "value": "205"
+            },
+            {
+                "key": "Threshold",
+                "value": "180"
+            }
+        ]
+    }
+{
+    "logId": 254,
+    "logText": "<164>Nov 15 2021 14:32:45+08:00 ME60-2 %%01DEFEND/4/hwBaseSecurityTtlExpiredLoop_clear(l):VS=Admin-VS-CID=0x807f047b-Slot=2-alarmID=0x0c152042-clearType=service_resume;TTL-expired loop detect alarm cleared. (CHASSISID=2, SLOTID=2, LASTRATELOW=0, LASTRATEHIGH=0, CURRENTRATELOW=0, CURRENTRATEHIGH=0, INTERVAL=60, THRESHOLD=10)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Nov 15 2021 14:32:45+08:00"
+        },
+        {
+            "key": "",
+            "value": "ME60-2"
+        },
+        {
+            "key": "VS",
+            "value": "Admin"
+        },
+        {
+            "key": "VS-CID",
+            "value": "0x807f047b"
+        },
+        {
+            "key": "Slot",
+            "value": "2"
+        },
+        {
+            "key": "alarmID",
+            "value": "0x0c152042"
+        },
+        {
+            "key": "clearType",
+            "value": "service_resume"
+        },
+        {
+            "key": "LASTRATELOW",
+            "value": "0"
+        }
+    ]
+}
+{
+    "logId": 255,
+    "logText": "<189>Oct 22 2016 14:35:42 zyw1 %%01TRUNK/5/hwTrunkMemNumberChange(t):CID=0x807a040a-OID=1.3.6.1.4.1.2011.5.25.41.3.30;The number of active trunk members changed. (TrunkName=Eth-Trunk20, PortName=GE1/4/0/20, ActiveTrunkMemNum=2, Reason=The port became up)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct 22 2016 14:35:42 zyw1"
+        },
+        {
+            "key": "",
+            "value": "zyw1"
+        },
+        {
+            "key": "CID",
+            "value": "0x807a040a"
+        },
+        {
+            "key": "OID",
+            "value": "1.3.6.1.4.1.2011.5.25.41.3.30"
+        },
+        {
+            "key": "TrunkName",
+            "value": "Eth-Trunk20"
+        },
+        {
+            "key": "PortName",
+            "value": "GE1/4/0/20"
+        },
+        {
+            "key": "ActiveTrunkMemNum",
+            "value": "2"
+        },
+        {
+            "key": "Reason",
+            "value": "The port became up"
+        }
+    ]
+}
+{
+        "logId": 256,
+        "logText": "<190>Dec 15 2023 14:22:45.750.321+00:00 AC6508 %%01DOT1X/6/EAPOL_USER_QUIETTABLE_ADD(l)[5328]:The user is added to quiet-table.(MAC Address:001a-2b3c-4d5e)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 15 2023 14:22:45.750.321+00:00"
+            },
+            {
+                "key": "",
+                "value": "AC6508"
+            },
+            {
+                "key": "",
+                "value": "5328"
+            },
+            {
+                "key": "MAC Address",
+                "value": "MAC Address:001a-2b3c-4d5e"
+            }
+        ]
+    }
+{
+        "logId": 257,
+        "logText": "<188>Oct 15 2017 14:30:45 VOD-ACSW06 %%01CONFIGURATION/4/CONFIGMIB_FILE_OPERATE_FINISH(l):CID=0xc9000a;Configuration was saved. (OperationType=5, OptTime=250, OptState=2, OptEndTime=506001500)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 2017 14:30:45"
+            },
+            {
+                "key": "",
+                "value": "VOD-ACSW06"
+            },
+            {
+                "key": "CID",
+                "value": "0xc9000a"
+            },
+            {
+                "key": "OperationType",
+                "value": "5"
+            },
+            {
+                "key": "OptTime",
+                "value": "250"
+            },
+            {
+                "key": "OptState",
+                "value": "2"
+            },
+            {
+                "key": "OptEndTime",
+                "value": "506001500"
+            }
+        ]
+    }
+{
+        "logId": 258,
+        "logText": "<166>Jun 22 2021 14:32:45 S5720-16F-Stack %%01VBST/6/PORTFORWARD(l)[23049]:In VBST VLAN 20, VBST set port GE1/0/12 state as forwarding.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jun 22 2021 14:32:45"
+            },
+            {
+                "key": "",
+                "value": "S5720-16F-Stack"
+            },
+            {
+                "key": "",
+                "value": "23049"
+            }
+        ]
+    }
+{
+        "logId": 259,
+        "logText": "<164>Jun 15 2021 14:45:22 S5720-16F-Stack %%01POE/4/NONSTANDARDPD(l)[19561]:Slot=3;An invalid or non-standard PD is connected to the interface GigabitEthernet3/0/22.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jun 15 2021 14:45:22"
+            },
+            {
+                "key": "",
+                "value": "S5720-16F-Stack"
+            },
+            {
+                "key": "",
+                "value": "19561"
+            },
+            {
+                "key": "Slot",
+                "value": "3"
+            }
+        ]
+    }
+{
+        "logId": 260,
+        "logText": "<172>2022-01-15 14:45:22.0.1 chc-B2 %%01ARP_FILTER/4/FREEARPFILTERCAR(l)[2120977]:Slot=10,Vcpu=1;The port GigabitEthernet10/0/5 vlan 0 is release from attacked. Arp vlan car is cancelled.",
+        "logField": [
+            {
+                "key": "",
+                "value": "2022-01-15 14:45:22.0.1"
+            },
+            {
+                "key": "",
+                "value": "chc-B2"
+            },
+            {
+                "key": "",
+                "value": "2120977"
+            },
+            {
+                "key": "Slot",
+                "value": "10"
+            },
+            {
+                "key": "Vcpu",
+                "value": "1"
+            }
+        ]
+    }
+{
+        "logId": 261,
+        "logText": "<189>Nov 15 2023 14:22:30 fw002.cn-beijing-1 %%01OPS/5/OPS_RESTCONF_RSP(s):CID=0x80c5a1b2;OPS operation information. (UserName=admin, SourceAddress=192.168.1.10, DestAddress=10.0.0.1, VpnName=_private_, SessionId=8201, StatusCode=200 OK, ReplyBody=, AssistantName=)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Nov 15 2023 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "fw002.cn-beijing-1"
+            },
+            {
+                "key": "CID",
+                "value": "0x80c5a1b2"
+            },
+            {
+                "key": "UserName",
+                "value": "admin"
+            },
+            {
+                "key": "SourceAddress",
+                "value": "192.168.1.10"
+            },
+            {
+                "key": "DestAddress",
+                "value": "10.0.0.1"
+            },
+            {
+                "key": "VpnName",
+                "value": "_private_,"
+            },
+            {
+                "key": "SessionId",
+                "value": "8201"
+            },
+            {
+                "key": "StatusCode",
+                "value": "200 OK"
+            }
+        ]
+    }
+{
+        "logId": 262,
+        "logText": "<189>Aug 15 2021 14:22:45 6FAB1-FABA-S5735-02 %%01MSTP_ADP/5/ADD_BINDVLAN(l)[310]:These VLAN 1202 bind instance 1, by CreateVlan.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Aug 15 2021 14:22:45"
+            },
+            {
+                "key": "",
+                "value": "6FAB1-FABA-S5735-02"
+            },
+            {
+                "key": "",
+                "value": "310"
+            }
+        ]
+    }
+{
+        "logId": 263,
+        "logText": "<188>Sep 15 2021 09:22:45 SC_K1736+450_SF_S5720 %%01SSH/4/UPDATE_PUBLICKEY(s)[109001]:When deciding whether to update the key 10.51.128.45 which already existed, the user chose N.)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Sep 15 2021 09:22:45"
+            },
+            {
+                "key": "",
+                "value": "SC_K1736+450_SF_S5720"
+            },
+            {
+                "key": "",
+                "value": "109001"
+            }
+        ]
+    }
+{
+        "logId": 264,
+        "logText": "<186>Mar 22 2023 14:15:42 ANC-FZ-Prod-SW-HW8860-S2-02 %%01L3VPN/2/L3V_TRAP_VRF_DOWN_clear(l):CID=0x806f2719-alarmID=0x09110001-clearType=service_resume;The interface bound to the VPN instance went Up. (VpnInstanceName=prod, IfName=GigabitEthernet0/0/1, IfCurRowStatus=1, VRFOperationStatus=1)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 22 2023 14:15:42"
+            },
+            {
+                "key": "",
+                "value": "ANC-FZ-Prod-SW-HW8860-S2-02"
+            },
+            {
+                "key": "CID",
+                "value": "0x806f2719"
+            },
+            {
+                "key": "alarmID",
+                "value": "0x09110001"
+            },
+            {
+                "key": "clearType",
+                "value": "service_resume"
+            },
+            {
+                "key": "VpnInstanceName",
+                "value": "prod"
+            },
+            {
+                "key": "IfName",
+                "value": "GigabitEthernet0/0/1"
+            },
+            {
+                "key": "IfCurRowStatus",
+                "value": "1"
+            }
+        ]
+    }
+{
+        "logId": 265,
+        "logText": "<145>Mar 15 2017 14:22:33 11F-West %%01PIC/1/hwPortPhysicalDown_clear(l):VS=Admin-VS-CID=0x80fa0017-alarmID=0x081300a9-clearType=service_resume;The status of the physical interface is Up. (BaseTrapSeverity=3, BaseTrapProbableCause=74752, BaseTrapEventType=5,EntityPhysicalIndex=16912646, EntPhysicalName=GigabitEthernet0/2/5, Reason=The status of the physical interface is Up)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 2017 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "11F-West"
+            },
+            {
+                "key": "VS",
+                "value": "Admin"
+            },
+            {
+                "key": "VS-CID",
+                "value": "0x80fa0017"
+            },
+            {
+                "key": "alarmID",
+                "value": "0x081300a9"
+            },
+            {
+                "key": "clearType",
+                "value": "service_resume"
+            },
+            {
+                "key": "BaseTrapSeverity",
+                "value": "3"
+            },
+            {
+                "key": "BaseTrapProbableCause",
+                "value": "74752"
+            },
+            {
+                "key": "EntPhysicalName",
+                "value": "GigabitEthernet0/2/5"
+            }
+        ]
+    }
+{
+    "logId": 266,
+    "logText": "<148>Jan 15 2017 14:22:33 11G-West %%01SNMP/4/SNMP_MIB_SET(s)[10835]:MIB node set. (UserName=%^%#:K9^G@JW`E!tM6/78|@LJw\'M8>Q~(=Bx@b%l4n@$1C(n7@crz/0z4\"I8I:RECUFeov>$=V\'!MVckT+%^%#, SourceIP=100.78.141.251, Version=v2c, RequestId=1635095918, hwFlhOperType.23=2, hwFlhOperProtocol.23=1, hwFlhOperServerUser.23=[61.64.6d.69.6e (hex)], hwFlhOperPassword.23=******, hwFlhOperSourceFile.23=[66.74.70.73.79.6e.63.2f.39.64.66.61.5f.73.66.74.70.73.79.6e.63.5f.31.33.2e.78.6d.6c (hex)], hwFlhOperDestinationFile.23=[66.6c.61.73.68.3a.2f.39.64.66.61.5f.73.66.74.70.73.79.6e.63.5f.31.33.2e.78.6d.6c (hex)], hwFlhOperRowStatus.23=5, hwFlhOperServerPort.23=31923, hwFlhOperServerAddress.23=100.78.141.251, VPN= )",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jan 15 2017 14:22:33"
+        },
+        {
+            "key": "",
+            "value": "11G-West"
+        },
+        {
+            "key": "",
+            "value": "10835"
+        },
+        {
+            "key": "UserName",
+            "value": "%^%#:K9^G@JW`E!tM6/78|@LJw\'M8>Q~(=Bx@b%l4n@$1C(n7@crz/0z4\"I8I:RECUFeov>$=V\'!MVckT+%^%#"
+        },
+        {
+            "key": "SourceIP",
+            "value": "100.78.141.251"
+        },
+        {
+            "key": "Version",
+            "value": "v2c"
+        },
+        {
+            "key": "RequestId",
+            "value": "1635095918"
+        },
+        {
+            "key": "hwFlhOperType.23",
+            "value": "2"
+        },
+        {
+            "key": "hwFlhOperProtocol.23",
+            "value": "1"
+        },
+        {
+            "key": "hwFlhOperSourceFile.23",
+            "value": "[66.74.70.73.79.6e.63.2f.39.64.66.61.5f.73.66.74.70.73.79.6e.63.5f.31.33.2e.78.6d.6c (hex)]"
+        }
+    ]
+}
+{
+        "logId": 267,
+        "logText": "<187>Jul 14 2020 14:25:02+08:00 LLQ_INT_VPN_FW_E1000E_B08_3U31_N %%01FEEDBACK/3/GETSERVERR(l)[319260]:Failed to obtain the information from the data feedback server. (SyslogId=5798)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jul 14 2020 14:25:02+08:00"
+            },
+            {
+                "key": "",
+                "value": "LLQ_INT_VPN_FW_E1000E_B08_3U31_N"
+            },
+            {
+                "key": "",
+                "value": "319260"
+            },
+            {
+                "key": "SyslogId",
+                "value": "5798"
+            }
+        ]
+    }
+{
+    "logId": 268,
+    "logText": "<189>Jun 15 2017 10:45:22 BK_Office %%01CM/5/CM_USERONLINEFAIL(s)[11975]:The user failed to go online. (UserType=SSH, UserName=johndoe, UserMac=, IP=192.168.1.10, VPNName=, AccessTime=2017/06/10 09:30:12, Reason=Password expired)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jun 15 2017 10:45:22"
+        },
+        {
+            "key": "",
+            "value": "BK_Office"
+        },
+        {
+            "key": "",
+            "value": "11975"
+        },
+        {
+            "key": "UserType",
+            "value": "SSH"
+        },
+        {
+            "key": "UserName",
+            "value": "johndoe"
+        },
+        {
+            "key": "IP",
+            "value": "192.168.1.10"
+        },
+        {
+            "key": "AccessTime",
+            "value": "2017/06/10 09:30:12"
+        },
+        {
+            "key": "Reason",
+            "value": "Password expired"
+        }
+    ]
+}
+{
+        "logId": 269,
+        "logText": "Jun 10 2018 14:22:45-07:15 C2-3-2-HW-5710-KL %%01IFNET/4/CARD_ENABLE(l)[167]:Board 1 card 1 has been available.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jun 10 2018 14:22:45-07:15"
+            },
+            {
+                "key": "",
+                "value": "C2-3-2-HW-5710-KL"
+            },
+            {
+                "key": "",
+                "value": "167"
+            }
+        ]
+    }
+{
+        "logId": 270,
+        "logText": "<190>Oct 15 2020 14:20:30 CZ-05-LEAF-02-HW16805 %%01FTP/6/FTPC_FILE_TRANSFER(s):CID=0x80942724;FTP file transfer end.(IPAddress=192.168.148.236, LocalFilename=LICCloudEngine16800_V200R020_20201015UHBQ7T.XML, RemoteFilename=LICCloudEngine16800_V200R020_20201015UHBQ7T.XML, RetCode=0, TransSize=5000bytes, TransTime=2second(s))",
+        "logField": [
+            {
+                "key": "",
+                "value": "Oct 15 2020 14:20:30"
+            },
+            {
+                "key": "",
+                "value": "CZ-05-LEAF-02-HW16805"
+            },
+            {
+                "key": "IPAddress",
+                "value": "192.168.148.236"
+            },
+            {
+                "key": "LocalFilename",
+                "value": "LICCloudEngine16800_V200R020_20201015UHBQ7T.XML"
+            },
+            {
+                "key": "RetCode",
+                "value": "0"
+            },
+            {
+                "key": "TransSize",
+                "value": "5000bytes"
+            },
+            {
+                "key": "TransTime",
+                "value": "2second(s)"
+            }
+        ]
+    }
+{
+        "logId": 271,
+        "logText": "<188>2013-07-09 16:20:00 IPS-Server %%01SEC/4/STREAM(l):In Last Five Minutes Stream Statistic is :TCP-37000,UDP-20,ICMP-30,EMAIL-1,OTHER-0,FTP-28,HTTP-15,H323-0,RTSP-0,DNS-0,MSN-0,QQ-0,SIP-0,GTCP-45,GUDP-0,P2P-0",
+        "logField": [
+            {
+                "key": "",
+                "value": "2013-07-09 16:20:00"
+            },
+            {
+                "key": "",
+                "value": "IPS-Server"
+            }
+        ]
+    }
+{
+        "logId": 272,
+        "logText": "<187>May  5 2019 14:22:45 SD-R-NE40E-X8-02 %%01BGP/3/STATE_CHG_UPDOWN(l)[680]:The status of the peer 10.60.253.62 changed from IDLE to ACTIVE. (InstanceName=Private, StateChangeReason=Down)",
+        "logField": [
+            {
+                "key": "",
+                "value": "May  5 2019 14:22:45"
+            },
+            {
+                "key": "",
+                "value": "SD-R-NE40E-X8-02"
+            },
+            {
+                "key": "",
+                "value": "680"
+            },
+            {
+                "key": "InstanceName",
+                "value": "Private"
+            },
+            {
+                "key": "StateChangeReason",
+                "value": "Down"
+            }
+        ]
+    }
+{
+        "logId": 273,
+        "logText": "<148>Mar 15 2017 14:22:15 11G-West %%01FEI/4/hwBaseSecApplicationApperceiveDropRateRising_active(l):VS=Admin-VS-CID=0x807f04b5-Slot=10-alarmID=0x0c15000b;Security Application-apperceive drop packets alarmed. (ChassisID=2, SlotID=10, Protocol=10, CurrentRateLow=2048000, CurrentRateHigh=0, NotifyEnabled=1, RateThreshold=1500000, RateInterval=600, ProtocalDescirption=BGP, Reason=Application related traffic's discarded rate exceeded alarm threshold.)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 2017 14:22:15"
+            },
+            {
+                "key": "",
+                "value": "11G-West"
+            },
+            {
+                "key": "ChassisID",
+                "value": "2"
+            },
+            {
+                "key": "SlotID",
+                "value": "10"
+            },
+            {
+                "key": "CurrentRateLow",
+                "value": "2048000"
+            },
+            {
+                "key": "CurrentRateHigh",
+                "value": "0"
+            },
+            {
+                "key": "RateThreshold",
+                "value": "1500000"
+            },
+            {
+                "key": "RateInterval",
+                "value": "600"
+            }
+        ]
+    }
+{
+    "logId": 274,
+    "logText": "<190>Oct 15 2020 11:45:30 CZ-05-LEAF-02-HW16805 %%01BGP/6/BNM_PEER_SWITCHIN_SENDING_LIST(l):CID=0x801304de;The BGP peer entered the batch advertisement queue. (PeerAddress=192.168.135.15, VPNInstance=_public_, AddressFamily=EVPN, UptPeerGrpID=5)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Oct 15 2020 11:45:30"
+        },
+        {
+            "key": "",
+            "value": "CZ-05-LEAF-02-HW16805"
+        },
+        {
+            "key": "CID",
+            "value": "0x801304de"
+        },
+        {
+            "key": "PeerAddress",
+            "value": "192.168.135.15"
+        },
+        {
+            "key": "VPNInstance",
+            "value": "_public_"
+        },
+        {
+            "key": "AddressFamily",
+            "value": "EVPN"
+        },
+        {
+            "key": "UptPeerGrpID",
+            "value": "5"
+        }
+    ]
+}
+{
+    "logId": 275,
+    "logText": "<188>2024-6-25 01:32:45.7.1 JX205_TXRongHang_RT_03 10.51.10.253 %%01IPSEC/4/IPSEC_INBOUND_SA_MISS(l)[12216]:The device failed to decrypt the received IPSec-encrypted packet (Source address=10.51.123.75, Destination address=10.51.123.76, SPI=15230782, Protocol=esp) because no inbound SA was found.",
+    "logField": [
+        {
+            "key": "",
+            "value": "2024-6-25 01:32:45.7.1"
+        },
+        {
+            "key": "",
+            "value": "JX205_TXRongHang_RT_03 10.51.10.253"
+        },
+        {
+            "key": "Source address",
+            "value": "10.51.123.75"
+        },
+        {
+            "key": "Destination address",
+            "value": "10.51.123.76"
+        },
+        {
+            "key": "SPI",
+            "value": "15230782"
+        },
+        {
+            "key": "Protocol",
+            "value": "esp"
+        }
+    ]
+}
+{
+        "logId": 276,
+        "logText": "<188>May 15 2017 14:30:45 BGW-2#lou-CSS-S7706 %%01SECE/4/PORT_ATTACK(l)[18145]:Port attack occurred.(Slot=LPU17, SourceAttackInterface=XGigabitEthernet2/5/0/2, OuterVlan/InnerVlan=14/0, AttackProtocol=ICMP, AttackPackets=150 packets per second)",
+        "logField": [
+            {
+                "key": "",
+                "value": "May 15 2017 14:30:45"
+            },
+            {
+                "key": "",
+                "value": "BGW-2#lou-CSS-S7706"
+            },
+            {
+                "key": "Slot",
+                "value": "LPU17"
+            },
+            {
+                "key": "SourceAttackInterface",
+                "value": "XGigabitEthernet2/5/0/2"
+            },
+            {
+                "key": "OuterVlan/InnerVlan",
+                "value": "14/0"
+            },
+            {
+                "key": "AttackProtocol",
+                "value": "ICMP"
+            },
+            {
+                "key": "AttackPackets",
+                "value": "150 packets per second"
+            }
+        ]
+    }
+{
+    "logId": 277,
+    "logText": "Mar 15 2014 10:15:45+08:00 Core9300B %%01SECE/3/ARPS_DROP_PACKET_OPTYPE(l)[6]:Invalid packet optype.(OperateType=4, SourceMAC=00e0-4c36-01a2, SourceIP=10.192.1.161, SourceInterface=GigabitEthernet1/0/39, DropTime=2014/03/15 10:15:45)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Mar 15 2014 10:15:45+08:00"
+        },
+        {
+            "key": "",
+            "value": "Core9300B"
+        },
+        {
+            "key": "OperateType",
+            "value": "4"
+        },
+        {
+            "key": "SourceMAC",
+            "value": "00e0-4c36-01a2"
+        },
+        {
+            "key": "SourceIP",
+            "value": "10.192.1.161"
+        },
+        {
+            "key": "SourceInterface",
+            "value": "GigabitEthernet1/0/39"
+        },
+        {
+            "key": "DropTime",
+            "value": "2014/03/15 10:15:45"
+        }
+    ]
+}
+{
+    "logId": 278,
+    "logText": "<187>Jan 15 2018 04:35:45 ANC_FZ_OA_Core_SW_HW7706_S2_02 %%01ALML/3/PKTERRORRISING(l)[17081]:Input packets are discarded for an error in physical layer detection. (SlotID=3/8, UnitID=65535, PortID=3/8/0/1, PeerSlotID=2/9, ErrorPacketStatistics=92160, MonitorInterval=300)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jan 15 2018 04:35:45"
+        },
+        {
+            "key": "",
+            "value": "ANC_FZ_OA_Core_SW_HW7706_S2_02"
+        },
+        {
+            "key": "SlotID",
+            "value": "3/8"
+        },
+        {
+            "key": "UnitID",
+            "value": "65535"
+        },
+        {
+            "key": "PortID",
+            "value": "3/8/0/1"
+        },
+        {
+            "key": "PeerSlotID",
+            "value": "2/9"
+        },
+        {
+            "key": "ErrorPacketStatistics",
+            "value": "92160"
+        },
+        {
+            "key": "MonitorInterval",
+            "value": "300"
+        }
+    ]
+}
+{
+    "logId": 279,
+    "logText": "<187>2023-09-15 14:30:22+08:00 ANC_FZ_OA_Out_AC_HW6005_02 %%01WLAN/3/AP_RESET_FAIL(l)[170]:AP reset failed. (MAC=[e0.e0.4c.d4.1b.f0 (hex)], ApID=54, Sysname=e0e0-4cd4-1bf0, Reason=power issue)",
+    "logField": [
+        {
+            "key": "",
+            "value": "2023-09-15 14:30:22+08:00"
+        },
+        {
+            "key": "",
+            "value": "ANC_FZ_OA_Out_AC_HW6005_02"
+        },
+        {
+            "key": "MAC",
+            "value": "[e0.e0.4c.d4.1b.f0 (hex)]"
+        },
+        {
+            "key": "ApID",
+            "value": "54"
+        },
+        {
+            "key": "Sysname",
+            "value": "e0e0-4cd4-1bf0"
+        },
+        {
+            "key": "Reason",
+            "value": "power issue"
+        }
+    ]
+}
+{
+    "logId": 280,
+    "logText": "<188>2017/06/23 16:20:35 FW1 %%01IPS/4/DETECT(l): An intrusion was detected. (SyslogId=28, VSys=\"public\", Policy=\"mail\", SrcIp=172.10.0.43, DstIp=172.31.100.187, SrcPort=54321, DstPort=443, SrcZone=untrust, DstZone=trust, User=\"unknown\", Protocol=TCP, Application=\"HTTPS\", Profile=\"default\", SignName=\"Cross-Site Scripting Attempt - Reflected XSS\", SignId=2000136, EventNum=1, Target=webserver, Severity=medium, Os=all, Category=Web, Action=Alert)",
+    "logField": [
+        {
+            "key": "",
+            "value": "2017/06/23 16:20:35"
+        },
+        {
+            "key": "",
+            "value": "FW1"
+        },
+        {
+            "key": "SyslogId",
+            "value": "28"
+        },
+        {
+            "key": "VSys",
+            "value": "public"
+        },
+        {
+            "key": "Policy",
+            "value": "mail"
+        },
+        {
+            "key": "SrcIp",
+            "value": "172.10.0.43"
+        },
+        {
+            "key": "SignName",
+            "value": "Cross-Site Scripting Attempt - Reflected XSS"
+        },
+        {
+            "key": "SignId",
+            "value": "2000136"
+        },
+        {
+            "key": "EventNum",
+            "value": "1"
+        },
+        {
+            "key": "Target",
+            "value": "webserver"
+        }
+    ]
+}
+{
+    "logId": 281,
+    "logText": "<187>Jun 15 2018 16:45:12 CE12808-2 %%01NETCONF/3/CONNECTION_INTERRUPT_active(l):CID=0x80a704d4-alarmID=0x00f1007f;The connection is interrupted. (IPType=ipv4, PeerIp=192.168.1.10, VpnName=_private_)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jun 15 2018 16:45:12"
+        },
+        {
+            "key": "",
+            "value": "CE12808-2"
+        },
+        {
+            "key": "CID",
+            "value": "0x80a704d4"
+        },
+        {
+            "key": "alarmID",
+            "value": "0x00f1007f"
+        },
+        {
+            "key": "IPType",
+            "value": "ipv4"
+        },
+        {
+            "key": "PeerIp",
+            "value": "192.168.1.10"
+        },
+        {
+            "key": "VpnName",
+            "value": "_private_"
+        }
+    ]
+}
+{
+        "logId": 282,
+        "logText": "<190>Apr  5 2018 02:15:30 Huawei_12700 %%01DSA/6/HOSTKEY_GEN_OK(s)[9194]:Create DSA host encryption key successfully.",
+        "logField": [
+            {
+                "key": "",
+                "value": "Apr  5 2018 02:15:30"
+            },
+            {
+                "key": "",
+                "value": "Huawei_12700"
+            },
+            {
+                "key": "",
+                "value": "9194"
+            }
+        ]
+    }
+{
+        "logId": 283,
+        "logText": "<188>Dec 15 2023 14:27:49 B-Area7-G2-18U-FabD-Acc %%01LLDP/4/hwLldpInterfaceRemTablesChange(t):CID=0x80a5044c-OID=1.3.6.1.4.1.2011.5.25.134.2.8;Neighbor information of the interface was changed. (Interface=GE2/0/2, Action=deleted, Added=0, Deleted=1, RemoteInterfaceName=d400-ad8b-ba12, RemoteDeviceManageAddress=)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 15 2023 14:27:49"
+            },
+            {
+                "key": "",
+                "value": "B-Area7-G2-18U-FabD-Acc"
+            },
+            {
+                "key": "CID",
+                "value": "0x80a5044c"
+            },
+            {
+                "key": "OID",
+                "value": "1.3.6.1.4.1.2011.5.25.134.2.8"
+            }
+        ]
+    }
+{
+    "logId": 284,
+    "logText": "<188>Jun 15 2018 14:35:42 D19_AntiDDoS_JianCe %%01FWD/4/SESSINSERTOVERLOAD(l)[19273]:Slot=9/0,Vcpu=0;Abnormal traffic was detected.(Vsys=public,VLAN=0,Protocol=UDP,SourceIP=192.168.1.100,SourcePort=12345,DestinationIP=8.8.8.8,DestinationPort=53)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jun 15 2018 14:35:42"
+        },
+        {
+            "key": "",
+            "value": "D19_AntiDDoS_JianCe"
+        },
+        {
+            "key": "Slot",
+            "value": "9/0"
+        },
+        {
+            "key": "Vcpu",
+            "value": "0"
+        },
+        {
+            "key": "Vsys",
+            "value": "public"
+        },
+        {
+            "key": "Protocol",
+            "value": "UDP"
+        },
+        {
+            "key": "SourceIP",
+            "value": "192.168.1.100"
+        },
+        {
+            "key": "DestinationPort",
+            "value": "53"
+        }
+    ]
+}
+{
+    "logId": 285,
+    "logText": "<172>Jan 15 2022 14:22:33+08:00 r-bupt6-bk %%01ISIS/4/IS_RECV_ERR_PKT(l):CID=0x80860539;ISIS-INFO: Drop error packet. (PktType=L2 LSP, ProcessId=101, ErrReason=LSP Bad Authentication TLV, ErrCount=2, InterfaceName=GigabitEthernet7/0/10, SubReason=None)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jan 15 2022 14:22:33+08:00"
+        },
+        {
+            "key": "",
+            "value": "r-bupt6-bk"
+        },
+        {
+            "key": "CID",
+            "value": "0x80860539"
+        },
+        {
+            "key": "PktType",
+            "value": "L2 LSP"
+        },
+        {
+            "key": "ProcessId",
+            "value": "101"
+        },
+        {
+            "key": "ErrReason",
+            "value": "LSP Bad Authentication TLV"
+        },
+        {
+            "key": "ErrCount",
+            "value": "2"
+        },
+        {
+            "key": "InterfaceName",
+            "value": "GigabitEthernet7/0/10"
+        },
+        {
+            "key": "SubReason",
+            "value": "None"
+        }
+    ]
+}
+{
+    "logId": 286,
+    "logText": "<190>2023-03-15 14:22:45 USG6600 %%01UM/6/LOGOUT(l): The user logged out. (User Name=johndoe@techdept, Vsys=root, Source IP=192.168.1.10, Parent Group=/techdept, Logon Time=2023/03/15 12:00:00 , Logout Time=2023/03/15 14:22:44 , Obverse Packets=120, Obverse Bytes=15000, Reverse Packets= 110, Reverse Bytes=14000)",
+    "logField": [
+        {
+            "key": "",
+            "value": "2023-03-15 14:22:45"
+        },
+        {
+            "key": "",
+            "value": "USG6600"
+        },
+        {
+            "key": "Vsys",
+            "value": "root"
+        },
+        {
+            "key": "Source IP",
+            "value": "192.168.1.10"
+        },
+        {
+            "key": "Parent Group",
+            "value": "/techdept"
+        },
+        {
+            "key": "Logon Time",
+            "value": "2023/03/15 12:00:00"
+        },
+        {
+            "key": "Logout Time",
+            "value": "2023/03/15 14:22:44"
+        },
+        {
+            "key": "Obverse Packets",
+            "value": "120"
+        }
+    ]
+}
+{
+        "logId": 287,
+        "logText": "<189>Jan 15 2021 14:22:33 L_USG6650 %%01IKE/5/IKE_NEGO_FAIL(l)[265]:Vsys public: IPSec tunnel negotiation fails. (IfIndex=15, SeqNum=10001, PeerAddress=192.168.1.1, PeerPort=4500, Reason=authentication fail)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jan 15 2021 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "L_USG6650"
+            },
+            {
+                "key": "IfIndex",
+                "value": "15"
+            },
+            {
+                "key": "SeqNum",
+                "value": "10001"
+            },
+            {
+                "key": "PeerAddress",
+                "value": "192.168.1.1"
+            },
+            {
+                "key": "PeerPort",
+                "value": "4500"
+            },
+            {
+                "key": "Reason",
+                "value": "authentication fail"
+            }
+        ]
+    }
+{
+    "logId": 288,
+    "logText": "<180>Dec 15 2016 14:22:35 ZX_HXJF_D_S7712-02 %%01MSTP/4/hwMstpiPortStateDiscarding(t):CID=0x80542725-OID=1.3.6.1.4.1.2011.5.25.42.4.2.2;The port has been set to discarding state. (InstanceID=1, PortIndex=214, IfIndex=214, PortName=Eth-Trunk11, PwName=-)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Dec 15 2016 14:22:35"
+        },
+        {
+            "key": "",
+            "value": "ZX_HXJF_D_S7712-02"
+        },
+        {
+            "key": "CID",
+            "value": "0x80542725"
+        },
+        {
+            "key": "OID",
+            "value": "1.3.6.1.4.1.2011.5.25.42.4.2.2"
+        },
+        {
+            "key": "InstanceID",
+            "value": "1"
+        },
+        {
+            "key": "PortIndex",
+            "value": "214"
+        },
+        {
+            "key": "PortName",
+            "value": "Eth-Trunk11"
+        }
+    ]
+}
+{
+    "logId": 289,
+    "logText": "<187>Jun 15 2018 09:22:45 1000E-2-inner %%01MANAGER/3/LOCK(l)[31841]:The user was locked out. (User Name=john, Lock Time=15 min, Lock Reason=password incorrect for 5 times, Access Type=telnet , IP Address=192.168.1.10)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jun 15 2018 09:22:45"
+        },
+        {
+            "key": "",
+            "value": "1000E-2-inner"
+        },
+        {
+            "key": "User Name",
+            "value": "john"
+        },
+        {
+            "key": "Lock Time",
+            "value": "15 min"
+        },
+        {
+            "key": "Lock Reason",
+            "value": "password incorrect for 5 times"
+        },
+        {
+            "key": "Access Type",
+            "value": "telnet"
+        },
+        {
+            "key": "IP Address",
+            "value": "192.168.1.10"
+        }
+    ]
+}
+{
+    "logId": 290,
+    "logText": "<190>2024-6-24 09:22:15.3.1 JX204_JingKai_RT_02 10.51.8.252 %%01SECE/6/ARPMISS(l)[175915]:Attack occurred.(AttackType=Arp Miss Attack, SourceInterface=Vlanif12, SourceIP=21.99.151.113, AttackPackets=4 packets per second)",
+    "logField": [
+        {
+            "key": "",
+            "value": "2024-6-24 09:22:15.3.1"
+        },
+        {
+            "key": "",
+            "value": "JX204_JingKai_RT_02 10.51.8.252"
+        },
+        {
+            "key": "AttackType",
+            "value": "Arp Miss Attack"
+        },
+        {
+            "key": "SourceInterface",
+            "value": "Vlanif12"
+        },
+        {
+            "key": "SourceIP",
+            "value": "21.99.151.113"
+        },
+        {
+            "key": "AttackPackets",
+            "value": "4 packets per second"
+        }
+    ]
+}
+{
+        "logId": 291,
+        "logText": "<188>Mar  5 2015 14:45:22 HW_SW9706_B %%01SECE/4/PORT_ATTACK_OCCUR(l)[686354]:Auto port-defend started.(SourceAttackInterface=GigabitEthernet3/0/15, AttackProtocol=ICMP-FLOOD)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar  5 2015 14:45:22"
+            },
+            {
+                "key": "",
+                "value": "HW_SW9706_B"
+            },
+            {
+                "key": "",
+                "value": "686354"
+            },
+            {
+                "key": "SourceAttackInterface",
+                "value": "GigabitEthernet3/0/15,"
+            },
+            {
+                "key": "AttackProtocol",
+                "value": "ICMP-FLOOD"
+            }
+        ]
+    }
+{
+        "logId": 292,
+        "logText": "<172>Jun 15 12:34:21.7 WLZX-IPA-NE40E-A %%01SSH/4/IP_UNLOCKED(s):CID=0x80930465;IP was unlocked. (IpAddress=192.168.1.1, VpnName=_private_)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Jun 15 12:34:21.7"
+            },
+            {
+                "key": "",
+                "value": "WLZX-IPA-NE40E-A"
+            },
+            {
+                "key": "CID",
+                "value": "0x80930465"
+            },
+            {
+                "key": "IpAddress",
+                "value": "192.168.1.1"
+            },
+            {
+                "key": "VpnName",
+                "value": "_private_"
+            }
+        ]
+    }
+{
+        "logId": 293,
+        "logText": "<188>Apr 22 2018 15:30:45 Huawei_12700 %%01SECE/4/UCSUPPRESSRESUME(l)[221457]:MAC address flapping finished on port. Unknown unicast packets were normally forwarded.(Interface=GigabitEthernet1/3/0/8)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Apr 22 2018 15:30:45"
+            },
+            {
+                "key": "",
+                "value": "Huawei_12700"
+            },
+            {
+                "key": "",
+                "value": "221457"
+            },
+            {
+                "key": "Interface",
+                "value": "GigabitEthernet1/3/0/8"
+            }
+        ]
+    }
+{
+    "logId": 294,
+    "logText": "<187>Jul 15 2020 14:22:15+08:00 LLQ_INT_VPN_FW_E1000E_B08_3U31_M %%01LOCATION/3/ONLINEUPDATEFAIL(l)[318430]:Failed to download the configuration file. (SyslogId=37, User=**, IP=**, Module=LOCATION-CFG, Pre-UpdateVersion=2016011010, UpdateVersion=, Status=download, Duration(s)=5, Suggestion=\"Please check the network connection and try again later\")",
+    "logField": [
+        {
+            "key": "",
+            "value": "Jul 15 2020 14:22:15+08:00"
+        },
+        {
+            "key": "",
+            "value": "LLQ_INT_VPN_FW_E1000E_B08_3U31_M"
+        },
+        {
+            "key": "SyslogId",
+            "value": "37"
+        },
+        {
+            "key": "Module",
+            "value": "LOCATION-CFG"
+        },
+        {
+            "key": "Pre-UpdateVersion",
+            "value": "2016011010"
+        },
+        {
+            "key": "Status",
+            "value": "download"
+        },
+        {
+            "key": "Duration(s)",
+            "value": "5"
+        }
+    ]
+}
+{
+        "logId": 295,
+        "logText": "<147>Mar 15 2017 14:22:33 12G-West %%01OSPF/3/RCV_ERR_PACKET(l):VS=Test-VS-CID=0x90940582;OSPFv2 received error packet and dropped it.(ProcessId=3, PktType=5, ErrPktCnt=820432, LocalComp=0x90940582, PeerComp=0x830432, IfName=Vlanif200)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 2017 14:22:33"
+            },
+            {
+                "key": "",
+                "value": "12G-West"
+            },
+            {
+                "key": "VS",
+                "value": "Test"
+            },
+            {
+                "key": "CID",
+                "value": "0x90940582"
+            },
+            {
+                "key": "ProcessId",
+                "value": "3"
+            },
+            {
+                "key": "PktType",
+                "value": "5"
+            },
+            {
+                "key": "ErrPktCnt",
+                "value": "820432"
+            },
+            {
+                "key": "IfName",
+                "value": "Vlanif200"
+            }
+        ]
+    }
+{
+        "logId": 296,
+        "logText": "<131>Mar 15 2022 14:45:22 SPYPT-SPW-XZ-HuaShanPaiChuSuo-S5735-02 %%01CMREG/3/ONLINE_FAIL(l)[5464628]:Online failed. (Error code=8, Reason=Failed to establish SSL connection, Controller address=44.45.254.39)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Mar 15 2022 14:45:22"
+            },
+            {
+                "key": "",
+                "value": "SPYPT-SPW-XZ-HuaShanPaiChuSuo-S5735-02"
+            },
+            {
+                "key": "",
+                "value": "5464628"
+            },
+            {
+                "key": "Error code",
+                "value": "8"
+            },
+            {
+                "key": "Reason",
+                "value": "Failed to establish SSL connection"
+            },
+            {
+                "key": "Controller address",
+                "value": "44.45.254.39"
+            }
+        ]
+    }
+{
+    "logId": 297,
+    "logText": "<187>Sep  7 2023 10:05:23 CORE-HWS12708-02 %%01HGCHECK/3/DISCARDPKT(l)[4908245]:Slot=3/12;Packets are discarded for congestion. (SlotID=3/12, UnitID=65535, PortID=3/12/0/3, PeerSlotID=2/12, DiscardNumber=1638000000, IncrementStatistics=303265)",
+    "logField": [
+        {
+            "key": "",
+            "value": "Sep  7 2023 10:05:23"
+        },
+        {
+            "key": "",
+            "value": "CORE-HWS12708-02"
+        },
+        {
+            "key": "",
+            "value": "4908245"
+        },
+        {
+            "key": "Slot",
+            "value": "3/12"
+        },
+        {
+            "key": "UnitID",
+            "value": "65535"
+        },
+        {
+            "key": "PortID",
+            "value": "3/12/0/3"
+        },
+        {
+            "key": "PeerSlotID",
+            "value": "2/12"
+        },
+        {
+            "key": "DiscardNumber",
+            "value": "1638000000"
+        },
+        {
+            "key": "IncrementStatistics",
+            "value": "303265"
+        }
+    ]
+}
+{
+        "logId": 298,
+        "logText": "<177>Dec 15 2016 14:22:35 ZX_HXJF_D_S7712-02 %%01DEVM/1/hwIfMonitorCrcErrorResume(t):CID=0x80fc0449-OID=1.3.6.1.4.1.2011.5.25.41.4.2;The CRC error alarm resume. (hwIfMonitorIndex=17240328, hwIfMonitorCrcErrorStatistics=0, hwIfMonitorCrcErrorThreshold=4, hwIfMonitorCrcErrorInterval=15, EntPhysicalName=GE1/8/0/7)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Dec 15 2016 14:22:35"
+            },
+            {
+                "key": "",
+                "value": "ZX_HXJF_D_S7712-02"
+            },
+            {
+                "key": "CID",
+                "value": "0x80fc0449"
+            },
+            {
+                "key": "OID",
+                "value": "1.3.6.1.4.1.2011.5.25.41.4.2"
+            },
+            {
+                "key": "hwIfMonitorIndex",
+                "value": "17240328"
+            },
+            {
+                "key": "hwIfMonitorCrcErrorStatistics",
+                "value": "0"
+            },
+            {
+                "key": "hwIfMonitorCrcErrorThreshold",
+                "value": "4"
+            },
+            {
+                "key": "hwIfMonitorCrcErrorInterval",
+                "value": "15"
+            },
+            {
+                "key": "EntPhysicalName",
+                "value": "GE1/8/0/7"
+            }
+        ]
+    }
+{
+        "logId": 301,
+        "logText": "Apr 15 2013 14:22:30 SPU-2 %%01OSPF/6/ADD_PHY_IF(l)[92]:Add the physical interface. (InterfaceName=Eth-Trunk1.1, InterfaceIndex=0xA)",
+        "logField": [
+            {
+                "key": "",
+                "value": "Apr 15 2013 14:22:30"
+            },
+            {
+                "key": "",
+                "value": "SPU-2"
+            },
+            {
+                "key": "",
+                "value": "92"
+            },
+            {
+                "key": "",
+                "value": "InterfaceName"
+            },
+            {
+                "key": "",
+                "value": "Eth-Trunk1.1"
+            },
+            {
+                "key": "InterfaceIndex",
+                "value": "0xA"
+            }
+        ]
+    }
+{
+    "logId": 300,
+    "logText": "<188>2015-07-21 14:02:45 USG5500_master %%01SEC/4/POLICYDENY(l): protocol=17, source-ip=192.168.1.100, source-port=12345, destination-ip=10.32.12.70, destination-port=8080, time=2015/07/21 14:02:45, interzone-untrust(public)-dzsw(public) inbound, policy=9.",
+    "logField": [
+        {
+            "key": "",
+            "value": "2015-07-21 14:02:45"
+        },
+        {
+            "key": "",
+            "value": "USG5500_master"
+        },
+        {
+            "key": "protocol",
+            "value": "17"
+        },
+        {
+            "key": "source-ip",
+            "value": "192.168.1.100"
+        },
+        {
+            "key": "source-port",
+            "value": "12345"
+        },
+        {
+            "key": "destination-ip",
+            "value": "10.32.12.70"
+        },
+        {
+            "key": "time",
+            "value": "2015/07/21 14:02:45"
+        },
+        {
+            "key": "policy",
+            "value": "9"
+        }
+    ]
+}

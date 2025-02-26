@@ -1,6 +1,7 @@
 import datetime
 import json
 import os
+import re
 from langchain_openai import ChatOpenAI  
 from dotenv import load_dotenv
 from crewai import Agent, Task, Process, Crew
@@ -118,11 +119,54 @@ data_generation_task = Task(
 )
 
 def get_generated_log(text):
-    # text = """{"name": "Kimi", "age": 3, "is_active": true, "last_seen": null}"""
     valid_json = text.replace("'", "\"")
     valid_json = text.replace("True", "true")
-    data = json.loads(valid_json)
-    return data
+    try:
+        data = json.loads(valid_json)
+        return data
+    except json.JSONDecodeError as e:   
+        print(f"UnHandled JSON: {e}")
+        try: 
+            data = auto_escape_json(valid_json)
+            return data
+        except json.JSONDecodeError as e:   
+            print(f"Error decoding JSON: {e}")
+        
+
+def auto_escape_json(json_str):
+    try:
+        # 使用正则表达式匹配 JSON 数据
+        # 提取 logId, logText 和 logField
+        # 假设 JSON 数据的结构是固定的
+        # 解析 logId
+        log_id_match = re.search(r'"logId":\s*(\d+),', json_str)
+        log_id = int(log_id_match.group(1)) if log_id_match else None
+
+        # 解析 logText
+        log_text_match = re.search(r'"logText":\s*"([^"]+)",', json_str)
+        log_text = log_text_match.group(1).replace('"', '\\"') if log_text_match else None
+
+        # 解析 logField
+        log_field_match = re.search(r'"logField":\s*(\[[\s\S]*?\])', json_str)
+        log_field_json = log_field_match.group(1) if log_field_match else None
+
+        # 解析 logField
+        log_field = json.loads(log_field_json) if log_field_json else []
+        for field in log_field:
+            if hasattr(field, 'get'):
+                field_value = field.get('value')
+                if field_value:
+                    field['value'] = field_value.replace('"', '\\"')
+
+        # 重新生成 JSON 数据
+        data = {
+            "logId": log_id,
+            "logText": log_text,
+            "logField": log_field
+        }
+        return json.dumps(data, ensure_ascii=False, indent=4)
+    except Exception as e:
+        raise ValueError(f"无法自动修复 JSON 格式: {e}")
 
 def generate_log_fileName():
     """
@@ -131,7 +175,7 @@ def generate_log_fileName():
         str: 完整的日志文件路径
     """
     # 日志目录，根据自己项目修改
-    log_dir = r"src\LogParserX\log"  
+    log_dir = "src/LogParserX/log"  
     os.makedirs(log_dir, exist_ok=True)
     # 生成精确到秒的时间戳
     timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
@@ -153,14 +197,17 @@ def run(test_data, output_file):
         }
         result = single_crew.kickoff(inputs=inputs)
         print("C")
-        # print(40* "#")
-        # print(result)
-        # print(40* "#")
-        res = get_generated_log(str(result))
+        print(40* "#")
+        print(result)
+        print(40* "#")
+        # res = get_generated_log(str(result))
+        res = str(result)
         generated_list.append(res)
-    print(generated_list)
+    # print(generated_list)
+    # with open(output_file, 'w', encoding='utf-8') as f:
+    #     json.dump(generated_list, f, indent=4, ensure_ascii=False) 
     with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(generated_list, f, indent=4, ensure_ascii=False) 
+        f.write('\n'.join(generated_list))
     print(f"Generated data saved to {output_file}!")
     # with open(output_file, 'w', encoding='utf-8') as f:
     #     f.write('\n'.join(generated_list))
@@ -168,9 +215,9 @@ def run(test_data, output_file):
 
 def launcher(s, e, log_path):
     json_data = json.load(open(log_path, "r", encoding="utf-8"))
-    test_data = json_data[s: e]
+    test_data = json_data[s:e]
     print(len(test_data))
-    run(test_data=test_data, output_file="data/generated_data/class_1.json")
+    run(test_data=test_data, output_file="data/generated_data/class_4.txt")
 
 if __name__ == '__main__':
-    launcher(0, 100, "data/classified_data/class_1.json")
+    launcher(0, 100, "data/classified_data/class_4.json")
