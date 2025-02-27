@@ -92,6 +92,8 @@ pattern_check_task = Task(
     date_p_3 = r"(\d{4}-\d{1,2}-\d{1,2} \d{2}:\d{2}:\d{2}(?:[+-]\d{2}:\d{2})?)"
     Optimized Reasons:
     - This regex can face some false positives, such as "Nov 5 2021 11:34:18+08:00"
+    - Fix some unmatched conditions, such as "Nov  5 2021 11:34:18+08:00", and why use optimized pattern can solve this problem.
+    - This regex can face some false positives, such as "Nov 5 2021 11:34:18+08:00", ...
     ...
     Optimized Rate:
     Compared to the original pattern, the optimized pattern can cover X%, except for some conditions: XXX.
@@ -136,6 +138,7 @@ code_generation_task = Task(
 
     For example(clean codes), your codes should be **strict** like this, main function only change log_text contents:
     import re
+    import json
     from functools import lru_cache
     @lru_cache(maxsize=100)
     def _compile_regex(pattern: str, flags: int = 0) -> re.Pattern:
@@ -169,7 +172,8 @@ code_generation_task = Task(
     if __name__ == '__main__':
         log_text = {{logText}}
         res = get_components(log_text)
-        print(res)
+        json_data = json.dumps(res, ensure_ascii=False)
+        print(json_data)
     """,
     output_file="{output_file}",
 )
@@ -220,7 +224,8 @@ code_validation_task = Task(
     ## Comparison
     Optimized codes Matched Rate: X%
     Original codes Matched Rate: Y%
-    Some Analysis...
+    In Optimized codes, [{"key": "", "value": ""},...] are matched, while ... are unmatched.
+    In Original codes, [{"key": "", "value": ""},...] are matched, while ... are unmatched.
     """,
     output_file="{output_file_md}",
     )
@@ -319,4 +324,4 @@ def launcher(S, E, class_path):
 
 if __name__ == '__main__':
     class_path = r"data/classified_data/class_2.json"
-    launcher(S=0,E=50, class_path=class_path)
+    launcher(S=0,E=3, class_path=class_path)

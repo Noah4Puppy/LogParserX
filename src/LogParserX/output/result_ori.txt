@@ -1,307 +1,105 @@
-[{'key': '', 'value': 'Aug 13 09:04:02'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '09'}, {'key': '', 'value': '3831379'}]
-Testing ID: 0:
-Testing LogText: <21>Aug 13 09:04:02 soc-32 systemd-logind: Removed session 3831379.
-Testing LogField: [{'key': '', 'value': 'Aug 13 09:04:02'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '3831379'}]
-Generated LogField: [{'key': '', 'value': 'Aug 13 09:04:02'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '09'}, {'key': '', 'value': '3831379'}]
-完全匹配！
-[{'key': '', 'value': 'Oct 28 18:00:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '172578'}]
-Testing ID: 1:
-Testing LogText: <21>Oct 28 18:00:09 soc-32 ntpdate[172578]: adjust time server 120.25.115.20 offset 0.000752 sec
-Testing LogField: [{'key': '', 'value': 'Oct 28 18:00:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '172578'}, {'key': '', 'value': '120.25.115.20'}]
-Generated LogField: [{'key': '', 'value': 'Oct 28 18:00:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '172578'}]
-至少有一个匹配！full_coverage: 80.00%
-[{'key': '', 'value': 'soc-32'}, {'key': 'code', 'value': 'exited'}, {'key': 'status', 'value': '2/INVALIDARGUMENT'}]
-Testing ID: 2:
-Testing LogText: <21>Oct 28 17:58:09 soc-32 systemd: lgent.service: main process exited, code=exited, status=2/INVALIDARGUMENT
-Testing LogField: [{'key': '', 'value': 'Oct 28 17:58:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}, {'key': 'code', 'value': 'exited'}, {'key': 'status', 'value': '2/INVALIDARGUMENT'}]
-Generated LogField: [{'key': '', 'value': 'soc-32'}, {'key': 'code', 'value': 'exited'}, {'key': 'status', 'value': '2/INVALIDARGUMENT'}]
-至少有一个匹配！full_coverage: 60.00%
-[{'key': '', 'value': 'Aug 12 08:06:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '16209'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38316'}]
-Testing ID: 3:
-Testing LogText: <21>Aug 12 08:06:01 soc-32 sshd[16209]: Postponed publickey for root from 3.66.0.23 port 38316 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Aug 12 08:06:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '16209'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38316'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Aug 12 08:06:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '16209'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38316'}]
-至少有一个匹配！full_coverage: 67.00%
-[{'key': '', 'value': '21'}]
-Testing ID: 4:
-Testing LogText: <21>Aug 12 08:11:56 soc-32 sshd[33101]: pam_unix(sshd:session): session closed for user root
-Testing LogField: [{'key': '', 'value': 'Aug 12 08:11:56'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '33101'}]
-Generated LogField: [{'key': '', 'value': '21'}]
+0
+gen_result = [{'key': '', 'value': '10.50.81.60'}, {'key': 'HTTP/S响应码', 'value': '403'}]
+
+init data: [{'key': '', 'value': '10.50.81.60'}, {'key': 'HTTP/S响应码', 'value': '403'}]
+
+valid data: [{"key": "", "value": "10.50.81.60"}, {"key": "HTTP/S响应码", "value": "403"}]
+
+<class 'list'>
+[{'key': '', 'value': '10.50.81.60'}, {'key': 'HTTP/S响应码', 'value': '403'}]
+Testing ID: 101:
+Testing LogText: <178>Nov 15 14:22:33 10.50.81.60 DBAppWAF: 发生时间/2024-11-15 14:22:32,威胁/高,事件/SQL注入,请求方法/POST,URL地址/10.50.81.60:8000/login.php,POST数据/user=admin&password=123456,服务器IP/10.50.81.6,主机名/10.50.81.60:8000,服务器端口/8000,客户端IP/10.20.170.23,客户端端口/45678,客户端环境/Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3),标签/SQL注入,动作/阻断,HTTP/S响应码/403,攻击特征串/login.php?user=admin&password=123456,触发规则/11010016,访问唯一编号/7425395334018236553,国家/LAN,省/,市/,XFF_IP/
+Testing LogField: [{'key': '', 'value': 'Nov 15 14:22:33'}, {'key': '', 'value': '10.50.81.60'}, {'key': '', 'value': 'DBAppWAF'}, {'key': '发生时间', 'value': '2024-11-15 14:22:32'}, {'key': '威胁', 'value': '高'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.81.60:8000/login.php'}, {'key': 'POST数据', 'value': 'user=admin&password=123456'}, {'key': '服务器IP', 'value': '10.50.81.6'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)'}, {'key': '访问唯一编号', 'value': '7425395334018236553'}]
+Generated LogField: [{'key': '', 'value': '10.50.81.60'}, {'key': 'HTTP/S响应码', 'value': '403'}]
+至少有一个匹配！full_coverage: 9.00%
+1
+gen_result = [{'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '中'}, {'key': '请求方法', 'value': 'GET'}, {'key': '主机名', 'value': '10.50.109.90:31001'}, {'key': '客户端端口', 'value': '59135'}, {'key': '客户端IP', 'value': '10.50.24.198'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '警告'}, {'key': '国家', 'value': '局域网'}]
+
+init data: [{'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '中'}, {'key': '请求方法', 'value': 'GET'}, {'key': '主机名', 'value': '10.50.109.90:31001'}, {'key': '客户端端口', 'value': '59135'}, {'key': '客户端IP', 'value': '10.50.24.198'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '警告'}, {'key': '国家', 'value': '局域网'}]
+
+valid data: [{"key": "", "value": "10-50-86-12"}, {"key": "威胁", "value": "中"}, {"key": "请求方法", "value": "GET"}, {"key": "主机名", "value": "10.50.109.90:31001"}, {"key": "客户端端口", "value": "59135"}, {"key": "客户端IP", "value": "10.50.24.198"}, {"key": "标签", "value": "SQL注入"}, {"key": "动作", "value": "警告"}, {"key": "国家", "value": "局域网"}]
+
+<class 'list'>
+[{'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '中'}, {'key': '请求方法', 'value': 'GET'}, {'key': '主机名', 'value': '10.50.109.90:31001'}, {'key': '客户端端口', 'value': '59135'}, {'key': '客户端IP', 'value': '10.50.24.198'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '警告'}, {'key': '国家', 'value': '局域网'}]
+Testing ID: 102:
+Testing LogText: <178>Dec 20 10:25:42 10-50-86-12 DBAppWAF: 发生时间/2024-12-20 10:25:37,威胁/中,事件/检测SQL注入,请求方法/GET,URL地址/10.50.109.90:31001/search,GET数据/user=admin&password=123456,服务器IP/10.50.109.90,主机名/10.50.109.90:31001,服务器端口/31001,客户端IP/10.50.24.198,客户端端口/59135,客户端环境/Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36,标签/SQL注入,动作/警告,HTTP/S响应码/403,攻击特征串/user=admin&password=123456,触发规则/10310001,访问唯一编号/7438514900033388674,国家/局域网,省/未知,市/未知,XFF_IP/
+Testing LogField: [{'key': '', 'value': 'Dec 20 10:25:42'}, {'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '中'}, {'key': '请求方法', 'value': 'GET'}, {'key': '主机名', 'value': '10.50.109.90:31001'}, {'key': '客户端端口', 'value': '59135'}, {'key': '客户端IP', 'value': '10.50.24.198'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '警告'}, {'key': '国家', 'value': '局域网'}]
+Generated LogField: [{'key': '', 'value': '10-50-86-12'}, {'key': '威胁', 'value': '中'}, {'key': '请求方法', 'value': 'GET'}, {'key': '主机名', 'value': '10.50.109.90:31001'}, {'key': '客户端端口', 'value': '59135'}, {'key': '客户端IP', 'value': '10.50.24.198'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '警告'}, {'key': '国家', 'value': '局域网'}]
+至少有一个匹配！full_coverage: 90.00%
+2
+gen_result = [{'key': '', 'value': '10-50-86-13'}, {'key': '事件', 'value': 'SQL注入攻击'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}, {'key': '客户端IP', 'value': '10.50.86.36'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '阻断'}, {'key': '访问唯一编号', 'value': '7428041192777978970'}, {'key': '国家', 'value': '局域网'}]
+
+init data: [{'key': '', 'value': '10-50-86-13'}, {'key': '事件', 'value': 'SQL注入攻击'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}, {'key': '客户端IP', 'value': '10.50.86.36'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '阻断'}, {'key': '访问唯一编号', 'value': '7428041192777978970'}, {'key': '国家', 'value': '局域网'}]
+
+valid data: [{"key": "", "value": "10-50-86-13"}, {"key": "事件", "value": "SQL注入攻击"}, {"key": "服务器IP", "value": "10.50.109.2"}, {"key": "服务器端口", "value": "80"}, {"key": "客户端IP", "value": "10.50.86.36"}, {"key": "标签", "value": "SQL注入"}, {"key": "动作", "value": "阻断"}, {"key": "访问唯一编号", "value": "7428041192777978970"}, {"key": "国家", "value": "局域网"}]
+
+<class 'list'>
+[{'key': '', 'value': '10-50-86-13'}, {'key': '事件', 'value': 'SQL注入攻击'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}, {'key': '客户端IP', 'value': '10.50.86.36'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '阻断'}, {'key': '访问唯一编号', 'value': '7428041192777978970'}, {'key': '国家', 'value': '局域网'}]
+Testing ID: 103:
+Testing LogText: <178>Nov 15 14:22:15 10-50-86-13 DBAppWAF: 发生时间/2024-11-15 14:22:03,威胁/中,事件/SQL注入攻击,请求方法/POST,URL地址/10.50.109.2/admin/login.php,POST数据/username=admin&password=123456,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.36,客户端端口/56789,客户端环境/Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3),标签/SQL注入,动作/阻断,HTTP/S响应码/403,攻击特征串/admin/login.php?username=admin&password=123456,触发规则/11010102,访问唯一编号/7428041192777978970,国家/局域网,省/未知,市/未知,XFF_IP/
+Testing LogField: [{'key': '', 'value': 'Nov 15 14:22:15'}, {'key': '', 'value': '10-50-86-13'}, {'key': '事件', 'value': 'SQL注入攻击'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}, {'key': '客户端IP', 'value': '10.50.86.36'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '阻断'}, {'key': '访问唯一编号', 'value': '7428041192777978970'}, {'key': '国家', 'value': '局域网'}]
+Generated LogField: [{'key': '', 'value': '10-50-86-13'}, {'key': '事件', 'value': 'SQL注入攻击'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}, {'key': '客户端IP', 'value': '10.50.86.36'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '阻断'}, {'key': '访问唯一编号', 'value': '7428041192777978970'}, {'key': '国家', 'value': '局域网'}]
+至少有一个匹配！full_coverage: 90.00%
+3
+gen_result = [{'key': '', 'value': '2024-12-20 10:21:08'}, {'key': 'AND password', 'value': "'123456'"}, {'key': 'hostname', 'value': '10-50-86-12'}, {'key': 'ip_port', 'value': '10-50-86-12'}, {'key': 'HTTP/S响应码', 'value': '403'}]
+
+init data: [{'key': '', 'value': '2024-12-20 10:21:08'}, {'key': 'AND password', 'value': "'123456'"}, {'key': 'hostname', 'value': '10-50-86-12'}, {'key': 'ip_port', 'value': '10-50-86-12'}, {'key': 'HTTP/S响应码', 'value': '403'}]
+
+valid data: [{"key": "", "value": "2024-12-20 10:21:08"}, {"key": "AND password", "value": "123456"}, {"key": "hostname", "value": "10-50-86-12"}, {"key": "ip_port", "value": "10-50-86-12"}, {"key": "HTTP/S响应码", "value": "403"}]
+
+<class 'list'>
+[{'key': '', 'value': '2024-12-20 10:21:08'}, {'key': 'AND password', 'value': '123456'}, {'key': 'hostname', 'value': '10-50-86-12'}, {'key': 'ip_port', 'value': '10-50-86-12'}, {'key': 'HTTP/S响应码', 'value': '403'}]
+Testing ID: 104:
+Testing LogText: <178>Dec 20 10:22:15 10-50-86-12 DBAppWAF: 发生时间/2024-12-20 10:21:08,威胁/中,事件/检测SQL注入(语义分析),请求方法/GET,URL地址/10.50.109.90:31001/vb5/?routestring=ajax/render/widget_sql,GET数据/query=SELECT+*+FROM+users+WHERE+username+%3D+%27admin%27+--+AND+password+%3D+%27123456%27,服务器IP/10.50.109.90,主机名/10.50.109.90:31001,服务器端口/31001,客户端IP/10.50.24.198,客户端端口/45377,客户端环境/Python-urllib/3.6,标签/通用防护,动作/警告,HTTP/S响应码/403,攻击特征串/SELECT * FROM users WHERE username = 'admin' -- AND password = '123456',触发规则/10130001,访问唯一编号/7438514904312627361,国家/局域网,省/未知,市/未知,XFF_IP/
+Testing LogField: [{'key': '', 'value': 'Dec 20 10:22:15'}, {'key': '发生时间', 'value': '2024-12-20 10:21:08'}, {'key': '事件', 'value': '检测SQL注入(语义分析)'}, {'key': '请求方法', 'value': 'GET'}, {'key': 'GET数据', 'value': 'query=SELECT+*+FROM+users+WHERE+username+%3D+%27admin%27+--+AND+password+%3D+%27123456%27'}, {'key': '服务器IP', 'value': '10.50.109.90'}, {'key': '主机名', 'value': '10.50.109.90:31001'}, {'key': '标签', 'value': '通用防护'}, {'key': '动作', 'value': '警告'}, {'key': '访问唯一编号', 'value': '7438514904312627361'}]
+Generated LogField: [{'key': '', 'value': '2024-12-20 10:21:08'}, {'key': 'AND password', 'value': '123456'}, {'key': 'hostname', 'value': '10-50-86-12'}, {'key': 'ip_port', 'value': '10-50-86-12'}, {'key': 'HTTP/S响应码', 'value': '403'}]
 完全不匹配！
-[{'key': '', 'value': 'Oct 28 17:57:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '17'}, {'key': '', 'value': '4996668'}]
-Testing ID: 5:
-Testing LogText: <21>Oct 28 17:57:09 soc-32 systemd-logind: New session 4996668 of user root.
-Testing LogField: [{'key': '', 'value': 'Oct 28 17:57:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '4996668'}]
-Generated LogField: [{'key': '', 'value': 'Oct 28 17:57:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '17'}, {'key': '', 'value': '4996668'}]
-完全匹配！
-[{'key': '', 'value': 'Aug 12 07:38:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '138033'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38140'}]
-Testing ID: 6:
-Testing LogText: <21>Aug 12 07:38:43 soc-32 sshd[138033]: Postponed publickey for root from 3.66.0.23 port 38140 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Aug 12 07:38:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '138033'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38140'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Aug 12 07:38:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '138033'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38140'}]
-至少有一个匹配！full_coverage: 67.00%
-[{'key': '', 'value': 'Jul 29 07:31:56'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '60636'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '48454'}]
-Testing ID: 7:
-Testing LogText: <21>Jul 29 07:31:56 soc-32 sshd[60636]: Postponed publickey for root from 3.66.0.23 port 48454 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Jul 29 07:31:56'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '60636'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '48454'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 07:31:56'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '60636'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '48454'}]
-至少有一个匹配！full_coverage: 67.00%
-[{'key': '', 'value': 'Jul 29 07:42:11'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '89018'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42736'}]
-Testing ID: 8:
-Testing LogText: <21>Jul 29 07:42:11 soc-32 sshd[89018]: Postponed publickey for root from 3.66.0.23 port 42736 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Jul 29 07:42:11'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '89018'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42736'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 07:42:11'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '89018'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42736'}]
-至少有一个匹配！full_coverage: 67.00%
-[{'key': '', 'value': 'Aug 12 07:14:12'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '71841'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '43604'}]
-Testing ID: 9:
-Testing LogText: <21>Aug 12 07:14:12 soc-32 sshd[71841]: Postponed publickey for root from 3.66.0.23 port 43604 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Aug 12 07:14:12'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '71841'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '43604'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Aug 12 07:14:12'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '71841'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '43604'}]
-至少有一个匹配！full_coverage: 67.00%
-[{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26434'}]
-Testing ID: 10:
-Testing LogText: Oct 29 00:00:01 soc-32 CROND[26434]: (root) CMD (/usr/lib64/sa/sa1 1 1)
-Testing LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26434'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'CMD'}]
-Generated LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26434'}]
-至少有一个匹配！full_coverage: 67.00%
-[]
-Testing ID: 11:
-Testing LogText: <21>Aug 13 09:05:17 soc-32 systemd: lgent.service holdoff time over, scheduling restart.
-Testing LogField: [{'key': '', 'value': 'Aug 13 09:05:17'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}]
-Generated LogField: []
+4
+gen_result = [{'key': 'hostname', 'value': '10-50-86-12'}, {'key': 'alert', 'value': "'XSS'"}, {'key': '发生时间', 'value': '发生时间'}, {'key': '威胁', 'value': '威胁'}, {'key': '事件', 'value': '事件'}, {'key': '请求方法', 'value': '请求方法'}, {'key': 'URL地址', 'value': 'URL地址'}, {'key': 'POST数据', 'value': 'POST数据'}, {'key': '服务器IP', 'value': '服务器IP'}, {'key': '主机名', 'value': '主机名'}, {'key': '服务器端口', 'value': '服务器端口'}, {'key': '标签', 'value': '标签'}, {'key': '动作', 'value': '动作'}, {'key': 'HTTP/S响应码', 'value': 'HTTP/S响应码'}, {'key': '攻击特征串', 'value': '攻击特征串'}, {'key': '触发规则', 'value': '触发规则'}, {'key': '访问唯一编号', 'value': '访问唯一编号'}, {'key': '国家', 'value': '国家'}, {'key': '局域网', 'value': '局域网'}, {'key': '省', 'value': '省'}]
+
+init data: [{'key': 'hostname', 'value': '10-50-86-12'}, {'key': 'alert', 'value': "'XSS'"}, {'key': '发生时间', 'value': '发生时间'}, {'key': '威胁', 'value': '威胁'}, {'key': '事件', 'value': '事件'}, {'key': '请求方法', 'value': '请求方法'}, {'key': 'URL地址', 'value': 'URL地址'}, {'key': 'POST数据', 'value': 'POST数据'}, {'key': '服务器IP', 'value': '服务器IP'}, {'key': '主机名', 'value': '主机名'}, {'key': '服务器端口', 'value': '服务器端口'}, {'key': '标签', 'value': '标签'}, {'key': '动作', 'value': '动作'}, {'key': 'HTTP/S响应码', 'value': 'HTTP/S响应码'}, {'key': '攻击特征串', 'value': '攻击特征串'}, {'key': '触发规则', 'value': '触发规则'}, {'key': '访问唯一编号', 'value': '访问唯一编号'}, {'key': '国家', 'value': '国家'}, {'key': '局域网', 'value': '局域网'}, {'key': '省', 'value': '省'}]
+
+valid data: [{"key": "hostname", "value": "10-50-86-12"}, {"key": "alert", "value": "XSS"}, {"key": "发生时间", "value": "发生时间"}, {"key": "威胁", "value": "威胁"}, {"key": "事件", "value": "事件"}, {"key": "请求方法", "value": "请求方法"}, {"key": "URL地址", "value": "URL地址"}, {"key": "POST数据", "value": "POST数据"}, {"key": "服务器IP", "value": "服务器IP"}, {"key": "主机名", "value": "主机名"}, {"key": "服务器端口", "value": "服务器端口"}, {"key": "标签", "value": "标签"}, {"key": "动作", "value": "动作"}, {"key": "HTTP/S响应码", "value": "HTTP/S响应码"}, {"key": "攻击特征串", "value": "攻击特征串"}, {"key": "触发规则", "value": "触发规则"}, {"key": "访问唯一编号", "value": "访问唯一编号"}, {"key": "国家", "value": "国家"}, {"key": "局域网", "value": "局域网"}, {"key": "省", "value": "省"}]
+
+<class 'list'>
+[{'key': 'hostname', 'value': '10-50-86-12'}, {'key': 'alert', 'value': 'XSS'}, {'key': '发生时间', 'value': '发生时间'}, {'key': '威胁', 'value': '威胁'}, {'key': '事件', 'value': '事件'}, {'key': '请求方法', 'value': '请求方法'}, {'key': 'URL地址', 'value': 'URL地址'}, {'key': 'POST数据', 'value': 'POST数据'}, {'key': '服务器IP', 'value': '服务器IP'}, {'key': '主机名', 'value': '主机名'}, {'key': '服务器端口', 'value': '服务器端口'}, {'key': '标签', 'value': '标签'}, {'key': '动作', 'value': '动作'}, {'key': 'HTTP/S响应码', 'value': 'HTTP/S响应码'}, {'key': '攻击特征串', 'value': '攻击特征串'}, {'key': '触发规则', 'value': '触发规则'}, {'key': '访问唯一编号', 'value': '访问唯一编号'}, {'key': '国家', 'value': '国家'}, {'key': '局域网', 'value': '局域网'}, {'key': '省', 'value': '省'}]
+Testing ID: 105:
+Testing LogText: <178>Aug 15 11:25:12 10-50-86-12 DBAppWAF: 发生时间/2024-08-15 11:25:10,威胁/低,事件/阻止携带恶意脚本的请求,请求方法/GET,URL地址//index.php,POST数据/,服务器IP/10.50.109.79,主机名/,服务器端口/80,客户端IP/10.20.170.23,客户端端口/45678,客户端环境/,标签/恶意脚本,动作/阻断,HTTP/S响应码/403,攻击特征串/<script>alert('XSS')</script>,触发规则/11010103,访问唯一编号/7403201528594620509,国家/局域网,省/未知,市/未知,XFF_IP/
+Testing LogField: [{'key': '', 'value': 'Aug 15 11:25:12'}, {'key': '发生时间', 'value': '2024-08-15 11:25:10'}, {'key': '事件', 'value': '阻止携带恶意脚本的请求'}, {'key': '客户端IP', 'value': '10.20.170.23'}, {'key': '客户端端口', 'value': '45678'}, {'key': '触发规则', 'value': '11010103'}, {'key': '访问唯一编号', 'value': '7403201528594620509'}, {'key': '国家', 'value': '局域网'}, {'key': '省', 'value': '未知'}]
+Generated LogField: [{'key': 'hostname', 'value': '10-50-86-12'}, {'key': 'alert', 'value': 'XSS'}, {'key': '发生时间', 'value': '发生时间'}, {'key': '威胁', 'value': '威胁'}, {'key': '事件', 'value': '事件'}, {'key': '请求方法', 'value': '请求方法'}, {'key': 'URL地址', 'value': 'URL地址'}, {'key': 'POST数据', 'value': 'POST数据'}, {'key': '服务器IP', 'value': '服务器IP'}, {'key': '主机名', 'value': '主机名'}, {'key': '服务器端口', 'value': '服务器端口'}, {'key': '标签', 'value': '标签'}, {'key': '动作', 'value': '动作'}, {'key': 'HTTP/S响应码', 'value': 'HTTP/S响应码'}, {'key': '攻击特征串', 'value': '攻击特征串'}, {'key': '触发规则', 'value': '触发规则'}, {'key': '访问唯一编号', 'value': '访问唯一编号'}, {'key': '国家', 'value': '国家'}, {'key': '局域网', 'value': '局域网'}, {'key': '省', 'value': '省'}]
 完全不匹配！
-[{'key': '', 'value': 'Jul 16 16:33:39'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'root'}]
-Testing ID: 12:
-Testing LogText: <21>Jul 16 16:33:39 soc-32 systemd: Started Session 3405658 of user root.
-Testing LogField: [{'key': '', 'value': 'Jul 16 16:33:39'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}, {'key': '', 'value': '3405658'}, {'key': '', 'value': 'root'}]
-Generated LogField: [{'key': '', 'value': 'Jul 16 16:33:39'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'root'}]
-至少有一个匹配！full_coverage: 60.00%
-[{'key': '', 'value': 'Jul 29 07:12:58'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '7246'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '35052'}]
-Testing ID: 13:
-Testing LogText: <21>Jul 29 07:12:58 soc-32 sshd[7246]: Postponed publickey for root from 3.66.0.23 port 35052 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Jul 29 07:12:58'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '7246'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '35052'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 07:12:58'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '7246'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '35052'}]
-至少有一个匹配！full_coverage: 75.00%
-[{'key': '', 'value': 'Oct 28 10:11:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '2100'}]
-Testing ID: 14:
-Testing LogText: <21>Oct 28 10:11:01 soc-32 CROND[2100]: (root) CMD (/usr/bin/bash /data/soc/soc_upgrade_dir/scripts/check_status.sh &> /dev/null)
-Testing LogField: [{'key': '', 'value': 'Oct 28 10:11:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '2100'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'CMD'}]
-Generated LogField: [{'key': '', 'value': 'Oct 28 10:11:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '2100'}]
-至少有一个匹配！full_coverage: 67.00%
-[{'key': '', 'value': 'Jul 29 16:57:28'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}]
-Testing ID: 15:
-Testing LogText: <21>Jul 29 16:57:28 soc-32 systemd: Started Client agent got collecting & sending logs & metrics..
-Testing LogField: [{'key': '', 'value': 'Jul 29 16:57:28'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 16:57:28'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}]
-完全匹配！
-[{'key': '', 'value': 'Aug 12 08:04:16'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '10791'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '34650'}]
-Testing ID: 16:
-Testing LogText: <21>Aug 12 08:04:16 soc-32 sshd[10791]: Postponed publickey for root from 3.66.0.23 port 34650 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Aug 12 08:04:16'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '10791'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '34650'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Aug 12 08:04:16'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '10791'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '34650'}]
-至少有一个匹配！full_coverage: 75.00%
-[{'key': '', 'value': 'Aug 12 08:08:52'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '24720'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '44196'}, {'key': '', 'value': '24720'}]
-Testing ID: 17:
-Testing LogText: <21>Aug 12 08:08:52 soc-32 sshd[24720]: Postponed publickey for root from 3.66.0.23 port 44196 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Aug 12 08:08:52'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '24720'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Aug 12 08:08:52'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '24720'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '44196'}, {'key': '', 'value': '24720'}]
-至少有一个匹配！full_coverage: 71.00%
-[{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}]
-Testing ID: 18:
-Testing LogText: <21>Jul 29 07:01:43 soc-32 sshd[173168]: pam_unix(sshd:session): session closed for user root
-Testing LogField: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': '', 'value': 'root'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}]
+5
+gen_result = [{'key': '', 'value': '10-50-86-13'}, {'key': '服务器IP', 'value': '10.50.109.3'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.3'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.3'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.86.36'}, {'key': '服务器端口', 'value': None}, {'key': 'HTTP/S响应码', 'value': '403'}, {'key': '攻击特征串', 'value': 'admin&password=123456'}, {'key': '触发规则', 'value': '10110001'}, {'key': '访问唯一编号', 'value': '7428040999502353439'}, {'key': '事件', 'value': '检测SQL注入'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.3/login.php?action=login&username=admin&password=123456'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '阻断'}]
+
+init data: [{'key': '', 'value': '10-50-86-13'}, {'key': '服务器IP', 'value': '10.50.109.3'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.3'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.3'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.86.36'}, {'key': '服务器端口', 'value': None}, {'key': 'HTTP/S响应码', 'value': '403'}, {'key': '攻击特征串', 'value': 'admin&password=123456'}, {'key': '触发规则', 'value': '10110001'}, {'key': '访问唯一编号', 'value': '7428040999502353439'}, {'key': '事件', 'value': '检测SQL注入'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.3/login.php?action=login&username=admin&password=123456'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '阻断'}]
+
+valid data: [{"key": "", "value": "10-50-86-13"}, {"key": "服务器IP", "value": "10.50.109.3"}, {"key": "服务器端口", "value": None}, {"key": "服务器IP", "value": "10.50.109.3"}, {"key": "服务器端口", "value": None}, {"key": "服务器IP", "value": "10.50.109.3"}, {"key": "服务器端口", "value": None}, {"key": "服务器IP", "value": "10.50.86.36"}, {"key": "服务器端口", "value": None}, {"key": "HTTP/S响应码", "value": "403"}, {"key": "攻击特征串", "value": "admin&password=123456"}, {"key": "触发规则", "value": "10110001"}, {"key": "访问唯一编号", "value": "7428040999502353439"}, {"key": "事件", "value": "检测SQL注入"}, {"key": "请求方法", "value": "POST"}, {"key": "URL地址", "value": "10.50.109.3/login.php?action=login&username=admin&password=123456"}, {"key": "标签", "value": "SQL注入"}, {"key": "动作", "value": "阻断"}]
+
+<class 'list'>
+[{'key': '', 'value': '10-50-86-13'}, {'key': '服务器IP', 'value': '10.50.109.3'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.3'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.3'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.86.36'}, {'key': '服务器端口', 'value': None}, {'key': 'HTTP/S响应码', 'value': '403'}, {'key': '攻击特征串', 'value': 'admin&password=123456'}, {'key': '触发规则', 'value': '10110001'}, {'key': '访问唯一编号', 'value': '7428040999502353439'}, {'key': '事件', 'value': '检测SQL注入'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.3/login.php?action=login&username=admin&password=123456'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '阻断'}]
+Testing ID: 106:
+Testing LogText: <178>Oct 22 10:30:45 10-50-86-13 DBAppWAF: 发生时间/2024-10-22 10:30:38,威胁/中,事件/检测SQL注入,请求方法/POST,URL地址/10.50.109.3/login.php?action=login&username=admin&password=123456,POST数据/username=admin&password=123456,服务器IP/10.50.109.3,主机名/10.50.109.3,服务器端口/80,客户端IP/10.50.86.36,客户端端口/59757,客户端环境/Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3),标签/SQL注入,动作/阻断,HTTP/S响应码/403,攻击特征串/admin&password=123456,触发规则/10110001,访问唯一编号/7428040999502353439,国家/局域网,省/未知,市/未知,XFF_IP/
+Testing LogField: [{'key': '', 'value': 'Oct 22 10:30:45'}, {'key': '', 'value': '10-50-86-13'}, {'key': '事件', 'value': '检测SQL注入'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.3/login.php?action=login&username=admin&password=123456'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3)'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '阻断'}, {'key': '触发规则', 'value': '10110001'}, {'key': '访问唯一编号', 'value': '7428040999502353439'}]
+Generated LogField: [{'key': '', 'value': '10-50-86-13'}, {'key': '服务器IP', 'value': '10.50.109.3'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.3'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.3'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.86.36'}, {'key': '服务器端口', 'value': None}, {'key': 'HTTP/S响应码', 'value': '403'}, {'key': '攻击特征串', 'value': 'admin&password=123456'}, {'key': '触发规则', 'value': '10110001'}, {'key': '访问唯一编号', 'value': '7428040999502353439'}, {'key': '事件', 'value': '检测SQL注入'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.3/login.php?action=login&username=admin&password=123456'}, {'key': '标签', 'value': 'SQL注入'}, {'key': '动作', 'value': '阻断'}]
 至少有一个匹配！full_coverage: 80.00%
-[{'key': '', 'value': 'Aug 12 07:51:29'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '172326'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '36424'}]
-Testing ID: 19:
-Testing LogText: <21>Aug 12 07:51:29 soc-32 sshd[172326]: Postponed publickey for root from 3.66.0.23 port 36424 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Aug 12 07:51:29'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '172326'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '36424'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Aug 12 07:51:29'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '172326'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '36424'}]
-至少有一个匹配！full_coverage: 75.00%
-[{'key': '', 'value': 'Jul 29 07:02:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '174980'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '40030'}, {'key': '', 'value': '21'}, {'key': '', 'value': '[preauth]'}]
-Testing ID: 20:
-Testing LogText: <21>Jul 29 07:02:20 soc-32 sshd[174980]: Postponed publickey for root from 3.66.0.23 port 40030 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Jul 29 07:02:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '174980'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '40030'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 07:02:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '174980'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '40030'}, {'key': '', 'value': '21'}, {'key': '', 'value': '[preauth]'}]
-至少有一个匹配！full_coverage: 75.00%
-[{'key': '', 'value': 'Aug 13 09:26:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '41916'}, {'key': '', 'value': '120.25.115.20'}]
-Testing ID: 21:
-Testing LogText: <21>Aug 13 09:26:10 soc-32 ntpdate[41916]: adjust time server 120.25.115.20 offset -0.000046 sec
-Testing LogField: [{'key': '', 'value': 'Aug 13 09:26:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '41916'}, {'key': '', 'value': '120.25.115.20'}]
-Generated LogField: [{'key': '', 'value': 'Aug 13 09:26:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '41916'}, {'key': '', 'value': '120.25.115.20'}]
-完全匹配！
-[{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38666'}]
-Testing ID: 22:
-Testing LogText: <21>Jul 29 07:01:43 soc-32 sshd[173168]: Accepted publickey for root from 3.66.0.23 port 38666 ssh2: RSA SHA256:M/HclYq1V9UXKEtEyF03gXBB7IyFJKcs8tU6lqWNuyM
-Testing LogField: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38666'}, {'key': '', 'value': 'ssh2'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '38666'}]
-至少有一个匹配！full_coverage: 86.00%
-[{'key': '', 'value': 'Oct 28 10:01:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '170594'}]
-Testing ID: 23:
-Testing LogText: <21>Oct 28 10:01:01 soc-32 CROND[170594]: (root) CMD (run-parts /etc/cron.hourly)
-Testing LogField: [{'key': '', 'value': 'Oct 28 10:01:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '170594'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'CMD'}]
-Generated LogField: [{'key': '', 'value': 'Oct 28 10:01:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '170594'}]
-至少有一个匹配！full_coverage: 67.00%
-[{'key': '', 'value': 'Aug 12 07:13:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '69034'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41484'}, {'key': '', 'value': 'ssh2'}]
-Testing ID: 24:
-Testing LogText: <21>Aug 12 07:13:10 soc-32 sshd[69034]: Accepted publickey for root from 3.66.0.23 port 41484 ssh2: RSA SHA256:M/HclYq1V9UXKEtEyF03gXBB7IyFJKcs8tU6lqWNuyM
-Testing LogField: [{'key': '', 'value': 'Aug 12 07:13:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '69034'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41484'}, {'key': '', 'value': 'ssh2'}]
-Generated LogField: [{'key': '', 'value': 'Aug 12 07:13:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '69034'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41484'}, {'key': '', 'value': 'ssh2'}]
-完全匹配！
-[{'key': '', 'value': 'Jul 29 17:01:24'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '17'}, {'key': '', 'value': '3604702'}, {'key': '', 'value': 'root.'}]
-Testing ID: 25:
-Testing LogText: <21>Jul 29 17:01:24 soc-32 systemd: Started Session 3604702 of user root.
-Testing LogField: [{'key': '', 'value': 'Jul 29 17:01:24'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}, {'key': '', 'value': '3604702'}, {'key': '', 'value': 'root'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 17:01:24'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '17'}, {'key': '', 'value': '3604702'}, {'key': '', 'value': 'root.'}]
-至少有一个匹配！full_coverage: 60.00%
-[{'key': '', 'value': 'Aug 12 08:07:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '20315'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41070'}]
-Testing ID: 26:
-Testing LogText: <21>Aug 12 08:07:20 soc-32 sshd[20315]: Postponed publickey for root from 3.66.0.23 port 41070 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Aug 12 08:07:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '20315'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41070'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Aug 12 08:07:20'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '20315'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '41070'}]
-至少有一个匹配！full_coverage: 75.00%
-[{'key': '', 'value': 'Oct 28 18:00:13'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '18'}, {'key': '', 'value': '4996702'}, {'key': '', 'value': 'root'}]
-Testing ID: 27:
-Testing LogText: <21>Oct 28 18:00:13 soc-32 systemd-logind: New session 4996702 of user root.
-Testing LogField: [{'key': '', 'value': 'Oct 28 18:00:13'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '4996702'}, {'key': '', 'value': 'root'}]
-Generated LogField: [{'key': '', 'value': 'Oct 28 18:00:13'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '18'}, {'key': '', 'value': '4996702'}, {'key': '', 'value': 'root'}]
-完全匹配！
-[{'key': '', 'value': 'Jul 29 07:20:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '28635'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50848'}]
-Testing ID: 28:
-Testing LogText: <21>Jul 29 07:20:09 soc-32 sshd[28635]: Postponed publickey for root from 3.66.0.23 port 50848 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Jul 29 07:20:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '28635'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50848'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 07:20:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '28635'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50848'}]
-至少有一个匹配！full_coverage: 75.00%
-[{'key': '', 'value': 'Jul 29 16:56:04'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '16'}, {'key': '', 'value': '3604644'}, {'key': '', 'value': 'root'}]
-Testing ID: 29:
-Testing LogText: <21>Jul 29 16:56:04 soc-32 systemd-logind: New session 3604644 of user root.
-Testing LogField: [{'key': '', 'value': 'Jul 29 16:56:04'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '3604644'}, {'key': '', 'value': 'root'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 16:56:04'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '16'}, {'key': '', 'value': '3604644'}, {'key': '', 'value': 'root'}]
-完全匹配！
-[{'key': '', 'value': 'Jul 29 16:58:07'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '38841'}, {'key': '', 'value': '120.25.115.20'}]
-Testing ID: 30:
-Testing LogText: <21>Jul 29 16:58:07 soc-32 ntpdate[38841]: adjust time server 120.25.115.20 offset 0.001189 sec
-Testing LogField: [{'key': '', 'value': 'Jul 29 16:58:07'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '38841'}, {'key': '', 'value': '120.25.115.20'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 16:58:07'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '38841'}, {'key': '', 'value': '120.25.115.20'}]
-完全匹配！
-[{'key': '', 'value': 'Jul 29 07:10:08'}, {'key': '', 'value': '<21>Jul'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '195746'}, {'key': '', 'value': '3.66.0.252'}, {'key': '', 'value': '52800'}, {'key': '', 'value': 'ssh2'}]
-Testing ID: 31:
-Testing LogText: <21>Jul 29 07:10:08 soc-32 sshd[195746]: Accepted publickey for root from 3.66.0.252 port 52800 ssh2: RSA SHA256:M/HclYq1V9UXKEtEyF03gXBB7IyFJKcs8tU6lqWNuyM
-Testing LogField: [{'key': '', 'value': 'Jul 29 07:10:08'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '195746'}, {'key': '', 'value': '3.66.0.252'}, {'key': '', 'value': '52800'}, {'key': '', 'value': 'ssh2'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 07:10:08'}, {'key': '', 'value': '<21>Jul'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '195746'}, {'key': '', 'value': '3.66.0.252'}, {'key': '', 'value': '52800'}, {'key': '', 'value': 'ssh2'}]
-完全匹配！
-[{'key': '', 'value': 'Jul 16 16:34:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '52003'}]
-Testing ID: 32:
-Testing LogText: <21>Jul 16 16:34:01 soc-32 CROND[52003]: (root) CMD (/usr/sbin/ntpdate -s ntp1.aliyun.com &> /dev/null)
-Testing LogField: [{'key': '', 'value': 'Jul 16 16:34:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '52003'}, {'key': '', 'value': 'root'}]
-Generated LogField: [{'key': '', 'value': 'Jul 16 16:34:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '52003'}]
-至少有一个匹配！full_coverage: 80.00%
-[{'key': '', 'value': 'Jul 16 16:34:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '52006'}]
-Testing ID: 33:
-Testing LogText: <21>Jul 16 16:34:01 soc-32 CROND[52006]: (root) CMD (/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep k3s) &> /dev/null)
-Testing LogField: [{'key': '', 'value': 'Jul 16 16:34:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '52006'}, {'key': '', 'value': 'root'}]
-Generated LogField: [{'key': '', 'value': 'Jul 16 16:34:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '52006'}]
-至少有一个匹配！full_coverage: 80.00%
-[{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '10324'}, {'key': '', 'value': '5000479'}]
-Testing ID: 34:
-Testing LogText: Oct 29 00:00:01 soc-32 systemd-logind[10324]: Removed session 5000479.
-Testing LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '10324'}, {'key': '', 'value': '5000479'}]
-Generated LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '10324'}, {'key': '', 'value': '5000479'}]
-完全匹配！
-[{'key': '', 'value': 'Aug 12 10:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '131152'}]
-Testing ID: 35:
-Testing LogText: <21>Aug 12 10:00:01 soc-32 CROND[131152]: (root) CMD (/usr/lib64/sa/sa1 1 1)
-Testing LogField: [{'key': '', 'value': 'Aug 12 10:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '131152'}, {'key': '', 'value': 'root'}]
-Generated LogField: [{'key': '', 'value': 'Aug 12 10:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '131152'}]
-至少有一个匹配！full_coverage: 80.00%
-[{'key': '', 'value': 'Aug 12 07:44:51'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '154494'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50808'}]
-Testing ID: 36:
-Testing LogText: <21>Aug 12 07:44:51 soc-32 sshd[154494]: Postponed publickey for root from 3.66.0.23 port 50808 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Aug 12 07:44:51'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '154494'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50808'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Aug 12 07:44:51'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '154494'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '50808'}]
-至少有一个匹配！full_coverage: 75.00%
-[{'key': '', 'value': 'Aug 13 09:05:18'}, {'key': '', 'value': 'soc-32'}]
-Testing ID: 37:
-Testing LogText: <21>Aug 13 09:05:18 soc-32 systemd: lgent.service failed.
-Testing LogField: [{'key': '', 'value': 'Aug 13 09:05:18'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd'}]
-Generated LogField: [{'key': '', 'value': 'Aug 13 09:05:18'}, {'key': '', 'value': 'soc-32'}]
-至少有一个匹配！full_coverage: 67.00%
-[{'key': '', 'value': 'Jul 29 16:56:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '33598'}]
-Testing ID: 38:
-Testing LogText: <21>Jul 29 16:56:09 soc-32 ntpdate[33598]: no server suitable for synchronization found
-Testing LogField: [{'key': '', 'value': 'Jul 29 16:56:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '33598'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 16:56:09'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'ntpdate'}, {'key': '', 'value': '33598'}]
-完全匹配！
-[{'key': '', 'value': 'Aug 12 07:24:38'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '100387'}]
-Testing ID: 39:
-Testing LogText: <21>Aug 12 07:24:38 soc-32 sshd[100387]: pam_unix(sshd:session): session closed for user root
-Testing LogField: [{'key': '', 'value': 'Aug 12 07:24:38'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '100387'}, {'key': '', 'value': 'root'}]
-Generated LogField: [{'key': '', 'value': 'Aug 12 07:24:38'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '100387'}]
-至少有一个匹配！full_coverage: 80.00%
-[{'key': '', 'value': 'Aug 12 09:30:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '49952'}]
-Testing ID: 40:
-Testing LogText: <21>Aug 12 09:30:01 soc-32 CROND[49952]: (root) CMD (/usr/local/lgent/scheduled.sh)
-Testing LogField: [{'key': '', 'value': 'Aug 12 09:30:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '49952'}, {'key': '', 'value': 'root'}]
-Generated LogField: [{'key': '', 'value': 'Aug 12 09:30:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '49952'}]
-至少有一个匹配！full_coverage: 80.00%
-[{'key': '', 'value': 'Aug 12 07:40:46'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '143619'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42378'}]
-Testing ID: 41:
-Testing LogText: <21>Aug 12 07:40:46 soc-32 sshd[143619]: Postponed publickey for root from 3.66.0.23 port 42378 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Aug 12 07:40:46'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '143619'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42378'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Aug 12 07:40:46'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '143619'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '42378'}]
-至少有一个匹配！full_coverage: 75.00%
-[{'key': '', 'value': 'Jul 29 07:21:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '31569'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '53116'}]
-Testing ID: 42:
-Testing LogText: <21>Jul 29 07:21:10 soc-32 sshd[31569]: Postponed publickey for root from 3.66.0.23 port 53116 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Jul 29 07:21:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '31569'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '53116'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 07:21:10'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '31569'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '53116'}]
-至少有一个匹配！full_coverage: 75.00%
-[{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': 'uid', 'value': '0'}]
-Testing ID: 43:
-Testing LogText: <21>Jul 29 07:01:43 soc-32 sshd[173168]: pam_unix(sshd:session): session opened for user root by (uid=0)
-Testing LogField: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': '', 'value': 'root'}, {'key': 'uid', 'value': '0'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 07:01:43'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '173168'}, {'key': 'uid', 'value': '0'}]
-至少有一个匹配！full_coverage: 83.00%
-[{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26439'}, {'key': '', 'value': 'root'}]
-Testing ID: 44:
-Testing LogText: Oct 29 00:00:01 soc-32 CROND[26439]: (root) CMD (/usr/local/lgent/scheduled.sh)
-Testing LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26439'}, {'key': '', 'value': 'root'}]
-Generated LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26439'}, {'key': '', 'value': 'root'}]
-完全匹配！
-[{'key': '', 'value': 'Jul 29 07:04:16'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '180002'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '44244'}]
-Testing ID: 45:
-Testing LogText: <21>Jul 29 07:04:16 soc-32 sshd[180002]: Postponed publickey for root from 3.66.0.23 port 44244 ssh2 [preauth]
-Testing LogField: [{'key': '', 'value': 'Jul 29 07:04:16'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '180002'}, {'key': '', 'value': 'root'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '44244'}, {'key': '', 'value': 'ssh2'}, {'key': '', 'value': 'preauth'}]
-Generated LogField: [{'key': '', 'value': 'Jul 29 07:04:16'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'sshd'}, {'key': '', 'value': '180002'}, {'key': '', 'value': '3.66.0.23'}, {'key': '', 'value': '44244'}]
-至少有一个匹配！full_coverage: 67.00%
-[{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26436'}, {'key': '', 'value': '/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep etcd'}]
-Testing ID: 46:
-Testing LogText: Oct 29 00:00:01 soc-32 CROND[26436]: (root) CMD (/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep etcd) &> /dev/null)
-Testing LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26436'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'CMD'}]
-Generated LogField: [{'key': '', 'value': 'Oct 29 00:00:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '26436'}, {'key': '', 'value': '/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep etcd'}]
-至少有一个匹配！full_coverage: 67.00%
-[{'key': '', 'value': 'Sep 23 22:39:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '135607'}, {'key': '', 'value': 'CMD'}, {'key': '', 'value': 'root'}]
-Testing ID: 47:
-Testing LogText: Sep 23 22:39:01 soc-32 CROND[135607]: (root) CMD (/usr/bin/bash /bin/ionice -c2 -n0 -p $(pgrep k3s) &> /dev/null)
-Testing LogField: [{'key': '', 'value': 'Sep 23 22:39:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '135607'}, {'key': '', 'value': 'root'}, {'key': '', 'value': 'CMD'}]
-Generated LogField: [{'key': '', 'value': 'Sep 23 22:39:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '135607'}, {'key': '', 'value': 'CMD'}, {'key': '', 'value': 'root'}]
-至少有一个匹配！full_coverage: 100.00%
-[{'key': '', 'value': 'Oct 28 18:00:14'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '18'}, {'key': '', 'value': '4996702'}]
-Testing ID: 48:
-Testing LogText: <21>Oct 28 18:00:14 soc-32 systemd-logind: Removed session 4996702.
-Testing LogField: [{'key': '', 'value': 'Oct 28 18:00:14'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'systemd-logind'}, {'key': '', 'value': '4996702'}]
-Generated LogField: [{'key': '', 'value': 'Oct 28 18:00:14'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': '18'}, {'key': '', 'value': '4996702'}]
-完全匹配！
-[{'key': '', 'value': 'Oct 28 10:10:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '195722'}]
-Testing ID: 49:
-Testing LogText: <21>Oct 28 10:10:01 soc-32 CROND[195722]: (root) CMD (/usr/bin/bash /data/AiLogAuditor-develop-9dfc79aaa--20230529030421/unison_copy.sh &> /dev/null)
-Testing LogField: [{'key': '', 'value': 'Oct 28 10:10:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '195722'}, {'key': '', 'value': 'root'}]
-Generated LogField: [{'key': '', 'value': 'Oct 28 10:10:01'}, {'key': '', 'value': 'soc-32'}, {'key': '', 'value': 'CROND'}, {'key': '', 'value': '195722'}]
-至少有一个匹配！full_coverage: 80.00%
-======================================================================
-My Scores (1 for full): [1.0, 0.8, 0.6, 0.67, 0.0, 1.0, 0.67, 0.67, 0.67, 0.67, 0.67, 0.0, 0.6, 0.75, 0.67, 1.0, 0.75, 0.71, 0.8, 0.75, 0.75, 1.0, 0.86, 0.67, 1.0, 0.6, 0.75, 1.0, 0.75, 1.0, 1.0, 1.0, 0.8, 0.8, 1.0, 0.8, 0.75, 0.67, 1.0, 0.8, 0.8, 0.75, 0.75, 0.83, 1.0, 0.67, 0.67, 1.0, 1.0, 0.8]
-My Average Score: 0.77
-Match Rate:  0.96
-Perfect Match Rate: 0.26
-Official Score (1 for full): 0.54
-Bad Case: 16
+6
+gen_result = [{'key': '', 'value': '10-50-86-15'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.86.45'}, {'key': '服务器端口', 'value': None}, {'key': 'HTTP/S响应码', 'value': '403'}, {'key': '发生时间', 'value': '2024-11-15 14:23:01'}, {'key': '威胁', 'value': '高'}, {'key': '事件', 'value': '检测SQL注入攻击'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.2/api/login.php'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}]
+
+init data: [{'key': '', 'value': '10-50-86-15'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.86.45'}, {'key': '服务器端口', 'value': None}, {'key': 'HTTP/S响应码', 'value': '403'}, {'key': '发生时间', 'value': '2024-11-15 14:23:01'}, {'key': '威胁', 'value': '高'}, {'key': '事件', 'value': '检测SQL注入攻击'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.2/api/login.php'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}]
+
+valid data: [{"key": "", "value": "10-50-86-15"}, {"key": "服务器IP", "value": "10.50.109.2"}, {"key": "服务器端口", "value": None}, {"key": "服务器IP", "value": "10.50.109.2"}, {"key": "服务器端口", "value": None}, {"key": "服务器IP", "value": "10.50.109.2"}, {"key": "服务器端口", "value": None}, {"key": "服务器IP", "value": "10.50.86.45"}, {"key": "服务器端口", "value": None}, {"key": "HTTP/S响应码", "value": "403"}, {"key": "发生时间", "value": "2024-11-15 14:23:01"}, {"key": "威胁", "value": "高"}, {"key": "事件", "value": "检测SQL注入攻击"}, {"key": "请求方法", "value": "POST"}, {"key": "URL地址", "value": "10.50.109.2/api/login.php"}, {"key": "服务器IP", "value": "10.50.109.2"}, {"key": "服务器端口", "value": "80"}]
+
+<class 'list'>
+[{'key': '', 'value': '10-50-86-15'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.86.45'}, {'key': '服务器端口', 'value': None}, {'key': 'HTTP/S响应码', 'value': '403'}, {'key': '发生时间', 'value': '2024-11-15 14:23:01'}, {'key': '威胁', 'value': '高'}, {'key': '事件', 'value': '检测SQL注入攻击'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.2/api/login.php'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}]
+Testing ID: 107:
+Testing LogText: <178>Nov 15 14:23:12 10-50-86-15 DBAppWAF: 发生时间/2024-11-15 14:23:01,威胁/高,事件/检测SQL注入攻击,请求方法/POST,URL地址/10.50.109.2/api/login.php,POST数据/user=admin' OR '1'='1,服务器IP/10.50.109.2,主机名/10.50.109.2,服务器端口/80,客户端IP/10.50.86.45,客户端端口/51234,客户端环境/Mozilla/5.0 [en] (X11, U; DBAPPSecurity 21.4.3),标签/通用防护,动作/阻断,HTTP/S响应码/403,攻击特征串/admin' OR '1'='1,触发规则/10350001,访问唯一编号/7428040947963794435,国家/局域网,省/未知,市/未知,XFF_IP/
+Testing LogField: [{'key': '', 'value': 'Nov 15 14:23:12'}, {'key': '', 'value': '10-50-86-15'}, {'key': '发生时间', 'value': '2024-11-15 14:23:01'}, {'key': '威胁', 'value': '高'}, {'key': '事件', 'value': '检测SQL注入攻击'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.2/api/login.php'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}]
+Generated LogField: [{'key': '', 'value': '10-50-86-15'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': None}, {'key': '服务器IP', 'value': '10.50.86.45'}, {'key': '服务器端口', 'value': None}, {'key': 'HTTP/S响应码', 'value': '403'}, {'key': '发生时间', 'value': '2024-11-15 14:23:01'}, {'key': '威胁', 'value': '高'}, {'key': '事件', 'value': '检测SQL注入攻击'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.2/api/login.php'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}]
+至少有一个匹配！full_coverage: 89.00%
+7
+gen_result = [{'key': '', 'value': '10-50-86-15'}, {'key': 'function', 'value': "alert('XSS')"}, {'key': 'Web端口', 'value': '10-50-86-15'}, {'key': '<178>Nov 15 14:30:45 10-50-86-15 DBAppWAF: 发生时间', 'value': '2024-11-15 14:30:30'}, {'key': '威胁', 'value': '中'}, {'key': '事件', 'value': '检测XSS攻击'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.2/ez/login.php?username=admin&password=123456'}, {'key': 'POST数据', 'value': 'username=admin&password=123456'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '主机名', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}, {'key': '客户端IP', 'value': '10.50.86.45'}, {'key': '客户端端口', 'value': '56190'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11'}, {'key': '标签', 'value': '通用防护'}, {'key': '动作', 'value': '告警'}, {'key': 'HTTP', 'value': 'S响应码/403'}, {'key': '攻击特征串', 'value': "<script>alert('XSS')</script>"}, {'key': '触发规则', 'value': '10120001'}, {'key': '访问唯一编号', 'value': '7428040333788713715'}, {'key': '国家', 'value': '局域网'}, {'key': '省', 'value': '未知'}, {'key': '市', 'value': '未知'}, {'key': 'HTTP/S响应码', 'value': '403'}, {'key': '关键词', 'value': '发生时间'}, {'key': '关键词', 'value': '威胁'}, {'key': '关键词', 'value': '事件'}, {'key': '关键词', 'value': '请求方法'}, {'key': '关键词', 'value': 'URL地址'}, {'key': '关键词', 'value': 'POST数据'}, {'key': '关键词', 'value': '服务器IP'}, {'key': '关键词', 'value': '主机名'}, {'key': '关键词', 'value': '服务器端口'}, {'key': '关键词', 'value': '标签'}, {'key': '关键词', 'value': '动作'}, {'key': '关键词', 'value': 'HTTP/S响应码'}, {'key': '关键词', 'value': '攻击特征串'}, {'key': '关键词', 'value': '触发规则'}, {'key': '关键词', 'value': '访问唯一编号'}, {'key': '关键词', 'value': '国家'}, {'key': '关键词', 'value': '局域网'}, {'key': '关键词', 'value': '省'}]
+
+init data: [{'key': '', 'value': '10-50-86-15'}, {'key': 'function', 'value': "alert('XSS')"}, {'key': 'Web端口', 'value': '10-50-86-15'}, {'key': '<178>Nov 15 14:30:45 10-50-86-15 DBAppWAF: 发生时间', 'value': '2024-11-15 14:30:30'}, {'key': '威胁', 'value': '中'}, {'key': '事件', 'value': '检测XSS攻击'}, {'key': '请求方法', 'value': 'POST'}, {'key': 'URL地址', 'value': '10.50.109.2/ez/login.php?username=admin&password=123456'}, {'key': 'POST数据', 'value': 'username=admin&password=123456'}, {'key': '服务器IP', 'value': '10.50.109.2'}, {'key': '主机名', 'value': '10.50.109.2'}, {'key': '服务器端口', 'value': '80'}, {'key': '客户端IP', 'value': '10.50.86.45'}, {'key': '客户端端口', 'value': '56190'}, {'key': '客户端环境', 'value': 'Mozilla/5.0 [en] (X11'}, {'key': '标签', 'value': '通用防护'}, {'key': '动作', 'value': '告警'}, {'key': 'HTTP', 'value': 'S响应码/403'}, {'key': '攻击特征串', 'value': "<script>alert('XSS')</script>"}, {'key': '触发规则', 'value': '10120001'}, {'key': '访问唯一编号', 'value': '7428040333788713715'}, {'key': '国家', 'value': '局域网'}, {'key': '省', 'value': '未知'}, {'key': '市', 'value': '未知'}, {'key': 'HTTP/S响应码', 'value': '403'}, {'key': '关键词', 'value': '发生时间'}, {'key': '关键词', 'value': '威胁'}, {'key': '关键词', 'value': '事件'}, {'key': '关键词', 'value': '请求方法'}, {'key': '关键词', 'value': 'URL地址'}, {'key': '关键词', 'value': 'POST数据'}, {'key': '关键词', 'value': '服务器IP'}, {'key': '关键词', 'value': '主机名'}, {'key': '关键词', 'value': '服务器端口'}, {'key': '关键词', 'value': '标签'}, {'key': '关键词', 'value': '动作'}, {'key': '关键词', 'value': 'HTTP/S响应码'}, {'key': '关键词', 'value': '攻击特征串'}, {'key': '关键词', 'value': '触发规则'}, {'key': '关键词', 'value': '访问唯一编号'}, {'key': '关键词', 'value': '国家'}, {'key': '关键词', 'value': '局域网'}, {'key': '关键词', 'value': '省'}]
+
+valid data: [{"key": "", "value": "10-50-86-15"}, {"key": "function", "value": "alert("XSS")"}, {"key": "Web端口", "value": "10-50-86-15"}, {"key": "<178>Nov 15 14:30:45 10-50-86-15 DBAppWAF: 发生时间", "value": "2024-11-15 14:30:30"}, {"key": "威胁", "value": "中"}, {"key": "事件", "value": "检测XSS攻击"}, {"key": "请求方法", "value": "POST"}, {"key": "URL地址", "value": "10.50.109.2/ez/login.php?username=admin&password=123456"}, {"key": "POST数据", "value": "username=admin&password=123456"}, {"key": "服务器IP", "value": "10.50.109.2"}, {"key": "主机名", "value": "10.50.109.2"}, {"key": "服务器端口", "value": "80"}, {"key": "客户端IP", "value": "10.50.86.45"}, {"key": "客户端端口", "value": "56190"}, {"key": "客户端环境", "value": "Mozilla/5.0 [en] (X11"}, {"key": "标签", "value": "通用防护"}, {"key": "动作", "value": "告警"}, {"key": "HTTP", "value": "S响应码/403"}, {"key": "攻击特征串", "value": "<script>alert("XSS")</script>"}, {"key": "触发规则", "value": "10120001"}, {"key": "访问唯一编号", "value": "7428040333788713715"}, {"key": "国家", "value": "局域网"}, {"key": "省", "value": "未知"}, {"key": "市", "value": "未知"}, {"key": "HTTP/S响应码", "value": "403"}, {"key": "关键词", "value": "发生时间"}, {"key": "关键词", "value": "威胁"}, {"key": "关键词", "value": "事件"}, {"key": "关键词", "value": "请求方法"}, {"key": "关键词", "value": "URL地址"}, {"key": "关键词", "value": "POST数据"}, {"key": "关键词", "value": "服务器IP"}, {"key": "关键词", "value": "主机名"}, {"key": "关键词", "value": "服务器端口"}, {"key": "关键词", "value": "标签"}, {"key": "关键词", "value": "动作"}, {"key": "关键词", "value": "HTTP/S响应码"}, {"key": "关键词", "value": "攻击特征串"}, {"key": "关键词", "value": "触发规则"}, {"key": "关键词", "value": "访问唯一编号"}, {"key": "关键词", "value": "国家"}, {"key": "关键词", "value": "局域网"}, {"key": "关键词", "value": "省"}]
+

@@ -1,4 +1,5 @@
 import io
+import json
 import re
 import sys
 import time
@@ -32,7 +33,6 @@ def add_main(logtext, path):
     with open(path, 'a', encoding='utf-8') as f:
         f.write(main_code)
     print(f"添加main函数成功，并保存为 {path}")
-    
 import subprocess
 import sys
 from pathlib import Path
@@ -89,6 +89,7 @@ def execute_python_code(file_path: str, timeout: int = 5) -> Dict[str, Optional[
             "return_code": process.returncode,
             "execution_time": elapsed
         })
+        
 
     except subprocess.TimeoutExpired as e:
         # 计算实际超时耗时
@@ -138,29 +139,33 @@ def get_all_files(dir_path: str, suffix: str = None) -> list:
 
 # files_list = get_all_files(r"D:\Competition_Xihu\Resources\LogParserX\src\LogParserX\learn")
 
-path = r"D:\Competition_Xihu\Resources\LogParserX\src\LogParserX\learn\gen\output_0.py"
-out = r"D:\Competition_Xihu\Resources\LogParserX\src\LogParserX\learn\test\update_0.py"
+# path = r"D:\Competition_Xihu\Resources\LogParserX\src\LogParserX\learn\gen\output_0.py"
+# out = r"D:\Competition_Xihu\Resources\LogParserX\src\LogParserX\learn\test\update_0.py"
 
-def single(input_file, output_file, logtext):
-    get_clear_python_code(input_file, output_file)
-    add_main(logtext, output_file)
-    r = execute_python_code(output_file)
-    if r:
-        gen_logField = r["output"]
-        return gen_logField
-    else:
-        return []
-# logtext=
-# single(path, out, )
+# def single(input_file, output_file, logtext):
+#     get_clear_python_code(input_file, output_file)
+#     add_main(logtext, output_file)
+#     r = execute_python_code(output_file)
+#     if r:
+#         gen_logField = r["output"]
+#         return gen_logField
+#     else:
+#         return []
+# # logtext=
+# # single(path, out, )
 
-def multi(input_files, output_file, logtexts):
-    output_list = [item.replace("output", "update") for item in input_files]
-    Gen = []
-    for i in range(len(input_files)):
-        input_file = input_files[i]
-        output_file = output_list[i]
-        logtext = logtexts[i]
-        gen_logField = single(input_file, output_file, logtext)
-        Gen.append(
-            {"logText": logtext, "genLogField": gen_logField})
-    return Gen
+# def multi(input_files, output_file, logtexts):
+#     output_list = [item.replace("output", "update") for item in input_files]
+#     Gen = []
+#     for i in range(len(input_files)):
+#         input_file = input_files[i]
+#         output_file = output_list[i]
+#         logtext = logtexts[i]
+#         gen_logField = single(input_file, output_file, logtext)
+#         Gen.append(
+#             {"logText": logtext, "genLogField": gen_logField})
+#     return Gen
+
+# f = r"src/LogParserX/output/test/test_100.py"
+# res = execute_python_code(f)
+# print(res)

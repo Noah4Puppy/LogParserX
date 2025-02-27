@@ -218,3 +218,18 @@ Official Score (1 for full): 0.46
 ### 2025.2.26-2.27
 准备Slides AND 修bugs
 尤其是生成日志的bug json中转义字符的分类处理
+
+### 2025.2.27-3.1
+2.27初赛答辩： 14:35-14:50 10mins say + 5mins 
+
+~~就我纯智能体是吧, 他没问我为什么自己生成测试集也是神人了！~~
+老师的建议是使用解释型文字作为下游的任务输入，这样能解释哪个项没有匹配上。在pattern优化和code优化的部分！
+另外建议使用其他的大模型API作为补充，比如DeepSeek / qwen-coder，
+还有一个原因说我的完全匹配率太低了，因为纯智能体的原因导致匹配率低，其他人的可能是使用硬编码来筛选的。
+
+目前的报告overleaf link:
+https://www.overleaf.com/project/67b77f62d4badf74432370ae
+
+
+
+

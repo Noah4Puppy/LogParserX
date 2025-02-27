@@ -151,7 +151,8 @@ class ExtractedCodes:
         # print(f"log_text: {log_text}")
         if self.main_function:
             # print("Check")
-            new_main_function = re.sub(r"log_text\s*=\s*[\"'].*?[\"']", f'log_text = f\'{log_text}\'', self.main_function)
+            # new_main_function = re.sub(r"log_text\s*=\s*[\"'].*?[\"']", f'log_text = f\"\"\"{log_text}\"\"\"', self.main_function)
+            new_main_function = re.sub(r'log_text\s*=\s*(["\'])(.*?)\1', f'log_text = f\"\"\"{log_text}\"\"\"', self.main_function, flags=re.DOTALL)
             # print(new_main_function)
             new_code = code_str.replace(self.main_function, new_main_function)
             return new_code
@@ -193,13 +194,24 @@ def get_testing_result(opt_path, log_text, opt_code, obj):
         f.write(new_code)
     result = execute_python_code(new_code_path)
     return result
-            
+                     
+
 def get_json_dict(text):
-    # 将文本中的单引号替换为双引号
-    valid_json = text.replace("'", "\"")
-    # 将替换后的文本转换为JSON字典
-    data = json.loads(valid_json)
-    # 返回转换后的JSON字典
+    # 如果是json格式的标准字符串即可，直接打印出现单引号不好处理
+
+    # 这里全是单引号需要修复的bug...
+    # 将文本中的单引号替换为双引号 但是如果是字符串中的单引号则不替换
+    # print(f"init data: {text}\n")
+    # valid_json = text.replace("'", "\"")
+    # # 去掉连续""
+    # valid_json = re.sub(r'"value":\s*""(.*?)""', r'"value": "\1"', valid_json)
+    # print(f"valid data: {valid_json}\n")
+    # # 非法字符 None True
+    # valid_json = valid_json.replace("None", "null").replace("True", "true")
+    # data = json.loads(valid_json)
+    # # 返回转换后的JSON字典
+    # print(type(data))
+    data = json.loads(text)
     return data
 
 class TeeStream:
@@ -249,7 +261,8 @@ def TestUnit(class_dataset_path, output_dir):
         with open(j, "w", encoding="utf-8") as f:
             f.write(codes[0])
         idx = i.split("\\")[-1].split("_")[1].replace(".md", "")
-        idx = int(idx)
+        idx = int(idx) % 100
+        print(idx)
         score = 0.0
         testing_id = testing_data[idx]["logId"]
         testing_logText = testing_data[idx]["logText"]
@@ -257,6 +270,7 @@ def TestUnit(class_dataset_path, output_dir):
         obj = ExtractedCodes()
         gen_result = get_testing_result(j, testing_logText, codes[0], obj)
         gen_result = gen_result["output"]
+        print(f"gen_result = {gen_result}\n")
         gen_result = get_json_dict(gen_result)
         print(gen_result)
         # 验证结果
@@ -354,8 +368,8 @@ def MultiTestUnit(class_dataset_path: str, output_dir: str):
 
 if __name__ == "__main__":
     # TestUnit
-    # class_dataset_path = "data/generated_data/class_1.json"
-    class_dataset_path = "data/classified_data/class_1.json"
+    class_dataset_path = "data/generated_data/class_2.json"
+    # class_dataset_path = "data/classified_data/class_2.json"
     output_dir = "src/LogParserX/output/gen/reports"
     # TestUnit: for one code, testing corresponding log to see if it can match 1->1
     TestUnit(class_dataset_path=class_dataset_path, output_dir=output_dir)
