@@ -146,18 +146,39 @@ class ExtractedCodes:
             functions[func_name] = func_def.strip()
         return functions
 
+    # def rewrite_codes(self, log_text: str, code_str: str) -> str:
+    #     self.main_function = self.get_main_function(code_str)
+    #     # print(f"log_text: {log_text}")
+    #     if self.main_function:
+    #         # print("Check")
+    #         # new_main_function = re.sub(r"log_text\s*=\s*[\"'].*?[\"']", f'log_text = f\"\"\"{log_text}\"\"\"', self.main_function)
+    #         new_main_function = re.sub(r'log_text\s*=\s*(["\'])(.*?)\1', f'log_text = f\"\"\"{log_text}\"\"\"', self.main_function, flags=re.DOTALL)
+    #         # print(new_main_function)
+    #         new_code = code_str.replace(self.main_function, new_main_function)
+    #         return new_code
+    #     else:
+    #         return code_str
+
     def rewrite_codes(self, log_text: str, code_str: str) -> str:
         self.main_function = self.get_main_function(code_str)
-        # print(f"log_text: {log_text}")
         if self.main_function:
-            # print("Check")
-            # new_main_function = re.sub(r"log_text\s*=\s*[\"'].*?[\"']", f'log_text = f\"\"\"{log_text}\"\"\"', self.main_function)
-            new_main_function = re.sub(r'log_text\s*=\s*(["\'])(.*?)\1', f'log_text = f\"\"\"{log_text}\"\"\"', self.main_function, flags=re.DOTALL)
-            # print(new_main_function)
-            new_code = code_str.replace(self.main_function, new_main_function)
-            return new_code
-        else:
-            return code_str
+            # 双重转义处理：{}和反斜杠
+            escaped_log = log_text.replace('{', '{{').replace('}', '}}').replace('\\', '\\\\')
+            
+            # 动态匹配所有引号类型的正则
+            pattern = r'(log_text\s*=\s*)(["\'])(.*?)(?<!\\)\2'
+            
+            # 构造替换模板
+            replacement = rf'\1f"""{escaped_log}"""'
+            
+            new_main_function = re.sub(
+                pattern,
+                replacement,
+                self.main_function,
+                flags=re.DOTALL
+            )
+            return code_str.replace(self.main_function, new_main_function)
+        return code_str
 
 def is_perfect_match(original, test):
     """完全匹配：所有字段的key和value都正确且数量一致"""
@@ -242,8 +263,8 @@ class TeeStream:
 
 
 
-def TestUnit(class_dataset_path, output_dir):
-    tee = TeeStream("src/LogParserX/output/result_ori.txt", sys.stdout)
+def TestUnit(class_dataset_path, output_dir, tag):
+    tee = TeeStream(f"src/LogParserX/output/{tag}.txt", sys.stdout)
     original_stdout = sys.stdout
     sys.stdout = tee
 
@@ -270,9 +291,9 @@ def TestUnit(class_dataset_path, output_dir):
         obj = ExtractedCodes()
         gen_result = get_testing_result(j, testing_logText, codes[0], obj)
         gen_result = gen_result["output"]
-        print(f"gen_result = {gen_result}\n")
+        # print(f"gen_result = {gen_result}\n")
         gen_result = get_json_dict(gen_result)
-        print(gen_result)
+        # print(gen_result)
         # 验证结果
         print(f"Testing ID: {testing_id}:")
         print(f"Testing LogText: {testing_logText}")
@@ -366,13 +387,26 @@ def MultiTestUnit(class_dataset_path: str, output_dir: str):
 
     sys.stdout = original_stdout
 
+
+
+def Selector(num, class_t, output_dir):
+    if num == 1:    
+        TestUnit(class_dataset_path=f"data/classified_data/{class_t}.json", output_dir=output_dir, tag="result_ori")
+    elif num == 2:
+        TestUnit(class_dataset_path=f"data/generated_data/{class_t}.json", output_dir=output_dir, tag="result")
+    elif num == 3:
+        MultiTestUnit(class_dataset_path=f"data/classified_data/{class_t}.json", output_dir=output_dir)
+        MultiTestUnit(class_dataset_path=f"data/generated_data/{class_t}.json", output_dir=output_dir)
+
 if __name__ == "__main__":
     # TestUnit
     class_dataset_path = "data/generated_data/class_2.json"
     # class_dataset_path = "data/classified_data/class_2.json"
     output_dir = "src/LogParserX/output/gen/reports"
     # TestUnit: for one code, testing corresponding log to see if it can match 1->1
-    TestUnit(class_dataset_path=class_dataset_path, output_dir=output_dir)
+    # TestUnit(class_dataset_path=class_dataset_path, output_dir=output_dir)
     # MultiTestUnit: for one code, testing num sample log to testing its coverage 1->N
     # MultiTestUnit(class_dataset_path=class_dataset_path, output_dir=output_dir)
 
+    Selector(1, "class_2", output_dir)
+    Selector(2, "class_2", output_dir)

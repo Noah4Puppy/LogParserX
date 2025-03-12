@@ -324,4 +324,4 @@ def launcher(S, E, class_path):
 
 if __name__ == '__main__':
     class_path = r"data/classified_data/class_2.json"
-    launcher(S=0,E=3, class_path=class_path)
+    launcher(S=0,E=50, class_path=class_path)

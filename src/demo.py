@@ -49,7 +49,7 @@ use_llm_model = "qwen2.5-72b-instruct"
 # print(reply_content)
 
 # money ?
-# check_money()
+check_money()
 
 # response = ChatCompletion(id='chatcmpl-e3086a05-a198-96d3-9dab-8543c566134e', 
 #                choices=[Choice(finish_reason='stop', index=0, logprobs=None, 

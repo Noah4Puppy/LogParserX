@@ -171,5 +171,3 @@ cython_debug/
 .pypirc
 
 
-## API KEY RESTORE CHECK
-src/restore_checker.py
