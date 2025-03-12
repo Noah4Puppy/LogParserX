@@ -16,7 +16,7 @@ def check_money():
   url = "https://wcode.net/api/account/billing/grants"
   payload = {}
   headers = {
-    'Authorization': 'Bearer sk-63.h3A5gkOyaHkT8W9wPKtu28gqEzhkpR5X53NKFyzX9eq5dIEH'  # <-------- TODO: 替换这里的 API_KEY
+    'Authorization': 'Bearer sk-63.h3A5gkOyaHkT8W9wPKtu28gqEzhkpR5X53NKFyzX9eq5dIXX'  # <-------- TODO: 替换这里的 API_KEY
   }
   response = requests.request("GET", url, headers=headers, data=payload)
   print(response.text)
@@ -35,7 +35,7 @@ messages = [
     }
   ]
 
-api_key = "sk-63.h3A5gkOyaHkT8W9wPKtu28gqEzhkpR5X53NKFyzX9eq5dIEH"
+api_key = "sk-63.h3A5gkOyaHkT8W9wPKtu28gqEzhkpR5X53NKFyzX9eq5dIXX"
 base_url = "https://wcode.net/api/gpt/v1"
 use_llm_model = "qwen2.5-72b-instruct"
 

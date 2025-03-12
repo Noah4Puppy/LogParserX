@@ -312,4 +312,4 @@ In Original codes, all key-value pairs in the `logField` are matched:
 - {"key": "HTTP/S响应码", "value": "403"}
 - {"key": "攻击特征串", "value": "/index.php?GLOBALS[SKIN]=../../../../../../../../../winnt/win.ini\\x00"}
 - {"key": "触发规则", "value": "11010015"}
-- {"key": "访问唯一编号", "value": "742
+- {"key": "访问唯一编号", "value": "742"}
